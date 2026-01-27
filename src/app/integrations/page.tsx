@@ -53,7 +53,7 @@ export default function IntegrationsPage() {
                 dentrix: "/integrations/logos/dentrix.png",
                 eaglesoft: "/integrations/logos/eagle-soft.png",
                 opendental: "/integrations/logos/open-dental.png",
-                "practice-web": "/integrations/practice-web.png", // Fallback if exists
+                "practice-web": "/integrations/logos/practice-web.png", // Fallback if exists
               };
               
               const logoPath = logoMap[integration.slug] || `/integrations/logos/${integration.slug}.png`;
@@ -81,9 +81,9 @@ export default function IntegrationsPage() {
                   {/* Title */}
 
                   {/* Description */}
-                  {/* <p className="font-sans font-normal text-sm md:text-base leading-6 text-[#606060] line-clamp-3">
+                  <p className="font-sans font-normal text-sm md:text-base leading-6 text-[#606060] line-clamp-3">
                     {integration.hero.description}
-                  </p> */}
+                  </p>
 
 
 
