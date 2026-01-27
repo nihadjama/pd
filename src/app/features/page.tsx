@@ -22,7 +22,6 @@ export default function FeaturesPage() {
               text="Everything You Need to "
               highlighted="Run a Modern Practice"
               as="h1"
-              className="text-4xl md:text-5xl lg:text-[60px] lg:leading-[60px]"
             />
             <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
               Comprehensive tools designed to modernize every aspect of your practice management and patient communication.

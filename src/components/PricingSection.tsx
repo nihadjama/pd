@@ -1,7 +1,8 @@
 import SectionContainer from "@/common/SectionContainer";
 import SectionHeader from "@/common/SectionHeader";
+import Button from "@/common/Button";
 import { H3 } from "@/common/headings";
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 
 export default function PricingSection() {
   const singleLocationFeatures = [
@@ -36,7 +37,7 @@ export default function PricingSection() {
         {/* Pricing Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto mb-8">
           {/* Single Location */}
-          <div className="bg-white border border-[#f0f0f0] rounded-xl p-8 flex flex-col gap-6">
+          <div className="bg-white border border-[#f0f0f0] rounded-xl p-6 md:p-8 flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full">
             <div className="flex flex-col gap-2">
               <H3 className="font-semibold text-2xl leading-7">
                 Single Location
@@ -68,7 +69,7 @@ export default function PricingSection() {
           </div>
 
           {/* Multi-Location Groups */}
-          <div className="bg-white border-2 border-[#5e48f0] rounded-xl p-8 flex flex-col gap-6 relative">
+          <div className="bg-white border-2 border-[#5e48f0] rounded-xl p-6 md:p-8 flex flex-col gap-6 relative hover:shadow-lg transition-all duration-200 h-full">
             <div className="absolute top-4 right-4">
               <div className="bg-[#5e48f0] text-[#f9f9f9] px-3 py-1 rounded-lg">
                 <p className="font-sans font-medium text-xs leading-4">Most Popular</p>
@@ -107,7 +108,7 @@ export default function PricingSection() {
         </div>
 
         {/* Footer Note */}
-        <div className="flex flex-col gap-2 items-center max-w-[600px] mx-auto">
+        <div className="flex flex-col gap-2 items-center max-w-[600px] mx-auto mb-12">
           <p className="font-sans font-normal text-sm leading-5 text-[#606060] text-center">
             From startups to established groups, PracticeDilly grows with you
           </p>
@@ -124,6 +125,29 @@ export default function PricingSection() {
               Add locations as you grow
             </p>
           </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="flex flex-col gap-6 items-center max-w-[600px] mx-auto pt-8 border-t border-[#e5e7eb]">
+          <div className="flex flex-col gap-3 items-center text-center">
+            <h3 className="font-heading font-semibold text-2xl leading-7 text-[#262626]">
+              Ready to get started?
+            </h3>
+            <p className="font-sans font-normal text-base leading-6 text-[#606060]">
+              Join hundreds of practices already using PracticeDilly to streamline their operations.
+            </p>
+          </div>
+          <Button
+            variant="primary"
+            icon={<ArrowRight className="h-5 w-5" />}
+            iconPosition="right"
+            className="px-8 py-3 text-base font-medium"
+          >
+            Start Free Trial
+          </Button>
+          <p className="font-sans font-normal text-xs leading-4 text-[#606060] text-center">
+            Setup takes less than 15 minutes • No credit card required
+          </p>
         </div>
       </div>
     </SectionContainer>

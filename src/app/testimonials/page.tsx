@@ -6,7 +6,6 @@ import SectionHeader from "@/common/SectionHeader";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import FAQItem from "@/common/FAQItem";
 import Button from "@/common/Button";
-import { H3 } from "@/common/headings";
 import { Star, MessageCircleHeart, Clock, Headphones, DollarSign, CheckCircle2 } from "lucide-react";
 import GridCard from "@/common/GridCard";
 import GridBackground from "@/components/GridBackground";
@@ -163,7 +162,6 @@ export default function TestimonialsPage() {
               text="Customer Reviews & "
               highlighted="Testimonials"
               as="h1"
-              className="text-4xl md:text-5xl lg:text-[60px] lg:leading-[60px]"
             />
             <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
               Dental practices owners and office managers share their stories about why they're passionate about what they do and how PracticeDilly helped them along the way.
@@ -221,19 +219,29 @@ export default function TestimonialsPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-[37px] items-start w-full max-w-4xl mx-auto">
             {whyChooseItems.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-4 p-6 bg-white border border-[#e5e7eb] rounded-[10px]"
+                className="bg-white border border-[#f0f0f0] flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full"
               >
-                <div className="flex items-center gap-4">
-                  <div className="shrink-0">{item.icon}</div>
-                  <H3 className="font-semibold">{item.title}</H3>
+                <div className="flex flex-col items-start w-full">
+                  <div className="flex items-center pb-5 pt-0 px-0">
+                    <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center p-2 rounded-[10px] shrink-0">
+                      <div className="relative shrink-0 size-6 text-[#5e48f0]">
+                        {item.icon}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-start pb-3 pt-0 px-0 w-full">
+                    <p className="font-sans font-normal leading-6 shrink-0 text-[#262626] text-base tracking-normal">
+                      {item.title}
+                    </p>
+                  </div>
+                  <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal w-full">
+                    {item.description}
+                  </p>
                 </div>
-                <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
-                  {item.description}
-                </p>
               </div>
             ))}
           </div>

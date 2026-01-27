@@ -239,6 +239,11 @@ export default function StickyNav() {
             )}
           </li>
           <li>
+            <Button href="/blog" variant="link" className="px-2.5">
+              Blog
+            </Button>
+          </li>
+          <li>
             <Button href="#resources" variant="link" className="px-2.5">
               Resources
             </Button>
@@ -391,6 +396,17 @@ export default function StickyNav() {
                   </ul>
                 </div>
               )}
+            </li>
+
+            {/* Blog - Mobile */}
+            <li className="border-b border-[#f0f0f0]">
+              <Link
+                href="/blog"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-sm font-normal px-2.5 py-3 rounded-[10px] transition-colors text-[#262626] hover:text-[#5e48f0]"
+              >
+                Blog
+              </Link>
             </li>
 
             {/* Resources - Mobile */}

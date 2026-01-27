@@ -24,7 +24,6 @@ export default function IntegrationsPage() {
               text="Seamlessly Integrated "
               highlighted="With Your Practice"
               as="h1"
-              className="text-4xl md:text-5xl lg:text-[60px] lg:leading-[60px]"
             />
             <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
               Connect PracticeDilly with your existing practice management system for a unified workflow. 15-minute setup, no contracts, 30-day free trial.
@@ -62,7 +61,7 @@ export default function IntegrationsPage() {
                 <Link
                   key={integration.slug}
                   href={`/integrations/${integration.slug}`}
-                  className="group bg-white border border-[#f0f0f0] rounded-xl  flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg"
+                  className="group bg-white border border-[#f0f0f0] rounded-xl flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
                 >
 
                  
@@ -77,7 +76,7 @@ export default function IntegrationsPage() {
                     />
                   </div>
 
-                  <div className="px-6 md:px-8 py-6 md:py-8 pt-2! flex flex-col gap-4">
+                  <div className="px-6 py-6 flex flex-col gap-4 flex-1">
                   {/* Title */}
 
                   {/* Description */}

@@ -165,10 +165,10 @@ export default function PricingPage() {
             {pricingPlans.map((plan, index) => (
               <div
                 key={plan.name}
-                className={`relative bg-white border rounded-xl p-8 flex flex-col gap-6 ${
+                className={`relative bg-white border rounded-xl p-6 md:p-8 flex flex-col gap-6 hover:shadow-lg transition-all duration-200 h-full ${
                   plan.popular
-                    ? "border-2 border-[#5e48f0] shadow-lg"
-                    : "border-[#f0f0f0]"
+                    ? "border-2 border-[#5e48f0]"
+                    : "border-[#f0f0f0] hover:border-[#5e48f0]"
                 }`}
               >
                 {plan.popular && (
@@ -180,7 +180,7 @@ export default function PricingPage() {
                 )}
 
                 <div className="flex flex-col gap-3">
-                  <H3 className="font-semibold text-2xl leading-7">
+                  <H3 className="font-semibold">
                     {plan.name}
                   </H3>
                   <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
@@ -222,7 +222,7 @@ export default function PricingPage() {
         <div className="w-full px-4 lg:px-16">
           <div className="flex flex-col gap-10 items-center max-w-4xl mx-auto">
             <div className="flex flex-col gap-4 items-center">
-              <H2 className="text-3xl leading-tight text-center">
+              <H2 className="text-center">
                 All Features Included in Each Plan
               </H2>
               <p className="font-sans font-normal text-base text-[#262626] text-center">
@@ -267,7 +267,7 @@ export default function PricingPage() {
         <div className="w-full px-4 lg:px-16">
           <div className="flex flex-col gap-10 items-center max-w-4xl mx-auto">
             <div className="flex flex-col gap-4 items-center">
-              <H2 className="text-3xl leading-tight text-center">
+              <H2 className="text-center">
                 Why PracticeDilly?
               </H2>
             </div>
@@ -275,7 +275,7 @@ export default function PricingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
               {whyPracticeDillyItems.map((item, index) => (
                 <div key={index} className="flex flex-col gap-3 bg-white border border-[#f0f0f0] rounded-xl p-6">
-                  <H3 className="font-semibold">
+                  <H3>
                     {item.title}
                   </H3>
                   <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
@@ -292,7 +292,7 @@ export default function PricingPage() {
       <SectionContainer className="items-center">
         <div className="w-full px-4 lg:px-16">
           <div className="flex flex-col gap-4 items-center max-w-2xl mx-auto py-12 border-y border-[#e5e7eb]">
-            <H2 className="text-2xl leading-tight text-center">
+            <H2 className="text-center">
               No Contracts, No Setup Fee
             </H2>
             <p className="font-sans font-normal text-base leading-6 text-[#262626] text-center">

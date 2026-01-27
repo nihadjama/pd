@@ -27,7 +27,7 @@ export default function FeatureCard({
   // Simple variant (existing usage)
   if (variant === "simple") {
     return (
-      <div className="bg-white border border-[#f0f0f0] flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full">
+      <div className="bg-white border border-[#f0f0f0] flex flex-col items-start overflow-clip p-6 rounded-xl shrink-0 w-full h-full hover:border-[#5e48f0] transition-all duration-200">
         <div className="flex flex-col items-start w-full">
           <div className="flex items-center pb-5 pt-0 px-0">
             <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center p-2 rounded-[10px] shrink-0">
@@ -63,7 +63,7 @@ export default function FeatureCard({
         </div>
       )}
 
-      <div className="p-4 md:p-6 flex flex-col gap-4">
+      <div className="p-6 flex flex-col gap-4 flex-1">
         {/* Category */}
         {category && (
           <div className="flex items-center gap-3">
@@ -106,7 +106,7 @@ export default function FeatureCard({
     return (
       <Link
         href={href}
-        className="group bg-white border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-b-[#5e48f0] transition-all duration-200  relative"
+        className="group bg-white border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 relative h-full"
       >
         {content}
       </Link>
@@ -114,7 +114,7 @@ export default function FeatureCard({
   }
 
   return (
-    <div className="group bg-white border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg relative">
+    <div className="group bg-white border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 relative h-full">
       {content}
     </div>
   );

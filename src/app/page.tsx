@@ -69,13 +69,10 @@ export const metadata: Metadata = {
   },
 };
 
-// Note: These image URLs are from localhost development server
-// In production, these should be replaced with proper Next.js Image imports or public assets
-
-// Image assets from Figma (for avatars only)
-const img1 = "http://localhost:3845/assets/b660cb21c76320d9bc09d908921347f2e81f4253.png";
-const img2 = "http://localhost:3845/assets/52e6c768b0f78c6582e1c8c5397490788d8077e5.png";
-const img3 = "http://localhost:3845/assets/2a5d7afd11521cf78645ec2fab4c712c936d10fb.png";
+// Avatar images from Unsplash
+const img1 = "/images/avatar-1.png";
+const img2 = "/images/avatar-2.png";
+const img3 = "/images/avatar-3.png";
 
 export default function Home() {
   return (

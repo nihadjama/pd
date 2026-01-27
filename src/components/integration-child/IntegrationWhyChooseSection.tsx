@@ -45,7 +45,7 @@ export default function IntegrationWhyChooseSection({
                 )}
               </div>
               <div className="flex flex-col gap-2 items-start">
-                <H3 className="text-base tracking-normal">
+                <H3 className="tracking-normal">
                   {item.title}
                 </H3>
                 <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal">

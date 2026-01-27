@@ -34,7 +34,7 @@ export default function TermsConditionsPage() {
           <div className="max-w-4xl mx-auto flex flex-col gap-8 md:gap-10">
             {/* Terms and Conditions of Use */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Terms and Conditions of Use</H2>
+              <H2>Terms and Conditions of Use</H2>
               <p className="font-sans font-normal text-base leading-6 text-[#262626]">
                 Please read these terms and conditions of use carefully. By accessing or using this web site or the AppDilly services, you agree to be bound by the terms and conditions described herein and all terms incorporated by reference. If you do not agree to all of these terms, do not use this web site.
               </p>

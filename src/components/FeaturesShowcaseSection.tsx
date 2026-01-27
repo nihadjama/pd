@@ -101,7 +101,7 @@ export default function FeaturesShowcaseSection() {
             return (
               <div
                 key={index}
-                className="bg-white border border-[#f0f0f0] p-16 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors"
+                className="bg-white border border-[#f0f0f0] rounded-xl p-6 md:p-8 flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
               >
                 <div className="flex items-center gap-3">
                   <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-2.5 rounded-[10px] shrink-0">

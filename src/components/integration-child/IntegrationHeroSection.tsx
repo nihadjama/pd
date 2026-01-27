@@ -55,7 +55,7 @@ export default function IntegrationHeroSection({
                 text={heading.text}
                 highlighted={heading.highlighted}
                 suffix={heading.suffix}
-                className="text-4xl md:text-5xl leading-[48px] text-center max-w-[568px]"
+                className="text-center max-w-[568px]"
                 as="h1"
               />
 
