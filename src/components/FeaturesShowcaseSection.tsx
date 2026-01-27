@@ -1,8 +1,10 @@
+import Button from "@/common/Button";
 import SectionContainer from "@/common/SectionContainer";
 import SectionHeader from "@/common/SectionHeader";
 import { H2, H3 } from "@/common/headings";
 import { getIcon } from "@/utils/iconMap";
 import { Phone, MessageSquare, Mail, Voicemail, Workflow, Check } from "lucide-react";
+import Link from "next/link";
 
 export default function FeaturesShowcaseSection() {
   const features = [
@@ -86,8 +88,8 @@ export default function FeaturesShowcaseSection() {
         <div className="flex flex-col gap-10 items-center mb-10">
           <SectionHeader
             heading={{
-              text: "See how we help you automate your ",
-              highlighted: "front office",
+              text: "See How We Help You Automate Your ",
+              highlighted: "Front Office",
             }}
             description="Comprehensive tools designed to modernize every aspect of your practice management."
             className="max-w-[600px]"
@@ -95,28 +97,30 @@ export default function FeaturesShowcaseSection() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto mb-16 max-w-[960px] border-x border-t border-[#e5e7eb]">
           {features.map((feature, index) => {
             const IconComponent = getIcon(feature.icon) || Phone;
             return (
               <div
                 key={index}
-                className="bg-white border border-[#f0f0f0] rounded-xl p-6 md:p-8 flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
+                className="bg-white border-l -ml-px border-[#e5e7eb] flex flex-col gap-4  transition-all duration-200  h-full border-b"
               >
-                <div className="flex items-center gap-3">
-                  <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-2.5 rounded-[10px] shrink-0">
-                    <IconComponent className="w-5 h-5 text-[#5e48f0]" />
+                <div className="p-6 md:p-8 flex flex-col gap-4">
+                  <div className="flex items-center gap-3 mt-8">
+                    <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-2.5 rounded-[10px] shrink-0">
+                      <IconComponent className="w-5 h-5 text-[#5e48f0]" />
+                    </div>
+                    <H3>
+                      {feature.title}
+                    </H3>
                   </div>
-                  <H3>
-                    {feature.title}
-                  </H3>
+                  <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
+                    {feature.description}
+                  </p>
                 </div>
-                <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
-                  {feature.description}
-                </p>
                 <ul className="flex flex-col gap-2">
                   {feature.bullets.map((bullet, bulletIndex) => (
-                    <li key={bulletIndex} className="flex items-start gap-2">
+                    <li key={bulletIndex} className="flex items-start gap-2 border-t border-[#e5e7eb] py-2 p-2 md:p-3 px-0 md:px-6">
                       {/* <span className="text-[#5e48f0] border flex">•</span> */}
                       <Check className="w-5 h-5 text-[#5e48f0]" />
                       <span className="font-sans font-normal text-sm leading-5 text-[#606060]">
@@ -132,7 +136,7 @@ export default function FeaturesShowcaseSection() {
 
         {/* Additional Features */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto mb-16">
-          <div className="bg-white border border-[#f0f0f0] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
+          <div className="bg-white border border-[#e5e7eb] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
             <H3>
               Scheduling
             </H3>
@@ -143,7 +147,7 @@ export default function FeaturesShowcaseSection() {
               See Scheduling →
             </button>
           </div>
-          <div className="bg-white border border-[#f0f0f0] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
+          <div className="bg-white border border-[#e5e7eb] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
             <H3>
               Forms
             </H3>
@@ -154,7 +158,7 @@ export default function FeaturesShowcaseSection() {
               See Forms →
             </button>
           </div>
-          <div className="bg-white border border-[#f0f0f0] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
+          <div className="bg-white border border-[#e5e7eb] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
             <H3>
               Phone system & call intelligence
             </H3>
@@ -165,7 +169,7 @@ export default function FeaturesShowcaseSection() {
               See Phone system & call intelligence →
             </button>
           </div>
-          <div className="bg-white border border-[#f0f0f0] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
+          <div className="bg-white border border-[#e5e7eb] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
             <H3>
               Payments
             </H3>
@@ -177,6 +181,15 @@ export default function FeaturesShowcaseSection() {
             </button>
           </div>
         </div> */}
+
+        <div className="flex justify-center">
+          <Link href="/features">
+            <Button variant="secondary" className="">
+              See All Features
+            </Button>
+          </Link>
+        </div>
+
 
       </div>
     </SectionContainer>

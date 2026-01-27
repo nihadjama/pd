@@ -10,6 +10,7 @@ import GridBackground from "@/components/GridBackground";
 import { H1, H2, H3 } from "@/common/headings";
 import { Check } from "lucide-react";
 import FAQItem from "@/common/FAQItem";
+import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import { useState } from "react";
 
 export default function PricingPage() {
@@ -165,10 +166,10 @@ export default function PricingPage() {
             {pricingPlans.map((plan, index) => (
               <div
                 key={plan.name}
-                className={`relative bg-white border rounded-xl p-6 md:p-8 flex flex-col gap-6 hover:shadow-lg transition-all duration-200 h-full ${
+                className={`relative border rounded-xl p-6 md:p-8 flex flex-col gap-6 hover:shadow-lg transition-all duration-200 h-full ${
                   plan.popular
                     ? "border-2 border-[#5e48f0]"
-                    : "border-[#f0f0f0] hover:border-[#5e48f0]"
+                    : "border-[#e5e7eb] hover:border-[#5e48f0]"
                 }`}
               >
                 {plan.popular && (
@@ -274,7 +275,7 @@ export default function PricingPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
               {whyPracticeDillyItems.map((item, index) => (
-                <div key={index} className="flex flex-col gap-3 bg-white border border-[#f0f0f0] rounded-xl p-6">
+                <div key={index} className="flex flex-col gap-3 border border-[#e5e7eb] rounded-xl p-6">
                   <H3>
                     {item.title}
                   </H3>
@@ -307,19 +308,18 @@ export default function PricingPage() {
 
       {/* FAQ Section */}
       <SectionContainer className="items-start">
-        <div className="w-full px-4 lg:px-16">
-          <div className="flex flex-col gap-10 items-center mb-10">
-            <SectionHeader
-              heading={{
-                text: "Frequently Asked ",
-                highlighted: "Questions",
-              }}
-              description="Everything you need to know about PracticeDilly pricing and features."
-              className="max-w-[600px]"
+        <div className="w-full flex flex-col md:flex-row border-t">
+          <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
+            <HeadingWithHighlight
+              text="Frequently Asked "
+              highlighted="Questions"
             />
+            <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
+              Everything you need to know about PracticeDilly pricing and features.
+            </p>
           </div>
 
-          <div className="flex flex-col max-w-[800px] mx-auto">
+          <div className="flex flex-col w-full md:w-1/2">
             {faqItems.map((faq, index) => (
               <FAQItem
                 key={index}

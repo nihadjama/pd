@@ -27,7 +27,7 @@ export default function FeatureCard({
   // Simple variant (existing usage)
   if (variant === "simple") {
     return (
-      <div className="bg-white border border-[#f0f0f0] flex flex-col items-start overflow-clip p-6 rounded-xl shrink-0 w-full h-full hover:border-[#5e48f0] transition-all duration-200">
+      <div className="bg-white border border-[#e5e7eb] flex flex-col items-start overflow-clip p-6 rounded-xl shrink-0 w-full h-full hover:border-[#5e48f0] transition-all duration-200">
         <div className="flex flex-col items-start w-full">
           <div className="flex items-center pb-5 pt-0 px-0">
             <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center p-2 rounded-[10px] shrink-0">

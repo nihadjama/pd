@@ -33,19 +33,19 @@ export default function FeatureHeroSection({
   image
 }: FeatureHeroSectionProps) {
   return (
-    <div className="relative flex min-h-screen items-center justify-center px-4 py-16 md:py-24 lg:py-32 lg:px-16 w-full">
+    <div className="relative flex min-h-[600px] md:min-h-screen items-center justify-center w-full py-12 md:py-0 border-b">
       {/* Grid Background */}
       <GridBackground gridSize={1279 / 9} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
 
-      <div className="flex w-full flex-col items-center gap-12 md:gap-16 lg:gap-20 relative z-10">
+      <div className="flex w-full flex-col items-center gap-8 md:gap-16 lg:gap-20 relative z-10">
         {/* Main Content Card */}
 
-        <div className="flex max-w-[1280px] md:flex-row items-center flex-col gap-6 md:gap-12 w-full  px-4 md:px-6 lg:px-0">
+        <div className="flex max-w-[1280px] md:flex-row items-center flex-col gap-6 md:gap-12 w-full px-4 md:px-6 lg:px-0">
 
-          <div className="flex flex-col items-start px-4 md:px-8 lg:pl-12 w-full md:w-1/2 flex-1">
-            <div className="flex flex-col gap-8 w-full">
+          <div className="flex flex-col items-start px-0 md:px-8 lg:pl-12 w-full md:w-1/2 flex-1">
+            <div className="flex flex-col gap-6 md:gap-8 w-full">
               {/* Category Badge */}
-              <div className="flex flex-col gap-6 justify-start items-start">
+              <div className="flex flex-col gap-4 md:gap-6 justify-start items-start w-full">
                 <HeroPill icon={category.icon} text={category.text} />
 
                 {/* Heading */}
@@ -53,26 +53,26 @@ export default function FeatureHeroSection({
                   text={heading.text}
                   highlighted={heading.highlighted}
                   suffix={heading.suffix}
-                  className="max-w-[568px]"
+                  className="max-w-[568px] w-full"
                   as="h1"
                 />
 
                 {/* Description */}
-                <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal max-w-[572px]">
+                <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal max-w-[572px] w-full">
                   {description}
                 </p>
 
               </div>
 
               {/* CTA Button */}
-              <div className="flex justify-start">
-                <Button href={cta.href} variant="primary" className=" flex items-center justify-center">
+              <div className="flex justify-start w-full">
+                <Button href={cta.href} variant="primary" className="flex items-center justify-center w-full md:w-auto">
                   {cta.text}
                 </Button>
               </div>
 
               {/* Feature Badges */}
-              <div className="flex flex-wrap gap-4 items-start justify-start px-0 py-8 md:py-10 lg:py-12 w-full">
+              <div className="flex flex-wrap gap-3 md:gap-4 items-start justify-start px-0 py-6 md:py-10 lg:py-12 w-full">
                 {badges.map((badge, index) => (
                   <Badge key={index} text={badge} />
                 ))}
@@ -80,12 +80,12 @@ export default function FeatureHeroSection({
             </div>
           </div>
 
-          <div className="md:w-1/2 w-full flex items-center justify-center">
+          <div className="md:w-1/2 w-full flex items-center justify-center px-4 md:px-0">
             <Image
               src={image || ""}
               alt={heading.text}
-              width={650}
-              height={650}
+              width={600}
+              height={600}
               className="w-full h-auto max-w-full"
             />
           </div>

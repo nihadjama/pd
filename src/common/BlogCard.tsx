@@ -33,7 +33,7 @@ export default function BlogCard({
   return (
     <Link
       href={`/blog/${slug}`}
-      className="group bg-white border border-[#f0f0f0] flex flex-col overflow-hidden rounded-xl hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
+      className="group bg-white border border-[#e5e7eb] flex flex-col overflow-hidden rounded-xl hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
     >
       {/* Image */}
       <div className="relative w-full h-48 bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5 overflow-hidden">
@@ -73,7 +73,7 @@ export default function BlogCard({
         </p>
 
         {/* Meta Info */}
-        <div className="flex flex-col gap-2 pt-2 border-t border-[#f0f0f0]">
+        <div className="flex flex-col gap-2 pt-2 border-t border-[#e5e7eb]">
           <div className="flex items-center gap-4 text-xs text-[#606060]">
             <div className="flex items-center gap-1.5">
               <Calendar className="h-3.5 w-3.5" />

@@ -43,8 +43,8 @@ export default function ModernPracticeSection() {
         <div className="flex flex-col gap-10 items-center mb-10">
           <SectionHeader
             heading={{
-              text: "Everything you need to run a ",
-              highlighted: "modern practice",
+              text: "Everything You Need To Run a ",
+              highlighted: "Modern Practice",
             }}
             description="A complete platform that helps you attract, manage, and retain patients without the manual admin tasks."
             className="max-w-[565px]"

@@ -7,6 +7,7 @@ import integrationsData from "@/data/integrations.json";
 import { notFound } from "next/navigation";
 import IntegrationTimeSection from "@/components/integration-child/IntegrationTimeSection";
 import type { Metadata } from "next";
+import CTASection from "@/components/CTASection";
 
 interface IntegrationPageProps {
   params: Promise<{
@@ -91,7 +92,7 @@ export default async function IntegrationPage({ params }: IntegrationPageProps) 
       <IntegrationFeaturesSection {...integrationData.features} />
       <TestimonialSection />
       <IntegrationWhyChooseSection {...integrationData.whyChoose} />
-      <IntegrationCTASection {...integrationData.cta} />
+      <CTASection />
     </div>
   );
 }

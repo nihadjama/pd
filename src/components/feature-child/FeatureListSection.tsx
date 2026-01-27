@@ -22,7 +22,7 @@ export default function FeatureListSection({
   features,
 }: FeatureListSectionProps) {
   return (
-    <SectionContainer className="items-start px-4 md:px-8 lg:px-16 border-t">
+    <SectionContainer className="items-start px-4 md:px-8 lg:px-12">
       <div className="flex flex-col gap-4 items-start w-full max-w-[557px]">
         <HeadingWithHighlight
           text={heading.text}
@@ -34,7 +34,7 @@ export default function FeatureListSection({
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] items-start w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-12 items-start w-full">
         {features.map((feature, index) => (
           <FeatureCard
             key={index}

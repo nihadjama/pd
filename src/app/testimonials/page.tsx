@@ -223,7 +223,7 @@ export default function TestimonialsPage() {
             {whyChooseItems.map((item, index) => (
               <div
                 key={index}
-                className="bg-white border border-[#f0f0f0] flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full"
+                className="border border-[#e5e7eb] flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full"
               >
                 <div className="flex flex-col items-start w-full">
                   <div className="flex items-center pb-5 pt-0 px-0">
@@ -250,7 +250,7 @@ export default function TestimonialsPage() {
 
       {/* FAQ Section */}
       <SectionContainer className="items-start">
-        <div className="w-full px-4 lg:px-16 flex flex-col md:flex-row">
+        <div className="w-full flex flex-col md:flex-row border-t">
           <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
             <HeadingWithHighlight
               text="Frequently Asked "

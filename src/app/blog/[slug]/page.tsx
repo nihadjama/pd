@@ -198,7 +198,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
                 <Link
                   key={relatedBlog.slug}
                   href={`/blog/${relatedBlog.slug}`}
-                  className="group bg-white border border-[#f0f0f0] rounded-xl p-6 hover:border-[#5e48f0] transition-all duration-200"
+                  className="group bg-white border border-[#e5e7eb] rounded-xl p-6 hover:border-[#5e48f0] transition-all duration-200"
                 >
                   <div className="flex items-center mb-3">
                     <span className="text-xs font-medium text-[#5e48f0] bg-[rgba(94,72,240,0.1)] px-2.5 py-1 rounded-full">

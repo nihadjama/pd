@@ -24,7 +24,7 @@ export default function Button({
   type = "button",
   disabled = false,
 }: ButtonProps) {
-  const baseStyles = "flex items-center justify-center text-sm font-medium px-3 py-2.5 rounded-[10px] transition-colors disabled:opacity-50 disabled:cursor-not-allowed";
+  const baseStyles = "flex items-center justify-center text-sm font-medium px-3 py-2.5 rounded-[10px] transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
   
   const variantStyles = {
     primary: "bg-[#5e48f0] text-[#f9f9f9] hover:bg-[#4d3ad0] px-4 justify-between gap-4",

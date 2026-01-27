@@ -5,7 +5,7 @@ interface MetricCardProps {
 
 export default function MetricCard({ value, label }: MetricCardProps) {
   return (
-    <div className="flex-1 bg-white rounded-xl border border-[#f0f0f0] px-4 py-3">
+    <div className="flex-1 bg-white rounded-xl border border-[#e5e7eb] px-4 py-3">
       <div className="font-sans text-3xl font-semibold leading-8 text-[#262626] mb-1">
         {value}
       </div>

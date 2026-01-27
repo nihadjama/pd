@@ -14,7 +14,7 @@ export default function AppointmentRow({
   status,
 }: AppointmentRowProps) {
   return (
-    <div className="grid grid-cols-[auto_1fr_auto_auto] gap-4 py-2.5 items-center border-b border-[#f0f0f0]">
+    <div className="grid grid-cols-[auto_1fr_auto_auto] gap-4 py-2.5 items-center border-b border-[#e5e7eb]">
       <div className="flex items-center">
         <Circle className="h-4 w-4 text-[#606060]" strokeWidth={1.5} fill="none" />
       </div>

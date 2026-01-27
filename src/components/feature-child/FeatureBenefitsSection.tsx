@@ -23,7 +23,7 @@ export default function FeatureBenefitsSection({
 }: FeatureBenefitsSectionProps) {
   return (
     <SectionContainer className="items-start border-t">
-      <div className="flex flex-col gap-4 items-start px-4 md:px-8 lg:px-16 py-8 md:py-12 lg:py-16 w-full max-w-[512px]">
+      <div className="flex flex-col gap-4 items-start px-4 md:px-8 lg:px-16 py-6 md:py-12 lg:py-16 w-full max-w-1/2">
         <HeadingWithHighlight
           text={heading.text}
           highlighted={heading.highlighted}
@@ -49,7 +49,7 @@ export default function FeatureBenefitsSection({
                 <Check className="w-5 h-5 text-[#5e48f0] shrink-0 mt-0.5" />
                 <div className="flex flex-col grow items-start min-w-0">
                   <div className="flex items-center pb-1 pt-0 px-0 w-full">
-                    <p className="font-sans font-medium leading-6 text-[#262626] text-base whitespace-nowrap tracking-normal">
+                    <p className="font-sans font-medium leading-6 text-[#262626] text-base md:whitespace-nowrap tracking-normal break-words">
                       {item.title}
                     </p>
                   </div>

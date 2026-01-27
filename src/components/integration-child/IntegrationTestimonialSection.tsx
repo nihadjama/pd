@@ -43,6 +43,7 @@ export default function IntegrationTestimonialSection({
     <SectionContainer className="items-center">
       <div className="flex flex-col items-center w-full max-w-[800px]">
         <TestimonialCard
+          testimonialType={"big-picture"}
           name={finalName}
           role={finalRole}
           company={finalCompany}

@@ -23,10 +23,10 @@ export default function TestimonialCard({
   testimonialType, 
 }: TestimonialCardProps) {
   return (
-    <div className="shrink-0 w-[500px] bg-white border border-[#f0f0f0] rounded-xl overflow-hidden">
+    <div className="shrink-0 w-[500px] bg-white border-r  overflow-hidden">
       <div className="flex flex-col gap-6">
         {/* Author */}
-        <div className="flex items-center gap-4 border-b border-[#f0f0f0] px-6 py-6">
+        <div className="flex items-center gap-4 border-b  px-6 py-6">
           {authorImage && (
             <div className={`relative shrink-0 overflow-hidden rounded-full ${
               testimonialType === "big-picture" ? "h-20 w-20" : "h-12 w-12"

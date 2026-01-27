@@ -8,8 +8,8 @@ import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import Button from "@/common/Button";
 import integrationsData from "@/data/integrations.json";
 import TestimonialSection from "@/components/TestimonialSection";
-import CTASection from "@/components/CTASection";
 import GridBackground from "@/components/GridBackground";
+import CTASection from "@/components/CTASection";
 
 export default function IntegrationsPage() {
   return (
@@ -61,7 +61,7 @@ export default function IntegrationsPage() {
                 <Link
                   key={integration.slug}
                   href={`/integrations/${integration.slug}`}
-                  className="group bg-white border border-[#f0f0f0] rounded-xl flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
+                  className="group bg-white border border-[#e5e7eb] rounded-xl flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
                 >
 
                  

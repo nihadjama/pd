@@ -17,9 +17,9 @@ export default function RunSmootherDayUI() {
   return (
     <div className={`flex flex-col lg:flex-row gap-4 w-full max-w-[700px] transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Patient Chat Card */}
-      <div className="flex-1 bg-white rounded-xl border border-[#e5e7eb] overflow-hidden">
+      <div className="flex-1 bg-white rounded-xl border border-[#e0e0e0] overflow-hidden">
         {/* Header */}
-        <div className="border-b border-[#e5e7eb] px-4 py-3">
+        <div className="border-b border-[#e0e0e0] px-4 py-3">
           <H3 className="text-sm leading-5">
             Patient Chat
           </H3>
@@ -40,9 +40,9 @@ export default function RunSmootherDayUI() {
       </div>
 
       {/* Recent Calls Card */}
-      <div className="flex-1 bg-white rounded-xl border border-[#e5e7eb] overflow-hidden">
+      <div className="flex-1 bg-white rounded-xl border border-[#e0e0e0] overflow-hidden">
         {/* Header */}
-        <div className="border-b border-[#e5e7eb] px-4 py-3 flex items-center justify-between">
+        <div className="border-b border-[#e0e0e0] px-4 py-3 flex items-center justify-between">
           <H3 className="text-sm leading-5">
             Recent calls
           </H3>

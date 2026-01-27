@@ -35,10 +35,10 @@ export default function PricingSection() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1000px] mx-auto mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1000px] mx-auto mb-8">
           {/* Single Location */}
-          <div className="bg-white border border-[#f0f0f0] rounded-xl p-6 md:p-8 flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full">
-            <div className="flex flex-col gap-2">
+          <div className="bg-white border border-[#e5e7eb] flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 h-full">
+            <div className="flex flex-col gap-2 p-6 md:p-8">
               <H3 className="font-semibold text-2xl leading-7">
                 Single Location
               </H3>
@@ -47,9 +47,9 @@ export default function PricingSection() {
               </p>
             </div>
 
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col">
               {singleLocationFeatures.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3">
+                <li key={index} className="flex items-start gap-3 p-6 md:p-8 md:py-4 border-t">
                   <Check className="w-5 h-5 text-[#5e48f0] shrink-0 mt-0.5" />
                   <span className="font-sans font-normal text-sm leading-5 text-[#262626]">
                     {feature}
@@ -58,7 +58,7 @@ export default function PricingSection() {
               ))}
             </ul>
 
-            <div className="flex flex-col gap-2 pt-4 border-t border-[#e5e7eb]">
+            <div className="flex flex-col gap-2 p-6 md:p-8 border-t border-[#e5e7eb]">
               <p className="font-sans font-medium text-sm leading-5 text-[#262626]">
                 Join 400+ single-location practices
               </p>
@@ -69,14 +69,14 @@ export default function PricingSection() {
           </div>
 
           {/* Multi-Location Groups */}
-          <div className="bg-white border-2 border-[#5e48f0] rounded-xl p-6 md:p-8 flex flex-col gap-6 relative hover:shadow-lg transition-all duration-200 h-full">
+          <div className="bg-white border-2 border-[#5e48f0] flex flex-col gap-6 relative hover:shadow-lg transition-all duration-200 h-full">
             <div className="absolute top-4 right-4">
               <div className="bg-[#5e48f0] text-[#f9f9f9] px-3 py-1 rounded-lg">
                 <p className="font-sans font-medium text-xs leading-4">Most Popular</p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 p-6 md:p-8">
               <H3 className="font-semibold text-2xl leading-7">
                 Multi-Location Groups
               </H3>
@@ -85,9 +85,9 @@ export default function PricingSection() {
               </p>
             </div>
 
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col">
               {multiLocationFeatures.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3">
+                <li key={index} className="flex items-start gap-3 p-6 md:p-8 md:py-4 border-t">
                   <Check className="w-5 h-5 text-[#5e48f0] shrink-0 mt-0.5" />
                   <span className="font-sans font-normal text-sm leading-5 text-[#262626]">
                     {feature}
@@ -96,11 +96,11 @@ export default function PricingSection() {
               ))}
             </ul>
 
-            <div className="flex flex-col gap-2 pt-4 border-t border-[#e5e7eb]">
+            <div className="flex flex-col gap-2 p-6 md:p-8 border-t border-[#e5e7eb]">
               <p className="font-sans font-medium text-sm leading-5 text-[#262626]">
                 Trusted by 100+ multi-location groups
               </p>
-              <p className="font-sans font-normal text-sm leading-5 text-[#606060] italic">
+              <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
                 "Scaled seamlessly across multiple locations. Game-changer for our practice group." - Pacific Ocean Dental Group
               </p>
             </div>

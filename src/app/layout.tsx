@@ -4,6 +4,7 @@ import { Inter, Geist } from "next/font/google";
 import "./globals.css";
 import StickyNav from "@/common/StickyNav";
 import Footer from "@/common/Footer";
+import { generateOrganizationSchemas } from "@/utils/generateOrganizationSchema";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,6 +36,20 @@ export const metadata: Metadata = {
   creator: "PracticeDilly",
   publisher: "PracticeDilly",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || "https://practicedilly.com"),
+  icons: {
+    icon: [
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "PracticeDilly",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -81,11 +96,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchemas = generateOrganizationSchemas();
+
   return (
     <html lang="en" className={`${inter.variable} ${geist.variable}`}>
       <body
         className="antialiased bg-[#f9f9f9]"
       >
+        {organizationSchemas.map((schema, index) => (
+          <script
+            key={index}
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
         <StickyNav />
         {children}
         <Footer />

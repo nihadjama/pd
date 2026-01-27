@@ -31,29 +31,28 @@ export default function FeatureFAQSection({
   };
 
   return (
-    <SectionContainer className="items-center border-t border-[#e5e7eb] w-full">
-      <div className="border-[#e5e7eb] flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
-        <HeadingWithHighlight
-          text={heading.text}
-          highlighted={heading.highlighted}
-        />
-        <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
-          {description}
-        </p>
-      </div>
-
-      <div className="flex w-full justify-center">
-
-        <div className="flex flex-col border border-[#e5e7eb] max-w-1/2 w-full">
-        {items.map((faq, index) => (
-          <FAQItem
-            key={index}
-            question={faq.question}
-            answer={faq.answer}
-            isOpen={openIndex === index}
-            onToggle={() => handleToggle(index)}
+    <SectionContainer className="items-start w-full">
+      <div className="w-full flex flex-col md:flex-row border-t">
+        <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
+          <HeadingWithHighlight
+            text={heading.text}
+            highlighted={heading.highlighted}
           />
-        ))}
+          <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
+            {description}
+          </p>
+        </div>
+
+        <div className="flex flex-col w-full md:w-1/2">
+          {items.map((faq, index) => (
+            <FAQItem
+              key={index}
+              question={faq.question}
+              answer={faq.answer}
+              isOpen={openIndex === index}
+              onToggle={() => handleToggle(index)}
+            />
+          ))}
         </div>
       </div>
     </SectionContainer>

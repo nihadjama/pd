@@ -15,7 +15,7 @@ export default function HeroPill({ icon, text }: HeroPillProps) {
           <IconComponent className="w-full h-full" />
         </div>
       )}
-      <p className="font-sans font-normal leading-5 shrink-0 text-[#606060] text-sm text-center whitespace-nowrap text-uppercase tracking-normal">
+      <p className="font-sans font-normal leading-5 shrink-0 text-[#262626] text-sm text-center whitespace-nowrap text-uppercase tracking-normal">
         {text}
       </p>
     </div>

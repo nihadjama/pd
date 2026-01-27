@@ -83,7 +83,7 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative flex min-h-screen items-center justify-center px-4 py-20 lg:px-16 border-b border-[#e5e7eb]">
         {/* Grid Background */}
-        <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+        <GridBackground gridSize={1279/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
         
         {/* ASCII Background Art */}
         {/* <AnimatedMolar /> */}
@@ -143,15 +143,15 @@ export default function Home() {
         {/* Left Widget - Action Items */}
         {/* Outer border-radius: 6.4px, inner adjusted to match (no gap between them) */}
         <div className="absolute z-40 left-4 top-[388px] hidden w-[280px] md:w-[328.8px] rounded-[6.4px] shadow-[0px_20px_60px_0px_rgba(0,0,0,0.1)] lg:left-[91px] xl:block">
-          <div className="overflow-hidden rounded-[6.4px] border border-[#f0f0f0] bg-white">
+          <div className="overflow-hidden rounded-[6.4px] border border-[#e5e7eb] bg-white">
             {/* Header */}
-            <div className="border-b border-[#f0f0f0] px-2.5 py-3.5">
+            <div className="border-b border-[#e5e7eb] px-2.5 py-3.5">
               <p className="text-sm font-medium leading-[22.4px] text-[#262626]">Action Items</p>
               <p className="text-right text-[9.6px] leading-[12.8px] text-[#606060]">Priority To-Dos</p>
             </div>
 
             {/* Items */}
-            <div className="border-b border-[#f0f0f0] bg-[#f8f8f8] px-2.5 py-2.5">
+            <div className="border-b border-[#e5e7eb] bg-[#f8f8f8] px-2.5 py-2.5">
               <div className="flex gap-4">
                 <div className="flex items-center pt-0.5">
                   <Check className="h-4 w-4 text-[#5e48f0]" />
@@ -168,7 +168,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border-b border-[#f0f0f0] px-2.5 py-2.5">
+            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
               <div className="flex gap-4">
                 <div className="flex items-center pt-0.5">
                   <Circle className="h-4 w-4 text-[#606060]" strokeWidth={1.5} />
@@ -181,7 +181,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border-b border-[#f0f0f0] px-2.5 py-2.5">
+            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
               <div className="flex gap-4">
                 <div className="flex items-center pt-0.5">
                   <Circle className="h-4 w-4 text-[#606060]" strokeWidth={1.5} />
@@ -200,15 +200,15 @@ export default function Home() {
         {/* Right Widget - Today's Appointments */}
         {/* Outer border-radius: 6.4px, inner adjusted to match (no gap between them) */}
         <div className="absolute z-50 right-4 top-[467.1px] hidden w-[280px] md:w-[355.2px] rounded-[6.4px] shadow-[0px_20px_60px_0px_rgba(0,0,0,0.1)] xl:right-[calc(50%+285px)] xl:block">
-          <div className="overflow-hidden rounded-[6.4px] border border-[#f0f0f0] bg-white">
+          <div className="overflow-hidden rounded-[6.4px] border border-[#e5e7eb] bg-white">
             {/* Header */}
-            <div className="border-b border-[#f0f0f0] px-2.5 py-3.5">
+            <div className="border-b border-[#e5e7eb] px-2.5 py-3.5">
               <p className="text-sm font-medium leading-[22.4px] text-[#262626]">Today's Appointments</p>
               <p className="text-right text-[9.6px] leading-[12.8px] text-[#606060]">3 appointments</p>
             </div>
 
             {/* Appointment 1 */}
-            <div className="border-b border-[#f0f0f0] px-2.5 py-2.5">
+            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
               <div className="flex items-center gap-4">
                 <div className="flex w-20 flex-col text-xs leading-[12.8px] text-[#606060]">
                   <p className="text-xs leading-[19.2px] text-[#262626]">09:00 AM</p>
@@ -232,7 +232,7 @@ export default function Home() {
             </div>
 
             {/* Appointment 2 */}
-            <div className="border-b border-[#f0f0f0] px-2.5 py-2.5">
+            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
               <div className="flex items-center gap-4">
                 <div className="flex w-20 flex-col text-xs leading-[12.8px] text-[#606060]">
                   <p className="text-xs leading-[19.2px] text-[#262626]">10:30 AM</p>
@@ -256,7 +256,7 @@ export default function Home() {
             </div>
 
             {/* Appointment 3 */}
-            <div className="border-b border-[#f0f0f0] px-2.5 py-2.5">
+            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
               <div className="flex items-center gap-4">
                 <div className="flex w-20 flex-col text-xs leading-[12.8px] text-[#606060]">
                   <p className="text-xs leading-[19.2px] text-[#262626]">02:00 PM</p>

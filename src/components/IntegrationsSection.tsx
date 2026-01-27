@@ -1,3 +1,4 @@
+import Button from "@/common/Button";
 import SectionContainer from "@/common/SectionContainer";
 import SectionHeader from "@/common/SectionHeader";
 import { Link2 } from "lucide-react";
@@ -64,12 +65,10 @@ export default function IntegrationsSection() {
 
       {/* Additional Info */}
       <div className="flex flex-col items-center gap-2 px-4">
-        <p className="font-sans font-normal text-sm text-[#606060] text-center">
+        <p className="font-sans font-normal text-sm text-[#606060] text-center mb-4">
           And 50+ more integrations available
         </p>
-        <button className="font-sans font-medium text-sm text-[#5e48f0] hover:underline">
-          View all integrations →
-        </button>
+        <Button href="/integrations" variant="secondary" className="px-6">View all integrations</Button>
       </div>
     </SectionContainer>
   );

@@ -104,6 +104,7 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
         <FeatureBenefitsSection {...featureData.benefits} />
         <FeatureWhyChooseSection {...featureData.whyChoose} />
         <FeatureFAQSection {...featureData.faq} />
+        
       </div>
     </>
   );

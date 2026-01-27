@@ -5,6 +5,8 @@ import TestimonialCard from "@/common/TestimonialCard";
 import SectionHeader from "@/common/SectionHeader";
 import { MessageCircleHeart } from "lucide-react";
 import testimonialsData from "@/data/testimonials.json";
+import Button from "@/common/Button";
+import Link from "next/link";
 
 interface Testimonial {
   id: string;
@@ -112,8 +114,8 @@ export default function TestimonialSection() {
         icon={MessageCircleHeart}
         label="Testimonials"
         heading={{
-          text: "Loved by Dentists ",
-          highlighted: "",
+          text: "",
+          highlighted: "Loved by Dentists ",
           suffix: "Across the Country",
         }}
         description="Real results from practices just like yours"
@@ -131,9 +133,11 @@ export default function TestimonialSection() {
 
       {/* Read More Link */}
       <div className="flex justify-center mt-8">
-        <button className="font-sans font-medium text-sm text-[#5e48f0] hover:underline">
-          Read More Success Stories →
-        </button>
+        <Link href="/testimonials">
+        <Button variant="secondary" className="">
+          Read More Success Stories
+        </Button>
+        </Link>
       </div>
     </SectionContainer>
   );

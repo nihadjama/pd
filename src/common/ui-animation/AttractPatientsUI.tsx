@@ -47,7 +47,7 @@ export default function AttractPatientsUI() {
         {/* Appointments Table */}
         <div className="px-4 py-3">
           {/* Table Header */}
-          <div className="grid grid-cols-[auto_1fr_auto_auto] gap-4 pb-2 mb-2 border-b border-[#f0f0f0]">
+          <div className="grid grid-cols-[auto_1fr_auto_auto] gap-4 pb-2 mb-2 border-b border-[#e5e7eb]">
             {/* <div className="w-6"></div> */}
             <div className="font-sans text-xs font-medium text-[#606060]">Patient Name</div>
             {/* <div className="font-sans text-xs font-medium text-[#606060] text-right">Time</div> */}

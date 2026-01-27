@@ -22,7 +22,7 @@ export default function CTASection() {
 
           {/* Benefits Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
-            <div className="flex items-center gap-2.5 px-4 py-3 rounded-lg bg-white border border-[#f0f0f0]">
+            <div className="flex items-center gap-2.5 px-4 py-3 rounded-lg bg-white border border-[#e5e7eb]">
               <div className="shrink-0 h-5 w-5 rounded-full bg-[#5e48f0]/10 flex items-center justify-center">
                 <Check className="h-3.5 w-3.5 text-[#5e48f0]" strokeWidth={2.5} />
               </div>
@@ -30,7 +30,7 @@ export default function CTASection() {
                 No credit card
               </p>
             </div>
-            <div className="flex items-center gap-2.5 px-4 py-3 rounded-lg bg-white border border-[#f0f0f0]">
+            <div className="flex items-center gap-2.5 px-4 py-3 rounded-lg bg-white border border-[#e5e7eb]">
               <div className="shrink-0 h-5 w-5 rounded-full bg-[#5e48f0]/10 flex items-center justify-center">
                 <Check className="h-3.5 w-3.5 text-[#5e48f0]" strokeWidth={2.5} />
               </div>
@@ -38,7 +38,7 @@ export default function CTASection() {
                 30-day free trial
               </p>
             </div>
-            <div className="flex items-center gap-2.5 px-4 py-3 rounded-lg bg-white border border-[#f0f0f0]">
+            <div className="flex items-center gap-2.5 px-4 py-3 rounded-lg bg-white border border-[#e5e7eb]">
               <div className="shrink-0 h-5 w-5 rounded-full bg-[#5e48f0]/10 flex items-center justify-center">
                 <Check className="h-3.5 w-3.5 text-[#5e48f0]" strokeWidth={2.5} />
               </div>

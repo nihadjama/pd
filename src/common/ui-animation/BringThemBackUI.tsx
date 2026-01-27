@@ -76,7 +76,7 @@ export default function BringThemBackUI() {
           </div>
 
           {/* Last Visit */}
-          <div className="w-full flex items-center justify-between py-2 border-b border-[#f0f0f0]">
+          <div className="w-full flex items-center justify-between py-2 border-b border-[#e5e7eb]">
             <div className="flex items-center gap-2">
               {/* <Calendar className="h-4 w-4 text-[#606060]" /> */}
               <span className="font-sans text-xs leading-4 text-[#606060]">LAST VISIT</span>
