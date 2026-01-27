@@ -1,12 +1,9 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
 import SectionContainer from "@/common/SectionContainer";
-import { H2, H3 } from "@/common/headings";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import Button from "@/common/Button";
-import { getIcon } from "@/utils/iconMap";
+import FeatureCard from "@/common/FeatureCard";
 import featuresData from "@/data/features.json";
 import TestimonialSection from "@/components/TestimonialSection";
 import CTASection from "@/components/CTASection";
@@ -48,82 +45,18 @@ export default function FeaturesPage() {
       <SectionContainer className="items-start">
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1280px] mx-auto border-t border-[#e5e7eb]">
-            {featuresData.map((feature) => {
-              const IconComponent = getIcon(feature.hero.category.icon);
-              return (
-                <Link
-                  key={feature.slug}
-                  href={`/features/${feature.slug}`}
-                  className="group bg-white border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg relative"
-                >
-                  {/* Image */}
-                  {feature.hero.image && (
-                    <div className="relative w-full h-48 md:h-56 overflow-hidden bg-[#f9f9f9]">
-                      <Image
-                        src={feature.hero.image}
-                        alt={feature.hero.heading.text + (feature.hero.heading.highlighted || "") + (feature.hero.heading.suffix || "")}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-200"
-                      />
-                    </div>
-                  )}
-
-                  <div className="p-4 md:p-6 flex flex-col gap-4">
-
-                    {/* Icon and Category */}
-                    <div className="flex items-center gap-3">
-                      <H3 className="text-lg font-medium text-[#606060]">
-                        {feature.hero.category.text}
-                      </H3>
-                    </div>
-
-                    <p className="font-sans font-normal text-sm md:text-sm leading-6 text-[#606060] line-clamp-2">
-                      {feature.hero.description}
-                    </p>
-
-                    {/* Badges */}
-                    {feature.hero.badges && feature.hero.badges.length > 0 && (
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {feature.hero.badges.slice(0, 3).map((badge, index) => (
-                          <span
-                            key={index}
-                            className="text-xs font-medium text-[#606060] bg-[#f9f9f9] px-2 py-1"
-                          >
-                          {badge}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Link Arrow */}
-                    <div className="flex items-center gap-2 text-[#5e48f0] font-medium text-sm mt-auto pt-2">
-                      <span>Learn more</span>
-                      <span className="group-hover:translate-x-1 transition-transform">→</span>
-                    </div>
-
-                  </div>
-
-
-                  {/* Title */}
-                  {/* <H2 className="text-xl md:text-2xl group-hover:text-[#5e48f0] transition-colors">
-                    {feature.hero.heading.text}
-                    {feature.hero.heading.highlighted && (
-                      <span className="text-[#5e48f0]">
-                        {feature.hero.heading.highlighted}
-                      </span>
-                    )}
-                    {feature.hero.heading.suffix}
-                  </H2> */}
-
-                  {/* Description */}
-
-
-
-
-
-                </Link>
-              );
-            })}
+            {featuresData.map((feature) => (
+              <FeatureCard
+                key={feature.slug}
+                icon={feature.hero.category.icon}
+                title={feature.hero.heading.text + (feature.hero.heading.highlighted || "") + (feature.hero.heading.suffix || "")}
+                description={feature.hero.description}
+                href={`/features/${feature.slug}`}
+                category={feature.hero.category.text}
+                badges={feature.hero.badges}
+                variant="detailed"
+              />
+            ))}
           </div>
         </div>
       </SectionContainer>

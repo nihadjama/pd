@@ -1,6 +1,6 @@
 import IntegrationHeroSection from "@/components/integration-child/IntegrationHeroSection";
 import IntegrationFeaturesSection from "@/components/integration-child/IntegrationFeaturesSection";
-import IntegrationTestimonialSection from "@/components/integration-child/IntegrationTestimonialSection";
+import TestimonialSection from "@/components/TestimonialSection";
 import IntegrationWhyChooseSection from "@/components/integration-child/IntegrationWhyChooseSection";
 import IntegrationCTASection from "@/components/integration-child/IntegrationCTASection";
 import integrationsData from "@/data/integrations.json";
@@ -89,7 +89,7 @@ export default async function IntegrationPage({ params }: IntegrationPageProps) 
       <IntegrationHeroSection {...integrationData.hero} />
       <IntegrationTimeSection stat={integrationData.hero.stat} primaryCta={integrationData.hero.cta} />
       <IntegrationFeaturesSection {...integrationData.features} />
-      <IntegrationTestimonialSection {...integrationData.testimonial} />
+      <TestimonialSection />
       <IntegrationWhyChooseSection {...integrationData.whyChoose} />
       <IntegrationCTASection {...integrationData.cta} />
     </div>

@@ -8,7 +8,7 @@ import TestimonialSection from "@/components/TestimonialSection";
 import HomeFAQSection from "@/components/HomeFAQSection";
 import GridBackground from "@/components/GridBackground";
 import { H1, H2, H3 } from "@/common/headings";
-import { Check, Star } from "lucide-react";
+import { Check } from "lucide-react";
 import FAQItem from "@/common/FAQItem";
 import { useState } from "react";
 
@@ -138,12 +138,6 @@ export default function PricingPage() {
     },
   ];
 
-  const testimonial = {
-    name: "Dr. Shivani Patel",
-    role: "D.M.D.",
-    company: "Grand Central Dentistry",
-    quote: "PracticeDilly has been a great addition to our office. We use it for automated reminders, confirmations, online reviews and two-way texting. It integrates seamlessly with our dental software. The best part is the great support team they have, even helped us add some specific features for our office. I highly recommend PracticeDilly for any dental office :)",
-  };
 
   return (
     <div className="relative min-h-screen bg-[#f9f9f9]">
@@ -309,33 +303,7 @@ export default function PricingPage() {
       </SectionContainer>
 
       {/* Testimonial Section */}
-      <SectionContainer className="items-center">
-        <div className="w-full px-4 lg:px-16">
-          <div className="flex flex-col gap-6 items-center max-w-3xl mx-auto py-12">
-            <H2 className="text-2xl leading-tight text-center">
-              What Our Clients Say
-            </H2>
-            <div className="bg-white border border-[#f0f0f0] rounded-xl p-8 flex flex-col gap-4">
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-[#fbbf24] fill-[#fbbf24]" />
-                ))}
-              </div>
-              <blockquote className="font-sans font-normal text-base leading-6 text-[#262626]">
-                "{testimonial.quote}"
-              </blockquote>
-              <div className="flex flex-col gap-1 pt-4 border-t border-[#e5e7eb]">
-                <p className="font-sans font-semibold text-sm leading-5 text-[#262626]">
-                  {testimonial.name}
-                </p>
-                <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
-                  {testimonial.role}, {testimonial.company}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SectionContainer>
+      <TestimonialSection />
 
       {/* FAQ Section */}
       <SectionContainer className="items-start">

@@ -131,7 +131,7 @@ export default function FeaturesShowcaseSection() {
         </div>
 
         {/* Additional Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto mb-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1200px] mx-auto mb-16">
           <div className="bg-white border border-[#f0f0f0] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors">
             <H3>
               Scheduling
@@ -176,48 +176,8 @@ export default function FeaturesShowcaseSection() {
               See Payments →
             </button>
           </div>
-        </div>
+        </div> */}
 
-        {/* Smart Workflows Section */}
-        <div className="flex flex-col gap-10 items-center">
-          <div className="flex flex-col gap-4 items-center max-w-[600px]">
-            <H2 className="text-center">
-              {smartWorkflows.title}
-            </H2>
-            <p className="font-sans font-normal text-base leading-6 text-[#262626] text-center">
-              {smartWorkflows.description}
-            </p>
-            <p className="font-sans font-normal text-sm leading-5 text-[#606060] text-center">
-              {smartWorkflows.subtitle}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px]">
-            {smartWorkflows.features.map((feature, index) => {
-              const IconComponent = getIcon(feature.icon) || Phone;
-              return (
-                <div
-                  key={index}
-                  className="bg-white border border-[#f0f0f0] rounded-xl p-6 flex flex-col gap-4 hover:border-[#5e48f0] transition-colors"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-2.5 rounded-[10px] shrink-0">
-                    <IconComponent className="w-5 h-5 text-[#5e48f0]" />
-                  </div>
-                  <H3>
-                    {feature.title}
-                  </H3>
-                  </div>
-                  {feature.description && (
-                    <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
-                      {feature.description}
-                    </p>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
       </div>
     </SectionContainer>
   );

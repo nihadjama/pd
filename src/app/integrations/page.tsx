@@ -62,8 +62,10 @@ export default function IntegrationsPage() {
                 <Link
                   key={integration.slug}
                   href={`/integrations/${integration.slug}`}
-                  className="group bg-white border border-[#f0f0f0] rounded-xl p-6 md:p-8 flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg"
+                  className="group bg-white border border-[#f0f0f0] rounded-xl  flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg"
                 >
+
+                 
                   {/* Logo */}
                   <div className="relative w-full h-32 md:h-40 flex items-center justify-center bg-[#f9f9f9] rounded-lg overflow-hidden">
                     <Image
@@ -75,35 +77,15 @@ export default function IntegrationsPage() {
                     />
                   </div>
 
+                  <div className="px-6 md:px-8 py-6 md:py-8 pt-2! flex flex-col gap-4">
                   {/* Title */}
-                  <H2 className="text-xl md:text-2xl group-hover:text-[#5e48f0] transition-colors">
-                    {integration.hero.heading.text}
-                    {integration.hero.heading.highlighted && (
-                      <span className="text-[#5e48f0]">
-                        {integration.hero.heading.highlighted}
-                      </span>
-                    )}
-                    {integration.hero.heading.suffix}
-                  </H2>
 
                   {/* Description */}
-                  <p className="font-sans font-normal text-sm md:text-base leading-6 text-[#606060] line-clamp-3">
+                  {/* <p className="font-sans font-normal text-sm md:text-base leading-6 text-[#606060] line-clamp-3">
                     {integration.hero.description}
-                  </p>
+                  </p> */}
 
-                  {/* Stat */}
-                  {integration.hero.stat && (
-                    <div className="flex flex-col gap-1 pt-2 border-t border-[#f0f0f0]">
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-2xl md:text-3xl font-bold text-[#5e48f0]">
-                          {integration.hero.stat.value}
-                        </span>
-                        <span className="text-sm font-medium text-[#606060]">
-                          {integration.hero.stat.label}
-                        </span>
-                      </div>
-                    </div>
-                  )}
+
 
                   {/* Badges */}
                   {integration.hero.badges && integration.hero.badges.length > 0 && (
@@ -121,8 +103,10 @@ export default function IntegrationsPage() {
 
                   {/* Link Arrow */}
                   <div className="flex items-center gap-2 text-[#5e48f0] font-medium text-sm mt-auto pt-2">
-                    <span>Learn more</span>
+                    <span>Start Now</span>
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+
                   </div>
                 </Link>
               );
