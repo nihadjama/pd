@@ -499,5 +499,194 @@
       "ogImage": "/og-images/practice-web-integration.jpg",
       "canonicalUrl": "https://practicedilly.com/integrations/practice-web"
     }
+  },
+  {
+    "slug": "eaglesoft",
+    "hero": {
+      "category": {
+        "icon": "Plug",
+        "text": "Integration"
+      },
+      "heading": {
+        "text": "The Best Companion for ",
+        "highlighted": "Eaglesoft",
+        "suffix": " Users"
+      },
+      "description": "Streamline appointment scheduling, reduce no-shows, go paperless, get positive online reviews, and much more. The best part is it just takes 15 minutes to integrate PracticeDilly with Eaglesoft.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Call (949) 407-5907",
+        "href": "tel:+19494075907"
+      },
+      "badges": [
+        "No setup fee",
+        "No contracts",
+        "30-day free trial"
+      ],
+      "stat": {
+        "value": "15",
+        "label": "Minutes to Full Integration",
+        "description": "We understand how busy you are! Give us just 15 minutes to integrate with Eaglesoft and then enjoy all the benefits."
+      }
+    },
+    "features": {
+      "heading": {
+        "text": "How PracticeDilly can help simplify patient engagement in everyday operations?",
+        "highlighted": "",
+        "suffix": ""
+      },
+      "description": "PracticeDilly application seamlessly integrating with Eaglesoft and providing extra benefits like Appointment reminders, Two-way texting, Online Reviews, Campaigns & Promotions, Paperless Forms.",
+      "items": [
+        {
+          "icon": "Calendar",
+          "title": "Appointment Reminders",
+          "description": "Automatically send out personalized reminders to your patients via email, text, or phone calls. Confirmations received from patients are recorded in the Eaglesoft schedule.",
+          "benefits": [
+            "Reduce no-shows by up to 90%",
+            "Automatic confirmation recording",
+            "Customizable reminder templates",
+            "Multi-channel delivery options"
+          ]
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Two-Way Texting",
+          "description": "With PracticeDilly you can search patients in Eaglesoft Family File and send them text messages. Patients can also text you pictures of their ID and Insurance cards.",
+          "benefits": [
+            "HIPAA-compliant messaging",
+            "Text from office or mobile",
+            "Track conversation history",
+            "Quick appointment modifications"
+          ]
+        },
+        {
+          "icon": "CalendarCheck",
+          "title": "Online Scheduling",
+          "description": "Allow patients to book appointments online at their convenience. Booked appointments are automatically added to your Eaglesoft schedule.",
+          "benefits": [
+            "24/7 booking availability",
+            "Real-time schedule sync",
+            "Fill last-minute cancellations",
+            "Reduce phone call volume"
+          ]
+        },
+        {
+          "icon": "FileText",
+          "title": "Paperless Forms",
+          "description": "You can easily send out intake forms via text message or email to any patient on your Eaglesoft schedule. We will customize your current forms at no extra cost to you.",
+          "benefits": [
+            "Eliminate paper waste",
+            "Pre-appointment form completion",
+            "Automatic Eaglesoft sync",
+            "Mobile-friendly interface"
+          ]
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Text to Pay",
+          "description": "Take advantage of our software to send payment requests via text/email to your patients on the Eaglesoft family file and get the amount credited to your bank account quickly and efficiently.",
+          "benefits": [
+            "Faster payment collection",
+            "Convenient for patients",
+            "Secure payment processing",
+            "Automatic payment tracking"
+          ]
+        },
+        {
+          "icon": "Megaphone",
+          "title": "Campaigns & Promotions",
+          "description": "Automatically send birthday greetings, and re-call reminders to patients on the Eaglesoft family file. You can also send out any promotional, and urgent messages to all patients using the mass texting feature.",
+          "benefits": [
+            "Automated recall reminders",
+            "Email and SMS campaigns",
+            "Patient list segmentation",
+            "Performance analytics"
+          ]
+        },
+        {
+          "icon": "Star",
+          "title": "Online Reviews",
+          "description": "Have your happy patients leave a positive review on Google, Yelp, or Facebook. You can have PracticeDilly send out review requests automatically to patients on your Eaglesoft schedule post-appointment. Alternatively, you can decide which patients to ask for reviews from.",
+          "benefits": [
+            "Automated review requests",
+            "Multi-platform management",
+            "Increase 5-star ratings",
+            "Reputation monitoring"
+          ]
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Mobile App",
+          "description": "View your Eaglesoft schedule, message your patients and manage your practice from PracticeDilly's all-in-one dental mobile app.",
+          "benefits": [
+            "Access from anywhere",
+            "Manage on the go",
+            "Full practice management",
+            "Real-time updates"
+          ]
+        }
+      ]
+    },
+    "testimonial": {
+      "testimonialId": "13"
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Choose Us?",
+        "highlighted": "",
+        "suffix": ""
+      },
+      "items": [
+        {
+          "icon": "Zap",
+          "title": "15 MINS",
+          "description": "We understand how busy you are! Give us just 15 minutes to integrate with Eaglesoft and then enjoy all the benefits."
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "Great Support",
+          "description": "We even have our support staff providing you with assistance after hours or during the weekend."
+        },
+        {
+          "icon": "DollarSign",
+          "title": "Fair Pricing",
+          "description": "We provide highly affordable pricing plans designed to assist you in growing your dental practice."
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Ready to Enhance Your Eaglesoft Practice?",
+      "description": "Join hundreds of dental practices using PracticeDilly with Eaglesoft",
+      "primaryCta": {
+        "text": "Start Your Free Trial",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Schedule a Demo",
+        "href": "#"
+      },
+      "note": "No credit card required • 30-day free trial"
+    },
+    "seo": {
+      "title": "PracticeDilly Integration with Eaglesoft | 15-Minute Setup | PracticeDilly",
+      "description": "Streamline appointment scheduling, reduce no-shows, go paperless, get positive online reviews with PracticeDilly's Eaglesoft integration. 15-minute setup, no setup fee, 30-day free trial.",
+      "keywords": [
+        "Eaglesoft integration",
+        "PracticeDilly Eaglesoft",
+        "Eaglesoft patient communication",
+        "Eaglesoft reminders",
+        "Eaglesoft texting",
+        "Eaglesoft online scheduling",
+        "Eaglesoft reviews",
+        "Eaglesoft forms",
+        "Eaglesoft automation",
+        "Eaglesoft patient engagement"
+      ],
+      "ogImage": "/og-images/eaglesoft-integration.jpg",
+      "canonicalUrl": "https://practicedilly.com/integrations/eaglesoft"
+    }
   }
 ]

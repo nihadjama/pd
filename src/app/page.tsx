@@ -130,13 +130,13 @@ export default function Home() {
           {/* Trust Indicator */}
           <div className="flex flex-col gap-4">
             {/* <div className="h-px w-full bg-[#e5e7eb]" /> */}
-            <div className="flex items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4">
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-[#ddaa29] fill-[#fbbf24]" />
                 ))}
               </div>
-              <p className="text-base font-medium leading-5 text-[#262626]">
+              <p className="text-sm sm:text-base font-medium leading-5 text-[#262626] text-center sm:text-left">
                 PracticeDilly is Trusted by <span className="text-[#5e48f0]">500+</span> practices
               </p>
             </div>

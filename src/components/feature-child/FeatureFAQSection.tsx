@@ -32,7 +32,7 @@ export default function FeatureFAQSection({
 
   return (
     <SectionContainer className="items-center border-[#e5e7eb] w-full">
-      <div className="border-[#e5e7eb] border-b flex flex-col gap-4 items-start justify-start px-16 py-14 relative shrink-0 w-full md:w-1/2">
+      <div className="border-[#e5e7eb] border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
         <HeadingWithHighlight
           text={heading.text}
           highlighted={heading.highlighted}

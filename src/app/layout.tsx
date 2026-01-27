@@ -3,6 +3,7 @@ import { Inter, Geist } from "next/font/google";
 
 import "./globals.css";
 import StickyNav from "@/common/StickyNav";
+import Footer from "@/common/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -83,10 +84,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${geist.variable}`}>
       <body
-        className="antialiased bg-[#f9f9f9] mb-40"
+        className="antialiased bg-[#f9f9f9]"
       >
         <StickyNav />
         {children}
+        <Footer />
       </body>
     </html>
   );

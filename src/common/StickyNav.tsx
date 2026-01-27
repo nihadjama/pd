@@ -82,9 +82,14 @@ export default function StickyNav() {
         {/* Desktop Navigation Links */}
         <ul className="hidden lg:flex justify-center items-center gap-2.5 w-full flex-1 list-none">
           {/* Features Dropdown */}
-          <li className="relative" ref={featuresDropdownRef}>
-            <button
-              onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+          <li 
+            className="relative" 
+            ref={featuresDropdownRef}
+            onMouseEnter={() => setIsFeaturesOpen(true)}
+            onMouseLeave={() => setIsFeaturesOpen(false)}
+          >
+            <Link
+              href="/features"
               className="text-sm font-normal px-2.5 py-2.5 rounded-[10px] transition-colors text-[#262626] hover:text-[#5e48f0] flex items-center gap-1"
               aria-expanded={isFeaturesOpen}
               aria-haspopup="true"
@@ -95,11 +100,24 @@ export default function StickyNav() {
                 className={`w-4 h-4 transition-transform ${isFeaturesOpen ? 'rotate-180' : ''}`}
                 aria-hidden="true"
               />
-            </button>
+            </Link>
+            
+            {/* Invisible bridge to cover gap for smooth hover transition */}
+            {isFeaturesOpen && (
+              <div 
+                className="absolute top-full left-1/2 -translate-x-1/2 w-full h-2"
+                onMouseEnter={() => setIsFeaturesOpen(true)}
+                onMouseLeave={() => setIsFeaturesOpen(false)}
+              />
+            )}
             
             {/* Outer border-radius: 10px (inner) + 8px (mx-2 margin) = 18px */}
             {isFeaturesOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[18px] shadow-lg border border-[#e5e7eb] py-2 z-50 max-w-[90vw]">
+              <div 
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[18px] shadow-lg border border-[#e5e7eb] py-2 z-50 max-w-[90vw]"
+                onMouseEnter={() => setIsFeaturesOpen(true)}
+                onMouseLeave={() => setIsFeaturesOpen(false)}
+              >
                 <ul 
                   className="grid grid-cols-3 gap-0 list-none w-[800px] max-w-full"
                   role="menu"
@@ -144,9 +162,14 @@ export default function StickyNav() {
           </li>
 
           {/* Integrations Dropdown */}
-          <li className="relative" ref={integrationsDropdownRef}>
-            <button
-              onClick={() => setIsIntegrationsOpen(!isIntegrationsOpen)}
+          <li 
+            className="relative" 
+            ref={integrationsDropdownRef}
+            onMouseEnter={() => setIsIntegrationsOpen(true)}
+            onMouseLeave={() => setIsIntegrationsOpen(false)}
+          >
+            <Link
+              href="/integrations"
               className="text-sm font-normal px-2.5 py-2.5 rounded-[10px] transition-colors text-[#262626] hover:text-[#5e48f0] flex items-center gap-1"
               aria-expanded={isIntegrationsOpen}
               aria-haspopup="true"
@@ -157,11 +180,24 @@ export default function StickyNav() {
                 className={`w-4 h-4 transition-transform ${isIntegrationsOpen ? 'rotate-180' : ''}`}
                 aria-hidden="true"
               />
-            </button>
+            </Link>
+            
+            {/* Invisible bridge to cover gap for smooth hover transition */}
+            {isIntegrationsOpen && (
+              <div 
+                className="absolute top-full left-1/2 -translate-x-1/2 w-full h-2"
+                onMouseEnter={() => setIsIntegrationsOpen(true)}
+                onMouseLeave={() => setIsIntegrationsOpen(false)}
+              />
+            )}
             
             {/* Outer border-radius: 10px (inner) + 8px (mx-2 margin) = 18px */}
             {isIntegrationsOpen && (
-              <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[18px] shadow-lg border border-[#e5e7eb] py-2 z-50 max-w-[90vw]">
+              <div 
+                className="absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white rounded-[18px] shadow-lg border border-[#e5e7eb] py-2 z-50 max-w-[90vw]"
+                onMouseEnter={() => setIsIntegrationsOpen(true)}
+                onMouseLeave={() => setIsIntegrationsOpen(false)}
+              >
                 <ul 
                   className="grid grid-cols-3 gap-0 list-none w-[800px] max-w-full"
                   role="menu"

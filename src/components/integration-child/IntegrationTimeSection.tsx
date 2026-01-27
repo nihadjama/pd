@@ -22,10 +22,10 @@ interface IntegrationTimeSectionProps {
 
 export default function IntegrationTimeSection({ stat, primaryCta }: IntegrationTimeSectionProps) {
     return (
-        <SectionContainer className="flex-col md:flex-row items-center px-16 border-y border-[#5e48f0] py-12!">
+        <SectionContainer className="flex-col md:flex-row items-center px-4 md:px-8 lg:px-16 border-y border-[#5e48f0] py-8 md:py-10 lg:py-12">
 
 
-            <div className="flex flex-col items-start w-full md:w-1/2 gap-4">
+            <div className="flex flex-col items-start w-full md:w-1/2 gap-4 px-4 md:px-0">
                 {/* <span className="font-sans font-medium text-5xl leading-[48px] text-[#5e48f0]">{stat.value}</span> */}
                 <div className="flex items-center gap-1.5 font-sans font-medium text-xs bg-[#5e48f0]/20 text-[#5e48f0] border border-[#5e48f0] pl-2 pr-2.5 py-1.5 rounded-full">
 

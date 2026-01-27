@@ -154,7 +154,7 @@ export default function TestimonialsPage() {
   return (
     <div className="min-h-screen bg-[#f9f9f9]">
       {/* Hero Section */}
-      <div className="relative bg-white border-b border-[#e5e7eb]">
+      <div className="relative border-b border-[#e5e7eb] py-20">
         {/* Grid Background */}
         <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
@@ -168,22 +168,6 @@ export default function TestimonialsPage() {
             <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
               Dental practices owners and office managers share their stories about why they're passionate about what they do and how PracticeDilly helped them along the way.
             </p>
-
-            {/* Rating Badges */}
-            <div className="flex flex-col gap-4 items-center">
-              <p className="font-sans font-medium text-sm text-[#262626]">Rated 5 Stars on</p>
-              <div className="flex items-center gap-6">
-                <div className="px-4 py-2 rounded-[10px] border border-[#e5e7eb] bg-white">
-                  <p className="font-sans font-medium text-sm text-[#262626]">Facebook</p>
-                </div>
-                <div className="px-4 py-2 rounded-[10px] border border-[#e5e7eb] bg-white">
-                  <p className="font-sans font-medium text-sm text-[#262626]">Google</p>
-                </div>
-                <div className="px-4 py-2 rounded-[10px] border border-[#e5e7eb] bg-white">
-                  <p className="font-sans font-medium text-sm text-[#262626]">G2</p>
-                </div>
-              </div>
-            </div>
 
             {/* CTA Buttons */}
             <div className="flex items-center gap-4 flex-wrap justify-center">
@@ -258,7 +242,7 @@ export default function TestimonialsPage() {
       {/* FAQ Section */}
       <SectionContainer className="items-start">
         <div className="w-full px-4 lg:px-16 flex flex-col md:flex-row">
-          <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-16 py-14 relative shrink-0 w-full md:w-1/2">
+          <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
             <HeadingWithHighlight
               text="Frequently Asked "
               highlighted="Questions"
