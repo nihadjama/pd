@@ -1,0 +1,1810 @@
+[
+  {
+    "slug": "phones",
+    "hero": {
+      "category": {
+        "icon": "PhoneCall",
+        "text": "Phones"
+      },
+      "heading": {
+        "text": "AI-Powered ",
+        "highlighted": "Phone System ",
+        "suffix": "for Dental & Healthcare Practices"
+      },
+      "image":"/feature-images/phones.png",
+      "description": "Transform your dental office phone system with AI-powered call handling, intelligent routing, and real-time analytics. Every call captured, every patient impressed.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "Smart Call Routing",
+        "Voicemail Transcription",
+        "Call Analytics",
+        "24/7 Availability"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Everything You ",
+        "highlighted": "Need",
+        "suffix": " in a \nPhone System"
+      },
+     
+      "description": "Built specifically for healthcare practices, with features that actually matter.",
+      "features": [
+        {
+          "icon": "Route",
+          "title": "Intelligent Call Routing",
+          "description": "Automatically route calls to the right team member based on caller ID, time of day, or custom rules you define."
+        },
+        {
+          "icon": "Videotape",
+          "title": "Visual Voicemail",
+          "description": "Read transcribed voicemails instantly. Never listen to a 3-minute message again—scan it in seconds."
+        },
+        {
+          "icon": "PhoneForwarded",
+          "title": "Call Forwarding",
+          "description": "Forward calls to mobile devices when staff are away. Stay connected without being tied to the office."
+        },
+        {
+          "icon": "Users",
+          "title": "Multi-Line Support",
+          "description": "Handle multiple calls simultaneously. No more busy signals or frustrated patients."
+        },
+        {
+          "icon": "ChartColumn",
+          "title": "Call Analytics",
+          "description": "Track call volume, peak hours, missed calls, and team performance with detailed dashboards."
+        },
+        {
+          "icon": "ClockFading",
+          "title": "After-Hours Handling",
+          "description": "Custom greetings and routing for after-hours calls. Emergency calls reach you; routine calls wait."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "Why Practices Switch to ",
+        "highlighted": "PracticeDilly",
+        "suffix": " Phones"
+      },
+      "description": "Join hundreds of practices that have upgraded their phone experience.",
+      "items": [
+        {
+          "title": "Reduce Missed Calls by 90%",
+          "description": "Smart queuing and overflow routing ensures every call gets answered, even during peak hours."
+        },
+        {
+          "title": "Save 2+ Hours Daily",
+          "description": "Visual voicemail and call summaries eliminate time spent listening to long messages."
+        },
+        {
+          "title": "Improve Patient Satisfaction",
+          "description": "Faster response times and professional call handling create better first impressions."
+        },
+        {
+          "title": "Enterprise Security",
+          "description": "HIPAA-compliant call handling with encrypted connections and secure voicemail storage."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Their Phone System"
+      },
+      "description": "Traditional phone systems weren't designed for the unique demands of healthcare practices. Between appointment scheduling calls, insurance verification requests, emergency inquiries, and new patient intake, your front desk handles hundreds of complex calls daily. PracticeDilly's VoIP phone system for medical and dental offices was built specifically for this reality—combining enterprise-grade call management with healthcare-specific intelligence that transforms how your practice handles patient communication.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Built for Healthcare Call Complexity",
+          "description": "Unlike generic business phone systems, PracticeDilly understands the rhythm of a healthcare practice. Our intelligent call routing distinguishes between new patient inquiries (which need immediate attention for conversion), existing patient scheduling (which can follow standard protocols), and urgent medical questions (which require specific handling). The system learns your practice's patterns—peak call times, common caller needs, and staff availability—to route every call optimally. Practices using our healthcare-specific routing see 40% faster average call resolution times compared to traditional auto-attendants."
+        },
+        {
+          "number": "02",
+          "title": "Visual Voicemail with Medical Context",
+          "description": "Healthcare voicemails aren't like regular business messages. They often contain protected health information, time-sensitive prescription requests, or urgent symptoms that need evaluation. PracticeDilly's visual voicemail transcribes messages with 95%+ accuracy, flags potential urgent keywords (pain, emergency, prescription refill, fever), and organizes messages by priority. Staff can scan a day's voicemails in minutes rather than listening to hours of recordings. The system maintains full HIPAA compliance with encrypted storage and access logging for every message."
+        },
+        {
+          "number": "03",
+          "title": "Seamless After-Hours Coverage",
+          "description": "Patient needs don't end at 5 PM. Our after-hours handling system provides customizable call flows that distinguish between true emergencies (routed to on-call providers), urgent matters (collected for first-thing follow-up), and routine requests (self-service options or next-day callback queue). Patients receive professional, caring responses 24/7 while your team gets uninterrupted rest. The system integrates with answering services if you use them, or handles everything independently with AI-powered responses for common questions."
+        },
+        {
+          "number": "04",
+          "title": "Analytics That Drive Practice Growth",
+          "description": "Every missed call is potentially a lost patient. PracticeDilly's call analytics dashboard shows exactly when calls are missed, why they're missed, and what opportunities are slipping away. Track new patient call-to-booking conversion rates, identify training opportunities by monitoring call outcomes, and understand true phone demand to staff appropriately. Practices using our analytics typically identify 15-20% more booking opportunities within the first month—opportunities that were invisible before."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's phone system for healthcare practices",
+      "items": [
+        {
+          "question": "Is PracticeDilly's phone system HIPAA compliant?",
+          "answer": "Yes, PracticeDilly's VoIP phone system is fully HIPAA compliant. All voice communications are encrypted in transit and at rest. Voicemail transcriptions are stored in HIPAA-compliant data centers with access logging and audit trails. We sign Business Associate Agreements (BAAs) with all healthcare clients and undergo regular third-party security audits to maintain compliance."
+        },
+        {
+          "question": "Can I keep my existing phone numbers when switching to PracticeDilly?",
+          "answer": "Absolutely. We handle the number porting process for you at no additional cost. Most numbers transfer within 2-3 business days, and we set up temporary call forwarding during the transition so you never miss a patient call. We've successfully ported numbers from all major carriers including traditional landlines, other VoIP providers, and wireless numbers."
+        },
+        {
+          "question": "Does PracticeDilly integrate with my practice management system?",
+          "answer": "PracticeDilly integrates with all major dental and medical practice management systems including Dentrix, Eaglesoft, Open Dental, Curve Dental, athenahealth, eClinicalWorks, and many others. Integrations enable automatic caller ID lookup with patient records, click-to-call from within your PMS, and call logging attached to patient charts. Our team handles the integration setup as part of onboarding."
+        },
+        {
+          "question": "What happens if my internet goes down?",
+          "answer": "PracticeDilly includes automatic failover protection. If your internet connection drops, calls automatically forward to backup numbers you specify—typically cell phones or an answering service. You can also configure the system to handle calls entirely through our cloud-based auto-attendant during outages. Most practices never notice brief outages because the failover is instant."
+        },
+        {
+          "question": "How much does PracticeDilly's phone system cost?",
+          "answer": "Pricing starts at $35 per user per month for our core VoIP phone system, which includes unlimited local and long-distance calling, visual voicemail, call recording, and basic analytics. Advanced features like AI call routing, call intelligence, and premium integrations are available in higher tiers. We offer a 14-day free trial with no credit card required, and most practices see ROI within the first month through reduced missed calls alone."
+        },
+        {
+          "question": "Can I use my existing desk phones with PracticeDilly?",
+          "answer": "Most modern VoIP-compatible desk phones work with PracticeDilly. We support phones from Poly (formerly Polycom), Yealink, Cisco, and Grandstream. If you have older analog phones, we can provide adapters or recommend affordable VoIP phones. Many practices also choose to use our mobile and desktop apps instead of or alongside traditional desk phones for added flexibility."
+        },
+        {
+          "question": "How long does it take to set up PracticeDilly's phone system?",
+          "answer": "Most practices are fully operational within one week. Basic setup takes 24-48 hours, including number porting initiation and phone configuration. Our onboarding team handles the technical setup remotely—you don't need IT expertise. Training typically requires 1-2 hours for your team to master the new system. We provide ongoing support and can make adjustments to call flows anytime."
+        },
+        {
+          "question": "What's included in the call analytics dashboard?",
+          "answer": "The analytics dashboard provides real-time and historical data on call volume by hour/day/week, answered vs. missed call rates, average hold and talk times, calls by outcome (booked, inquiry, existing patient), staff performance metrics, and new patient conversion tracking. You can export reports, set up automated email summaries, and create custom dashboards focused on the metrics that matter most to your practice."
+        }
+      ]
+    },
+    "seo": {
+      "title": "AI-Powered Phone System for Dental & Healthcare Practices | PracticeDilly",
+      "description": "Transform your dental office phone system with AI-powered call handling, intelligent routing, and real-time analytics. HIPAA-compliant VoIP phone system for medical and dental practices. Reduce missed calls by 90%.",
+      "keywords": [
+        "dental phone system",
+        "healthcare phone system",
+        "VoIP for dental practices",
+        "AI phone system",
+        "HIPAA compliant phone system",
+        "dental office phone",
+        "medical practice phone system",
+        "call routing for healthcare",
+        "visual voicemail",
+        "call analytics dental"
+      ],
+      "ogImage": "/og-images/phones-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/phones"
+    }
+  },
+  {
+    "slug": "reminders",
+    "hero": {
+      "category": {
+        "icon": "Bell",
+        "text": "Reminders"
+      },
+      "heading": {
+        "text": "Cut No-Shows by 80%. ",
+        "highlighted": "Automatically.",
+        "suffix": ""
+      },
+      "image":"/feature-images/reminders.png",
+      "description": "Smart appointment reminders that reach patients at the right time, through the right channel. Confirmations flow back automatically.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "SMS & Email",
+        "Voice Calls",
+        "Smart Timing",
+        "Two-Way Confirm"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Reminders That ",
+        "highlighted": "Actually Work",
+        "suffix": ""
+      },
+      "description": "Not just notifications—intelligent communication that respects your patients' preferences.",
+      "features": [
+        {
+          "icon": "MessageSquare",
+          "title": "Multi-Channel Delivery",
+          "description": "Reach patients where they are—SMS, email, or voice calls. Let patients choose their preferred method."
+        },
+        {
+          "icon": "Clock",
+          "title": "Smart Timing",
+          "description": "AI determines the optimal time to send reminders based on appointment type and patient behavior."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Two-Way Confirmation",
+          "description": "Patients confirm, cancel, or reschedule with a simple reply. No phone tag required."
+        },
+        {
+          "icon": "ListChecks",
+          "title": "Waitlist Management",
+          "description": "Automatically fill cancelled slots by notifying waitlisted patients instantly."
+        },
+        {
+          "icon": "BellRing",
+          "title": "Instant Notifications",
+          "description": "Real-time alerts when patients confirm, cancel, or request changes. Stay ahead of your schedule."
+        },
+        {
+          "icon": "Settings",
+          "title": "Custom Sequences",
+          "description": "Create reminder sequences for different appointment types—cleanings, surgeries, consultations."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "The Impact on ",
+        "highlighted": "Your Practice",
+        "suffix": ""
+      },
+      "description": "Every reminder sent is revenue protected and patient relationships strengthened.",
+      "items": [
+        {
+          "title": "Reduce No-Shows by 80%",
+          "description": "Smart reminder sequences dramatically decrease missed appointments and last-minute cancellations."
+        },
+        {
+          "title": "Recover $50K+ Annually",
+          "description": "Fill empty slots automatically with waitlist management and instant rebooking."
+        },
+        {
+          "title": "Save 10+ Hours Weekly",
+          "description": "Eliminate manual reminder calls. Your team focuses on patients, not phones."
+        },
+        {
+          "title": "Improve Patient Experience",
+          "description": "Patients appreciate convenient, respectful communication on their terms."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Appointment Reminders"
+      },
+      "description": "No-shows and last-minute cancellations cost the average healthcare practice $150,000+ annually in lost revenue. But the problem isn't that patients don't care—it's that reminder systems haven't evolved with how people actually communicate. PracticeDilly's automated appointment reminder software combines multi-channel delivery, intelligent timing, and two-way confirmation to create a reminder experience that patients actually respond to and appreciate.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Multi-Channel Delivery That Meets Patients Where They Are",
+          "description": "Different patients prefer different communication channels. Younger patients respond best to text messages, while older patients may prefer phone calls or emails. PracticeDilly lets patients choose their preferred reminder method during intake and automatically delivers reminders through their selected channel. Our data shows that patient-preferred delivery increases confirmation rates by 35% compared to one-size-fits-all approaches. You can also configure cascade sequences—start with a text, escalate to email, then phone call if no response."
+        },
+        {
+          "number": "02",
+          "title": "AI-Optimized Timing for Maximum Response",
+          "description": "Sending a reminder at 2 AM doesn't help anyone. PracticeDilly's AI analyzes appointment types, patient history, and response patterns to determine the optimal reminder timing for each individual. Routine cleanings might need a 48-hour and 24-hour reminder, while complex procedures benefit from a week-ahead notice plus day-before confirmation. The system continuously learns from response data, automatically adjusting timing to maximize confirmation rates for your specific patient population."
+        },
+        {
+          "number": "03",
+          "title": "Two-Way Confirmation That Eliminates Phone Tag",
+          "description": "Old-school reminders are one-way broadcasts. PracticeDilly's two-way system lets patients confirm, cancel, or request rescheduling with a simple reply. Confirmations automatically update your schedule with visual indicators. Cancellations immediately trigger waitlist notifications to fill the slot. Reschedule requests open a streamlined rebooking flow. Your front desk no longer wastes hours playing phone tag—they can focus on patients who need personal attention."
+        },
+        {
+          "number": "04",
+          "title": "Intelligent Waitlist Management That Recovers Revenue",
+          "description": "When patients cancel, most practices scramble to fill slots manually. PracticeDilly's waitlist automation instantly notifies patients who want earlier appointments, in priority order based on your rules. Patients claim open slots with one tap. First-come-first-served fairness eliminates awkward conversations. Practices using our waitlist feature recover an average of 40% of cancelled appointment revenue that would otherwise be lost. That's often tens of thousands of dollars annually."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's appointment reminder system",
+      "items": [
+        {
+          "question": "How effective are automated appointment reminders at reducing no-shows?",
+          "answer": "Practices using PracticeDilly's reminder system typically see no-show rates drop from 15-20% to 2-5%—a reduction of 75-85%. The key is our multi-channel approach and two-way confirmation. Patients who actively confirm are far more likely to show up than those who simply receive a one-way notification. Our customers report average no-show reductions of 80% within 60 days of implementation."
+        },
+        {
+          "question": "Can patients reschedule directly from the reminder message?",
+          "answer": "Yes! When patients receive a reminder, they can reply to confirm, cancel, or request rescheduling. If they choose to reschedule, they receive a link to your online booking system showing available appointments. The entire reschedule process takes under a minute and requires no staff involvement. This convenience dramatically increases rebooking rates for cancellations."
+        },
+        {
+          "question": "How many reminders should I send for each appointment?",
+          "answer": "This varies by appointment type, but our data suggests two to three reminders work best for most practices. A typical sequence might be: 7 days before (especially for new patients or complex procedures), 2 days before (primary reminder), and morning-of (final confirmation). PracticeDilly lets you create custom sequences for different appointment types—you might use fewer reminders for quick visits and more for extensive treatments."
+        },
+        {
+          "question": "Does PracticeDilly integrate with my practice management system?",
+          "answer": "Yes, PracticeDilly integrates with all major dental and medical practice management systems including Dentrix, Eaglesoft, Open Dental, Curve, athenahealth, eClinicalWorks, and 50+ others. Appointments sync automatically—you don't manually add them to the reminder system. Confirmations and cancellations flow back to your schedule in real-time. Our team handles the integration setup during onboarding."
+        },
+        {
+          "question": "Can I customize the reminder messages?",
+          "answer": "Absolutely. You have full control over reminder content, including your practice name, appointment details, location/directions, pre-visit instructions, and any custom messaging. You can include different instructions for different appointment types (e.g., fasting requirements for certain procedures). Messages are automatically personalized with the patient's name, provider, and appointment specifics."
+        },
+        {
+          "question": "What happens if a patient doesn't respond to reminders?",
+          "answer": "You can configure escalation sequences for non-responders. For example: start with a text, send an email 24 hours later if no response, then trigger a staff task for phone outreach if still unconfirmed the day before. This ensures important appointments get confirmed while automating the routine follow-up work that consumes staff time."
+        },
+        {
+          "question": "How does the waitlist feature work?",
+          "answer": "Patients can add themselves to your waitlist when booking or when no preferred appointments are available. When a cancellation creates an opening, PracticeDilly automatically notifies waitlisted patients in your priority order. Patients claim the slot with one tap on a first-come-first-served basis. The system handles everything—your staff just sees the slot filled with a waitlist patient."
+        },
+        {
+          "question": "Are reminder messages HIPAA compliant?",
+          "answer": "Yes. PracticeDilly's reminder system is fully HIPAA compliant. Messages are designed to confirm appointments without disclosing protected health information. For example, reminders say 'appointment at Main Street Dental' rather than 'dental cleaning appointment.' We sign Business Associate Agreements with all healthcare clients and maintain strict security protocols for all patient data."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Automated Appointment Reminders - Cut No-Shows by 80% | PracticeDilly",
+      "description": "Smart appointment reminders that reach patients at the right time through SMS, email, and voice calls. Two-way confirmation, waitlist management, and automated sequences. Reduce no-shows by 80%.",
+      "keywords": [
+        "appointment reminders",
+        "dental appointment reminders",
+        "reduce no-shows",
+        "automated reminders",
+        "SMS reminders",
+        "appointment confirmation",
+        "patient reminders",
+        "healthcare reminders",
+        "waitlist management",
+        "two-way confirmation"
+      ],
+      "ogImage": "/og-images/reminders-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/reminders"
+    }
+  },
+  {
+    "slug": "scheduling",
+    "hero": {
+      "category": {
+        "icon": "CalendarCheck",
+        "text": "Scheduling"
+      },
+      "heading": {
+        "text": "Patients Book. You ",
+        "highlighted": "Focus on Care.",
+        "suffix": ""
+      },
+      "image":"/feature-images/scheduling.png",
+      "description": "Intelligent online scheduling that fills your calendar 24/7, syncs with your PMS, and respects your booking rules.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "24/7 Booking",
+        "PMS Sync",
+        "Smart Rules",
+        "Instant Confirm"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Scheduling Built for ",
+        "highlighted": "Healthcare",
+        "suffix": ""
+      },
+      "description": "More than a calendar—a complete booking engine designed for practice workflows.",
+      "features": [
+        {
+          "icon": "Clock",
+          "title": "24/7 Online Booking",
+          "description": "Patients book anytime from your website, Google, or Facebook. No office hours required."
+        },
+        {
+          "icon": "Link2",
+          "title": "PMS Integration",
+          "description": "Real-time sync with your practice management system. No double-booking, no conflicts."
+        },
+        {
+          "icon": "Sliders",
+          "title": "Custom Booking Rules",
+          "description": "Control appointment types, durations, providers, and buffer times. Your schedule, your rules."
+        },
+        {
+          "icon": "UserCheck",
+          "title": "Provider Preferences",
+          "description": "Let patients choose their preferred provider or auto-assign based on availability."
+        },
+        {
+          "icon": "Repeat",
+          "title": "Recurring Appointments",
+          "description": "Set up series for ongoing treatments. Patients see all upcoming visits at once."
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Mobile-First Design",
+          "description": "Beautiful booking experience on any device. 60% of bookings happen on mobile."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "Why Practices Love ",
+        "highlighted": "Our Scheduling",
+        "suffix": ""
+      },
+      "description": "Transform how patients discover and book your services.",
+      "items": [
+        {
+          "title": "Book 40% More Appointments",
+          "description": "Capture after-hours requests that would otherwise be lost to competitors."
+        },
+        {
+          "title": "Reduce Phone Volume by 50%",
+          "description": "Patients prefer self-service booking. Free your team for complex tasks."
+        },
+        {
+          "title": "Eliminate Double-Booking",
+          "description": "Real-time availability ensures conflicts never happen."
+        },
+        {
+          "title": "Improve New Patient Conversion",
+          "description": "Instant booking converts website visitors before they bounce to competitors."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Online Scheduling"
+      },
+      "description": "Patients expect to book appointments online—just like they book restaurants, flights, and everything else. But generic scheduling tools don't understand healthcare complexity: appointment types, provider preferences, insurance requirements, and treatment sequences. PracticeDilly's online scheduling software for medical and dental practices was purpose-built for healthcare, combining consumer-grade convenience with the sophisticated booking logic your practice requires.",
+      "items": [
+        {
+          "number": "01",
+          "title": "24/7 Booking That Captures After-Hours Demand",
+          "description": "Research shows that 40% of appointment requests happen outside business hours—evenings, weekends, and holidays when your phones are off. Every missed online booking opportunity is a potential patient lost to a competitor with better digital access. PracticeDilly's 24/7 online scheduling captures these after-hours requests automatically. Patients can book from your website, Google Business listing, Facebook page, or direct link. Our customers report 30-50% increases in new patient bookings after launching online scheduling."
+        },
+        {
+          "number": "02",
+          "title": "Real-Time PMS Synchronization Eliminates Double-Booking",
+          "description": "The worst thing about online scheduling is double-booked appointments. PracticeDilly eliminates this with real-time, bi-directional sync with your practice management system. When patients book online, the appointment immediately appears in your PMS. When your front desk books in the PMS, online availability updates instantly. We integrate with Dentrix, Eaglesoft, Open Dental, Curve, athenahealth, and 50+ other systems. Conflicts are impossible because we check real-time availability before confirming any booking."
+        },
+        {
+          "number": "03",
+          "title": "Customizable Booking Rules That Protect Your Schedule",
+          "description": "You know your practice best. PracticeDilly lets you control exactly what patients can book online: which appointment types (new patient exams vs. complex procedures), which providers, which days/times, how far in advance, minimum notice periods, and buffer times between appointments. You can require insurance verification before certain bookings, limit new patient slots per day, or reserve specific times for emergencies. The booking experience is seamless for patients while respecting your operational needs."
+        },
+        {
+          "number": "04",
+          "title": "Conversion-Optimized Booking Flow for New Patients",
+          "description": "Most online schedulers are generic forms that create friction. PracticeDilly's booking flow was designed by conversion experts to maximize completed bookings. Mobile-first design (60%+ of healthcare bookings happen on phones), minimal required fields, smart defaults, and instant confirmation combine to achieve 85%+ booking completion rates. For new patients specifically, we capture essential information (insurance, referral source, chief complaint) without making the process feel like paperwork. You get qualified leads, not abandoned forms."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's online scheduling for healthcare",
+      "items": [
+        {
+          "question": "Will online scheduling work with my current practice management system?",
+          "answer": "Yes, PracticeDilly integrates with all major dental and medical practice management systems including Dentrix, Eaglesoft, Open Dental, Curve Dental, Denticon, athenahealth, eClinicalWorks, NextGen, and 50+ others. Our integration is real-time and bi-directional—appointments sync instantly in both directions to prevent double-booking. Our team handles the integration setup as part of your onboarding."
+        },
+        {
+          "question": "Can I control which appointments patients can book online?",
+          "answer": "Absolutely. You have complete control over your online scheduling rules. You can specify which appointment types are bookable online, which providers accept online bookings, available days and times, advance booking windows (e.g., only 2 weeks ahead), minimum notice periods, and more. Many practices offer new patient exams and routine visits online while requiring phone calls for complex procedures."
+        },
+        {
+          "question": "How do I add online scheduling to my website?",
+          "answer": "We provide multiple options: an embedded scheduling widget that appears directly on your website, a hosted booking page with your branding that you can link to, and a simple 'Book Now' button that opens the scheduler. Installation is typically a simple code snippet that takes 5 minutes. We also set up booking links for your Google Business and Facebook profiles automatically."
+        },
+        {
+          "question": "Can patients request specific providers when booking online?",
+          "answer": "Yes. You can configure the booking flow to let patients choose their preferred provider, or you can auto-assign based on availability, appointment type, or other rules. For practices with multiple providers, showing provider options often increases booking rates because patients value choosing who they see. Returning patients can easily book with the same provider they've seen before."
+        },
+        {
+          "question": "How does online scheduling handle new patient paperwork?",
+          "answer": "After booking, new patients automatically receive links to complete digital intake forms before their appointment. You can customize which forms different appointment types trigger. The forms are mobile-friendly and sync directly with your PMS, so patients arrive ready with all paperwork completed. This saves 15+ minutes per new patient visit."
+        },
+        {
+          "question": "What if a patient books the wrong appointment type?",
+          "answer": "PracticeDilly includes smart safeguards to prevent booking errors. You can add descriptions and durations to appointment types so patients choose correctly. You can also configure confirmations that your team reviews before appointments finalize for certain booking types. Additionally, you can always modify bookings from your PMS if adjustments are needed."
+        },
+        {
+          "question": "Is online scheduling HIPAA compliant?",
+          "answer": "Yes, PracticeDilly's scheduling system is fully HIPAA compliant. Patient data is encrypted in transit and at rest, stored in SOC 2 compliant data centers, and accessed only through authenticated connections. We sign Business Associate Agreements (BAAs) with all healthcare clients. The booking flow is designed to collect only necessary information without exposing PHI."
+        },
+        {
+          "question": "Can I offer recurring or series appointments through online scheduling?",
+          "answer": "Yes! For treatment plans that require multiple visits, you can enable series booking. Patients can book all appointments in their treatment sequence at once—for example, all four visits for a phased treatment plan. This improves treatment plan completion rates and reduces scheduling workload. Patients receive reminders for each appointment in the series."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Online Appointment Scheduling for Dental Practices | PracticeDilly",
+      "description": "Intelligent online scheduling that fills your calendar 24/7, syncs with your PMS, and respects your booking rules. Patients book anytime. Real-time availability sync. Book 40% more appointments.",
+      "keywords": [
+        "online scheduling",
+        "dental scheduling software",
+        "appointment booking",
+        "online booking system",
+        "PMS integration",
+        "24/7 booking",
+        "patient scheduling",
+        "healthcare scheduling",
+        "dental calendar",
+        "appointment management"
+      ],
+      "ogImage": "/og-images/scheduling-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/scheduling"
+    }
+  },
+  {
+    "slug": "texting",
+    "hero": {
+      "category": {
+        "icon": "MessageCircle",
+        "text": "Texting"
+      },
+      "heading": {
+        "text": "Text Patients. ",
+        "highlighted": "Get Answers.",
+        "suffix": ""
+      },
+      "image":"/feature-images/texting.png",
+      "description": "HIPAA-compliant two-way texting that feels as natural as messaging a friend. Because that's how your patients want to communicate.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "HIPAA Compliant",
+        "Two-Way Chat",
+        "MMS Support",
+        "Team Inbox"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Texting That Works for ",
+        "highlighted": "Healthcare",
+        "suffix": ""
+      },
+      "description": "Built for busy practices with security, compliance, and convenience at the core.",
+      "features": [
+        {
+          "icon": "MessageSquare",
+          "title": "Two-Way Conversations",
+          "description": "Real conversations with patients, not one-way blasts. They reply, you respond—simple as that."
+        },
+        {
+          "icon": "Inbox",
+          "title": "Unified Team Inbox",
+          "description": "All patient messages in one place. Anyone on your team can pick up where another left off."
+        },
+        {
+          "icon": "Image",
+          "title": "MMS & Rich Media",
+          "description": "Send images, documents, and care instructions. Receive photos from patients."
+        },
+        {
+          "icon": "Bot",
+          "title": "Smart Auto-Replies",
+          "description": "AI handles common questions automatically. Escalate complex issues to staff."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Scheduled Messages",
+          "description": "Queue up birthday wishes, treatment follow-ups, and recall messages in advance."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "HIPAA Compliant",
+          "description": "Enterprise-grade security with audit trails, consent tracking, and encrypted storage."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "Why Texting ",
+        "highlighted": "Changes Everything",
+        "suffix": ""
+      },
+      "description": "Meet patients where they already are—on their phones.",
+      "items": [
+        {
+          "title": "98% Open Rate",
+          "description": "Texts get read within 3 minutes on average. Email can't compete."
+        },
+        {
+          "title": "Faster Response Times",
+          "description": "Patients reply to texts 60x faster than emails. Get answers in minutes."
+        },
+        {
+          "title": "Reduce Phone Calls 40%",
+          "description": "Quick questions get quick answers via text. Reserve calls for complex discussions."
+        },
+        {
+          "title": "Better Patient Relationships",
+          "description": "Modern communication builds trust and shows you respect their time."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Patient Texting"
+      },
+      "description": "Text messages have a 98% open rate and are read within 3 minutes on average. Compare that to email (20% open rate) or phone calls (often ignored or sent to voicemail). Your patients live on their phones—PracticeDilly's HIPAA-compliant patient texting lets you meet them there with two-way conversations that feel natural, professional, and secure.",
+      "items": [
+        {
+          "number": "01",
+          "title": "True Two-Way Conversations, Not Broadcast Blasts",
+          "description": "Most 'patient texting' systems are really just one-way notification tools. PracticeDilly enables real conversations—patients can reply to your texts, ask questions, send photos, and get immediate responses. Your team sees all messages in a unified inbox where anyone can pick up a conversation. It's as easy as texting a friend, but with the security and organization a healthcare practice needs. Two-way texting builds relationships and solves problems faster than phone tag ever could."
+        },
+        {
+          "number": "02",
+          "title": "HIPAA-Compliant Security Without Sacrificing Convenience",
+          "description": "Healthcare texting must protect patient privacy. PracticeDilly is fully HIPAA compliant with end-to-end encryption, secure data storage, access controls, and complete audit trails. We sign Business Associate Agreements with all healthcare clients. But security doesn't mean inconvenience—patients text from their regular messaging app, and your team uses our intuitive interface. You get enterprise security with consumer simplicity."
+        },
+        {
+          "number": "03",
+          "title": "Smart Automation That Handles Routine Communication",
+          "description": "Not every text needs human attention. PracticeDilly's AI-powered auto-replies handle common questions—office hours, directions, appointment confirmations, pre-visit instructions—instantly and accurately. Complex or sensitive messages route to your team for personal response. You can create custom auto-replies for any scenario, from insurance questions to post-procedure care. Automation handles the routine so your team focuses on patients who need human touch."
+        },
+        {
+          "number": "04",
+          "title": "Unified Team Inbox That Ensures Nothing Falls Through Cracks",
+          "description": "When one staff member starts a conversation and another finishes it, context matters. PracticeDilly's team inbox shows the complete message history for every patient conversation, who sent each message, and any internal notes. Assign conversations to specific team members, mark messages for follow-up, and ensure every patient gets a response. Managers can oversee all conversations without reading over shoulders—perfect for training and quality assurance."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's HIPAA-compliant texting",
+      "items": [
+        {
+          "question": "Is texting patients HIPAA compliant?",
+          "answer": "Yes, when done correctly. PracticeDilly's texting platform is fully HIPAA compliant with encryption, secure storage, access controls, and audit logging. We sign Business Associate Agreements (BAAs) with all healthcare clients. The key is using a purpose-built healthcare texting platform rather than personal phones or generic messaging apps, which lack the security controls HIPAA requires."
+        },
+        {
+          "question": "Can patients text us from their regular phone, or do they need an app?",
+          "answer": "Patients text you from their regular SMS app—no downloads or special apps required. They simply text your practice's dedicated number. This eliminates friction and increases engagement. Your team uses PracticeDilly's web or mobile app to manage conversations, but patients experience normal texting."
+        },
+        {
+          "question": "How do we handle texts when the office is closed?",
+          "answer": "You can configure auto-replies for after-hours messages that acknowledge receipt and set expectations for response time. For urgent matters, you can set up escalation rules that notify on-call staff. The system can also provide self-service options like links to online scheduling or FAQs. Your team sees all after-hours messages when they return, organized and ready for response."
+        },
+        {
+          "question": "Can we send images and documents via text?",
+          "answer": "Yes! PracticeDilly supports MMS messaging, so you can send and receive images, PDFs, and documents. This is great for sharing care instructions, receiving photos of concerns from patients, sending directions or forms, and more. All media is stored securely with the same HIPAA protections as text messages."
+        },
+        {
+          "question": "How do patients opt in to receiving texts?",
+          "answer": "TCPA regulations require patient consent before texting. PracticeDilly provides multiple opt-in methods: consent checkboxes on intake forms, text-to-join keywords patients can use, and opt-in confirmation for existing patients. The system tracks consent status for every patient and only allows texting those who've opted in. Patients can opt out anytime by replying STOP."
+        },
+        {
+          "question": "Can we text patients in languages other than English?",
+          "answer": "Absolutely. PracticeDilly supports texting in any language. You can create message templates in Spanish, Chinese, Vietnamese, or any other language your patient population speaks. Our AI auto-reply features also support multiple languages for automated responses."
+        },
+        {
+          "question": "How does texting integrate with our practice management system?",
+          "answer": "PracticeDilly integrates with all major dental and medical PMS platforms. Patient conversations are linked to their chart, so you see context when messaging. You can send texts triggered by appointment events, access patient phone numbers from your PMS, and log text interactions for the patient record. Integration setup is handled during your onboarding."
+        },
+        {
+          "question": "What's the difference between texting and appointment reminders?",
+          "answer": "Appointment reminders are automated, scheduled messages about upcoming visits. Two-way texting is real-time, conversational communication for any topic—questions, care coordination, follow-ups, etc. PracticeDilly includes both. Reminders run on autopilot, while texting gives you a channel for genuine patient conversations beyond appointment logistics."
+        }
+      ]
+    },
+    "seo": {
+      "title": "HIPAA-Compliant Patient Texting for Dental Practices | PracticeDilly",
+      "description": "HIPAA-compliant two-way texting that feels natural. Team inbox, MMS support, smart auto-replies, and scheduled messages. 98% open rate. Reduce phone calls by 40%.",
+      "keywords": [
+        "patient texting",
+        "HIPAA compliant texting",
+        "two-way texting",
+        "dental texting",
+        "healthcare messaging",
+        "SMS for healthcare",
+        "patient communication",
+        "text messaging dental",
+        "secure messaging",
+        "MMS healthcare"
+      ],
+      "ogImage": "/og-images/texting-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/texting"
+    }
+  },
+  {
+    "slug": "reviews",
+    "hero": {
+      "category": {
+        "icon": "Star",
+        "text": "Reviews"
+      },
+      "heading": {
+        "text": "Build a 5-Star Reputation. ",
+        "highlighted": "Automatically.",
+        "suffix": ""
+      },
+      "image":"/feature-images/reviews.png",
+      "description": "Turn happy patients into vocal advocates. Catch issues before they become public. Grow your online presence effortlessly.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "Auto-Request",
+        "Multi-Platform",
+        "Alert System",
+        "Analytics"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Complete Reputation ",
+        "highlighted": "Management",
+        "suffix": ""
+      },
+      "description": "From collection to response to analysis—everything you need in one platform.",
+      "features": [
+        {
+          "icon": "Send",
+          "title": "Automated Review Requests",
+          "description": "Send perfectly-timed requests after appointments. Happy patients leave reviews; unhappy ones get follow-up."
+        },
+        {
+          "icon": "Globe",
+          "title": "Multi-Platform Support",
+          "description": "Collect reviews on Google, Facebook, Yelp, and Healthgrades from one workflow."
+        },
+        {
+          "icon": "Bell",
+          "title": "Negative Review Alerts",
+          "description": "Get instant notifications for low ratings. Respond quickly before issues escalate."
+        },
+        {
+          "icon": "FileText",
+          "title": "Response Templates",
+          "description": "Pre-written responses for common scenarios. Personalize and reply in seconds."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Reputation Dashboard",
+          "description": "Track your ratings, response times, and trends across all platforms in one view."
+        },
+        {
+          "icon": "Filter",
+          "title": "Smart Filtering",
+          "description": "Happy patients go to Google. Unhappy patients reach you privately first."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "The Power of ",
+        "highlighted": "Great Reviews",
+        "suffix": ""
+      },
+      "description": "Your reputation is your most valuable marketing asset. Protect and grow it.",
+      "items": [
+        {
+          "title": "Triple Your Reviews",
+          "description": "Practices using automated requests see 3x more reviews within 60 days."
+        },
+        {
+          "title": "Improve Star Rating",
+          "description": "Smart filtering and quick response to issues lifts average ratings."
+        },
+        {
+          "title": "Attract New Patients",
+          "description": "88% of patients read reviews before booking. Stand out from competitors."
+        },
+        {
+          "title": "Save 5+ Hours Weekly",
+          "description": "Automate requests, responses, and monitoring. Focus on patient care."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Reputation Management"
+      },
+      "description": "88% of patients read online reviews before choosing a healthcare provider. Your Google star rating directly impacts whether new patients find you, trust you, and book with you. But actively managing your online reputation takes time most practices don't have. PracticeDilly's automated review generation and reputation management system helps you build a 5-star presence without adding work to your team's plate.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Automated Review Requests at the Perfect Moment",
+          "description": "Timing matters more than anything in review collection. Ask too early and patients haven't experienced your care. Ask too late and the moment has passed. PracticeDilly automatically sends review requests at the optimal time after each appointment—typically same-day for routine visits or a few days later for procedures. The message comes from your practice with a one-tap link to leave a review. Practices using our automated requests see 3-5x more reviews than those relying on manual asks or waiting for patients to remember."
+        },
+        {
+          "number": "02",
+          "title": "Smart Routing That Protects Your Reputation",
+          "description": "Not every patient experience is 5-star worthy. PracticeDilly's smart feedback routing asks patients about their experience before directing them to public review sites. Happy patients (4-5 stars) go straight to Google, Facebook, or Healthgrades. Patients with concerns are routed to private feedback where your team can address issues before they become public complaints. This 'review gating' approach—now compliant with platform guidelines through our invitation-based system—helps maintain higher average ratings while surfacing real problems for resolution."
+        },
+        {
+          "number": "03",
+          "title": "Multi-Platform Review Collection From One Workflow",
+          "description": "Different patients prefer different platforms. Some use Google, others check Facebook, and healthcare-specific sites like Healthgrades and Zocdoc matter for certain specialties. PracticeDilly collects reviews across all major platforms from a single automated workflow. You can weight platforms based on your priorities—most practices emphasize Google since it drives the most search visibility. One system, all platforms, consistent reputation building."
+        },
+        {
+          "number": "04",
+          "title": "Reputation Dashboard With Actionable Insights",
+          "description": "Knowing your Google rating isn't enough. PracticeDilly's reputation dashboard tracks review velocity, sentiment trends, response times, and ratings across all platforms over time. See which providers get the best reviews, identify recurring themes in feedback, and catch negative trends before they compound. Automated alerts notify you of new reviews—especially negative ones that need quick response. Turn reputation data into practice improvement."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's review and reputation management",
+      "items": [
+        {
+          "question": "Is it legal to ask patients for reviews?",
+          "answer": "Yes, asking patients for reviews is completely legal and encouraged by platforms like Google. What's prohibited is incentivizing reviews (offering discounts for reviews), posting fake reviews, or selectively removing negative reviews from platforms. PracticeDilly's review request system is fully compliant with FTC guidelines and platform terms of service. We help you ask authentically without crossing ethical or legal lines."
+        },
+        {
+          "question": "What's review gating and is it allowed?",
+          "answer": "Review gating means filtering unhappy patients away from public review sites. Google prohibited explicit gating in 2018, but invitation-based review requests (where you invite all patients to review, not just happy ones) remain fully compliant. PracticeDilly sends requests to all patients equally—the 'smart routing' happens only after they voluntarily provide feedback. This is compliant with current Google guidelines while still giving unhappy patients a private channel to share concerns."
+        },
+        {
+          "question": "How quickly do practices see more reviews?",
+          "answer": "Most practices see a significant increase in review volume within the first 2-4 weeks. Practices that previously got 1-2 reviews per month typically increase to 8-15+ monthly. The compounding effect is powerful—more reviews mean higher rankings, which mean more patients, which mean more reviews. Within 90 days, most practices double or triple their total review count."
+        },
+        {
+          "question": "Can PracticeDilly respond to reviews for us?",
+          "answer": "We provide AI-generated response suggestions that you can post with one click, but we recommend practices personally review and approve responses before posting. Authentic responses matter—patients can tell when replies are generic. Our templates give you starting points that you can personalize, saving time while maintaining authenticity. We also alert you immediately when reviews need attention."
+        },
+        {
+          "question": "How do I handle negative reviews?",
+          "answer": "Negative reviews happen to every practice. The key is responding professionally, quickly, and taking the conversation offline. PracticeDilly alerts you to negative reviews within minutes so you can respond before others see an unanswered complaint. We provide HIPAA-safe response templates that acknowledge concerns without confirming patient relationships. Quick, professional responses to negative reviews often matter more than the reviews themselves."
+        },
+        {
+          "question": "Which review platforms does PracticeDilly support?",
+          "answer": "PracticeDilly collects and monitors reviews across all major platforms: Google Business Profile, Facebook, Yelp, Healthgrades, Zocdoc, Vitals, RateMDs, and practice-specific platforms. You can prioritize which platforms to emphasize in your review requests. Most practices focus on Google (highest SEO impact) with Facebook as secondary, but you can customize based on where your patients actually look."
+        },
+        {
+          "question": "Will sending review requests annoy my patients?",
+          "answer": "No—when done correctly. PracticeDilly sends polite, non-pushy requests at appropriate intervals. Patients receive at most one request per visit, and only after appointments (not at random times). The requests are short, mobile-friendly, and take 30 seconds to complete. In our experience, patients appreciate being asked and are happy to support practices they like. You can also exclude specific patients from requests if needed."
+        },
+        {
+          "question": "How does review generation affect SEO and Google rankings?",
+          "answer": "Reviews significantly impact local SEO rankings. Google considers review quantity, quality (star rating), recency, and response rate when ranking local businesses. Practices with more recent, positive reviews rank higher in 'near me' searches and Google Maps. Increasing your review velocity signals to Google that your practice is active and trusted, improving visibility for local healthcare searches."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Online Review Management for Dental Practices | PracticeDilly",
+      "description": "Build a 5-star reputation automatically. Automated review requests, multi-platform management, negative review alerts, and reputation dashboard. Triple your reviews and improve star ratings.",
+      "keywords": [
+        "dental reviews",
+        "online review management",
+        "Google reviews",
+        "review generation",
+        "reputation management",
+        "patient reviews",
+        "healthcare reviews",
+        "review automation",
+        "5 star reviews",
+        "review monitoring"
+      ],
+      "ogImage": "/og-images/reviews-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/reviews"
+    }
+  },
+  {
+    "slug": "call-intelligence",
+    "hero": {
+      "category": {
+        "icon": "Brain",
+        "text": "Call Intelligence"
+      },
+      "heading": {
+        "text": "Turn Every Call Into an ",
+        "highlighted": "Insight.",
+        "suffix": ""
+      },
+      "image":"/feature-images/call-intelligence.png",
+      "description": "AI listens to every conversation, transcribes instantly, and surfaces the insights that grow your practice.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "AI Transcription",
+        "Call Scoring",
+        "Trend Analysis",
+        "Coaching Tools"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Intelligence That ",
+        "highlighted": "Drives Results",
+        "suffix": ""
+      },
+      "description": "Not just recordings—actionable insights that improve performance and patient experience.",
+      "features": [
+        {
+          "icon": "FileText",
+          "title": "Automatic Transcription",
+          "description": "Every call transcribed with 95%+ accuracy. Searchable, shareable, actionable."
+        },
+        {
+          "icon": "Award",
+          "title": "Call Scoring",
+          "description": "AI evaluates calls on greeting, discovery, objection handling, and booking success."
+        },
+        {
+          "icon": "AlertCircle",
+          "title": "Issue Detection",
+          "description": "Automatic alerts for missed opportunities, patient complaints, and training gaps."
+        },
+        {
+          "icon": "Search",
+          "title": "Keyword Tracking",
+          "description": "Track mentions of competitors, insurance questions, and specific treatments."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Performance Analytics",
+          "description": "Compare team members, track improvements, identify top performers."
+        },
+        {
+          "icon": "Lightbulb",
+          "title": "AI Coaching Insights",
+          "description": "Personalized feedback and improvement suggestions for each team member."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "Why Call Intelligence ",
+        "highlighted": "Matters",
+        "suffix": ""
+      },
+      "description": "Transform call data into practice growth.",
+      "items": [
+        {
+          "title": "Improve Booking Rates",
+          "description": "Identify what works and replicate it. See 20-30% booking improvements."
+        },
+        {
+          "title": "Reduce Training Time",
+          "description": "AI coaching accelerates onboarding. New staff perform better, faster."
+        },
+        {
+          "title": "Catch Issues Early",
+          "description": "Spot problems before they escalate. Address concerns proactively."
+        },
+        {
+          "title": "Data-Driven Decisions",
+          "description": "Make staffing and training decisions based on actual performance data."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Call Intelligence"
+      },
+      "description": "Every phone call contains valuable insights—if you can capture and analyze them. Most practices have no visibility into what happens during patient calls beyond basic metrics like call volume and duration. PracticeDilly's AI-powered call intelligence transforms every conversation into actionable data that improves booking rates, identifies training opportunities, and surfaces issues before they become problems.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Automatic Transcription That Makes Every Call Searchable",
+          "description": "PracticeDilly transcribes every call with 95%+ accuracy using advanced speech recognition. Transcripts are searchable, so you can instantly find calls mentioning specific treatments, insurance questions, or patient concerns. No more listening through hours of recordings to find one conversation. Search 'root canal' and see every call where it was discussed. Transcripts are stored securely with full HIPAA compliance and can be linked to patient records for context."
+        },
+        {
+          "number": "02",
+          "title": "AI Call Scoring That Identifies What Actually Works",
+          "description": "Our AI evaluates calls across multiple dimensions: greeting quality, discovery questions, objection handling, booking success, and patient satisfaction signals. Each call receives a score, and the system learns what behaviors correlate with successful bookings. You can see which team members excel at converting new patient calls, which appointment types have the highest booking rates, and what language patterns lead to better outcomes. This data drives targeted coaching and process improvements."
+        },
+        {
+          "number": "03",
+          "title": "Issue Detection That Prevents Problems",
+          "description": "PracticeDilly automatically flags calls with concerning patterns: patient complaints, missed booking opportunities, staff errors, or negative sentiment. You get instant alerts for issues that need attention, allowing proactive resolution before problems escalate. The system can detect frustration in tone, identify when patients mention competitors, and surface calls where staff struggled with questions. Early intervention protects patient relationships and practice reputation."
+        },
+        {
+          "number": "04",
+          "title": "Performance Analytics That Drive Improvement",
+          "description": "Compare booking rates, call duration, and satisfaction scores across team members. Identify top performers and understand what makes them successful. Track improvements over time as coaching takes effect. See which appointment types convert best, which times of day yield highest-quality calls, and how performance varies by provider or service. This data informs staffing decisions, training priorities, and process optimization. Practices using call intelligence typically see 20-30% improvements in booking rates within 90 days."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's call intelligence and analytics",
+      "items": [
+        {
+          "question": "Is call recording and transcription HIPAA compliant?",
+          "answer": "Yes, PracticeDilly's call intelligence system is fully HIPAA compliant. All recordings and transcriptions are encrypted in transit and at rest, stored in secure data centers with access controls and audit logging. We sign Business Associate Agreements with all healthcare clients. Patient consent for recording is handled according to your state's requirements—we provide templates and guidance for compliance."
+        },
+        {
+          "question": "How accurate is the AI transcription?",
+          "answer": "Our transcription accuracy is 95%+ for clear calls. Accuracy may be lower for calls with background noise, heavy accents, or poor connection quality. All transcriptions are searchable and can be reviewed for accuracy. You can also listen to the original recording if needed. The system continuously improves as it processes more calls from your practice."
+        },
+        {
+          "question": "Can I opt out of recording for certain calls?",
+          "answer": "Yes, you can configure recording rules based on call type, caller, or other criteria. Some practices choose not to record sensitive conversations or calls with specific patients. You can also pause recording during a call if needed. The system respects your preferences while still providing analytics on recorded calls."
+        },
+        {
+          "question": "How does call scoring work?",
+          "answer": "Our AI evaluates calls across multiple dimensions: greeting quality (did staff introduce themselves professionally?), discovery (did they ask about patient needs?), objection handling (how were concerns addressed?), and outcome (was an appointment booked?). The system learns from your practice's successful calls to identify patterns that lead to bookings. Scores are relative to your practice's performance, not absolute benchmarks."
+        },
+        {
+          "question": "What kind of insights can I get from call analytics?",
+          "answer": "You can see booking conversion rates by team member, appointment type, time of day, and call source. Track trends over time to measure improvement. Identify common objections and see how they're handled. Monitor patient sentiment and satisfaction signals. Compare performance across staff members to identify training opportunities. The analytics dashboard provides both high-level trends and drill-down details for specific calls."
+        },
+        {
+          "question": "How long are call recordings stored?",
+          "answer": "Storage duration is configurable based on your compliance needs and preferences. Default retention is 90 days, but you can extend to 1 year, 7 years, or unlimited based on your requirements. Transcripts are retained separately and use minimal storage. Recordings are compressed efficiently; a typical practice's monthly call volume uses minimal storage. We offer configurable retention periods (30 days to unlimited) based on your compliance needs and preferences. Transcripts are retained separately and take virtually no storage."
+        },
+        {
+          "question": "Can managers listen to calls in real-time?",
+          "answer": "PracticeDilly focuses on post-call analysis rather than real-time monitoring, which most practices find intrusive and impractical. However, you can review any call immediately after it ends—the transcription and scoring happen in near-real-time (typically within minutes). This allows quick intervention if the AI flags an issue that needs immediate attention."
+        }
+      ]
+    },
+    "seo": {
+      "title": "AI Call Intelligence & Analytics for Dental Practices | PracticeDilly",
+      "description": "Turn every call into an insight. AI transcription, call scoring, trend analysis, and coaching tools. Improve booking rates by 20-30%. HIPAA-compliant call intelligence.",
+      "keywords": [
+        "call intelligence",
+        "call analytics",
+        "call transcription",
+        "call scoring",
+        "dental call analytics",
+        "healthcare call intelligence",
+        "call recording",
+        "call monitoring",
+        "performance analytics",
+        "call coaching"
+      ],
+      "ogImage": "/og-images/call-intelligence-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/call-intelligence"
+    }
+  },
+  {
+    "slug": "billing-payments",
+    "hero": {
+      "category": {
+        "icon": "CreditCard",
+        "text": "Billing & Payments"
+      },
+      "heading": {
+        "text": "Get Paid Faster. ",
+        "highlighted": "Stress Less.",
+        "suffix": ""
+      },
+      "image":"/feature-images/billing-payments.png",
+      "description": "Modern payment experiences patients love. Digital invoices, text-to-pay, and flexible plans that improve cash flow.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "Text-to-Pay",
+        "Payment Plans",
+        "Auto Reminders",
+        "PCI Compliant"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Payments Built for ",
+        "highlighted": "Healthcare",
+        "suffix": ""
+      },
+      "description": "From invoicing to collections—a complete financial workflow.",
+      "features": [
+        {
+          "icon": "Smartphone",
+          "title": "Text-to-Pay",
+          "description": "Send payment links via text. Patients pay in 30 seconds from their phone."
+        },
+        {
+          "icon": "Repeat",
+          "title": "Flexible Payment Plans",
+          "description": "Offer financing options that work for patients. Automatic recurring payments."
+        },
+        {
+          "icon": "Receipt",
+          "title": "Digital Invoicing",
+          "description": "Professional invoices via email or text. Patients pay with one click."
+        },
+        {
+          "icon": "Bell",
+          "title": "Automated Reminders",
+          "description": "Gentle payment reminders that collect without confrontation."
+        },
+        {
+          "icon": "FileText",
+          "title": "Detailed Statements",
+          "description": "Clear, branded statements that patients understand. Reduce billing questions."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "PCI Compliant",
+          "description": "Enterprise-grade security. Securely store cards for future payments."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "Transform Your ",
+        "highlighted": "Revenue Cycle",
+        "suffix": ""
+      },
+      "description": "Faster payments, fewer headaches, happier patients.",
+      "items": [
+        {
+          "title": "Get Paid 50% Faster",
+          "description": "Text-to-pay closes the gap between service and payment."
+        },
+        {
+          "title": "Reduce Collections 60%",
+          "description": "Automated reminders and easy payment options prevent accounts from aging."
+        },
+        {
+          "title": "Increase Case Acceptance",
+          "description": "Payment plans make big treatments accessible. More yes, less hesitation."
+        },
+        {
+          "title": "Save Admin Hours",
+          "description": "Digital statements and auto-reminders eliminate manual billing work."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Patient Billing"
+      },
+      "description": "Getting paid shouldn't be harder than providing care. Yet most practices struggle with aging accounts receivable, awkward payment conversations, and manual collection processes that consume staff hours. PracticeDilly's patient billing and payment platform modernizes how healthcare practices collect revenue—making it easier for patients to pay and easier for you to get paid.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Text-to-Pay That Patients Actually Use",
+          "description": "Paper statements get ignored. Email invoices get lost. But text messages get read within 3 minutes. PracticeDilly's text-to-pay sends a simple link that lets patients pay their balance in 30 seconds—no logging in, no creating accounts, no friction. Just tap, confirm amount, and pay. Practices using text-to-pay collect 50% faster on average, with dramatically higher collection rates on balances under 90 days. Meet patients where they are: on their phones."
+        },
+        {
+          "number": "02",
+          "title": "Flexible Payment Plans That Increase Case Acceptance",
+          "description": "Expensive treatments get declined when patients can't see a path to payment. PracticeDilly's built-in payment plan functionality lets you offer financing options directly—no third-party patient financing companies taking a cut. Customize terms, set up automatic recurring payments, and let patients choose plans that work for their budget. Practices offering in-house payment plans see 30-40% higher treatment acceptance on cases over $1,000."
+        },
+        {
+          "number": "03",
+          "title": "Automated Collections That Preserve Relationships",
+          "description": "Manual collection calls are uncomfortable and time-consuming. PracticeDilly automates the collections sequence with escalating reminders that are firm but friendly. Start with gentle text reminders, escalate to email statements, then phone call queues for your team. The system tracks every touchpoint and stops automatically when payment is received. Collect more while spending less staff time on awkward conversations."
+        },
+        {
+          "number": "04",
+          "title": "Clear, Professional Statements Patients Understand",
+          "description": "Confusing bills don't get paid. PracticeDilly generates clean, branded statements that clearly show what was done, what insurance covered, and what the patient owes. Patients can see their payment history, download receipts, and understand their obligations. Clarity reduces billing questions (saving staff time) and increases payment rates because patients know exactly what they owe and why."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions",
+        "suffix": ""
+      },
+      "description": "Common questions about PracticeDilly's billing and payment solutions",
+      "items": [
+        {
+          "question": "What payment methods can patients use?",
+          "answer": "PracticeDilly accepts all major credit and debit cards (Visa, MasterCard, American Express, Discover), ACH bank transfers, HSA/FSA cards, and digital wallets (Apple Pay, Google Pay). You can enable or disable specific payment methods based on your preferences. ACH transfers have lower processing fees and are popular for larger balances and recurring payments."
+        },
+        {
+          "question": "What are the payment processing fees?",
+          "answer": "Processing fees depend on payment method: credit cards are typically 2.9% + $0.30 per transaction, while ACH transfers are 0.8% (capped at $5). These rates are competitive with or better than traditional merchant accounts. All fees are transparent—no hidden charges or monthly minimums. Many practices find that faster payment collection more than offsets processing costs."
+        },
+        {
+          "question": "How do payment plans work?",
+          "answer": "You define the payment plan terms: minimum down payment, number of installments, and payment schedule. Patients choose a plan that works for them, provide a card or bank account for recurring charges, and payments process automatically on schedule. You can configure different plan options for different balance sizes. The system handles the entire lifecycle including receipts, reminders, and failed payment recovery."
+        },
+        {
+          "question": "Is PracticeDilly PCI compliant?",
+          "answer": "Yes. PracticeDilly is fully PCI DSS compliant. We use tokenization so actual card numbers never touch your systems or ours after the initial transaction. Payment processing is handled by our certified payment partners. This protects your practice from liability while enabling seamless payment experiences."
+        },
+        {
+          "question": "Can patients set up automatic payments for recurring balances?",
+          "answer": "Absolutely. Patients can securely store payment methods and authorize automatic payments—either for payment plans or for future balances. Cards on file are stored using secure tokenization. You can offer autopay as an option or require it for payment plans. Automatic payments dramatically improve collection rates and reduce staff follow-up work."
+        },
+        {
+          "question": "How does text-to-pay work?",
+          "answer": "After an appointment or when a balance is due, PracticeDilly sends a text message with a secure payment link. Patients tap the link, see their balance, confirm the amount, and pay—all in under 30 seconds without logging in or creating an account. The link is mobile-optimized and works on any smartphone. You can customize the message text and timing of these payment requests."
+        },
+        {
+          "question": "Does PracticeDilly integrate with our practice management system?",
+          "answer": "Yes, we integrate with all major dental and medical PMS platforms. Patient balances, payment history, and account status sync automatically. When patients pay through PracticeDilly, the payment posts to their account in your PMS. This eliminates manual posting and ensures accurate records. Our team handles integration setup during onboarding."
+        },
+        {
+          "question": "Can we still accept in-office payments?",
+          "answer": "Of course! PracticeDilly works alongside your existing in-office payment processes. You can use our virtual terminal to process cards at the front desk if you want unified reporting. Or continue using your existing terminal while using PracticeDilly for remote and online payments. Many practices use PracticeDilly for post-visit collections while maintaining their existing checkout flow."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Patient Billing & Payment Solutions for Dental Practices | PracticeDilly",
+      "description": "Get paid faster with text-to-pay, flexible payment plans, digital invoicing, and automated reminders. PCI compliant. Get paid 50% faster and reduce collections by 60%.",
+      "keywords": [
+        "dental billing",
+        "patient payments",
+        "text to pay",
+        "payment plans",
+        "dental payment processing",
+        "patient billing software",
+        "healthcare payments",
+        "digital invoicing",
+        "payment reminders",
+        "PCI compliant payments"
+      ],
+      "ogImage": "/og-images/billing-payments-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/billing-payments"
+    }
+  },
+  {
+    "slug": "digital-forms",
+    "hero": {
+      "category": {
+        "icon": "Clipboard",
+        "text": "Digital Forms"
+      },
+      "heading": {
+        "text": "Ditch the Clipboard. Go ",
+        "highlighted": "Digital.",
+        "suffix": ""
+      },
+      "image":"/feature-images/digital-forms.png",
+      "description": "Beautiful, mobile-friendly intake forms that patients actually enjoy completing. Data syncs automatically to your PMS.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "Mobile-Friendly",
+        "PMS Sync",
+        "E-Signatures",
+        "HIPAA Secure"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Forms That Work for ",
+        "highlighted": "Everyone",
+        "suffix": ""
+      },
+      "description": "Easy for patients, efficient for staff, integrated with your systems.",
+      "features": [
+        {
+          "icon": "Smartphone",
+          "title": "Complete Anywhere",
+          "description": "Patients fill forms from home on any device. Arrive ready, not early."
+        },
+        {
+          "icon": "Link2",
+          "title": "PMS Integration",
+          "description": "Data flows directly into your practice management system. No manual entry."
+        },
+        {
+          "icon": "PenTool",
+          "title": "E-Signatures",
+          "description": "Legally binding electronic signatures for consent forms and agreements."
+        },
+        {
+          "icon": "Zap",
+          "title": "Smart Form Logic",
+          "description": "Conditional fields show relevant questions. Forms feel short and smart."
+        },
+        {
+          "icon": "Send",
+          "title": "Auto-Send Before Visits",
+          "description": "Forms automatically sent with appointment confirmations. Zero staff effort."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "HIPAA Compliant",
+          "description": "Encrypted transmission and storage. Audit trails for every submission."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "The Paperless ",
+        "highlighted": "Advantage",
+        "suffix": ""
+      },
+      "description": "Transform your front desk experience for staff and patients alike.",
+      "items": [
+        {
+          "title": "Save 15+ Minutes Per Patient",
+          "description": "No clipboard handoffs. No data entry. No illegible handwriting."
+        },
+        {
+          "title": "Reduce Errors by 80%",
+          "description": "Required fields and validation ensure complete, accurate information."
+        },
+        {
+          "title": "Improve Patient Experience",
+          "description": "Modern intake impresses patients and sets the tone for quality care."
+        },
+        {
+          "title": "Go Paperless",
+          "description": "Eliminate printing, scanning, and storage costs. Better for everyone."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Digital Patient Forms"
+      },
+      "description": "Clipboards and paper forms are relics of a pre-digital era. They create work for staff, frustrate patients, and introduce errors into your records. PracticeDilly's digital patient intake forms transform the registration experience—letting patients complete paperwork on their own devices before they arrive, with data flowing directly into your practice management system.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Complete Forms From Home on Any Device",
+          "description": "Patients receive a link via text or email to complete their forms before their appointment—at home, on the bus, whenever it's convenient. Forms work on any device: iPhone, Android, tablet, or computer. No apps to download, no accounts to create. Just tap the link and start. Patients love completing paperwork in 10 minutes from their couch rather than 30 minutes in your waiting room. Arrival becomes check-in, not registration."
+        },
+        {
+          "number": "02",
+          "title": "Direct PMS Integration Eliminates Manual Data Entry",
+          "description": "Paper forms require staff to manually enter information into your practice management system—a process that's slow, error-prone, and tedious. PracticeDilly integrates with all major dental and medical PMS platforms, pushing patient data directly into your system. When patients submit forms, their information appears in their chart automatically. Zero typing, zero transcription errors, massive time savings."
+        },
+        {
+          "number": "03",
+          "title": "Smart Form Logic Makes Long Forms Feel Short",
+          "description": "Not every question applies to every patient. PracticeDilly's conditional logic shows only relevant questions based on previous answers. A 'No' on 'Do you have allergies?' skips the allergy detail section. A 'Yes' on 'Are you currently taking medications?' reveals the medication list. Forms adapt to each patient, keeping the experience focused and quick while still collecting complete information for your clinical team."
+        },
+        {
+          "number": "04",
+          "title": "Legally Binding E-Signatures for Consents and Agreements",
+          "description": "Informed consent, financial agreements, HIPAA acknowledgments, treatment authorizations—these documents require signatures. PracticeDilly's e-signature capability captures legally binding electronic signatures that meet healthcare compliance requirements. Signed documents are stored securely, attached to patient records, and accessible anytime. No more scanning paper forms or tracking down missing signatures."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's digital patient forms",
+      "items": [
+        {
+          "question": "Are digital signatures legally valid for consent forms?",
+          "answer": "Yes. Electronic signatures are legally valid for healthcare consent forms under the federal ESIGN Act and UETA (Uniform Electronic Transactions Act). PracticeDilly's e-signature implementation meets these requirements with audit trails, timestamp recording, and signer authentication. Signed documents are securely stored and legally equivalent to wet signatures for informed consent, financial agreements, and HIPAA acknowledgments."
+        },
+        {
+          "question": "How do patients access the forms before their appointment?",
+          "answer": "Patients receive a link via text message or email after booking. Clicking the link opens the forms in their mobile browser—no app download required. They can complete forms on any device (phone, tablet, computer) and save progress if they need to pause. Forms can be sent automatically with appointment confirmations or manually by your staff for specific patients."
+        },
+        {
+          "question": "What practice management systems does PracticeDilly integrate with?",
+          "answer": "We integrate with all major dental PMS platforms (Dentrix, Eaglesoft, Open Dental, Curve, Denticon) and medical EHRs (athenahealth, eClinicalWorks, NextGen, and others). Integration means patient responses flow directly into your system without manual data entry. Our team handles the integration setup during your onboarding. Custom integrations are available for less common systems."
+        },
+        {
+          "question": "Can we customize the forms to match our existing paperwork?",
+          "answer": "Absolutely. PracticeDilly's form builder lets you create any form you need with our drag-and-drop editor. Replicate your existing paper forms, add new fields, set up conditional logic, and brand everything with your logo and colors. We also offer templates for common healthcare forms (medical history, dental history, consent forms) that you can customize."
+        },
+        {
+          "question": "How do we handle patients who can't or won't complete forms digitally?",
+          "answer": "Digital forms are optional—you can still provide paper alternatives. Some practices keep tablets in the waiting room for patients who prefer to complete forms on-site but still want the digital experience. Staff can also enter information on behalf of patients using the same digital forms. You choose the balance that works for your patient population."
+        },
+        {
+          "question": "Are digital forms HIPAA compliant?",
+          "answer": "Yes. PracticeDilly's forms are fully HIPAA compliant with end-to-end encryption, secure storage, access controls, and audit logging. We sign Business Associate Agreements (BAAs) with all healthcare clients. Data is stored in SOC 2 compliant data centers and never shared with third parties. We take PHI protection seriously."
+        },
+        {
+          "question": "Can forms be required before check-in?",
+          "answer": "Yes. You can configure forms as required or optional. For required forms, patients can't complete check-in until forms are submitted. Your front desk can see completion status at a glance and remind patients who haven't finished. For returning patients, you can require form updates only after a certain period (e.g., annually) rather than every visit."
+        },
+        {
+          "question": "How do patients update their information for return visits?",
+          "answer": "Returning patients can quickly review and update their information rather than filling out everything from scratch. They see their existing data pre-filled and can make changes as needed. You can configure which forms or sections need periodic updates (like annual medical history updates) vs. one-time forms (like initial consent). This saves time while keeping records current."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Digital Patient Forms & Paperless Intake | PracticeDilly",
+      "description": "Beautiful, mobile-friendly intake forms that patients complete before appointments. PMS integration, e-signatures, smart form logic. Save 15+ minutes per patient. HIPAA compliant.",
+      "keywords": [
+        "digital forms",
+        "patient intake forms",
+        "paperless forms",
+        "digital patient forms",
+        "e-signatures",
+        "patient registration",
+        "intake forms dental",
+        "HIPAA forms",
+        "mobile forms",
+        "paperless office"
+      ],
+      "ogImage": "/og-images/digital-forms-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/digital-forms"
+    }
+  },
+  {
+    "slug": "email-marketing",
+    "hero": {
+      "category": {
+        "icon": "Mail",
+        "text": "Email Marketing"
+      },
+      "heading": {
+        "text": "Email Marketing That ",
+        "highlighted": "Runs Itself.",
+        "suffix": ""
+      },
+      "image":"/feature-images/email-marketing.png",
+      "description": "Keep patients engaged with beautiful, automated emails. Reactivate lost patients. Fill your schedule. All on autopilot.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "Done-For-You",
+        "Automation",
+        "Segmentation",
+        "Analytics"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Marketing Made ",
+        "highlighted": "Simple",
+        "suffix": ""
+      },
+      "description": "Professional email marketing without the complexity or cost of agencies.",
+      "features": [
+        {
+          "icon": "FileText",
+          "title": "Pre-Built Templates",
+          "description": "Professional, healthcare-specific templates ready to customize. Launch in minutes."
+        },
+        {
+          "icon": "Zap",
+          "title": "Marketing Automation",
+          "description": "Welcome sequences, birthday emails, and reactivation campaigns run on autopilot."
+        },
+        {
+          "icon": "Filter",
+          "title": "Smart Segmentation",
+          "description": "Target patients by treatment history, last visit, insurance, or any criteria."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Campaign Scheduling",
+          "description": "Plan and schedule campaigns in advance. Never miss a holiday or promotion."
+        },
+        {
+          "icon": "Palette",
+          "title": "Brand Customization",
+          "description": "Your colors, your logo, your voice. Every email looks authentically you."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Performance Analytics",
+          "description": "Track opens, clicks, and appointments booked. Know what's working."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "Grow Your Practice on ",
+        "highlighted": "Autopilot",
+        "suffix": ""
+      },
+      "description": "Set it up once, benefit forever. Marketing that works while you sleep.",
+      "items": [
+        {
+          "title": "Reactivate Lost Patients",
+          "description": "Automated campaigns bring back patients who haven't visited in 6+ months."
+        },
+        {
+          "title": "Fill Slow Periods",
+          "description": "Targeted promotions fill gaps in your schedule during quiet times."
+        },
+        {
+          "title": "Build Patient Loyalty",
+          "description": "Regular communication keeps your practice top-of-mind between visits."
+        },
+        {
+          "title": "Zero Marketing Team Needed",
+          "description": "Pre-built campaigns and automation mean you don't need marketing expertise."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Email Marketing"
+      },
+      "description": "Between appointments, patients forget about you. They see competing practices' ads, get busy with life, and lapse on their care. Email marketing keeps your practice top-of-mind—reminding patients to schedule overdue appointments, educating them on treatments, and building relationships that drive loyalty and referrals. PracticeDilly makes healthcare email marketing effortless with pre-built campaigns, automation, and integration with your patient data.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Pre-Built Campaigns That Launch in Minutes",
+          "description": "Most practices don't have marketing staff or agencies. PracticeDilly provides ready-to-send email campaigns designed specifically for healthcare: recall reminders, birthday greetings, treatment promotions, seasonal campaigns, and patient education series. Just customize with your branding, review the content, and launch. What would take an agency weeks takes you 15 minutes—and performs just as well because our templates are tested across thousands of practices."
+        },
+        {
+          "number": "02",
+          "title": "Automation That Runs While You Focus on Patients",
+          "description": "Set up campaigns once and let them run forever. New patient welcome sequences, post-appointment follow-ups, reactivation campaigns for lapsed patients, recall reminders based on treatment intervals—all automated, all personalized, all driving appointments and revenue without staff effort. Patients receive the right message at the right time, and your practice grows on autopilot."
+        },
+        {
+          "number": "03",
+          "title": "Smart Segmentation Based on Patient Data",
+          "description": "Not every patient should receive every email. PracticeDilly segments your patient list based on real data: last visit date, treatment history, appointment types, insurance status, and more. Send whitening promotions to cosmetic patients, implant information to candidates with missing teeth, or recare reminders only to those actually overdue. Relevant emails get opened, irrelevant emails get unsubscribed."
+        },
+        {
+          "number": "04",
+          "title": "Analytics That Show What's Working",
+          "description": "Vanity metrics like open rates only tell part of the story. PracticeDilly tracks what matters: appointments booked, treatments scheduled, and revenue generated from each campaign. See which subject lines perform best, which segments engage most, and which campaigns drive the most production. Data-driven insights help you continuously improve your email marketing effectiveness."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's email marketing for healthcare",
+      "items": [
+        {
+          "question": "Is healthcare email marketing HIPAA compliant?",
+          "answer": "Yes, when done correctly. PracticeDilly's email marketing is fully HIPAA compliant. We never include specific health information in emails—messages are designed for marketing, not clinical communication. Patient data used for segmentation is protected with encryption and access controls. We sign Business Associate Agreements with all healthcare clients and follow HIPAA email guidelines."
+        },
+        {
+          "question": "Can patients unsubscribe from marketing emails?",
+          "answer": "Yes, every email includes an unsubscribe link as required by CAN-SPAM. Unsubscribe requests are processed automatically and immediately. You can also configure different subscription preferences—patients might opt out of promotions but keep receiving appointment reminders. We make it easy to respect patient preferences while maintaining effective communication."
+        },
+        {
+          "question": "How often should we send marketing emails?",
+          "answer": "Most practices find success with 2-4 emails per month. Too few and patients forget you; too many and they unsubscribe. PracticeDilly's automation handles much of this—recall reminders and follow-ups are sent based on patient activity, not a fixed schedule. You layer in promotional or educational campaigns as desired. We help you find the right frequency for your patient base."
+        },
+        {
+          "question": "What kind of email campaigns work best for healthcare?",
+          "answer": "The highest-performing campaigns are recall reminders (driving overdue patients back), reactivation campaigns (recovering lapsed patients), and special offers (attracting patients to specific services). Educational content (oral health tips, treatment explanations) builds trust over time. Birthday and holiday greetings maintain relationships. PracticeDilly includes templates for all these proven campaign types."
+        },
+        {
+          "question": "Does PracticeDilly integrate with our patient database?",
+          "answer": "Yes, we integrate with all major dental and medical practice management systems. Patient information, visit history, and treatment data sync automatically, enabling smart segmentation without manual list management. When new patients are added to your PMS, they appear in PracticeDilly. When patients complete treatments, their segments update. Integration is set up during your onboarding."
+        },
+        {
+          "question": "Can we create our own email templates?",
+          "answer": "Absolutely. Our drag-and-drop email builder lets you create custom templates from scratch or modify our pre-built templates. Add your logo, colors, images, and content. Save templates for reuse and create variations for A/B testing. You have full creative control, or you can use our proven templates and just customize the details."
+        },
+        {
+          "question": "How do we measure email marketing ROI?",
+          "answer": "PracticeDilly tracks both email metrics (opens, clicks) and business outcomes (appointments booked, revenue generated). When patients click an email and book an appointment, we attribute that appointment to the campaign. You can see exactly which campaigns drive production and calculate true return on investment—not just engagement metrics."
+        },
+        {
+          "question": "Can we send emails on behalf of specific providers?",
+          "answer": "Yes! Emails can come 'from' the practice generally or from specific providers. Provider-level sending is great for building personal relationships—patients receiving an email from 'Dr. Smith' feel more connection than one from 'Main Street Dental.' You can segment by provider relationship and personalize sender details accordingly."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Email Marketing for Dental Practices | PracticeDilly",
+      "description": "Email marketing that runs itself. Pre-built templates, automation, smart segmentation, and analytics. Reactivate lost patients, fill slow periods, build loyalty. Zero marketing team needed.",
+      "keywords": [
+        "dental email marketing",
+        "healthcare email marketing",
+        "patient email campaigns",
+        "email automation",
+        "dental marketing",
+        "patient communication",
+        "recall emails",
+        "email templates",
+        "marketing automation",
+        "patient retention"
+      ],
+      "ogImage": "/og-images/email-marketing-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/email-marketing"
+    }
+  },
+  {
+    "slug": "mobile-app",
+    "hero": {
+      "category": {
+        "icon": "Smartphone",
+        "text": "Mobile App"
+      },
+      "heading": {
+        "text": "Your Practice. In Every ",
+        "highlighted": "Pocket.",
+        "suffix": ""
+      },
+      "image":"/feature-images/mobile-app.png",
+      "description": "A beautiful, branded mobile app that puts your practice on patients' home screens. Booking, messaging, payments—everything they need.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "Your Branding",
+        "Easy Booking",
+        "Secure Messaging",
+        "Mobile Payments"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Everything Patients ",
+        "highlighted": "Need",
+        "suffix": ""
+      },
+      "description": "A complete patient experience, designed for the smartphone generation.",
+      "features": [
+        {
+          "icon": "Zap",
+          "title": "One-Tap Booking",
+          "description": "Patients book, reschedule, or cancel appointments in seconds. 24/7 access."
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Secure Messaging",
+          "description": "HIPAA-compliant chat keeps conversations private and organized."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Mobile Payments",
+          "description": "Pay bills, view statements, and set up payment plans right from the app."
+        },
+        {
+          "icon": "Clipboard",
+          "title": "Digital Forms",
+          "description": "Complete intake forms before visits. Push notifications remind them."
+        },
+        {
+          "icon": "Bell",
+          "title": "Push Notifications",
+          "description": "Appointment reminders, recall notices, and important updates reach patients instantly."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Secure Records Access",
+          "description": "Patients view treatment history, receipts, and care instructions anytime."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "The App ",
+        "highlighted": "Advantage",
+        "suffix": ""
+      },
+      "description": "Be where your patients are—on their phones, every day.",
+      "items": [
+        {
+          "title": "Stand Out From Competitors",
+          "description": "Be the modern practice with an app. Most competitors still use paper."
+        },
+        {
+          "title": "Increase Patient Loyalty",
+          "description": "Patients who download your app are 3x more likely to stay."
+        },
+        {
+          "title": "Reduce No-Shows 40%",
+          "description": "Push notifications have higher open rates than SMS or email."
+        },
+        {
+          "title": "Your Brand, Their Phone",
+          "description": "Your logo and colors on their home screen. Daily visibility."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Their Patient Mobile App"
+      },
+      "description": "Patients live on their smartphones—checking apps 96 times daily on average. A branded mobile app puts your practice on their home screen, just a tap away. Not a mobile website they'll never bookmark. Not a patient portal they'll forget exists. A real app, with your branding, offering the convenient experience modern patients expect. PracticeDilly makes practice apps accessible to practices of all sizes.",
+      "items": [
+        {
+          "number": "1",
+          "title": "Your Brand on Every Patient's Home Screen",
+          "description": "When patients download your app, your logo appears on their phone next to Netflix, Instagram, and their bank. That's premium real estate for patient engagement. Every time they scroll past, they're reminded of your practice. Push notifications cut through inbox clutter with 90%+ open rates. It's the most direct communication channel possible—and it's branded entirely to your practice, not to a third-party portal."
+        },
+        {
+          "number": "2",
+          "title": "Self-Service Features Patients Actually Want",
+          "description": "Today's patients don't want to call for everything. Your app lets them book and manage appointments, send secure messages to your team, pay bills and view statements, complete intake forms, and access treatment information—all without picking up a phone. Self-service isn't just convenient for patients; it reduces your front desk workload and frees staff for higher-value tasks."
+        },
+        {
+          "number": "3",
+          "title": "Push Notifications That Patients Don't Ignore",
+          "description": "Email has 20% open rates. Text is better at 98%. But push notifications? They appear on lock screens instantly and get 90%+ engagement. Use push for appointment reminders, appointment availability alerts, balance due notices, and recall reminders. Patients who download your app are your most engaged segment—push notifications keep them active and booking."
+        },
+        {
+          "number": "4",
+          "title": "Real App Store Presence, No Development Team Required",
+          "description": "PracticeDilly publishes your app in the Apple App Store and Google Play Store under your practice's name. Patients search, find, and download your branded app just like any other. You don't need developers, designers, or app store accounts. We handle the technical side while you focus on patient care. Updates and new features roll out automatically."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's patient mobile app",
+      "items": [
+        {
+          "question": "Is the app listed in the App Store and Google Play under our practice's name?",
+          "answer": "Yes! Your app is published in both the Apple App Store and Google Play Store under your practice's name and branding. Patients search for your practice name and download your app just like any other. It's a fully native app experience, not a mobile website or white-labeled generic app. We handle all the app store submission and approval processes."
+        },
+        {
+          "question": "How long does it take to get our app live in the stores?",
+          "answer": "Typically 4-6 weeks from kickoff to live in stores. This includes branding customization (2 weeks), development and testing (2 weeks), and app store review/approval (1-2 weeks). Apple's review process can sometimes add time, but we manage the entire submission process. Most practices are live within 6 weeks."
+        },
+        {
+          "question": "What features are included in the patient app?",
+          "answer": "Standard features include appointment booking and management, secure messaging with your team, mobile payments and billing, digital intake forms, appointment reminders via push notification, treatment information access, and practice contact details. Custom features can be added based on your needs. The app integrates with PracticeDilly's other products for a seamless patient experience."
+        },
+        {
+          "question": "How do we get patients to download the app?",
+          "answer": "We provide marketing materials including QR codes for your office, email/text campaigns to existing patients, and website badges. Most practices see 20-40% app adoption within the first year. Push notifications and self-service features drive organic adoption—patients who experience the convenience become advocates. We help you develop an adoption strategy during onboarding."
+        },
+        {
+          "question": "Can patients book appointments through the app?",
+          "answer": "Yes! Online scheduling is fully integrated into the app. Patients see real-time availability, choose their provider and appointment type, and book with a few taps. Appointments sync with your practice management system instantly. It's the same powerful scheduling as our web product, optimized for mobile experience."
+        },
+        {
+          "question": "Is the app HIPAA compliant for patient messaging?",
+          "answer": "Absolutely. All messaging through the app is HIPAA compliant with end-to-end encryption, secure authentication, and full audit logging. Messages are never sent through standard SMS or email—they stay within the secure app environment. This makes the app ideal for discussing clinical matters, sharing images, and communicating PHI when appropriate."
+        },
+        {
+          "question": "What happens when you release new features?",
+          "answer": "New features roll out to your app automatically through our update process. We regularly enhance the app based on patient feedback and healthcare industry trends. Major updates go through app store review (typically 1-3 days) and become available to patients automatically. You don't need to do anything—the app stays current on its own."
+        },
+        {
+          "question": "How does the app affect our no-show rates?",
+          "answer": "Practices with patient apps typically see 20-40% reductions in no-shows. Push notifications have higher engagement than text or email reminders. Patients can easily reschedule within the app if they can't make an appointment, reducing last-minute no-shows. The convenience of app-based management makes patients more engaged with their appointments overall."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Patient Mobile App for Dental Practices | PracticeDilly",
+      "description": "A beautiful, branded mobile app that puts your practice on patients' home screens. Booking, messaging, payments, and digital forms. Reduce no-shows by 40%. Your brand, their phone.",
+      "keywords": [
+        "patient mobile app",
+        "dental practice app",
+        "healthcare mobile app",
+        "patient app",
+        "mobile app dental",
+        "patient engagement app",
+        "appointment app",
+        "dental practice mobile",
+        "patient portal app",
+        "branded mobile app"
+      ],
+      "ogImage": "/og-images/mobile-app-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/mobile-app"
+    }
+  }
+]

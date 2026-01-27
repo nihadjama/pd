@@ -1,0 +1,503 @@
+[
+  {
+    "slug": "dentrix",
+    "hero": {
+      "category": {
+        "icon": "Plug",
+        "text": "Integration"
+      },
+      "heading": {
+        "text": "The Best Companion for ",
+        "highlighted": "Dentrix",
+        "suffix": " Users"
+      },
+      "description": "Streamline appointment scheduling, reduce no-shows, go paperless, get positive online reviews, and much more. The best part is it just takes 15 minutes to integrate PracticeDilly with Dentrix.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Call (949) 407-5907",
+        "href": "tel:+19494075907"
+      },
+      "badges": [
+        "No setup fee",
+        "No contracts",
+        "30-day free trial"
+      ],
+      "stat": {
+        "value": "15",
+        "label": "Minutes to Full Integration",
+        "description": "We understand how busy you are! Give us just 15 minutes to integrate with your Dentrix software and then enjoy all the benefits of automated patient communication."
+      }
+    },
+    "features": {
+      "heading": {
+        "text": "How PracticeDilly helps streamline patient engagement with ",
+        "highlighted": "Dentrix",
+        "suffix": ""
+      },
+      "description": "All features integrate seamlessly with Dentrix to enhance your everyday operations and patient experience.",
+      "items": [
+        {
+          "icon": "Calendar",
+          "title": "Appointment Reminders",
+          "description": "Automatically send out personalized reminders to your patients via email, text, or phone calls. Confirmations received from patients are recorded in the Dentrix schedule.",
+          "benefits": [
+            "Reduce no-shows by up to 90%",
+            "Automatic confirmation recording",
+            "Customizable reminder templates",
+            "Multi-channel delivery options"
+          ]
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Two-Way Texting",
+          "description": "Enable direct text communication with your patients. Answer questions, confirm appointments, and provide quick updates all from one platform.",
+          "benefits": [
+            "HIPAA-compliant messaging",
+            "Text from office or mobile",
+            "Track conversation history",
+            "Quick appointment modifications"
+          ]
+        },
+        {
+          "icon": "FileText",
+          "title": "Paperless Forms",
+          "description": "Easily digitize your patient forms and reduce paper usage. Patients complete forms online before appointments, and data syncs directly to Dentrix.",
+          "benefits": [
+            "Eliminate paper waste",
+            "Pre-appointment form completion",
+            "Automatic Dentrix sync",
+            "Mobile-friendly interface"
+          ]
+        },
+        {
+          "icon": "Star",
+          "title": "Online Reviews",
+          "description": "Boost your online presence by automatically requesting reviews from satisfied patients. Manage and respond to reviews across Google, Facebook, and Yelp.",
+          "benefits": [
+            "Automated review requests",
+            "Multi-platform management",
+            "Increase 5-star ratings",
+            "Reputation monitoring"
+          ]
+        },
+        {
+          "icon": "Megaphone",
+          "title": "Campaigns & Recalls",
+          "description": "Send targeted campaigns to promote services, seasonal offers, or recall appointments. Segment patients and track campaign performance.",
+          "benefits": [
+            "Automated recall reminders",
+            "Email and SMS campaigns",
+            "Patient list segmentation",
+            "Performance analytics"
+          ]
+        },
+        {
+          "icon": "CalendarCheck",
+          "title": "Online Appointment Booking",
+          "description": "Let patients book appointments online 24/7 through your website. Real-time availability syncs with your Dentrix schedule.",
+          "benefits": [
+            "24/7 booking availability",
+            "Real-time schedule sync",
+            "Fill last-minute cancellations",
+            "Reduce phone call volume"
+          ]
+        }
+      ]
+    },
+    "testimonial": {
+      "testimonialId": "12"
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why ",
+        "highlighted": "Dentrix",
+        "suffix": " Users Choose PracticeDilly"
+      },
+      "items": [
+        {
+          "icon": "Zap",
+          "title": "15 Minute Setup",
+          "description": "Quick and easy integration that doesn't disrupt your practice. We do the heavy lifting."
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "Great Support",
+          "description": "Our support staff is available after hours and during weekends to assist you."
+        },
+        {
+          "icon": "DollarSign",
+          "title": "Fair Pricing",
+          "description": "Affordable plans designed to help you grow your practice without breaking the bank."
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Ready to Enhance Your Dentrix Practice?",
+      "description": "Join hundreds of dental practices using PracticeDilly with Dentrix",
+      "primaryCta": {
+        "text": "Start Your Free Trial",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Schedule a Demo",
+        "href": "#"
+      },
+      "note": "No credit card required • 30-day free trial"
+    },
+    "seo": {
+      "title": "PracticeDilly Integration with Dentrix | 15-Minute Setup | PracticeDilly",
+      "description": "Streamline appointment scheduling, reduce no-shows, go paperless, get positive online reviews with PracticeDilly's Dentrix integration. 15-minute setup, no setup fee, 30-day free trial.",
+      "keywords": [
+        "Dentrix integration",
+        "PracticeDilly Dentrix",
+        "Dentrix patient communication",
+        "Dentrix reminders",
+        "Dentrix texting",
+        "Dentrix online scheduling",
+        "Dentrix reviews",
+        "Dentrix forms",
+        "Dentrix automation",
+        "Dentrix patient engagement"
+      ],
+      "ogImage": "/og-images/dentrix-integration.jpg",
+      "canonicalUrl": "https://practicedilly.com/integrations/dentrix"
+    }
+  },
+  {
+    "slug": "opendental",
+    "hero": {
+      "category": {
+        "icon": "Plug",
+        "text": "Integration"
+      },
+      "heading": {
+        "text": "The Best Companion for ",
+        "highlighted": "Open Dental Software",
+        "suffix": ""
+      },
+      "description": "Streamline patient communication, reduce no-shows, go paperless, collect positive reviews, and much more. The best part? It takes just 15 minutes to integrate PracticeDilly with Open Dental.",
+      "cta": {
+        "text": "Get Started Free",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Call (949) 407-5907",
+        "href": "tel:+19494075907"
+      },
+      "badges": [
+        "No setup fee",
+        "No contracts",
+        "30-day free trial"
+      ],
+      "stat": {
+        "value": "15",
+        "label": "Minutes Setup Time",
+        "description": "We understand how busy dental practices are. Our team will handle the entire integration process in just 15 minutes, so you can get back to treating patients."
+      }
+    },
+    "features": {
+      "heading": {
+        "text": "How PracticeDilly Streamlines Patient Engagement with ",
+        "highlighted": "Open Dental",
+        "suffix": ""
+      },
+      "description": "All features integrate seamlessly with Open Dental Software to enhance your practice's daily operations and patient experience.",
+      "items": [
+        {
+          "icon": "Calendar",
+          "title": "Appointment Reminders",
+          "description": "Automatically send personalized reminders via text, email, or phone calls. Patient confirmations are recorded directly in your Open Dental schedule.",
+          "benefits": [
+            "Reduce no-shows by up to 90%",
+            "Automated confirmation tracking",
+            "Multi-channel communication (text, email, phone)",
+            "Customizable reminder templates"
+          ]
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Two-Way Texting",
+          "description": "Enable seamless text communication with patients. Answer questions, confirm appointments, and engage with patients directly from your practice.",
+          "benefits": [
+            "Text from office or personal devices",
+            "Maintain patient conversations",
+            "Quick appointment scheduling",
+            "HIPAA-compliant messaging"
+          ]
+        },
+        {
+          "icon": "FileText",
+          "title": "Paperless Digital Forms",
+          "description": "Eliminate paper clutter by digitizing all patient forms. Patients can complete forms online before their appointment.",
+          "benefits": [
+            "Save time on data entry",
+            "Reduce paper waste",
+            "Secure cloud storage",
+            "Mobile-friendly forms"
+          ]
+        },
+        {
+          "icon": "Star",
+          "title": "Online Review Management",
+          "description": "Automatically request reviews from satisfied patients and manage your online reputation across Google, Facebook, and Yelp.",
+          "benefits": [
+            "Increase 5-star reviews",
+            "Monitor all review platforms",
+            "Automated review requests",
+            "Respond to reviews from one dashboard"
+          ]
+        },
+        {
+          "icon": "Megaphone",
+          "title": "Campaigns & Promotions",
+          "description": "Send targeted marketing campaigns to specific patient segments. Promote special offers, seasonal promotions, or new services.",
+          "benefits": [
+            "Segment patient lists",
+            "Schedule campaigns in advance",
+            "Track campaign performance",
+            "Email and text marketing"
+          ]
+        },
+        {
+          "icon": "CalendarCheck",
+          "title": "Online Appointment Booking",
+          "description": "Allow patients to book appointments directly from your website 24/7. Automatically syncs with your Open Dental schedule.",
+          "benefits": [
+            "Fill last-minute cancellations",
+            "24/7 booking availability",
+            "Automatic schedule sync",
+            "Reduce front desk workload"
+          ]
+        }
+      ]
+    },
+    "testimonial": {
+      "testimonialId": "9"
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why ",
+        "highlighted": "Open Dental",
+        "suffix": " Practices Choose PracticeDilly"
+      },
+      "items": [
+        {
+          "icon": "Zap",
+          "title": "Quick Integration",
+          "description": "Our team handles the entire setup in 15 minutes. No technical knowledge required from your staff."
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "Outstanding Support",
+          "description": "Our support team is available after hours and on weekends to assist with any questions."
+        },
+        {
+          "icon": "DollarSign",
+          "title": "Transparent Pricing",
+          "description": "Affordable plans with no hidden fees. No contracts required, cancel anytime."
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Ready to Enhance Your Open Dental Practice?",
+      "description": "Join hundreds of dental practices using PracticeDilly with Open Dental",
+      "primaryCta": {
+        "text": "Start Your Free Trial",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Schedule a Demo",
+        "href": "#"
+      },
+      "note": "No credit card required • 30-day free trial"
+    },
+    "seo": {
+      "title": "PracticeDilly Integration with Open Dental | 15-Minute Setup | PracticeDilly",
+      "description": "Streamline patient communication, reduce no-shows, go paperless, collect positive reviews with PracticeDilly's Open Dental integration. 15-minute setup, no setup fee, 30-day free trial.",
+      "keywords": [
+        "Open Dental integration",
+        "PracticeDilly Open Dental",
+        "Open Dental patient communication",
+        "Open Dental reminders",
+        "Open Dental texting",
+        "Open Dental online scheduling",
+        "Open Dental reviews",
+        "Open Dental forms",
+        "Open Dental automation",
+        "Open Dental patient engagement"
+      ],
+      "ogImage": "/og-images/opendental-integration.jpg",
+      "canonicalUrl": "https://practicedilly.com/integrations/opendental"
+    }
+  },
+  {
+    "slug": "practice-web",
+    "hero": {
+      "category": {
+        "icon": "Plug",
+        "text": "Integration"
+      },
+      "heading": {
+        "text": "The Best Companion for ",
+        "highlighted": "Practice-Web Users",
+        "suffix": ""
+      },
+      "description": "Enhance patient engagement, reduce appointment no-shows, go paperless, and grow your online reviews. Integration with Practice-Web takes just 15 minutes with no technical hassle.",
+      "cta": {
+        "text": "Get Started Free",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Call (949) 407-5907",
+        "href": "tel:+19494075907"
+      },
+      "badges": [
+        "No setup fee",
+        "No contracts",
+        "30-day free trial"
+      ],
+      "stat": {
+        "value": "15",
+        "label": "Minutes to Complete Setup",
+        "description": "We know you're busy running your practice. Our integration experts will handle everything and have you up and running with Practice-Web in just 15 minutes."
+      }
+    },
+    "features": {
+      "heading": {
+        "text": "Streamline Patient Engagement with ",
+        "highlighted": "Practice-Web Integration",
+        "suffix": ""
+      },
+      "description": "PracticeDilly works seamlessly with Practice-Web to automate communication, improve efficiency, and grow your practice.",
+      "items": [
+        {
+          "icon": "Calendar",
+          "title": "Automated Appointment Reminders",
+          "description": "Send automated appointment reminders via text, email, and phone calls. Patient confirmations automatically update your Practice-Web schedule.",
+          "benefits": [
+            "Reduce no-shows by up to 90%",
+            "Automatic schedule synchronization",
+            "Customizable reminder timing",
+            "Multi-channel delivery (SMS, email, voice)"
+          ]
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Two-Way Patient Texting",
+          "description": "Communicate directly with patients via text message. Answer questions, confirm appointments, and build relationships.",
+          "benefits": [
+            "Text from any device",
+            "HIPAA-compliant platform",
+            "Conversation history tracking",
+            "Quick appointment changes"
+          ]
+        },
+        {
+          "icon": "FileText",
+          "title": "Digital Forms & Paperless Office",
+          "description": "Transform your practice into a paperless office. Patients complete forms online before their visit, saving time and reducing errors.",
+          "benefits": [
+            "Eliminate paper forms",
+            "Pre-appointment form completion",
+            "Automatic data sync to Practice-Web",
+            "Mobile-optimized forms"
+          ]
+        },
+        {
+          "icon": "Star",
+          "title": "Online Review Generation",
+          "description": "Automatically request reviews from happy patients and manage your online reputation across Google, Facebook, and Yelp.",
+          "benefits": [
+            "Increase positive reviews",
+            "Multi-platform management",
+            "Automated review requests",
+            "Review response tools"
+          ]
+        },
+        {
+          "icon": "Megaphone",
+          "title": "Patient Campaigns & Promotions",
+          "description": "Create targeted marketing campaigns to promote services, seasonal offers, or recalls. Engage patients with personalized messaging.",
+          "benefits": [
+            "Targeted patient segments",
+            "Email and SMS campaigns",
+            "Campaign performance tracking",
+            "Automated recall campaigns"
+          ]
+        },
+        {
+          "icon": "CalendarCheck",
+          "title": "Online Scheduling",
+          "description": "Allow patients to book appointments online 24/7 through your website. Real-time availability syncs with Practice-Web.",
+          "benefits": [
+            "24/7 appointment booking",
+            "Fill last-minute openings",
+            "Reduce phone call volume",
+            "Automatic schedule updates"
+          ]
+        }
+      ]
+    },
+    "testimonial": {
+      "testimonialId": "15"
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why ",
+        "highlighted": "Practice-Web",
+        "suffix": " Users Love PracticeDilly"
+      },
+      "items": [
+        {
+          "icon": "Zap",
+          "title": "Lightning Fast Setup",
+          "description": "We handle the entire integration process. You'll be up and running in just 15 minutes."
+        },
+        {
+          "icon": "MessageCircle",
+          "title": "Exceptional Support",
+          "description": "Our dedicated support team is available after hours and weekends to help you succeed."
+        },
+        {
+          "icon": "DollarSign",
+          "title": "Fair Pricing",
+          "description": "Affordable plans designed for practices of all sizes. No hidden fees or long-term contracts."
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Ready to Supercharge Your Practice-Web Practice?",
+      "description": "Join dental practices already using PracticeDilly with Practice-Web",
+      "primaryCta": {
+        "text": "Start Your Free Trial",
+        "href": "#"
+      },
+      "secondaryCta": {
+        "text": "Schedule a Demo",
+        "href": "#"
+      },
+      "note": "No credit card required • 30-day free trial"
+    },
+    "seo": {
+      "title": "PracticeDilly Integration with Practice-Web | 15-Minute Setup | PracticeDilly",
+      "description": "Enhance patient engagement, reduce appointment no-shows, go paperless, and grow your online reviews with PracticeDilly's Practice-Web integration. 15-minute setup, no setup fee, 30-day free trial.",
+      "keywords": [
+        "Practice-Web integration",
+        "PracticeDilly Practice-Web",
+        "Practice-Web patient communication",
+        "Practice-Web reminders",
+        "Practice-Web texting",
+        "Practice-Web online scheduling",
+        "Practice-Web reviews",
+        "Practice-Web forms",
+        "Practice-Web automation",
+        "Practice-Web patient engagement"
+      ],
+      "ogImage": "/og-images/practice-web-integration.jpg",
+      "canonicalUrl": "https://practicedilly.com/integrations/practice-web"
+    }
+  }
+]

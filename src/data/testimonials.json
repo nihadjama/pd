@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1",
+    "practiceName": "Mike Shananon DDS",
+    "practiceLogo": "/practice-logos/michael-shannon-dds.png",
+    "quote": "We are able to automatically send out texts, emails, phone calls reminders. It's been a real-time saver in the front office. It has given my girls the opportunity to do a lot more other things, free up some time and we love it!",
+    "rating": 5,
+    "authorName": "Samantha Shannon",
+    "authorTitle": "Office Manager",
+    "authorImage": "/dentists/samantha-shannon.png"
+  },
+  {
+    "id": "2",
+    "practiceName": "Grand Central Dentistry",
+    "practiceLogo": "/practice-logos/grand-central-dentistry.png",
+    "quote": "PracticeDilly has been a great addition to our office. We use it for automated reminders, confirmations, online reviews and two-way texting. It integrates seamlessly with our dental software. The best part is the great support team they have, even helped us add some specific features for our office. I highly recommend PracticeDilly for any dental office :)",
+    "rating": 5,
+    "authorName": "Dr. Shivani Patel, D.M.D.",
+    "authorTitle": "Grand Central Dentistry",
+    "authorImage": "/dentists/shivani-patel.png"
+  },
+  {
+    "id": "3",
+    "practiceName": "Mike Shananon DDS",
+    "practiceLogo": "/practice-logos/michael-shannon-dds.png",
+    "quote": "We have been using PracticeDilly for a few years now, and absolutely love it. The features are so much easier to use than other competitors, and the price is very reasonable. Their customer service is also excellent. Our office has saved so much time and money since we started using PracticeDilly.",
+    "rating": 5,
+    "authorName": "Dr. Michael Shannon, D.D.S, M.S.",
+    "authorTitle": "Mike Shananon DDS",
+    "authorImage": "/dentists/mike-shannon.png"
+  },
+  {
+    "id": "4",
+    "practiceName": "Future Dental Care",
+    "practiceLogo": "/practice-logos/future-dental-care.png",
+    "quote": "I have been using PracticeDilly in my office, and I love it! It rates our patients based on the past number of appointments, and it automatically sends them the review request. Since using the software, we got so many more online reviews! Highly recommended to any office who's looking forward to growing their online reputation!",
+    "rating": 5,
+    "authorName": "Dr. Mudita Agarwal, D.D.S.",
+    "authorTitle": "Future Dental Care",
+    "authorImage": "/dentists/mudita.png"
+  },
+  {
+    "id": "5",
+    "practiceName": "Confidental Beverly Hills",
+    "practiceLogo": "/practice-logos/confidental-beverly.png",
+    "quote": "We love the Mass Texting service from PracticeDilly. We use this feature a lot to quickly reach out to all our patients. We could easily share safety protocols, remind patients to use their insurance benefits, and run recall campaigns.",
+    "rating": 5,
+    "authorName": "Dr. Liyan Massaband D.M.D., M.P.H.",
+    "authorTitle": "Confidental Beverly Hills",
+    "authorImage": "/dentists/liyan-massaband.png"
+  },
+  {
+    "id": "6",
+    "practiceName": "Custom Smile Dentistry",
+    "practiceLogo": "/practice-logos/custom-smile-dentistry.png",
+    "quote": "We are delighted with PracticeDilly's service. We have a small staff, and the automated appointment confirmations and automated recall reminders have saved us time and stress and are very helpful when we are out of the office. The features are easy to change and customize as our needs change, and the team is very helpful with any questions that we have and always addresses our concerns immediately. It is a big \"thumbs up\" from us!",
+    "rating": 5,
+    "authorName": "Dr. Daniel Nguyen (D.D.S., FICOI)",
+    "authorTitle": "Custom Smile Dentistry",
+    "authorImage": "/dentists/daniel-nguyen.png"
+  },
+  {
+    "id": "7",
+    "practiceName": "Lowe & Rossopoulos Dental Specialists",
+    "practiceLogo": "/practice-logos/lowe-rossopoulos.png",
+    "quote": "We love the customization part as we were able to get our current paper forms exactly into a digital version. We switched to PracticeDilly from another provider a year ago, and we love the patient engagement platform so far!",
+    "rating": 5,
+    "authorName": "Stephanie",
+    "authorTitle": "Office Manager",
+    "authorImage": "/dentists/stephanie.png"
+  },
+  {
+    "id": "8",
+    "practiceName": "Cosmetic Beverly Hills Dentist",
+    "practiceLogo": "/practice-logos/cosmetic-restorative-dentistry.png",
+    "quote": "I was looking to switch from Demandforce to an affordable patient engagement platform that easily integrates with my EHR software and offers many features. In the end, after doing a lot of research, I found PracticeDilly, which made the entire tranisition process so smooth for me. Highly recommend it to every small and medium dental practice out there!",
+    "rating": 5,
+    "authorName": "Dr. Saghi Parham (D.D.S)",
+    "authorTitle": "Cosmetic Beverly Hills Dentist",
+    "authorImage": "/dentists/saghi-parham-dds.png"
+  },
+  {
+    "id": "9",
+    "practiceName": "Spence Dental",
+    "practiceLogo": "/practice-logos/spence-dental.png",
+    "quote": "Our experience with PracticeDilly has been a pleasant one. We use it mainly for appointment reminders and patient intake forms. The features are easy to change and customize according to our practice's needs. We love how our Opendental schedule is constantly updated with patient's information because of PracticeDilly.",
+    "rating": 5,
+    "authorName": "Dr. Michael J. Spence (D.M.D.)",
+    "authorTitle": "Spence Dental",
+    "authorImage": "/dentists/michael-j-spence.png"
+  },
+  {
+    "id": "10",
+    "practiceName": "Village Family Dental",
+    "practiceLogo": "/practice-logos/village-family-dental.png",
+    "quote": "Our patients love interacting with us via text messages for appointment booking, confirmations, and also general questions.",
+    "rating": 5,
+    "authorName": "Dr. Paul Hung, D.D.S., M.S.",
+    "authorTitle": "Village Family Dental",
+    "authorImage": "/dentists/paul-hung-dds.png"
+  },
+  {
+    "id": "11",
+    "practiceName": "Karzen Family Dental",
+    "practiceLogo": "/practice-logos/karzen-family-dental.png",
+    "quote": "Awesome app! Now, I can quickly access my schedule and patient information from outside of my office. Earlier, I had to log in to my office computer and follow so many tedious steps. My staff and I use this app on a regular basis even while in the office to quickly reply to patient's text messages. It's a must-have mobile app for every dental office!",
+    "rating": 5,
+    "authorName": "Dr. Katie Karzen, D.D.S.",
+    "authorTitle": "Karzen Family Dental",
+    "authorImage": "/dentists/katie-karzen.png"
+  },
+  {
+    "id": "12",
+    "practiceName": "Olive Dental Group",
+    "practiceLogo": "/practice-logos/olive-dental-group.png",
+    "quote": "I have been using PracticeDilly in my office for the past few years. At first, there were concerns about how the entire process of integrating PracticeDilly with Dentrix will be, but Pavan made sure that the process doesn't take more than 20 minutes. Now, I automatically get appointment confirmations recorded on my Dentrix schedule!",
+    "rating": 5,
+    "authorName": "Dr. Dimitri Bizoumis",
+    "authorTitle": "Pediatric Dentist",
+    "authorImage": "/dentists/dmitri-bizoumis.png"
+  },
+  {
+    "id": "13",
+    "practiceName": "Concierge Smile Boutique",
+    "practiceLogo": "/practice-logos/concierge-smile-boutique.png",
+    "quote": "PracticeDilly is a platform that not only saves hours of staff time but also patients love interacting with us via text messages for appointment booking, confirmation, and also general questions. At the same time, we don't need to log in to the office computer, PracticeDilly's all-in-one dental mobile app has made it easier for us to engage with our patients.",
+    "rating": 5,
+    "authorName": "Dr. Nima Shayesteh, D.M.D.",
+    "authorTitle": "Concierge Smile Boutique",
+    "authorImage": "/dentists/nima-shaesteh.png"
+  },
+  {
+    "id": "14",
+    "practiceName": "Pediatric Dentistry of Valencia",
+    "practiceLogo": "/practice-logos/pediatric-denstistry-valencia.png",
+    "quote": "The process of collecting payment has become easier and more efficient with PracticeDilly's text to pay software. We can now send text messages to our patients with the payment link, track the progress of the payment, and get the payment directly credited to our practice's bank account.",
+    "rating": 5,
+    "authorName": "Dr. Christopher  D.D.S.",
+    "authorTitle": "Pediatric Dentistry of Valencia",
+    "authorImage": "/dentists/christopher-ezzat.png"
+  },
+  {
+    "id": "15",
+    "practiceName": "123 Greenleaf Dental Group",
+    "practiceLogo": "/practice-logos/green-leaf.png",
+    "quote": "I was looking for a patient communication software that integrates with Practice-web and I came across PracticeDilly. It's not only the most affordable software but also it helps us automate all the routine patient communication tasks like sending appointment reminders via text or email. It's a big thumbs up from my end!",
+    "rating": 5,
+    "authorName": "Dr. Kevin Kang (D.D.S.)",
+    "authorTitle": "123 Greenleaf Dental Group",
+    "authorImage": "/dentists/kevin-dang-dds.png"
+  }
+]

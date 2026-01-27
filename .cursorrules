@@ -1,0 +1,159 @@
+# Cursor Rules for Practice Dilly Project
+
+## Project Overview
+This is a Next.js 16 application built with React 19, TypeScript, and Tailwind CSS v4. The project uses the App Router pattern and includes 3D animations with React Three Fiber.
+
+## Tech Stack
+- **Framework**: Next.js 16.1.1 (App Router)
+- **React**: 19.2.3
+- **TypeScript**: 5.x
+- **Styling**: Tailwind CSS v4
+- **3D Graphics**: React Three Fiber + Three.js
+- **Icons**: Lucide React
+- **Linting**: ESLint with Next.js config
+
+## Code Style & Conventions
+
+### TypeScript
+- Use strict TypeScript with proper typing
+- Prefer explicit types over `any`
+- Use interfaces for component props
+- Leverage TypeScript's type inference where appropriate
+
+### React Components
+- Use functional components with TypeScript
+- Prefer named exports for components
+- Use `"use client"` directive only when necessary (client-side hooks, event handlers, etc.)
+- Server components by default in App Router
+- Use proper React hooks patterns (useState, useEffect, useRef, etc.)
+
+### File Organization
+- **Components**: `src/components/` - Feature-specific or complex UI components
+- **Common**: `src/common/` - Reusable components used across the app (Button, StickyNav, etc.)
+- **App**: `src/app/` - Next.js App Router pages and layouts
+- **Utils**: `src/utils/` - Utility functions and helpers
+- **Data**: `src/data/` - Static data files (JSON, etc.)
+
+### Import Paths
+- Always use the `@/` alias for imports (configured in tsconfig.json)
+- Example: `import Button from "@/common/Button"`
+- Example: `import { getIcon } from "@/utils/iconMap"`
+
+### Styling with Tailwind CSS
+- Use Tailwind utility classes for styling
+- Follow the existing color scheme:
+  - Primary: `#5e48f0` (purple)
+  - Text: `#262626` (dark gray)
+  - Background: `#f9f9f9` (light gray)
+  - Borders: `#e5e7eb`, `#f0f0f0`
+  - Secondary text: `#606060`, `#666666`
+- Use custom font families:
+  - `font-sans` for body text (Inter)
+  - `font-heading` for headings (Geist)
+  - `font-mono` for monospace (Menlo)
+- Prefer Tailwind classes over inline styles
+- Use responsive design utilities (sm:, md:, lg:, xl:)
+- Use semantic spacing (gap-4, px-4, py-2.5, etc.)
+
+### Border Radius & Padding for Nested Containers
+**CRITICAL**: When creating nested containers with padding or gaps, always calculate border-radius to maintain smooth, aligned rounded corners.
+
+**Rule**: Outer container border-radius = Inner container border-radius + Padding/Gap
+
+**Examples**:
+- If inner container has `rounded-lg` (8px) and padding is `p-4` (16px), outer should be `rounded-[24px]` (8px + 16px)
+- If inner container has `rounded-xl` (12px) and padding is `p-2.5` (10px), outer should be `rounded-[22px]` (12px + 10px)
+- If inner container has `rounded-[10px]` and gap is `gap-4` (16px), outer should be `rounded-[26px]` (10px + 16px)
+
+**Alternative approach** (when starting with outer container):
+- Inner container border-radius = Outer container border-radius - Padding/Gap
+- Example: Outer `rounded-2xl` (16px) with `p-4` (16px) → Inner should be `rounded-lg` (8px) or `rounded-[0px]` if padding equals radius
+
+**Best Practices**:
+- Always calculate border-radius values for nested containers
+- Use Tailwind's arbitrary values `rounded-[Xpx]` when exact calculations are needed
+- Maintain visual harmony by ensuring inner and outer curves align perfectly
+- Consider padding, gap, and margin when calculating border-radius
+- Document complex border-radius calculations in comments if needed
+
+### Component Patterns
+- Extract reusable components to `src/common/` when used in multiple places
+- Keep feature-specific components in `src/components/` organized by feature
+- Use composition over configuration
+- Pass props explicitly rather than spreading
+
+### Accessibility
+- Always include proper ARIA labels and attributes
+- Use semantic HTML elements
+- Ensure keyboard navigation works
+- Add proper alt text for images
+- Use proper heading hierarchy (h1, h2, h3, etc.)
+
+### Next.js App Router
+- Use Server Components by default
+- Add `"use client"` only when needed (interactivity, hooks, browser APIs)
+- Use Next.js Image component for optimized images
+- Use Link component for internal navigation
+- Leverage metadata API for SEO
+
+### Code Quality
+- Write clean, readable code with descriptive variable names
+- Add comments for complex logic or business rules
+- Keep components focused and single-purpose
+- Extract complex logic into utility functions
+- Use proper error handling
+
+### Performance
+- Optimize images using Next.js Image component
+- Use React.memo for expensive components when appropriate
+- Lazy load heavy components when possible
+- Minimize client-side JavaScript when possible
+
+### Git & Version Control
+- Write clear, descriptive commit messages
+- Keep commits focused and atomic
+- Don't commit build artifacts or node_modules
+
+## Common Patterns
+
+### Component Structure
+```tsx
+"use client"; // Only if needed
+
+import { useState } from "react";
+import Button from "@/common/Button";
+
+interface ComponentProps {
+  title: string;
+  // ... other props
+}
+
+export default function Component({ title }: ComponentProps) {
+  // Component logic
+  return (
+    <div className="...">
+      {/* JSX */}
+    </div>
+  );
+}
+```
+
+### Styling Pattern
+- Use Tailwind utility classes
+- Group related classes logically
+- Use responsive breakpoints consistently
+- Follow existing spacing scale (2.5, 4, 8, 16, etc.)
+
+## When Adding New Features
+1. Check if similar components exist in `src/common/` or `src/components/`
+2. Follow existing patterns and conventions
+3. Ensure TypeScript types are properly defined
+4. Add proper accessibility attributes
+5. Test responsive design across breakpoints
+6. Use consistent color scheme and spacing
+
+## Notes
+- The project uses a dental/healthcare practice management theme
+- Color palette emphasizes purple (#5e48f0) as primary brand color
+- Components should be responsive and mobile-first
+- Maintain consistency with existing UI patterns
