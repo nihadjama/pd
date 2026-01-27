@@ -8,7 +8,7 @@ interface IntegrationAnimationProps {
 
 export default function IntegrationAnimation({ className }: IntegrationAnimationProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationFrameRef = useRef<number | undefined>(undefined);
+  const animationFrameRef = useRef<ReturnType<typeof requestAnimationFrame> | undefined>(undefined);
 
   useEffect(() => {
     const canvas = canvasRef.current;
