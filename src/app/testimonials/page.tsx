@@ -36,7 +36,7 @@ function TestimonialCard({ practiceName, practiceLogo, quote, rating, authorName
   const logoUrl = practiceLogo || "/placeholder-practice-logo.svg";
   
   return (
-    <div className="flex flex-col bg-white border-b rounded-none overflow-hidden w-full border-t -mb-px py-2 border-l -ml-px border-[#e5e7eb]">
+    <div className="flex flex-col border-b rounded-none overflow-hidden w-full border-t -mb-px py-2 border-l -ml-px border-[#e5e7eb]">
       {/* Practice Logo/Name Section */}
       {/* <div className="px-6 py-4 border-b border-[#e5e7eb] bg-[#f9f9f9]">
         <div className="flex items-center gap-3">
@@ -174,7 +174,7 @@ export default function TestimonialsPage() {
               <Button href="#get-started" variant="primary" className="px-6">
                 Get Started - No Setup Fee!
               </Button>
-              <Button href="tel:9494075907" variant="secondary" className="px-6">
+              <Button href="tel:+19494075907" variant="secondary" className="px-6">
                 Call (949) 407-5907
               </Button>
             </div>
@@ -208,12 +208,13 @@ export default function TestimonialsPage() {
       </SectionContainer>
 
       {/* Why Choose Us Section */}
-      <SectionContainer className="items-start">
-        <div className="w-full px-4 lg:px-16">
+      <SectionContainer className="items-center">
+        <div className="w-full px-4 lg:px-16 items-center">
           <div className="flex flex-col gap-4 items-center mb-12">
             <HeadingWithHighlight
               text="Why Choose "
               highlighted="Us?"
+              className="text-center"
             />
             <p className="font-sans font-normal text-base leading-6 text-[#262626] text-center max-w-2xl">
               Our Dentist clients appreciate our easy to use patient engagement software and you will love it too!

@@ -36,7 +36,7 @@ export default function FeaturesPage() {
               <Button href="#get-started" variant="primary" className="px-6">
                 Get Started - No Setup Fee!
               </Button>
-              <Button href="tel:9494075907" variant="secondary" className="px-6">
+              <Button href="tel:+19494075907" variant="secondary" className="px-6">
                 Call (949) 407-5907
               </Button>
             </div>
