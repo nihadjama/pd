@@ -17,10 +17,10 @@ export default function ProgressBar({
     <div className="w-full">
       {showLabel && label && (
         <div className="flex items-center justify-between mb-2">
-          <span className="font-sans text-sm leading-5 text-[#262626]">
+          <span className="font-sans text-xs leading-[17px] text-[#262626]">
             {label}
           </span>
-          <span className="font-sans text-sm font-medium leading-5 text-[#262626]">
+          <span className="font-sans text-xs font-medium leading-[17px] text-[#262626]">
             {progress}%
           </span>
         </div>

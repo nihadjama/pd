@@ -22,7 +22,7 @@ export default function StatusBadge({
   icon,
   className = "",
 }: StatusBadgeProps) {
-  const baseStyles = "px-2 py-0.5 rounded-full border font-sans text-xs leading-4 font-medium flex items-center gap-1";
+  const baseStyles = "px-2 py-0.5 rounded-full border font-sans text-[10.5px] leading-[14px] font-medium flex items-center gap-1";
   const variantStyle = variantStyles[variant];
 
   return (

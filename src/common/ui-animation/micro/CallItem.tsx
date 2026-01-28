@@ -35,14 +35,14 @@ export default function CallItem({ name, status, time }: CallItemProps) {
     <div className={`${styles.container} border rounded-lg px-3 py-2.5`}>
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-0.5">
-          <p className="font-sans text-sm font-medium leading-5 text-[#262626]">
+          <p className="font-sans text-xs font-medium leading-[17px] text-[#262626]">
             {name}
           </p>
-          <p className={`font-sans text-xs leading-4 ${styles.statusText}`}>
+          <p className={`font-sans text-[10.5px] leading-[14px] ${styles.statusText}`}>
             {statusLabels[status]}
           </p>
         </div>
-        <div className={`font-sans ${status === "active" ? "text-sm font-medium leading-5" : "text-xs leading-4"} ${styles.timeText}`}>
+        <div className={`font-sans ${status === "active" ? "text-xs font-medium leading-[17px]" : "text-[10.5px] leading-[14px]"} ${styles.timeText}`}>
           {time}
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function TestimonialCard({
   testimonialType, 
 }: TestimonialCardProps) {
   return (
-    <div className="shrink-0 w-[500px] bg-white border-r  overflow-hidden">
+    <div className="shrink-0 w-[500px] border-r  overflow-hidden">
       <div className="flex flex-col gap-6">
         {/* Author */}
         <div className="flex items-center gap-4 border-b  px-6 py-6">

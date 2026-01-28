@@ -25,6 +25,7 @@
         "No contracts",
         "30-day free trial"
       ],
+      "image": "/integration-hero/dentrix.png",
       "stat": {
         "value": "15",
         "label": "Minutes to Full Integration",
@@ -192,6 +193,7 @@
         "No contracts",
         "30-day free trial"
       ],
+      "image": "/integration-hero/open-dental.png",
       "stat": {
         "value": "15",
         "label": "Minutes Setup Time",
@@ -359,6 +361,7 @@
         "No contracts",
         "30-day free trial"
       ],
+      "image": "/integration-hero/practice-web.png",
       "stat": {
         "value": "15",
         "label": "Minutes to Complete Setup",
@@ -526,6 +529,7 @@
         "No contracts",
         "30-day free trial"
       ],
+      "image": "/integration-hero/eaglesoft.png",
       "stat": {
         "value": "15",
         "label": "Minutes to Full Integration",

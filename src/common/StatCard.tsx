@@ -18,7 +18,7 @@ export default function StatCard({
   explanation,
 }: StatCardProps) {
   return (
-    <div className="flex flex-col gap-9 items-start px-6 py-6 bg-white border md:first:border-l-0 md:border-r-0 border-[#e5e7eb] flex-1">
+    <div className="flex flex-col gap-9 items-start px-6 py-6 border-b first:border-t md:border-t md:first:border-l-0 md:border-r md:last:border-r-0 border-[#e5e7eb] flex-1">
       <div className="flex flex-col items-start w-full">
         <div className="flex gap-1.5 items-center w-full">
           <div className="relative shrink-0 w-4 h-4 text-[#606060]">{icon}</div>

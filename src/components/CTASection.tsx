@@ -13,7 +13,8 @@ export default function CTASection() {
             <HeadingWithHighlight
               text="Ready to transform your practice? "
               highlighted="Start free today"
-              className="text-center"
+              className="text-center md:text-5xl! md:leading-[56px]!"
+              as="h2"
             />
             <p className="font-sans font-normal text-lg leading-7 text-[#262626] text-center max-w-[560px]">
               Join <span className="font-semibold text-[#5e48f0]">500+ dental practices</span> already using PracticeDilly to streamline patient communication and grow their practice.

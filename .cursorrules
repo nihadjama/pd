@@ -152,8 +152,36 @@ export default function Component({ title }: ComponentProps) {
 5. Test responsive design across breakpoints
 6. Use consistent color scheme and spacing
 
+## Animated UI Components (Demo/Mockup Components)
+
+**IMPORTANT**: The animated UI components in `src/common/ui-animation/` are **NOT part of the website UI**. These are demo/mockup components that showcase product features and should maintain their own independent styling.
+
+### Rules for Animated UI Components:
+- **Do NOT apply website-level styling changes** to components in `src/common/ui-animation/` or `src/common/ui-animation/micro/`
+- These components have their own isolated design system and font sizes
+- Changes to website typography, colors, spacing, or design tokens should **NOT** affect these components
+- When making website-wide changes (e.g., font size updates, color scheme changes, spacing adjustments), explicitly exclude:
+  - `src/common/ui-animation/AttractPatientsUI.tsx`
+  - `src/common/ui-animation/RunSmootherDayUI.tsx`
+  - `src/common/ui-animation/BringThemBackUI.tsx`
+  - All files in `src/common/ui-animation/micro/`
+- These components are used for demonstration purposes only and should remain visually consistent regardless of website design updates
+- If you need to modify these components, do so intentionally and independently of website-level changes
+
+### Examples of What NOT to Do:
+- ❌ Applying global font size changes that affect animated UI components
+- ❌ Updating website color scheme and changing colors in animated UI components
+- ❌ Modifying spacing/typography scale and having it cascade to animated UI components
+- ❌ Using find-and-replace operations that include animated UI component files
+
+### Examples of What TO Do:
+- ✅ Make website-level changes while explicitly excluding `src/common/ui-animation/` directory
+- ✅ Update animated UI components only when specifically requested or when fixing bugs within those components
+- ✅ Treat animated UI components as a separate, isolated design system
+
 ## Notes
 - The project uses a dental/healthcare practice management theme
 - Color palette emphasizes purple (#5e48f0) as primary brand color
 - Components should be responsive and mobile-first
 - Maintain consistency with existing UI patterns
+- Animated UI components are separate from the main website UI and should not be affected by website-level changes

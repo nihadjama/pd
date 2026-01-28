@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { H3 } from "@/common/headings";
 import ChatMessage from "./micro/ChatMessage";
 import CallItem from "./micro/CallItem";
 import StatusBadge from "./micro/StatusBadge";
@@ -20,9 +19,9 @@ export default function RunSmootherDayUI() {
       <div className="flex-1 bg-white rounded-xl border border-[#e0e0e0] overflow-hidden">
         {/* Header */}
         <div className="border-b border-[#e0e0e0] px-4 py-3">
-          <H3 className="text-sm leading-5">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
             Patient Chat
-          </H3>
+          </div>
         </div>
 
         {/* Chat Messages */}
@@ -43,9 +42,9 @@ export default function RunSmootherDayUI() {
       <div className="flex-1 bg-white rounded-xl border border-[#e0e0e0] overflow-hidden">
         {/* Header */}
         <div className="border-b border-[#e0e0e0] px-4 py-3 flex items-center justify-between">
-          <H3 className="text-sm leading-5">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
             Recent calls
-          </H3>
+          </div>
           <StatusBadge variant="active">1 ACTIVE</StatusBadge>
         </div>
 

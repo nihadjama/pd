@@ -45,12 +45,12 @@ export default function IntegrationsSection() {
       />
 
       {/* Integrations Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-4 max-w-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-3xl border">
         {integrations.map((integration) => (
           <Link
             key={integration.name}
             href={`/integrations/${integration.slug}`}
-            className="flex items-center justify-center  hover:border-[#5e48f0] transition-colors"
+            className="flex items-center justify-center  hover:border-[#5e48f0] transition-colors  box-border border-l first:border-l-0 p-4"
           >
             <Image
               src={integration.logo}
@@ -65,9 +65,7 @@ export default function IntegrationsSection() {
 
       {/* Additional Info */}
       <div className="flex flex-col items-center gap-2 px-4">
-        <p className="font-sans font-normal text-sm text-[#606060] text-center mb-4">
-          And 50+ more integrations available
-        </p>
+     
         <Button href="/integrations" variant="secondary" className="px-6">View all integrations</Button>
       </div>
     </SectionContainer>

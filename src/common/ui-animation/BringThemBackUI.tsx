@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { User, Calendar, AlertCircle, ArrowUp } from "lucide-react";
-import { H3 } from "@/common/headings";
 import StatusBadge from "./micro/StatusBadge";
 import Avatar from "./micro/Avatar";
 import BarChart from "./micro/BarChart";
@@ -48,9 +47,9 @@ export default function BringThemBackUI() {
         <div className="border-b border-[#e5e7eb] px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <User className="h-4 w-4 text-[#606060]" />
-            <H3 className="text-sm leading-5">
+            <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
               Patient Profile
-            </H3>
+            </div>
           </div>
           <StatusBadge
             variant="overdue"
@@ -67,10 +66,10 @@ export default function BringThemBackUI() {
 
           {/* Name and Since */}
           <div className="flex flex-col items-center gap-1">
-            <p className="font-sans text-base font-medium leading-6 text-[#262626]">
+            <p className="font-sans text-sm font-medium leading-[21px] text-[#262626]">
               Luna Lovegood
             </p>
-            <p className="font-sans text-xs leading-4 text-[#606060]">
+            <p className="font-sans text-[10.5px] leading-[14px] text-[#606060]">
               Patient since 2019
             </p>
           </div>
@@ -79,19 +78,19 @@ export default function BringThemBackUI() {
           <div className="w-full flex items-center justify-between py-2 border-b border-[#e5e7eb]">
             <div className="flex items-center gap-2">
               {/* <Calendar className="h-4 w-4 text-[#606060]" /> */}
-              <span className="font-sans text-xs leading-4 text-[#606060]">LAST VISIT</span>
+              <span className="font-sans text-[10.5px] leading-[14px] text-[#606060]">LAST VISIT</span>
             </div>
-            <span className="font-sans text-xs leading-4 text-[#262626]">Oct 12, 2025</span>
+            <span className="font-sans text-[10.5px] leading-[14px] text-[#262626]">Oct 12, 2025</span>
           </div>
 
           {/* Treatment */}
           <div className="w-full flex items-center justify-between">
-            <span className="font-sans text-xs leading-4 text-[#606060]">TREATMENT</span>
-            <span className="font-sans text-sm font-medium leading-5 text-[#5e48f0]">$1,250 Pending</span>
+            <span className="font-sans text-[10.5px] leading-[14px] text-[#606060]">TREATMENT</span>
+            <span className="font-sans text-xs font-medium leading-[17px] text-[#5e48f0]">$1,250 Pending</span>
           </div>
 
           {/* Send Recall Button */}
-          <button className="w-full mt-2 px-4 py-2.5 bg-[#5e48f0] text-[#f9f9f9] font-sans text-sm font-medium rounded-lg hover:bg-[#4d3ad0] transition-colors">
+          <button className="w-full mt-2 px-4 py-2.5 bg-[#5e48f0] text-[#f9f9f9] font-sans text-xs font-medium rounded-lg hover:bg-[#4d3ad0] transition-colors">
             Send Recall Text
           </button>
         </div>
@@ -101,9 +100,9 @@ export default function BringThemBackUI() {
       <div className="flex-1 bg-white rounded-xl border border-[#e5e7eb] overflow-hidden">
         {/* Header */}
         <div className="border-b border-[#e5e7eb] px-4 py-3 flex items-center justify-between">
-          <H3 className="text-sm leading-5">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
             Hygiene Re-appointment
-          </H3>
+          </div>
           
         </div>
 
@@ -111,7 +110,7 @@ export default function BringThemBackUI() {
         <div className="px-4 py-4">
           {/* Large Percentage */}
           <div className="flex items-baseline gap-2 mb-4">
-            <span className="font-sans text-5xl font-semibold leading-[60px] text-[#262626]">84%</span>
+            <span className="font-sans text-4xl font-semibold leading-[45px] text-[#262626]">84%</span>
             <StatusBadge
               variant="active"
               icon={<ArrowUp className="h-3 w-3" />}

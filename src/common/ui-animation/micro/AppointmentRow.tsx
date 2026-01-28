@@ -18,11 +18,11 @@ export default function AppointmentRow({
       <div className="flex items-center">
         <Circle className="h-4 w-4 text-[#606060]" strokeWidth={1.5} fill="none" />
       </div>
-      <div className="font-sans text-sm leading-5 text-[#262626]">
+      <div className="font-sans text-xs leading-[17px] text-[#262626]">
         {patientName}
       </div>
       <div className="flex flex-col items-center">
-        <div className="font-sans text-sm leading-5 text-[#262626] text-right">
+        <div className="font-sans text-xs leading-[17px] text-[#262626] text-right">
           {time}
         </div>
         {status === "failed" && (

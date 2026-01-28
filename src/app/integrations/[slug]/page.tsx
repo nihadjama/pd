@@ -87,7 +87,7 @@ export default async function IntegrationPage({ params }: IntegrationPageProps) 
   
   return (
     <div className="relative min-h-screen">
-      <IntegrationHeroSection {...integrationData.hero} />
+      <IntegrationHeroSection {...integrationData.hero} image={integrationData.hero.image} />
       <IntegrationTimeSection stat={integrationData.hero.stat} primaryCta={integrationData.hero.cta} />
       <IntegrationFeaturesSection {...integrationData.features} />
       <TestimonialSection />

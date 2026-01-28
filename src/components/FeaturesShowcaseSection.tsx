@@ -97,16 +97,16 @@ export default function FeaturesShowcaseSection() {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto mb-16 max-w-[960px] border-x border-t border-[#e5e7eb]">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto mb-16 gap-y-16 max-w-[960px] border-x border-t border-[#e5e7eb]">
           {features.map((feature, index) => {
             const IconComponent = getIcon(feature.icon) || Phone;
             return (
               <div
                 key={index}
-                className="bg-white border-l -ml-px border-[#e5e7eb] flex flex-col gap-4  transition-all duration-200  h-full border-b"
+                className="border-l -ml-px border-[#e5e7eb] flex flex-col gap-4  transition-all duration-200  h-full border-y"
               >
                 <div className="p-6 md:p-8 flex flex-col gap-4">
-                  <div className="flex items-center gap-3 mt-8">
+                  <div className="flex items-center gap-3 ">
                     <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-2.5 rounded-[10px] shrink-0">
                       <IconComponent className="w-5 h-5 text-[#5e48f0]" />
                     </div>
@@ -118,9 +118,9 @@ export default function FeaturesShowcaseSection() {
                     {feature.description}
                   </p>
                 </div>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col ">
                   {feature.bullets.map((bullet, bulletIndex) => (
-                    <li key={bulletIndex} className="flex items-start gap-2 border-t border-[#e5e7eb] py-2 p-2 md:p-3 px-0 md:px-6">
+                    <li key={bulletIndex} className="flex items-start gap-2 border-t border-[#e5e7eb] py-2 p-3 md:p-4 px-0 md:px-6">
                       {/* <span className="text-[#5e48f0] border flex">•</span> */}
                       <Check className="w-5 h-5 text-[#5e48f0]" />
                       <span className="font-sans font-normal text-sm leading-5 text-[#606060]">
@@ -128,6 +128,7 @@ export default function FeaturesShowcaseSection() {
                       </span>
                     </li>
                   ))}
+                  <li className="h-16 border-t"></li>
                 </ul>
               </div>
             );

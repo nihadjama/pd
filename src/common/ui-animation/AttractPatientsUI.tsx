@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { RefreshCw } from "lucide-react";
-import { H3 } from "@/common/headings";
 import StatusBadge from "./micro/StatusBadge";
 import ProgressBar from "./micro/ProgressBar";
 import MetricCard from "./micro/MetricCard";
@@ -22,12 +21,12 @@ export default function AttractPatientsUI() {
       <div className="bg-white rounded-xl border border-[#e5e7eb] overflow-hidden flex-1">
         {/* Header */}
         <div className="border-b border-[#e5e7eb] px-4 py-3 flex items-center justify-between">
-          <H3 className="text-sm leading-5">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
             Appointments
-          </H3>
+          </div>
           <div className="flex items-center gap-2">
             {/* <Calendar className="h-4 w-4 text-[#606060]" /> */}
-            <span className="font-sans text-xs leading-4 text-[#606060]">Nov 20, 2025</span>
+            <span className="font-sans text-[10.5px] leading-[14px] text-[#606060]">Nov 20, 2025</span>
             <button className="p-1 hover:bg-[#f0f0f0] rounded transition-colors">
               <RefreshCw className="h-4 w-4 text-[#606060]" />
             </button>
@@ -36,10 +35,10 @@ export default function AttractPatientsUI() {
 
         {/* Action Buttons */}
         <div className="px-4 py-3 flex gap-2 border-b border-[#e5e7eb]">
-          <button className="flex-1 px-3 py-2 rounded-lg border border-[#5e48f0] text-[#5e48f0] font-sans text-xs font-medium hover:bg-[rgba(94,72,240,0.05)] transition-colors">
+          <button className="flex-1 px-3 py-2 rounded-lg border border-[#5e48f0] text-[#5e48f0] font-sans text-[10.5px] font-medium hover:bg-[rgba(94,72,240,0.05)] transition-colors">
             Send Check-In Request
           </button>
-          <button className="flex-1 px-3 py-2 rounded-lg border border-[#5e48f0] text-[#5e48f0] font-sans text-xs font-medium hover:bg-[rgba(94,72,240,0.05)] transition-colors">
+          <button className="flex-1 px-3 py-2 rounded-lg border border-[#5e48f0] text-[#5e48f0] font-sans text-[10.5px] font-medium hover:bg-[rgba(94,72,240,0.05)] transition-colors">
             Send Appt. Reminder
           </button>
         </div>
@@ -49,9 +48,9 @@ export default function AttractPatientsUI() {
           {/* Table Header */}
           <div className="grid grid-cols-[auto_1fr_auto_auto] gap-4 pb-2 mb-2 border-b border-[#e5e7eb]">
             {/* <div className="w-6"></div> */}
-            <div className="font-sans text-xs font-medium text-[#606060]">Patient Name</div>
+            <div className="font-sans text-[10.5px] font-medium text-[#606060]">Patient Name</div>
             {/* <div className="font-sans text-xs font-medium text-[#606060] text-right">Time</div> */}
-            <div className="font-sans text-xs font-medium text-[#606060] text-right">Time & Status</div>
+            <div className="font-sans text-[10.5px] font-medium text-[#606060] text-right">Time & Status</div>
           </div>
 
           {/* Appointment Row 1 */}
@@ -74,9 +73,9 @@ export default function AttractPatientsUI() {
       <div className="bg-white rounded-xl border border-[#e5e7eb] overflow-hidden flex-1">
         {/* Header */}
         <div className="border-b border-[#e5e7eb] px-4 py-3 flex items-center justify-between">
-          <H3 className="text-sm leading-5">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
             Recall Campaign
-          </H3>
+          </div>
           <StatusBadge variant="active">Active</StatusBadge>
         </div>
 

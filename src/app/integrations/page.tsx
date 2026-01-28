@@ -44,8 +44,8 @@ export default function IntegrationsPage() {
 
       {/* Integrations Grid */}
       <SectionContainer className="items-start">
-        <div className="w-full px-4 md:px-8 lg:px-16 py-16 md:py-20 lg:py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-[1280px] mx-auto">
+        <div className="w-full py-16 md:py-20 lg:py-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-[1280px] mx-auto -ml-px gap-y-16 border-[#e5e7eb]">
             {integrationsData.map((integration) => {
               // Map slugs to logo paths
               const logoMap: Record<string, string> = {
@@ -61,12 +61,12 @@ export default function IntegrationsPage() {
                 <Link
                   key={integration.slug}
                   href={`/integrations/${integration.slug}`}
-                  className="group bg-white border border-[#e5e7eb] rounded-xl flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
+                  className="group bg-white border-l border-y border-[#e5e7eb] flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
                 >
 
                  
                   {/* Logo */}
-                  <div className="relative w-full h-32 md:h-40 flex items-center justify-center bg-[#f9f9f9] rounded-lg overflow-hidden">
+                  <div className="relative w-full h-32 md:h-40 flex items-center justify-center bg-[#f9f9f9] overflow-hidden">
                     <Image
                       src={logoPath}
                       alt={integration.hero.heading.text + (integration.hero.heading.highlighted || "") + (integration.hero.heading.suffix || "")}
@@ -76,7 +76,7 @@ export default function IntegrationsPage() {
                     />
                   </div>
 
-                  <div className="px-6 py-6 flex flex-col gap-4 flex-1">
+                  <div className="px-6 pb-6 flex flex-col gap-4 flex-1">
                   {/* Title */}
 
                   {/* Description */}
@@ -112,15 +112,6 @@ export default function IntegrationsPage() {
             })}
           </div>
 
-          {/* Additional Info */}
-          <div className="flex flex-col items-center gap-4 mt-16 pt-8 border-t border-[#e5e7eb]">
-            <p className="font-sans font-normal text-base text-[#606060] text-center">
-              And 50+ more integrations available
-            </p>
-            <button className="font-sans font-medium text-sm text-[#5e48f0] hover:underline">
-              View all integrations →
-            </button>
-          </div>
         </div>
       </SectionContainer>
 

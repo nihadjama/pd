@@ -10,7 +10,7 @@ export default function ChatMessage({ message, sender }: ChatMessageProps) {
     <div className={`flex items-start gap-2 ${isAI ? "justify-end" : ""}`}>
       {!isAI && (
         <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#f0f0f0] shrink-0 mt-0.5">
-          <span className="font-sans text-xs font-medium text-[#606060]">P</span>
+          <span className="font-sans text-[10.5px] font-medium text-[#606060]">P</span>
         </div>
       )}
       <div
@@ -18,11 +18,11 @@ export default function ChatMessage({ message, sender }: ChatMessageProps) {
           isAI ? "bg-[#e0f2fe]" : "bg-[#f0f0f0]"
         }`}
       >
-        <p className="font-sans text-sm leading-5 text-[#262626]">{message}</p>
+        <p className="font-sans text-xs leading-[17px] text-[#262626]">{message}</p>
       </div>
       {isAI && (
         <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#5e48f0] shrink-0 mt-0.5">
-          <span className="font-sans text-xs font-medium text-[#f9f9f9]">AI</span>
+          <span className="font-sans text-[10.5px] font-medium text-[#f9f9f9]">AI</span>
         </div>
       )}
     </div>
