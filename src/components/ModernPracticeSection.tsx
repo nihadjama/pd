@@ -94,9 +94,9 @@ export default function ModernPracticeSection() {
         </div>
 
         {/* Desktop: Two-column layout: List on left, UI on right */}
-        <div className="hidden md:flex flex-row items-start border-y border-[#e5e7eb] px-4 md:px-8 lg:px-16">
+        <div className="hidden md:flex flex-row items-start border-y border-[#e5e7eb]">
           {/* Left: Feature List */}
-          <div className="flex flex-col w-1/2 border-r border-[#e5e7eb] justify-betwee border-l box-content">
+          <div className="flex flex-col w-1/3 border-r border-[#e5e7eb] justify-betwee  box-content">
             {features.map((feature, index) => {
               const IconComponent = getIcon(feature.icon);
               const isSelected = index === selectedIndex;
@@ -105,7 +105,7 @@ export default function ModernPracticeSection() {
                 <button
                   key={index}
                   onClick={() => setSelectedIndex(index)}
-                  className={`flex gap-6 items-start text-left px-20 py-8 min-h-[160px] border-b last:border-b-transparent transition-all cursor-pointer ${
+                  className={`flex gap-6 items-start text-left px-8 py-8 min-h-[160px] border-b last:border-b-transparent transition-all cursor-pointer ${
                     isSelected
                       ? "border-[#5e48f0] bg-white"
                       : "border-[#e5e7eb] hover:border-[#5e48f0] hover:bg-[rgba(94,72,240,0.02)]"
@@ -144,7 +144,7 @@ export default function ModernPracticeSection() {
           </div>
 
           {/* Right: Animated UI Component */}
-          <div className="w-1/2 flex bg-[#5e48f0] p-12 min-h-[480px]">
+          <div className="w-2/3 flex bg-[#5e48f0] p-12 min-h-[494px]">
             <div className="w-full transition-opacity flex justify-center items-center" key={selectedIndex}>
               {selectedFeature.uiComponent}
             </div>

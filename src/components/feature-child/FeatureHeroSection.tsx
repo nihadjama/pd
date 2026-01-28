@@ -33,16 +33,16 @@ export default function FeatureHeroSection({
   image
 }: FeatureHeroSectionProps) {
   return (
-    <div className="relative flex min-h-[600px] md:min-h-screen items-center justify-center w-full py-12 md:py-0 border-b">
+    <div className="relative flex min-h-[600px] md:min-h-[80vh] items-center justify-center w-full py-12 md:py-0 border-b">
       {/* Grid Background */}
-      <GridBackground gridSize={1279 / 9} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+      <GridBackground gridSize={1280 / 9} lineColor="#e5e7eb" contentWidth={1280} contentPadding={64} />
 
       <div className="flex w-full flex-col items-center gap-8 md:gap-16 lg:gap-20 relative z-10">
         {/* Main Content Card */}
 
         <div className="flex max-w-[1280px] md:flex-row items-center flex-col gap-6 md:gap-12 w-full px-4 md:px-6 lg:px-0">
 
-          <div className="flex flex-col items-center md:items-start px-0 md:px-8 lg:pl-12 w-full md:w-1/2 flex-1">
+          <div className="flex flex-col items-center md:items-start px-0 md:px-8 w-full md:w-1/2 flex-1">
             <div className="flex flex-col gap-6 md:gap-8 w-full">
               {/* Category Badge */}
               <div className="flex flex-col gap-4 md:gap-6 justify-center md:justify-start items-center md:items-start w-full">
@@ -72,7 +72,7 @@ export default function FeatureHeroSection({
               </div>
 
               {/* Feature Badges */}
-              <div className="flex flex-wrap gap-3 md:gap-4 items-center md:items-start justify-center md:justify-start px-0 py-6 md:py-10 lg:py-12 w-full">
+              <div className="flex flex-wrap gap-3 md:gap-4 items-center md:items-start justify-center md:justify-start px-0 w-full">
                 {badges.map((badge, index) => (
                   <Badge key={index} text={badge} />
                 ))}
