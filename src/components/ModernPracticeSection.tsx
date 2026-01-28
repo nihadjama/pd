@@ -144,7 +144,7 @@ export default function ModernPracticeSection() {
           </div>
 
           {/* Right: Animated UI Component */}
-          <div className="w-2/3 flex dark:bg-primary/30 bg-primary p-12 min-h-[494px]">
+          <div className="w-2/3 flex bg-primary/30 p-12 min-h-[494px]">
             <div className="w-full transition-opacity flex justify-center items-center" key={selectedIndex}>
               {selectedFeature.uiComponent}
             </div>

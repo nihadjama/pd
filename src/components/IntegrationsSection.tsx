@@ -50,14 +50,14 @@ export default function IntegrationsSection() {
           <Link
             key={integration.name}
             href={`/integrations/${integration.slug}`}
-            className="flex items-center justify-center  hover:border-primary transition-colors  box-border border-l first:border-l-0 p-4"
+            className="flex items-center justify-center  hover:border-b-primary transition-colors  bg-background  box-border border-l first:border-l-0 p-4"
           >
             <Image
               src={integration.logo}
               alt={integration.name}
               width={200}
               height={80}
-              className="object-contain max-w-full h-auto dark:grayscale dark:brightness-[1.4]"
+              className="object-contain max-w-full h-auto"
             />
           </Link>
         ))}

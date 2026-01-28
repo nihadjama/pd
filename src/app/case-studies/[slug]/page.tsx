@@ -77,15 +77,15 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       </SectionContainer>
 
       {/* Hero Image */}
-      <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0] to-[#5e48f0]/20 border-y border-border">
-        {/* <ImageWithFallback
+      {/* <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0] to-[#5e48f0]/20 border-y border-border">
+        <ImageWithFallback
           src={`/case-studies/${caseStudy.slug}.png`}
           alt={caseStudy.title}
           fill
           className="object-cover"
           priority
-        /> */}
-      </div>
+        />
+      </div> */}
 
       {/* Article Content */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 py-12">

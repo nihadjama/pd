@@ -282,11 +282,11 @@ export default function PricingPage() {
               ))}
             </div>
 
-            <div className="flex flex-col gap-2 items-center pt-8 border-t border-border w-full">
-              <p className="font-sans font-normal text-sm leading-5 text-foreground text-center">
+            <div className="flex flex-col gap-4 items-center border-border w-full">
+              <p className="font-sans font-normal text-base leading-5 text-foreground text-center">
                 Looking for only a specific feature listed above? Let us know, we can certainly help you with that.
               </p>
-              <p className="font-sans font-medium text-sm leading-5 text-primary text-center">
+              <p className="font-sans font-medium text-base leading-5 text-primary text-center">
                 Call us at (949) 407-5907
               </p>
             </div>

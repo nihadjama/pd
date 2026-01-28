@@ -23,6 +23,7 @@
   --destructive-foreground: 0 0% 98%;
   --warning: 45 93% 47%;
   --warning-foreground: 0 0% 9%;
+  --subtle-background: 252 87% 62%;
   
   /* Font */
   --font-menlo: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
@@ -51,11 +52,13 @@
   --destructive-foreground: 0 0% 98%;
   --warning: 45 93% 47%;
   --warning-foreground: 0 0% 9%;
+  --subtle-background: 252 87% 20%;
 }
 
 @theme inline {
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
+  --color-subtle-background: hsl(var(--sublte-background));
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-primary-hover: hsl(var(--primary-hover));

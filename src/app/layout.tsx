@@ -100,10 +100,34 @@ export default function RootLayout({
   const organizationSchemas = generateOrganizationSchemas();
 
   return (
-    <html lang="en" className={`${inter.variable} ${geist.variable}`}>
+    <html lang="en" className={`${inter.variable} ${geist.variable}`} suppressHydrationWarning>
       <body
         className="antialiased bg-background text-foreground"
       >
+        {/* Blocking script to set theme before React hydrates - prevents flash */}
+        {/* Prioritizes saved theme preference (switcher setting is final) */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                  document.documentElement.classList.add('dark');
+                } else if (savedTheme === 'light') {
+                  document.documentElement.classList.remove('dark');
+                } else {
+                  // No saved preference - use system preference as initial default
+                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (prefersDark) {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                }
+              })();
+            `,
+          }}
+        />
         {organizationSchemas.map((schema, index) => (
           <script
             key={index}

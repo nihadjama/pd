@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <div className="relative bg-card border-b border-border">
         <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />

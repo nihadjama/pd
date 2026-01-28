@@ -9,10 +9,19 @@ export default function DarkModeToggle() {
 
   useEffect(() => {
     setMounted(true);
-    // Check for saved theme preference or default to light mode
+    // Prioritize saved theme preference - switcher setting is final
+    // Only use system preference if user hasn't explicitly set a preference
     const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const shouldBeDark = savedTheme === "dark" || (!savedTheme && prefersDark);
+    
+    let shouldBeDark = false;
+    if (savedTheme) {
+      // User has explicitly set a preference - use it (switcher setting is final)
+      shouldBeDark = savedTheme === "dark";
+    } else {
+      // No saved preference - use system preference as initial default
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      shouldBeDark = prefersDark;
+    }
     
     setIsDark(shouldBeDark);
     if (shouldBeDark) {
@@ -20,6 +29,26 @@ export default function DarkModeToggle() {
     } else {
       document.documentElement.classList.remove("dark");
     }
+
+    // Listen for storage changes (e.g., theme changed in another tab)
+    // But do NOT listen to system preference changes - switcher setting is final
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === "theme" && e.newValue) {
+        const newIsDark = e.newValue === "dark";
+        setIsDark(newIsDark);
+        if (newIsDark) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
   }, []);
 
   const toggleDarkMode = () => {
