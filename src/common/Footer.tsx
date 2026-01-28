@@ -8,7 +8,7 @@ export default function Footer() {
   const navigationLinks = [
     { label: "Features", href: "/features" },
     { label: "Integrations", href: "/integrations" },
-    { label: "Resources", href: "#resources" },
+    { label: "Case Studies", href: "/case-studies" },
     { label: "Pricing", href: "/pricing" },
   ];
 
@@ -28,7 +28,7 @@ export default function Footer() {
   const legalLinks = [
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "/terms-conditions" },
-    { label: "Cookie Policy", href: "/cookies" },
+    // { label: "Cookie Policy", href: "/cookies" },
   ];
 
   const socialLinks = [
@@ -113,7 +113,7 @@ export default function Footer() {
             </div>
 
             {/* Middle Section: Navigation Links Grid with Boxy Layout */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-0 border-b">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-b">
               {/* Product Column */}
               <div className="flex flex-col border-r">
                 <h3 className="font-heading font-semibold text-sm text-[#262626] py-2.5 px-4 border-b">
@@ -157,12 +157,13 @@ export default function Footer() {
                   </li>
                   <li className="border-b">
                     <Link
-                      href="/careers"
+                      href="/testimonials"
                       className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
                     >
-                      Careers
+                      Testimonials
                     </Link>
                   </li>
+
                   <li>
                     <Link
                       href="/contact"
@@ -174,24 +175,7 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Legal Column */}
-              <div className="flex flex-col border-r md:border-r-0 lg:border-r">
-                <h3 className="font-heading font-semibold text-sm text-[#262626] py-2.5 px-4 border-b">
-                  Legal
-                </h3>
-                <ul className="flex flex-col list-none">
-                  {legalLinks.map((link, index) => (
-                    <li key={link.label} className={index < legalLinks.length - 1 ? "border-b" : ""}>
-                      <Link
-                        href={link.href}
-                        className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+ 
 
               {/* Features Column 1 */}
               <div className="flex flex-col border-r lg:border-r">

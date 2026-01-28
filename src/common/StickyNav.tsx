@@ -126,7 +126,7 @@ export default function StickyNav() {
         </div>
       </div> */}
 
-      <nav ref={navRef} className="sticky top-0 z-50 bg-[#f9f9f9] border-b border-[#e5e7eb]" aria-label="Main navigation">
+      <nav ref={navRef} className="sticky top-0 z-9999 bg-[#f9f9f9] border-b border-[#e5e7eb]" aria-label="Main navigation">
         <div className="max-w-[1280px] px-4 sm:px-6 lg:px-8 border border-b-0 w-full mx-auto py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0" aria-label="Home">
@@ -257,6 +257,15 @@ export default function StickyNav() {
               className="text-sm font-normal px-3 py-2 rounded-lg transition-colors text-[#262626] hover:text-[#5e48f0]"
             >
               Testimonials
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/about"
+              className="text-sm font-normal px-3 py-2 rounded-lg transition-colors text-[#262626] hover:text-[#5e48f0]"
+            >
+              About
             </Link>
           </li>
 
@@ -691,6 +700,17 @@ export default function StickyNav() {
                 className="block text-sm font-normal px-3 py-3 rounded-lg transition-colors text-[#262626] hover:text-[#5e48f0]"
               >
                 Testimonials
+              </Link>
+            </li>
+
+            {/* About - Mobile */}
+            <li className="border-b border-[#e5e7eb]">
+              <Link
+                href="/about"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block text-sm font-normal px-3 py-3 rounded-lg transition-colors text-[#262626] hover:text-[#5e48f0]"
+              >
+                About
               </Link>
             </li>
 

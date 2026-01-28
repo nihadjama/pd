@@ -8,7 +8,7 @@ export default function CTASection() {
     <SectionContainer className="items-center bg-[#5e48f0]">
       <div className="w-full px-4 lg:px-16">
         {/* Main CTA Card with border and background */}
-        <div className="flex flex-col gap-8 items-center max-w-[700px] mx-auto py-12 md:py-16 px-6 md:px-8 lg:px-12 rounded-2xl border border-[#e5e7eb] bg-linear-to-b from-white to-[#fafafa]">
+        <div className="flex flex-col gap-8 items-center max-w-4xl mx-auto py-12 md:py-16 px-6 md:px-8 lg:px-12 rounded-2xl border border-[#e5e7eb] bg-linear-to-b from-white to-[#fafafa]">
           <div className="flex flex-col gap-6 items-center text-center">
             <HeadingWithHighlight
               text="Ready to transform your practice? "
