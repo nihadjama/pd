@@ -42,10 +42,10 @@ export default function FeatureHeroSection({
 
         <div className="flex max-w-[1280px] md:flex-row items-center flex-col gap-6 md:gap-12 w-full px-4 md:px-6 lg:px-0">
 
-          <div className="flex flex-col items-start px-0 md:px-8 lg:pl-12 w-full md:w-1/2 flex-1">
+          <div className="flex flex-col items-center md:items-start px-0 md:px-8 lg:pl-12 w-full md:w-1/2 flex-1">
             <div className="flex flex-col gap-6 md:gap-8 w-full">
               {/* Category Badge */}
-              <div className="flex flex-col gap-4 md:gap-6 justify-start items-start w-full">
+              <div className="flex flex-col gap-4 md:gap-6 justify-center md:justify-start items-center md:items-start w-full">
                 <HeroPill icon={category.icon} text={category.text} />
 
                 {/* Heading */}
@@ -53,26 +53,26 @@ export default function FeatureHeroSection({
                   text={heading.text}
                   highlighted={heading.highlighted}
                   suffix={heading.suffix}
-                  className=" w-full"
+                  className="text-center md:text-left w-full"
                   as="h1"
                 />
 
                 {/* Description */}
-                <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal max-w-[572px] w-full">
+                <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal max-w-[572px] w-full text-center md:text-left">
                   {description}
                 </p>
 
               </div>
 
               {/* CTA Button */}
-              <div className="flex justify-start w-full">
+              <div className="flex justify-center md:justify-start w-full">
                 <Button href={cta.href} variant="primary" className="flex items-center justify-center w-full md:w-auto">
                   {cta.text}
                 </Button>
               </div>
 
               {/* Feature Badges */}
-              <div className="flex flex-wrap gap-3 md:gap-4 items-start justify-start px-0 py-6 md:py-10 lg:py-12 w-full">
+              <div className="flex flex-wrap gap-3 md:gap-4 items-center md:items-start justify-center md:justify-start px-0 py-6 md:py-10 lg:py-12 w-full">
                 {badges.map((badge, index) => (
                   <Badge key={index} text={badge} />
                 ))}

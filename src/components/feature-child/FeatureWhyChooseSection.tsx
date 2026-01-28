@@ -22,14 +22,15 @@ export default function FeatureWhyChooseSection({
   items,
 }: FeatureWhyChooseSectionProps) {
   return (
-    <SectionContainer className="items-start">
-      <div className="flex flex-col gap-4 items-start px-4 md:px-8 lg:px-16 py-6 md:py-12 lg:py-16 w-full max-w-[597px]">
+    <SectionContainer className="items-center md:items-start">
+      <div className="flex flex-col gap-4 items-center md:items-start px-4 md:px-8 lg:px-16 py-6 md:py-12 lg:py-16 w-full md:max-w-[597px]">
         <HeadingWithHighlight
           text={heading.text}
           highlighted={heading.highlighted}
           suffix={heading.suffix}
+          className="text-center md:text-left"
         />
-        <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal w-full">
+        <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal w-full text-center md:text-left">
           {description}
         </p>
       </div>

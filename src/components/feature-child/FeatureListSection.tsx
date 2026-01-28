@@ -22,14 +22,15 @@ export default function FeatureListSection({
   features,
 }: FeatureListSectionProps) {
   return (
-    <SectionContainer className="items-start px-4 md:px-8 lg:px-12">
-      <div className="flex flex-col gap-4 items-start w-full max-w-[557px]">
+    <SectionContainer className="items-center md:items-start px-4 md:px-8 lg:px-12">
+      <div className="flex flex-col gap-4 items-center md:items-start w-full max-w-[557px]">
         <HeadingWithHighlight
           text={heading.text}
           highlighted={heading.highlighted}
           suffix={heading.suffix}
+          className="text-center md:text-left"
         />
-        <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
+        <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full text-center md:text-left">
           {description}
         </p>
       </div>
