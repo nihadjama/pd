@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { searchAll, type SearchResult } from "@/utils/search";
 import SectionContainer from "@/common/SectionContainer";
 import SectionHeader from "@/common/SectionHeader";
@@ -21,7 +21,7 @@ interface SearchResults {
   total: number;
 }
 
-export default function SearchPage() {
+function SearchContent() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q") || "";
   const [results, setResults] = useState<SearchResults>({
@@ -323,5 +323,39 @@ export default function SearchPage() {
         </SectionContainer>
       )}
     </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="relative min-h-screen bg-[#f9f9f9]">
+          <div className="relative border-b border-[#e5e7eb] py-20">
+            <GridBackground
+              gridSize={1278 / 11}
+              lineColor="#e5e7eb"
+              contentWidth={960}
+              contentPadding={64}
+            />
+            <div className="relative z-10 max-w-[1112px] mx-auto px-4 py-16">
+              <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
+                <SectionHeader
+                  icon={Search}
+                  label="Search"
+                  heading={{
+                    text: "Search",
+                    highlighted: "",
+                  }}
+                  description="Search across our blog posts, features, integrations, and testimonials"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    >
+      <SearchContent />
+    </Suspense>
   );
 }
