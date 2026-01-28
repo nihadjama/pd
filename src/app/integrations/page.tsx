@@ -14,11 +14,11 @@ import HeroPill from "@/common/HeroPill";
 
 export default function IntegrationsPage() {
   return (
-    <div className="relative min-h-screen bg-[#f9f9f9]">
+    <div className="relative min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative border-b border-[#e5e7eb] py-20">
+      <div className="relative border-b border-border py-20">
         {/* Grid Background */}
-        <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+        <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
             <HeroPill icon="Plug" text="Integrations" />
@@ -27,7 +27,7 @@ export default function IntegrationsPage() {
               highlighted="With Your Practice"
               as="h1"
             />
-            <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
+            <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
               Connect PracticeDilly with your existing practice management system for a unified workflow. 15-minute setup, no contracts, 30-day free trial.
             </p>
 
@@ -47,7 +47,7 @@ export default function IntegrationsPage() {
       {/* Integrations Grid */}
       <SectionContainer className="items-start">
         <div className="w-full py-16 md:py-20 lg:py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-[1280px] mx-auto -ml-px gap-y-16 border-[#e5e7eb]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-[1280px] mx-auto -ml-px gap-y-16 border-border">
             {integrationsData.map((integration) => {
               // Map slugs to logo paths
               const logoMap: Record<string, string> = {
@@ -63,18 +63,18 @@ export default function IntegrationsPage() {
                 <Link
                   key={integration.slug}
                   href={`/integrations/${integration.slug}`}
-                  className="group bg-white border-l border-y border-[#e5e7eb] flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
+                  className="group bg-card border-l border-y border-border flex flex-col gap-6 hover:border-b-primary transition-all duration-200 hover:shadow-lg h-full"
                 >
 
                  
                   {/* Logo */}
-                  <div className="relative w-full h-32 md:h-40 flex items-center justify-center bg-[#f9f9f9] overflow-hidden">
+                  <div className="relative w-full h-32 md:h-40 flex items-center justify-center bg-background overflow-hidden">
                     <Image
                       src={logoPath}
                       alt={integration.hero.heading.text + (integration.hero.heading.highlighted || "") + (integration.hero.heading.suffix || "")}
                       width={200}
                       height={80}
-                      className="object-contain max-w-full h-auto group-hover:scale-105 transition-transform duration-200"
+                      className="object-contain max-w-full h-auto group-hover:scale-105 transition-transform duration-200 dark:grayscale dark:brightness-[1.4]"
                     />
                   </div>
 
@@ -82,7 +82,7 @@ export default function IntegrationsPage() {
                   {/* Title */}
 
                   {/* Description */}
-                  <p className="font-sans font-normal text-sm md:text-base leading-6 text-[#606060] line-clamp-3">
+                  <p className="font-sans font-normal text-sm md:text-base leading-6 text-muted line-clamp-3">
                     {integration.hero.description}
                   </p>
 
@@ -94,7 +94,7 @@ export default function IntegrationsPage() {
                       {integration.hero.badges.map((badge, index) => (
                         <span
                           key={index}
-                          className="text-xs font-medium text-[#606060] bg-[#f9f9f9] px-2.5 py-1 rounded-full"
+                          className="text-xs font-medium text-muted bg-background px-2.5 py-1 rounded-full"
                         >
                           {badge}
                         </span>
@@ -103,7 +103,7 @@ export default function IntegrationsPage() {
                   )}
 
                   {/* Link Arrow */}
-                  <div className="flex items-center gap-2 text-[#5e48f0] font-medium text-sm mt-auto pt-2">
+                  <div className="flex items-center gap-2 text-primary font-medium text-sm mt-auto pt-2">
                     <span>Start Now</span>
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </div>

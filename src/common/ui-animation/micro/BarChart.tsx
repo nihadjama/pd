@@ -22,11 +22,11 @@ export default function BarChart({
               style={{ height: `${maxHeight}px` }}
             >
               <div
-                className={`w-full bg-[#5e48f0] rounded-t ${isAnimated ? "transition-all duration-300 ease-out" : ""}`}
+                className={`w-full bg-[#5e48f0] dark:bg-[#7c6cf0] rounded-t ${isAnimated ? "transition-all duration-300 ease-out" : ""}`}
                 style={{ height: `${height}px` }}
               />
             </div>
-            <span className="font-sans text-[10px] leading-3 text-[#606060] mt-1">
+            <span className="font-sans text-[10px] leading-3 text-[#606060] dark:text-[#a0a0a0] mt-1">
               {label}
             </span>
           </div>

@@ -24,13 +24,13 @@ export default function IntegrationCTASection({
   note,
 }: IntegrationCTASectionProps) {
   return (
-    <SectionContainer className="items-center border-t border-[#e5e7eb]">
+    <SectionContainer className="items-center border-t border-border">
       <div className="flex flex-col gap-8 items-center w-full max-w-[600px] px-4">
         <div className="flex flex-col gap-4 items-center text-center">
           <H2 className="font-medium text-center">
             {heading}
           </H2>
-          <p className="font-sans font-normal text-base leading-6 text-[#606060]">
+          <p className="font-sans font-normal text-base leading-6 text-muted">
             {description}
           </p>
         </div>
@@ -44,7 +44,7 @@ export default function IntegrationCTASection({
           </Button>
         </div>
 
-        <p className="font-sans font-normal text-sm leading-5 text-[#606060] text-center">
+        <p className="font-sans font-normal text-sm leading-5 text-muted text-center">
           {note}
         </p>
       </div>

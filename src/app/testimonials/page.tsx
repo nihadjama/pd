@@ -36,9 +36,9 @@ function TestimonialCard({ practiceName, practiceLogo, quote, rating, authorName
   const logoUrl = practiceLogo || "/placeholder-practice-logo.svg";
   
   return (
-    <div className="flex flex-col border-b rounded-none overflow-hidden w-full border-t -mb-px py-2 border-l -ml-px border-[#e5e7eb]">
+    <div className="flex flex-col border-b rounded-none overflow-hidden w-full border-t -mb-px py-2 border-l -ml-px border-border">
       {/* Practice Logo/Name Section */}
-      {/* <div className="px-6 py-4 border-b border-[#e5e7eb] bg-[#f9f9f9]">
+      {/* <div className="px-6 py-4 border-b border-border bg-background">
         <div className="flex items-center gap-3">
           {!logoError ? (
             <img 
@@ -48,18 +48,18 @@ function TestimonialCard({ practiceName, practiceLogo, quote, rating, authorName
               onError={() => setLogoError(true)}
             />
           ) : (
-            <div className="h-8 w-8 rounded-full bg-[#5e48f0] flex items-center justify-center shrink-0">
-              <span className="text-white text-xs font-medium">
+            <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+              <span className="text-card text-xs font-medium">
                 {practiceName.charAt(0).toUpperCase()}
               </span>
             </div>
           )}
-          <p className="font-sans font-medium text-sm text-[#262626]">{practiceName}</p>
+          <p className="font-sans font-medium text-sm text-foreground">{practiceName}</p>
         </div>
       </div> */}
 
       {/* Rating and Author Section */}
-      <div className="px-6 py-4 border-[#e5e7eb]">
+      <div className="px-6 py-4 border-border">
   
         <div className="flex items-center gap-3">
           {authorImage && !authorImageError ? (
@@ -73,8 +73,8 @@ function TestimonialCard({ practiceName, practiceLogo, quote, rating, authorName
             </div>
           ) : null}
           <div className="flex flex-col">
-            <p className="font-sans font-medium text-sm text-[#262626]">{authorName}</p>
-            <p className="font-sans font-normal text-xs text-[#606060]">{practiceName}</p>
+            <p className="font-sans font-medium text-sm text-foreground">{authorName}</p>
+            <p className="font-sans font-normal text-xs text-muted">{practiceName}</p>
           </div>
         </div>
       </div>
@@ -86,15 +86,15 @@ function TestimonialCard({ practiceName, practiceLogo, quote, rating, authorName
             <Star
               key={i}
               className={`w-4 h-4 ${
-                i < rating ? "text-[#fbbf24] fill-[#fbbf24]" : "text-[#e5e7eb]"
+                i < rating ? "text-warning fill-warning" : "text-[#e5e7eb]"
               }`}
             />
           ))}
-          {/* <span className="font-sans font-normal text-sm text-[#606060] ml-1">
+          {/* <span className="font-sans font-normal text-sm text-muted ml-1">
             {rating} out of 5
           </span> */}
         </div>
-        <blockquote className="font-sans font-normal text-base leading-6 text-[#262626] mb-3">
+        <blockquote className="font-sans font-normal text-base leading-6 text-foreground mb-3">
           "{quote}"
         </blockquote>
       </div>
@@ -111,22 +111,22 @@ export default function TestimonialsPage() {
 
   const whyChooseItems: WhyChooseItem[] = [
     {
-      icon: <Clock className="w-6 h-6 text-[#5e48f0]" />,
+      icon: <Clock className="w-6 h-6 text-primary" />,
       title: "15 MINS",
       description: "We understand how busy you are! Give us just 15 minutes to integrate with Dentrix and then enjoy all the benefits.",
     },
     {
-      icon: <Headphones className="w-6 h-6 text-[#5e48f0]" />,
+      icon: <Headphones className="w-6 h-6 text-primary" />,
       title: "Great Support",
       description: "We even have our support staff providing you with assistance after hours or during the weekend.",
     },
     {
-      icon: <DollarSign className="w-6 h-6 text-[#5e48f0]" />,
+      icon: <DollarSign className="w-6 h-6 text-primary" />,
       title: "Fair Pricing",
       description: "We provide highly affordable pricing plans designed to assist you in growing your dental practice.",
     },
     {
-      icon: <CheckCircle2 className="w-6 h-6 text-[#5e48f0]" />,
+      icon: <CheckCircle2 className="w-6 h-6 text-primary" />,
       title: "No Contracts, No Setup Fee, and 30-day Free Trial",
       description:
         "We want you to be completely satisfied before you commit to making any payments. That's why we offer our service without any setup fees or contracts.",
@@ -152,11 +152,11 @@ export default function TestimonialsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f9f9f9]">
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative border-b border-[#e5e7eb] py-20">
+      <div className="relative border-b border-border py-20">
         {/* Grid Background */}
-        <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+        <GridBackground gridSize={1280/11}  contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
             <HeroPill icon="MessageCircleHeart" text="Testimonials" />
@@ -165,7 +165,7 @@ export default function TestimonialsPage() {
               highlighted="Testimonials"
               as="h1"
             />
-            <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
+            <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
               Dental practices owners and office managers share their stories about why they're passionate about what they do and how PracticeDilly helped them along the way.
             </p>
 
@@ -201,7 +201,7 @@ export default function TestimonialsPage() {
             {testimonials.map((testimonial) => (
               <div key={testimonial.id} className="break-inside-avoid mb-0 border-l">
                 <TestimonialCard {...testimonial} />
-                <div className="h-16 border-y -mb-px border-[#e5e7eb]"></div>
+                <div className="h-16 border-y -mb-px border-border"></div>
               </div>
             ))}
           </div>
@@ -217,7 +217,7 @@ export default function TestimonialsPage() {
               highlighted="Us?"
               className="text-center"
             />
-            <p className="font-sans font-normal text-base leading-6 text-[#262626] text-center max-w-2xl">
+            <p className="font-sans font-normal text-base leading-6 text-foreground text-center max-w-2xl">
               Our Dentist clients appreciate our easy to use patient engagement software and you will love it too!
             </p>
           </div>
@@ -226,22 +226,22 @@ export default function TestimonialsPage() {
             {whyChooseItems.map((item, index) => (
               <div
                 key={index}
-                className="border border-[#e5e7eb] flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full"
+                className="border border-border flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full"
               >
                 <div className="flex flex-col items-start w-full">
                   <div className="flex items-center pb-5 pt-0 px-0">
                     <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center p-2 rounded-[10px] shrink-0">
-                      <div className="relative shrink-0 size-6 text-[#5e48f0]">
+                      <div className="relative shrink-0 size-6 text-primary">
                         {item.icon}
                       </div>
                     </div>
                   </div>
                   <div className="flex items-center justify-start pb-3 pt-0 px-0 w-full">
-                    <p className="font-sans font-normal leading-6 shrink-0 text-[#262626] text-base tracking-normal">
+                    <p className="font-sans font-normal leading-6 shrink-0 text-foreground text-base tracking-normal">
                       {item.title}
                     </p>
                   </div>
-                  <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal w-full">
+                  <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal w-full">
                     {item.description}
                   </p>
                 </div>
@@ -254,12 +254,12 @@ export default function TestimonialsPage() {
       {/* FAQ Section */}
       <SectionContainer className="items-start">
         <div className="w-full flex flex-col md:flex-row border-t">
-          <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
+          <div className="border-border border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
             <HeadingWithHighlight
               text="Frequently Asked "
               highlighted="Questions"
             />
-            <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
+            <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full">
               Have questions? We're here to help.
             </p>
           </div>

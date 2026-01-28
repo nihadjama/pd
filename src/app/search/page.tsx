@@ -57,12 +57,12 @@ function SearchContent() {
   };
 
   return (
-    <div className="relative min-h-screen bg-[#f9f9f9]">
+    <div className="relative min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative border-b border-[#e5e7eb] py-20">
+      <div className="relative border-b border-border py-20">
         <GridBackground
-          gridSize={1278 / 11}
-          lineColor="#e5e7eb"
+          gridSize={1280 / 11}
+        
           contentWidth={960}
           contentPadding={64}
         />
@@ -90,11 +90,11 @@ function SearchContent() {
                   value={searchInput}
                   onChange={(e) => setSearchInput(e.target.value)}
                   placeholder="Search for articles, features, integrations..."
-                  className="w-full px-6 py-4 pr-14 border border-[#e5e7eb] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#5e48f0] focus:border-transparent font-sans text-base text-[#262626] bg-white"
+                  className="w-full px-6 py-4 pr-14 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#5e48f0] focus:border-transparent font-sans text-base text-foreground bg-card"
                 />
                 <button
                   type="submit"
-                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-[#5e48f0] text-white rounded-lg hover:bg-[#4d3acf] transition-colors"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-primary text-card rounded-lg hover:bg-[#4d3acf] transition-colors"
                   aria-label="Search"
                 >
                   <Search className="h-5 w-5" />
@@ -113,12 +113,12 @@ function SearchContent() {
             <SectionContainer className="items-start px-4 md:px-8 lg:px-16">
               <div className="w-full">
                 <div className="flex items-center gap-3 mb-8">
-                  <BookOpen className="h-6 w-6 text-[#5e48f0]" />
-                  <h2 className="text-2xl font-heading font-semibold text-[#262626]">
+                  <BookOpen className="h-6 w-6 text-primary" />
+                  <h2 className="text-2xl font-heading font-semibold text-foreground">
                     Blog Posts ({results.blogs.length})
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-[#e5e7eb] pt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-border pt-8">
                   {results.blogs.map((result) => (
                     <BlogCard
                       key={result.id}
@@ -142,12 +142,12 @@ function SearchContent() {
             <SectionContainer className="items-start px-4 md:px-8 lg:px-16">
               <div className="w-full">
                 <div className="flex items-center gap-3 mb-8">
-                  <Zap className="h-6 w-6 text-[#5e48f0]" />
-                  <h2 className="text-2xl font-heading font-semibold text-[#262626]">
+                  <Zap className="h-6 w-6 text-primary" />
+                  <h2 className="text-2xl font-heading font-semibold text-foreground">
                     Features ({results.features.length})
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-[#e5e7eb] pt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-border pt-8">
                   {results.features.map((result) => (
                     <FeatureCard
                       key={result.id}
@@ -170,29 +170,29 @@ function SearchContent() {
             <SectionContainer className="items-start px-4 md:px-8 lg:px-16">
               <div className="w-full">
                 <div className="flex items-center gap-3 mb-8">
-                  <Plug className="h-6 w-6 text-[#5e48f0]" />
-                  <h2 className="text-2xl font-heading font-semibold text-[#262626]">
+                  <Plug className="h-6 w-6 text-primary" />
+                  <h2 className="text-2xl font-heading font-semibold text-foreground">
                     Integrations ({results.integrations.length})
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-[#e5e7eb] pt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-border pt-8">
                   {results.integrations.map((result) => (
                     <Link
                       key={result.id}
                       href={result.url}
-                      className="group bg-white border border-[#e5e7eb] flex flex-col overflow-hidden rounded-xl hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
+                      className="group bg-card border border-border flex flex-col overflow-hidden rounded-xl hover:border-primary transition-all duration-200 hover:shadow-lg h-full"
                     >
                       <div className="p-6 flex flex-col gap-4 flex-1">
                         <div className="flex items-center gap-3">
-                          <Plug className="h-6 w-6 text-[#5e48f0]" />
-                          <h3 className="text-xl font-heading font-semibold text-[#262626] line-clamp-2 group-hover:text-[#5e48f0] transition-colors">
+                          <Plug className="h-6 w-6 text-primary" />
+                          <h3 className="text-xl font-heading font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
                             {result.title}
                           </h3>
                         </div>
-                        <p className="font-sans text-sm leading-6 text-[#606060] line-clamp-3 flex-1">
+                        <p className="font-sans text-sm leading-6 text-muted line-clamp-3 flex-1">
                           {result.description}
                         </p>
-                        <div className="flex items-center gap-2 text-[#5e48f0] font-medium text-sm mt-auto pt-2">
+                        <div className="flex items-center gap-2 text-primary font-medium text-sm mt-auto pt-2">
                           <span>Learn more</span>
                           <span className="group-hover:translate-x-1 transition-transform">→</span>
                         </div>
@@ -209,19 +209,19 @@ function SearchContent() {
             <SectionContainer className="items-start px-4 md:px-8 lg:px-16">
               <div className="w-full">
                 <div className="flex items-center gap-3 mb-8">
-                  <MessageCircleHeart className="h-6 w-6 text-[#5e48f0]" />
-                  <h2 className="text-2xl font-heading font-semibold text-[#262626]">
+                  <MessageCircleHeart className="h-6 w-6 text-primary" />
+                  <h2 className="text-2xl font-heading font-semibold text-foreground">
                     Testimonials ({results.testimonials.length})
                   </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-[#e5e7eb] pt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-border pt-8">
                   {results.testimonials.map((result) => {
                     const testimonial = testimonialsData.find((t) => t.id === result.id);
                     return (
                       <Link
                         key={result.id}
                         href={result.url}
-                        className="group bg-white border border-[#e5e7eb] rounded-xl overflow-hidden hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg flex flex-col"
+                        className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary transition-all duration-200 hover:shadow-lg flex flex-col"
                       >
                         <div className="p-6 flex flex-col gap-4 flex-1">
                           {/* Author Info */}
@@ -238,10 +238,10 @@ function SearchContent() {
                               </div>
                             )}
                             <div className="flex flex-col flex-1 min-w-0">
-                              <p className="font-sans font-semibold text-base leading-6 text-[#262626]">
+                              <p className="font-sans font-semibold text-base leading-6 text-foreground">
                                 {result.metadata?.authorName || ""}
                               </p>
-                              <p className="font-sans text-sm leading-5 text-[#606060]">
+                              <p className="font-sans text-sm leading-5 text-muted">
                                 {result.title}
                               </p>
                             </div>
@@ -254,7 +254,7 @@ function SearchContent() {
                                 key={i}
                                 className={`w-4 h-4 ${
                                   i < (result.metadata?.rating || 5)
-                                    ? "text-[#fbbf24] fill-[#fbbf24]"
+                                    ? "text-warning fill-warning"
                                     : "text-[#e5e7eb]"
                                 }`}
                               />
@@ -262,12 +262,12 @@ function SearchContent() {
                           </div>
 
                           {/* Quote */}
-                          <p className="font-sans text-sm leading-6 text-[#262626] line-clamp-4 flex-1">
+                          <p className="font-sans text-sm leading-6 text-foreground line-clamp-4 flex-1">
                             "{result.description}"
                           </p>
 
                           {/* Link */}
-                          <div className="flex items-center gap-2 text-[#5e48f0] font-medium text-sm mt-auto pt-2">
+                          <div className="flex items-center gap-2 text-primary font-medium text-sm mt-auto pt-2">
                             <span>Read full testimonial</span>
                             <span className="group-hover:translate-x-1 transition-transform">→</span>
                           </div>
@@ -285,10 +285,10 @@ function SearchContent() {
             <SectionContainer className="items-center px-4 md:px-8 lg:px-16">
               <div className="w-full max-w-2xl mx-auto text-center py-20">
                 <Search className="h-16 w-16 text-[#e5e7eb] mx-auto mb-6" />
-                <h2 className="text-2xl font-heading font-semibold text-[#262626] mb-4">
+                <h2 className="text-2xl font-heading font-semibold text-foreground mb-4">
                   No results found
                 </h2>
-                <p className="font-sans text-base text-[#606060] mb-8">
+                <p className="font-sans text-base text-muted mb-8">
                   We couldn't find any results for "{query}". Try searching with different keywords.
                 </p>
                 <form onSubmit={handleSearch} className="max-w-md mx-auto">
@@ -298,11 +298,11 @@ function SearchContent() {
                       value={searchInput}
                       onChange={(e) => setSearchInput(e.target.value)}
                       placeholder="Search again..."
-                      className="w-full px-6 py-4 pr-14 border border-[#e5e7eb] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#5e48f0] focus:border-transparent font-sans text-base text-[#262626] bg-white"
+                      className="w-full px-6 py-4 pr-14 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-[#5e48f0] focus:border-transparent font-sans text-base text-foreground bg-card"
                     />
                     <button
                       type="submit"
-                      className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-[#5e48f0] text-white rounded-lg hover:bg-[#4d3acf] transition-colors"
+                      className="absolute right-2 top-1/2 -translate-y-1/2 p-2.5 bg-primary text-card rounded-lg hover:bg-[#4d3acf] transition-colors"
                       aria-label="Search"
                     >
                       <Search className="h-5 w-5" />
@@ -316,7 +316,7 @@ function SearchContent() {
       ) : (
         <SectionContainer className="items-center px-4 md:px-8 lg:px-16">
           <div className="w-full max-w-2xl mx-auto text-center py-20">
-            <p className="font-sans text-base text-[#606060]">
+            <p className="font-sans text-base text-muted">
               Enter a search term above to find articles, features, integrations, and testimonials.
             </p>
           </div>
@@ -330,11 +330,11 @@ export default function SearchPage() {
   return (
     <Suspense
       fallback={
-        <div className="relative min-h-screen bg-[#f9f9f9]">
-          <div className="relative border-b border-[#e5e7eb] py-20">
+        <div className="relative min-h-screen bg-background">
+          <div className="relative border-b border-border py-20">
             <GridBackground
-              gridSize={1278 / 11}
-              lineColor="#e5e7eb"
+              gridSize={1280 / 11}
+            
               contentWidth={960}
               contentPadding={64}
             />

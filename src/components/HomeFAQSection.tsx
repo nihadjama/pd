@@ -43,12 +43,12 @@ export default function HomeFAQSection() {
   return (
     <SectionContainer className="items-start">
       <div className="w-full flex flex-col md:flex-row border-t">
-        <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
+        <div className="border-border border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
           <HeadingWithHighlight
             text="Frequently Asked "
             highlighted="Questions"
           />
-          <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
+          <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full">
             Everything you need to know about getting started with PracticeDilly.
           </p>
         </div>

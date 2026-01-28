@@ -30,12 +30,12 @@ export default function FeatureBenefitsSection({
           suffix={heading.suffix}
           className="text-center md:text-left"
         />
-        <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full text-center md:text-left">
+        <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full text-center md:text-left">
           {description}
         </p>
       </div>
 
-      <div className="border-y border-[#e5e7eb] flex flex-wrap w-full">
+      <div className="border-y border-border flex flex-wrap w-full">
         {items.map((item, index) => {
           const isRightColumn = index % 2 === 1;
           const isBottomRow = index >= items.length - 2;
@@ -47,14 +47,14 @@ export default function FeatureBenefitsSection({
               isBottomRow={isBottomRow}
             >
               <div className="flex gap-3 items-start w-full">
-                <Check className="w-5 h-5 text-[#5e48f0] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div className="flex flex-col grow items-start min-w-0">
                   <div className="flex items-center pb-1 pt-0 px-0 w-full">
-                    <p className="font-sans font-medium leading-6 text-[#262626] text-base md:whitespace-nowrap tracking-normal break-words">
+                    <p className="font-sans font-medium leading-6 text-foreground text-base md:whitespace-nowrap tracking-normal break-words">
                       {item.title}
                     </p>
                   </div>
-                  <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal w-full">
+                  <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal w-full">
                     {item.description}
                   </p>
                 </div>

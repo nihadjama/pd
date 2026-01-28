@@ -30,7 +30,7 @@ export default function FeatureListSection({
           suffix={heading.suffix}
           className="text-center md:text-left"
         />
-        <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full text-center md:text-left">
+        <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full text-center md:text-left">
           {description}
         </p>
       </div>

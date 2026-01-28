@@ -155,11 +155,11 @@ export default function PricingPage() {
 
 
   return (
-    <div className="relative min-h-screen bg-[#f9f9f9]">
+    <div className="relative min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative border-b border-[#e5e7eb] py-20">
+      <div className="relative border-b border-border py-20">
         {/* Grid Background */}
-        <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+        <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
             <HeroPill icon="DollarSign" text="Pricing" />
@@ -169,7 +169,7 @@ export default function PricingPage() {
               className="text-center"
               as="h1"
             />
-            <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
+            <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
               We want dental practices of all sizes to take advantage of technology and automation. That's why our pricing is based on practice size and offers all the features.
             </p>
 
@@ -189,17 +189,17 @@ export default function PricingPage() {
       {/* Pricing Plans Section */}
       <SectionContainer className="items-center">
         <div className="w-full px-4 lg:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1200px] mx-auto md:gap-0 gap-y-16 border-x border-[#e5e7eb]">
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1200px] mx-auto md:gap-0 gap-y-16 border-x border-border">
             {pricingPlans.map((plan, index) => (
               <div
                 key={plan.name}
-                className={`relative border-l -ml-px border-[#e5e7eb] flex flex-col gap-6 transition-all duration-200 h-full border-y ${
-                  plan.popular ? "border-[#5e48f0]" : ""
+                className={`relative border-l -ml-px border-border flex flex-col gap-6 transition-all duration-200 h-full border-y ${
+                  plan.popular ? "border-y-primary" : ""
                 }`}
               >
                 {plan.popular && (
                   <div className="absolute top-4 right-4 z-10">
-                    <div className="bg-[#5e48f0] text-[#f9f9f9] px-3 py-1 rounded-lg">
+                    <div className="bg-primary text-background px-3 py-1 rounded-lg">
                       <p className="font-sans font-medium text-xs leading-4">Most Popular</p>
                     </div>
                   </div>
@@ -209,17 +209,17 @@ export default function PricingPage() {
                   <H3 className="font-semibold">
                     {plan.name}
                   </H3>
-                  <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
+                  <p className="font-sans font-normal text-sm leading-5 text-muted">
                     {plan.description}
                   </p>
                 </div>
 
                 <div className="flex flex-col gap-1 px-6 md:px-8">
                   <div className="flex items-baseline gap-2">
-                    <span className="font-heading font-semibold text-4xl leading-tight text-[#262626]">
+                    <span className="font-heading font-semibold text-4xl leading-tight text-foreground">
                       {plan.price}
                     </span>
-                    <span className="font-sans font-normal text-base text-[#606060]">
+                    <span className="font-sans font-normal text-base text-muted">
                       {plan.period}
                     </span>
                   </div>
@@ -234,8 +234,8 @@ export default function PricingPage() {
                   </Button>
                 </div>
 
-                <div className="flex flex-col gap-2 py-3 md:p-4 px-4 md:px-6 border-t border-[#e5e7eb]">
-                  <p className="font-sans font-normal text-xs leading-4 text-[#606060] text-center">
+                <div className="flex flex-col gap-2 py-3 md:p-4 px-4 md:px-6 border-t border-border">
+                  <p className="font-sans font-normal text-xs leading-4 text-muted text-center">
                     No contracts, No setup fee
                   </p>
                 </div>
@@ -251,42 +251,42 @@ export default function PricingPage() {
           <div className="flex flex-col gap-10 items-center max-w-6xl mx-auto">
             <div className="flex flex-col gap-4 items-center">
               <HeadingWithHighlight text="" highlighted="All Features " suffix="Included in Each Plan" className="text-center" />
-              <p className="font-sans font-normal text-base text-[#262626] text-center">
+              <p className="font-sans font-normal text-base text-foreground text-center">
                 Regardless of the plan you choose, you will enjoy every feature listed below
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full border">
               {allFeatures.map((category, index) => (
-                <div key={index} className="flex flex-col border-l -ml-px border-[#e5e7eb]">
+                <div key={index} className="flex flex-col border-l -ml-px border-border">
                   <div className="py-3 md:p-4 px-4 md:px-6">
                   <H3 className="font-medium">
                     {category.category}
                   </H3>
-                  <p className="font-sans font-normal text-sm text-[#606060] mt-1.5">
+                  <p className="font-sans font-normal text-sm text-muted mt-1.5">
                     {category.description}
                   </p>
                   </div>
                   <ul className="flex flex-col w-full">
                     {category.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start gap-2 py-3 md:p-4 px-4 md:px-6 border-t last:border-b border-[#e5e7eb]">
-                        <Check className="w-5 h-5 text-[#5e48f0]" />
-                        <span className="font-sans font-normal text-sm leading-5 text-[#606060]">
+                      <li key={itemIndex} className="flex items-start gap-2 py-3 md:p-4 px-4 md:px-6 border-t last:border-b border-border">
+                        <Check className="w-5 h-5 text-primary" />
+                        <span className="font-sans font-normal text-sm leading-5 text-muted">
                           {item}
                         </span>
                       </li>
                     ))}
                   </ul>
-                  <div className="h-16 border-b -mb-px border-[#e5e7eb] bg-[#f9f9f9]"></div>
+                  <div className="h-16 border-b -mb-px border-border bg-background"></div>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-col gap-2 items-center pt-8 border-t border-[#e5e7eb] w-full">
-              <p className="font-sans font-normal text-sm leading-5 text-[#262626] text-center">
+            <div className="flex flex-col gap-2 items-center pt-8 border-t border-border w-full">
+              <p className="font-sans font-normal text-sm leading-5 text-foreground text-center">
                 Looking for only a specific feature listed above? Let us know, we can certainly help you with that.
               </p>
-              <p className="font-sans font-medium text-sm leading-5 text-[#5e48f0] text-center">
+              <p className="font-sans font-medium text-sm leading-5 text-primary text-center">
                 Call us at (949) 407-5907
               </p>
             </div>
@@ -336,12 +336,12 @@ export default function PricingPage() {
       {/* FAQ Section */}
       <SectionContainer className="items-start">
         <div className="w-full flex flex-col md:flex-row border-t">
-          <div className="border-[#e5e7eb] border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
+          <div className="border-border border-r border-b flex flex-col gap-4 items-start justify-start px-4 md:px-8 lg:px-16 py-8 md:py-10 lg:py-14 relative shrink-0 w-full md:w-1/2">
             <HeadingWithHighlight
               text="Frequently Asked "
               highlighted="Questions"
             />
-            <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
+            <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full">
               Everything you need to know about PracticeDilly pricing and features.
             </p>
           </div>

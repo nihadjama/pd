@@ -43,10 +43,10 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-[#f9f9f9]">
+    <div className="relative min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative border-b border-[#e5e7eb] py-20">
-        <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+      <div className="relative border-b border-border py-20">
+        <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
             <HeroPill icon="Users" text="About Us" />
@@ -56,7 +56,7 @@ export default function AboutPage() {
               className="text-center"
               as="h1"
             />
-            <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
+            <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
               From a simple mobile app to a comprehensive patient engagement platform, discover how PracticeDilly evolved by listening to our customers and building what they truly need.
             </p>
 
@@ -73,13 +73,13 @@ export default function AboutPage() {
               return (
                 <div
                   key={index}
-                  className="border border-[#e5e7eb] flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full bg-white"
+                  className="border border-border flex flex-col items-start overflow-clip p-7 rounded-xl shrink-0 w-full h-full bg-card"
                 >
                   <div className="flex flex-col items-start w-full">
                     {/* {section.year && (
                       <div className="flex items-center pb-4 pt-0 px-0">
                         <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center px-3 py-1.5 rounded-lg shrink-0">
-                          <p className="font-heading font-semibold text-sm text-[#5e48f0]">
+                          <p className="font-heading font-semibold text-sm text-primary">
                             {section.year}
                           </p>
                         </div>
@@ -88,18 +88,18 @@ export default function AboutPage() {
                     <div className="flex items-center pb-5 pt-0 px-0">
                       <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center p-2 rounded-[10px] shrink-0">
                         {IconComponent && (
-                          <div className="relative shrink-0 size-6 text-[#5e48f0]">
+                          <div className="relative shrink-0 size-6 text-primary">
                             <IconComponent className="w-full h-full" />
                           </div>
                         )}
                       </div>
                     </div>
                     <div className="flex items-center justify-start pb-3 pt-0 px-0 w-full">
-                      <p className="font-sans font-semibold leading-6 shrink-0 text-[#262626] text-lg tracking-normal">
+                      <p className="font-sans font-semibold leading-6 shrink-0 text-foreground text-lg tracking-normal">
                         {section.title}
                       </p>
                     </div>
-                    <p className="font-sans font-normal leading-6 text-[#606060] text-base tracking-normal w-full">
+                    <p className="font-sans font-normal leading-6 text-muted text-base tracking-normal w-full">
                       {section.description}
                     </p>
                   </div>
@@ -114,19 +114,19 @@ export default function AboutPage() {
       <SectionContainer className="items-center">
         <div className="w-full px-4 lg:px-16">
           <div className="flex flex-col gap-8 items-center max-w-4xl mx-auto">
-            <div className="border border-[#e5e7eb] rounded-2xl bg-white p-8 md:p-12 w-full">
+            <div className="border border-border rounded-2xl bg-card p-8 md:p-12 w-full">
               <div className="flex flex-col gap-6 items-center text-center">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]">
-                  <Quote className="w-8 h-8 text-[#5e48f0]" />
+                  <Quote className="w-8 h-8 text-primary" />
                 </div>
-                <blockquote className="font-sans font-normal text-lg md:text-xl leading-7 md:leading-8 text-[#262626] max-w-3xl">
+                <blockquote className="font-sans font-normal text-lg md:text-xl leading-7 md:leading-8 text-foreground max-w-3xl">
                   "Listen to your customers. They'll guide you on how you should build your product, how you should market it, and everything in between."
                 </blockquote>
-                <div className="flex flex-col gap-1 items-center pt-4 border-t border-[#e5e7eb] w-full">
-                  <p className="font-sans font-semibold text-base text-[#262626]">
+                <div className="flex flex-col gap-1 items-center pt-4 border-t border-border w-full">
+                  <p className="font-sans font-semibold text-base text-foreground">
                     Pavan Chakka
                   </p>
-                  <p className="font-sans font-normal text-sm text-[#606060]">
+                  <p className="font-sans font-normal text-sm text-muted">
                     CEO, PracticeDilly
                   </p>
                 </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                 highlighted="Journey"
                 className="text-center"
               />
-              <p className="font-sans font-normal text-base text-[#262626] text-center max-w-2xl">
+              <p className="font-sans font-normal text-base text-foreground text-center max-w-2xl">
                 Our evolution from a simple mobile app to a comprehensive patient engagement platform
               </p>
             </div>
@@ -159,10 +159,10 @@ export default function AboutPage() {
       <SectionContainer className="items-center">
         <div className="w-full px-4 lg:px-16">
           <div className="flex flex-col gap-6 items-center max-w-4xl mx-auto">
-            <div className="border border-[#e5e7eb] rounded-xl bg-white p-8 md:p-12 w-full text-center">
+            <div className="border border-border rounded-xl bg-card p-8 md:p-12 w-full text-center">
               <div className="flex flex-col gap-4 items-center">
                 <div className="flex items-center justify-center w-16 h-16 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]">
-                  <Heart className="w-8 h-8 text-[#5e48f0]" />
+                  <Heart className="w-8 h-8 text-primary" />
                 </div>
                 <HeadingWithHighlight
                   text="Proudly made in "

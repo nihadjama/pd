@@ -4,6 +4,7 @@ import { Inter, Geist } from "next/font/google";
 import "./globals.css";
 import StickyNav from "@/common/StickyNav";
 import Footer from "@/common/Footer";
+import DarkModeToggle from "@/common/DarkModeToggle";
 import { generateOrganizationSchemas } from "@/utils/generateOrganizationSchema";
 
 const inter = Inter({
@@ -101,7 +102,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${geist.variable}`}>
       <body
-        className="antialiased bg-[#f9f9f9]"
+        className="antialiased bg-background text-foreground"
       >
         {organizationSchemas.map((schema, index) => (
           <script
@@ -113,6 +114,9 @@ export default function RootLayout({
         <StickyNav />
         {children}
         <Footer />
+        <div className="fixed bottom-4 right-4 z-50">
+          <DarkModeToggle />
+        </div>
       </body>
     </html>
   );

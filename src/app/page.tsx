@@ -81,9 +81,9 @@ export default function Home() {
       {/* <BackgroundElements /> */}
       
       {/* Hero Section */}
-      <div className="relative flex min-h-screen items-center justify-center px-4 py-20 lg:px-16 border-b border-[#e5e7eb]">
+      <div className="relative flex min-h-screen items-center justify-center px-4 py-20 lg:px-16 border-b border-border">
         {/* Grid Background */}
-        <GridBackground gridSize={1279/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+        <GridBackground gridSize={1280/11} contentPadding={64} />
         
         {/* ASCII Background Art */}
         {/* <AnimatedMolar /> */}
@@ -92,19 +92,19 @@ export default function Home() {
         <div className="relative z-10 flex w-full max-w-[960px] flex-col items-center gap-8 text-center p-4 md:p-8 lg:p-[64px]">
           {/* Badge */}
           <div className="flex items-center gap-2.5 rounded-full border px-1.5 py-1">
-            <div className="flex items-center rounded-full bg-[#5e48f0] px-1.5 py-px">
-              <p className="text-xs leading-4 text-[#f9f9f9]">New</p>
+            <div className="flex items-center rounded-full bg-primary px-1.5 py-px">
+              <p className="text-xs leading-4 text-primary-foreground">New</p>
             </div>
-            <p className="text-sm leading-5 text-[#262626]">AI Voice Intelligence 2.0</p>
+            <p className="text-sm leading-5 text-foreground">AI Voice Intelligence 2.0</p>
           </div>
 
           {/* Heading and Description */}
           <div className="flex flex-col gap-6 items-center">
             <H1>
               AI-Powered Patient Communication for{" "}<br/>
-              <span className="text-[#5e48f0]">Dental Practices</span>
+              <span className="text-primary">Dental Practices</span>
             </H1>
-            <p className="max-w-[455px] font-sans text-base text-[#262626]">
+            <p className="max-w-[455px] font-sans text-base text-foreground">
               Combine phones, texting, scheduling, and recalls in one AI-powered communication hub built for multi-location dental groups and healthcare practices.
             </p>
           </div>
@@ -126,15 +126,15 @@ export default function Home() {
 
           {/* Trust Indicator */}
           <div className="flex flex-col gap-4">
-            {/* <div className="h-px w-full bg-[#e5e7eb]" /> */}
+            {/* <div className="h-px w-full bg-border" /> */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4">
               <div className="flex items-center gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-[#ddaa29] fill-[#fbbf24]" />
+                  <Star key={i} className="h-5 w-5 text-warning fill-warning" />
                 ))}
               </div>
-              <p className="text-sm sm:text-base font-medium leading-5 text-[#262626] text-center sm:text-left">
-                PracticeDilly is Trusted by <span className="text-[#5e48f0]">500+</span> practices
+              <p className="text-sm sm:text-base font-medium leading-5 text-foreground text-center sm:text-left">
+                PracticeDilly is Trusted by <span className="text-primary">500+</span> practices
               </p>
             </div>
           </div>
@@ -143,54 +143,54 @@ export default function Home() {
         {/* Left Widget - Action Items */}
         {/* Outer border-radius: 6.4px, inner adjusted to match (no gap between them) */}
         <div className="absolute z-40 left-4 top-[388px] hidden w-[280px] md:w-[328.8px] rounded-[6.4px] shadow-[0px_20px_60px_0px_rgba(0,0,0,0.1)] lg:left-[91px] xl:block">
-          <div className="overflow-hidden rounded-[6.4px] border border-[#e5e7eb] bg-white">
+          <div className="overflow-hidden rounded-[6.4px] border border-border bg-card">
             {/* Header */}
-            <div className="border-b border-[#e5e7eb] px-2.5 py-3.5">
-              <p className="text-sm font-medium leading-[22.4px] text-[#262626]">Action Items</p>
-              <p className="text-right text-[9.6px] leading-[12.8px] text-[#606060]">Priority To-Dos</p>
+            <div className="border-b border-border px-2.5 py-3.5">
+              <p className="text-sm font-medium leading-[22.4px] text-foreground">Action Items</p>
+              <p className="text-right text-[9.6px] leading-[12.8px] text-muted">Priority To-Dos</p>
             </div>
 
             {/* Items */}
-            <div className="border-b border-[#e5e7eb] bg-[#f8f8f8] px-2.5 py-2.5">
+            <div className="border-b border-border bg-muted/5 px-2.5 py-2.5">
               <div className="flex gap-4">
                 <div className="flex items-center pt-0.5">
-                  <Check className="h-4 w-4 text-[#5e48f0]" />
+                  <Check className="h-4 w-4 text-primary" />
                 </div>
-                <div className="flex w-16 flex-col text-xs leading-[12.8px] text-[#606060]">
-                  <p className="text-xs leading-[19.2px] text-[#262626]">11:23 AM</p>
+                <div className="flex w-16 flex-col text-xs leading-[12.8px] text-muted">
+                  <p className="text-xs leading-[19.2px] text-foreground">11:23 AM</p>
                   <p className="text-[9.6px] leading-[12.8px]">30 mins</p>
                 </div>
                 <div className="flex-1">
-                  <p className="text-xs leading-[19.2px] text-[#262626]">Follow up: Missed call</p>
-                  <p className="text-[9.6px] leading-[12.8px] text-[#606060]">(949) 555-0123 - 11:23 AM</p>
-                  <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Patient called about insurance</p>
+                  <p className="text-xs leading-[19.2px] text-foreground">Follow up: Missed call</p>
+                  <p className="text-[9.6px] leading-[12.8px] text-muted">(949) 555-0123 - 11:23 AM</p>
+                  <p className="text-[9.6px] leading-[12.8px] text-muted">Patient called about insurance</p>
                 </div>
               </div>
             </div>
 
-            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
+            <div className="border-b border-border px-2.5 py-2.5">
               <div className="flex gap-4">
                 <div className="flex items-center pt-0.5">
-                  <Circle className="h-4 w-4 text-[#606060]" strokeWidth={1.5} />
+                  <Circle className="h-4 w-4 text-muted" strokeWidth={1.5} />
                 </div>
                 <div className="flex-1">
-                  <p className="text-xs leading-[19.2px] text-[#262626]">Confirm: Neville L. appointment</p>
-                  <p className="text-[9.6px] leading-[12.8px] text-[#606060]">10:30 AM tomorrow</p>
-                  <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Crown prep - 90 min blocked</p>
+                  <p className="text-xs leading-[19.2px] text-foreground">Confirm: Neville L. appointment</p>
+                  <p className="text-[9.6px] leading-[12.8px] text-muted">10:30 AM tomorrow</p>
+                  <p className="text-[9.6px] leading-[12.8px] text-muted">Crown prep - 90 min blocked</p>
                 </div>
               </div>
             </div>
 
-            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
+            <div className="border-b border-border px-2.5 py-2.5">
               <div className="flex gap-4">
                 <div className="flex items-center pt-0.5">
-                  <Circle className="h-4 w-4 text-[#606060]" strokeWidth={1.5} />
+                  <Circle className="h-4 w-4 text-muted" strokeWidth={1.5} />
                 </div>
                 <div className="flex-1">
-                  <p className="text-xs leading-[19.2px] text-[#262626]">Recalls Due</p>
-                  <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Cho C. - 6mo Hygiene</p>
-                  <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Last visit: 6 months ago</p>
-                  <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Preferred: Weekday mornings</p>
+                  <p className="text-xs leading-[19.2px] text-foreground">Recalls Due</p>
+                  <p className="text-[9.6px] leading-[12.8px] text-muted">Cho C. - 6mo Hygiene</p>
+                  <p className="text-[9.6px] leading-[12.8px] text-muted">Last visit: 6 months ago</p>
+                  <p className="text-[9.6px] leading-[12.8px] text-muted">Preferred: Weekday mornings</p>
                 </div>
               </div>
             </div>
@@ -200,18 +200,18 @@ export default function Home() {
         {/* Right Widget - Today's Appointments */}
         {/* Outer border-radius: 6.4px, inner adjusted to match (no gap between them) */}
         <div className="absolute z-50 right-4 top-[467.1px] hidden w-[280px] md:w-[355.2px] rounded-[6.4px] shadow-[0px_20px_60px_0px_rgba(0,0,0,0.1)] xl:right-[calc(50%+285px)] xl:block">
-          <div className="overflow-hidden rounded-[6.4px] border border-[#e5e7eb] bg-white">
+          <div className="overflow-hidden rounded-[6.4px] border border-border bg-card">
             {/* Header */}
-            <div className="border-b border-[#e5e7eb] px-2.5 py-3.5">
-              <p className="text-sm font-medium leading-[22.4px] text-[#262626]">Today's Appointments</p>
-              <p className="text-right text-[9.6px] leading-[12.8px] text-[#606060]">3 appointments</p>
+            <div className="border-b border-border px-2.5 py-3.5">
+              <p className="text-sm font-medium leading-[22.4px] text-foreground">Today's Appointments</p>
+              <p className="text-right text-[9.6px] leading-[12.8px] text-muted">3 appointments</p>
             </div>
 
             {/* Appointment 1 */}
-            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
+            <div className="border-b border-border px-2.5 py-2.5">
               <div className="flex items-center gap-4">
-                <div className="flex w-20 flex-col text-xs leading-[12.8px] text-[#606060]">
-                  <p className="text-xs leading-[19.2px] text-[#262626]">09:00 AM</p>
+                <div className="flex w-20 flex-col text-xs leading-[12.8px] text-muted">
+                  <p className="text-xs leading-[19.2px] text-foreground">09:00 AM</p>
                   <p className="text-[9.6px] leading-[12.8px]">30 mins</p>
                 </div>
                 <div className="flex items-center gap-1.5">
@@ -219,23 +219,23 @@ export default function Home() {
                     <img alt="Avatar" className="h-full w-full object-cover" src={img1} />
                   </div>
                   <div className="flex w-[120px] flex-col gap-0.5">
-                    <p className="text-xs leading-[19.2px] text-[#262626]">Luna L.</p>
-                    <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Cleaning & Checkup</p>
+                    <p className="text-xs leading-[19.2px] text-foreground">Luna L.</p>
+                    <p className="text-[9.6px] leading-[12.8px] text-muted">Cleaning & Checkup</p>
                   </div>
                 </div>
                 <div className="ml-auto flex items-center">
-                  <div className="rounded-[10px] border border-[#8ed6ae] bg-[#f0fdf4] px-1.5 py-1">
-                    <p className="text-[8px] leading-[8.8px] text-[#606060]">Confirmed</p>
+                  <div className="rounded-[10px] border border-green-300 bg-green-50 dark:border-green-600 dark:bg-green-950 px-1.5 py-1">
+                    <p className="text-[8px] leading-[8.8px] text-green-700 dark:text-green-200">Confirmed</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Appointment 2 */}
-            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
+            <div className="border-b border-border px-2.5 py-2.5">
               <div className="flex items-center gap-4">
-                <div className="flex w-20 flex-col text-xs leading-[12.8px] text-[#606060]">
-                  <p className="text-xs leading-[19.2px] text-[#262626]">10:30 AM</p>
+                <div className="flex w-20 flex-col text-xs leading-[12.8px] text-muted">
+                  <p className="text-xs leading-[19.2px] text-foreground">10:30 AM</p>
                   <p className="text-[9.6px] leading-[12.8px]">90 min</p>
                 </div>
                 <div className="flex items-center gap-1.5">
@@ -243,23 +243,23 @@ export default function Home() {
                     <img alt="Avatar" className="h-full w-full object-cover" src={img2} />
                   </div>
                   <div className="flex w-[120px] flex-col gap-0.5">
-                    <p className="text-xs leading-[19.2px] text-[#262626]">Neville L.</p>
-                    <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Crown Prep</p>
+                    <p className="text-xs leading-[19.2px] text-foreground">Neville L.</p>
+                    <p className="text-[9.6px] leading-[12.8px] text-muted">Crown Prep</p>
                   </div>
                 </div>
                 <div className="ml-auto flex items-center">
-                  <div className="rounded-[10px] border border-[#f7db76] bg-[#fefce8] px-1.5 py-1">
-                    <p className="text-[8px] leading-[8.8px] text-[#606060]">Pending</p>
+                  <div className="rounded-[10px] border border-warning/30 bg-warning/10 dark:border-warning/50 dark:bg-warning/20 px-1.5 py-1">
+                    <p className="text-[8px] leading-[8.8px] text-warning-700 dark:text-warning-200">Pending</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Appointment 3 */}
-            <div className="border-b border-[#e5e7eb] px-2.5 py-2.5">
+            <div className="border-b border-border px-2.5 py-2.5">
               <div className="flex items-center gap-4">
-                <div className="flex w-20 flex-col text-xs leading-[12.8px] text-[#606060]">
-                  <p className="text-xs leading-[19.2px] text-[#262626]">02:00 PM</p>
+                <div className="flex w-20 flex-col text-xs leading-[12.8px] text-muted">
+                  <p className="text-xs leading-[19.2px] text-foreground">02:00 PM</p>
                   <p className="text-[9.6px] leading-[12.8px]">1 hr 30 mins</p>
                 </div>
                 <div className="flex items-center gap-1.5">
@@ -267,13 +267,13 @@ export default function Home() {
                     <img alt="Avatar" className="h-full w-full object-cover" src={img3} />
                   </div>
                   <div className="flex w-[120px] flex-col gap-0.5">
-                    <p className="text-xs leading-[19.2px] text-[#262626]">Ginny W.</p>
-                    <p className="text-[9.6px] leading-[12.8px] text-[#606060]">Root Canal Follow-up</p>
+                    <p className="text-xs leading-[19.2px] text-foreground">Ginny W.</p>
+                    <p className="text-[9.6px] leading-[12.8px] text-muted">Root Canal Follow-up</p>
                   </div>
                 </div>
                 <div className="ml-auto flex items-center">
-                  <div className="rounded-[10px] border border-[#8ec5ff] bg-[#eff6ff] px-1.5 py-1">
-                    <p className="text-[8px] leading-[8.8px] text-[#606060]">Checked out</p>
+                  <div className="rounded-[10px] border border-blue-300 bg-blue-50 dark:border-blue-600 dark:bg-blue-950 px-1.5 py-1">
+                    <p className="text-[8px] leading-[8.8px] text-blue-700 dark:text-blue-200">Checked out</p>
                   </div>
                 </div>
               </div>

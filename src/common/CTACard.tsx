@@ -30,9 +30,9 @@ export default function CTACard({
   headingAs = "h2",
 }: CTACardProps) {
   return (
-    <SectionContainer className={`items-center bg-[#5e48f0] ${sectionClassName}`}>
+    <SectionContainer className={`items-center bg-primary ${sectionClassName}`}>
       <div className="w-full px-4 lg:px-16">
-        <div className={`relative flex flex-col gap-8 items-center max-w-4xl mx-auto py-12 md:py-16 px-6 md:px-8 lg:px-12 rounded-2xl border border-[#e5e7eb] bg-linear-to-b from-white to-[#fafafa] ${cardClassName}`}>
+        <div className={`relative flex flex-col gap-8 items-center max-w-4xl mx-auto py-12 md:py-16 px-6 md:px-8 lg:px-12 rounded-2xl border border-border bg-linear-to-b from-card to-card ${cardClassName}`}>
           <div className="relative z-10 flex flex-col gap-6 items-center text-center">
             <HeadingWithHighlight
               text={headingText}

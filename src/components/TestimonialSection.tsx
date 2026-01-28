@@ -108,7 +108,7 @@ export default function TestimonialSection() {
   const row2Cards = row2Testimonials.map(convertToCardFormat);
 
   return (
-    <SectionContainer className="items-center border-t border-[#e5e7eb]">
+    <SectionContainer className="items-center border-t border-border">
       {/* Header Section */}
       <SectionHeader
         icon={MessageCircleHeart}
@@ -123,7 +123,7 @@ export default function TestimonialSection() {
       />
 
       {/* Testimonial Rows */}
-      <div className="flex flex-col w-full overflow-hidden border-t border-[#e5e7eb]">
+      <div className="flex flex-col w-full overflow-hidden border-t border-border">
         {/* Row 1 - Left scrolling */}
         <TestimonialRow testimonials={row1Cards} direction="left" speed={30} />
 

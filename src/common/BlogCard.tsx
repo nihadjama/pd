@@ -33,7 +33,7 @@ export default function BlogCard({
   return (
     <Link
       href={`/blog/${slug}`}
-      className="group bg-white border border-[#e5e7eb] flex flex-col overflow-hidden rounded-xl hover:border-[#5e48f0] transition-all duration-200 hover:shadow-lg h-full"
+      className="group bg-card border border-border flex flex-col overflow-hidden rounded-xl hover:border-primary transition-all duration-200 hover:shadow-lg h-full"
     >
       {/* Image */}
       <div className="relative w-full h-48 bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5 overflow-hidden">
@@ -46,7 +46,7 @@ export default function BlogCard({
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center">
-            <div className="text-4xl font-heading font-bold text-[#5e48f0]/20">
+            <div className="text-4xl font-heading font-bold text-primary/20">
               {title.charAt(0)}
             </div>
           </div>
@@ -57,24 +57,24 @@ export default function BlogCard({
       <div className="p-6 flex flex-col gap-4 flex-1">
         {/* Category */}
         <div className="flex items-center">
-          <span className="text-xs font-medium text-[#5e48f0] bg-[rgba(94,72,240,0.1)] px-2.5 py-1 rounded-full">
+          <span className="text-xs font-medium text-primary bg-[rgba(94,72,240,0.1)] px-2.5 py-1 rounded-full">
             {category}
           </span>
         </div>
 
         {/* Title */}
-        <H3 className="text-xl font-heading font-semibold text-[#262626] line-clamp-2 group-hover:text-[#5e48f0] transition-colors">
+        <H3 className="text-xl font-heading font-semibold text-foreground line-clamp-2 group-hover:text-primary transition-colors">
           {title}
         </H3>
 
         {/* Description */}
-        <p className="font-sans text-sm leading-6 text-[#606060] line-clamp-3 flex-1">
+        <p className="font-sans text-sm leading-6 text-muted line-clamp-3 flex-1">
           {description}
         </p>
 
         {/* Meta Info */}
-        <div className="flex flex-col gap-2 pt-2 border-t border-[#e5e7eb]">
-          <div className="flex items-center gap-4 text-xs text-[#606060]">
+        <div className="flex flex-col gap-2 pt-2 border-t border-border">
+          <div className="flex items-center gap-4 text-xs text-muted">
             <div className="flex items-center gap-1.5">
               <Calendar className="h-3.5 w-3.5" />
               <span>{formattedDate}</span>
@@ -84,7 +84,7 @@ export default function BlogCard({
               <span>{readTime}</span>
             </div>
           </div>
-          <p className="text-xs text-[#606060]">By {author}</p>
+          <p className="text-xs text-muted">By {author}</p>
         </div>
       </div>
     </Link>

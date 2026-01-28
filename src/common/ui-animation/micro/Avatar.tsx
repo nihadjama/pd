@@ -11,8 +11,8 @@ const sizeStyles = {
 };
 
 const variantStyles = {
-  default: "bg-[#f0f0f0] text-[#606060]",
-  primary: "bg-[#e0f2fe] border-2 border-[#bae6fd] text-[#0369a1]",
+  default: "bg-[#f0f0f0] dark:bg-[#2a2a2a] text-[#606060] dark:text-[#a0a0a0]",
+  primary: "bg-[#e0f2fe] dark:bg-[#1a2a3a] border-2 border-[#bae6fd] dark:border-[#2d4a5d] text-[#0369a1] dark:text-[#bae6fd]",
 };
 
 export default function Avatar({

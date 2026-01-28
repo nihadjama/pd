@@ -11,11 +11,53 @@ interface GridBackgroundProps {
 
 export default function GridBackground({
   gridSize = 85,
-  lineColor = "#e5e7eb",
+  lineColor,
   contentWidth = 960,
   contentPadding = 64,
 }: GridBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  
+  // Helper functions to get CSS variable colors
+  const getLineColor = () => {
+    if (lineColor) return lineColor;
+    if (typeof window !== 'undefined') {
+      // Use border-subtle for more subtle grid lines
+      const borderSubtleValue = getComputedStyle(document.documentElement).getPropertyValue('--border-subtle').trim();
+      if (borderSubtleValue) {
+        // For even more subtle grid lines, we'll adjust the lightness
+        // Check if dark mode is active
+        const isDark = document.documentElement.classList.contains('dark');
+        if (isDark) {
+          // In dark mode, make lines very subtle - slightly lighter than background (4%)
+          // Use around 12% for very subtle lines that don't overpower the dark background
+          return `hsl(210, 15%, 12%)`;
+        } else {
+          // In light mode, make lines very subtle - slightly darker than background (98%)
+          // Use around 96% for very subtle lines that don't overpower the light background
+          return `hsl(0, 0%, 90%)`;
+        }
+      }
+      // Fallback: try border if border-subtle is not available
+      const borderValue = getComputedStyle(document.documentElement).getPropertyValue('--border').trim();
+      if (borderValue) {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (isDark) {
+          return `hsl(210, 15%, 15%)`;
+        } else {
+          return `hsl(0, 0%, 90%)`;
+        }
+      }
+    }
+    return 'hsl(0, 0%, 90%)';
+  };
+  
+  const getBackgroundColor = () => {
+    if (typeof window !== 'undefined') {
+      const bgValue = getComputedStyle(document.documentElement).getPropertyValue('--background').trim();
+      if (bgValue) return `hsl(${bgValue})`;
+    }
+    return 'hsl(0, 0%, 98%)';
+  };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -53,7 +95,7 @@ export default function GridBackground({
       const adjustedTopOffset = topOffset < 0 ? topOffset + gridSize : topOffset;
 
       // Configure canvas for crisp, thin lines matching CSS borders
-      ctx.strokeStyle = lineColor;
+      ctx.strokeStyle = getLineColor();
       ctx.lineWidth = 1; // 1px line width (context is already scaled by dpr)
       ctx.imageSmoothingEnabled = false; // Disable smoothing for crisp lines
 
@@ -92,8 +134,8 @@ export default function GridBackground({
       const whiteAreaLeft = centerX - (whiteAreaBoxesX * gridSize) / 2 + 1;
       const whiteAreaTop = centerY - (whiteAreaBoxesY * gridSize) / 2 + 1;
 
-      // Draw white background for center area on top of grid lines
-      ctx.fillStyle = "#f9f9f9";
+      // Draw background for center area on top of grid lines
+      ctx.fillStyle = getBackgroundColor();
       ctx.fillRect(whiteAreaLeft, whiteAreaTop, whiteAreaWidth, whiteAreaHeight);
     };
 
@@ -114,9 +156,35 @@ export default function GridBackground({
 
     window.addEventListener("resize", handleResize);
 
+    // Watch for dark mode class changes on document element
+    const mutationObserver = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+          drawGrid();
+          break;
+        }
+      }
+    });
+
+    mutationObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    // Also listen to storage events for theme changes (when theme is changed in another tab/window)
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'theme') {
+        drawGrid();
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
     return () => {
       resizeObserver.disconnect();
       window.removeEventListener("resize", handleResize);
+      mutationObserver.disconnect();
+      window.removeEventListener('storage', handleStorageChange);
     };
   }, [gridSize, lineColor, contentWidth, contentPadding]);
 

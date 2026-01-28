@@ -46,7 +46,7 @@ export default function IntegrationHeroSection({
   return (
     <div className="relative flex min-h-[600px] md:min-h-screen items-center justify-center w-full py-12 md:py-0 border-b">
       {/* Grid Background */}
-      <GridBackground gridSize={1279 / 9} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+      <GridBackground gridSize={1280 / 9} contentWidth={960} contentPadding={64} />
 
       <div className="flex w-full flex-col items-center gap-8 md:gap-16 lg:gap-20 relative z-10">
         {/* Main Content Card */}
@@ -69,7 +69,7 @@ export default function IntegrationHeroSection({
                 />
 
                 {/* Description */}
-                <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal max-w-[572px] w-full">
+                <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal max-w-[572px] w-full">
                   {description}
                 </p>
 

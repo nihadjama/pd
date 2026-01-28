@@ -8,12 +8,12 @@ interface StatusBadgeProps {
 }
 
 const variantStyles = {
-  active: "bg-[#d1fae5] border-[#86efac] text-[#166534]",
-  overdue: "bg-[#fff7ed] border-[#fed7aa] text-[#ea580c]",
-  failed: "bg-[#fee2e2] border-[#fecaca] text-[#dc2626]",
-  missed: "bg-[#fee2e2] border-[#fecaca] text-[#dc2626]",
-  completed: "bg-[#f0f0f0] border-[#e5e7eb] text-[#606060]",
-  default: "bg-[#f0f0f0] border-[#e5e7eb] text-[#262626]",
+  active: "bg-[#d1fae5] dark:bg-[#1a3a2a] border-[#86efac] dark:border-[#2d5a3d] text-[#166534] dark:text-[#86efac]",
+  overdue: "bg-[#fff7ed] dark:bg-[#3a2a1a] border-[#fed7aa] dark:border-[#5a4a3d] text-[#ea580c] dark:text-[#fed7aa]",
+  failed: "bg-[#fee2e2] dark:bg-[#3a1a1a] border-[#fecaca] dark:border-[#5a3d3d] text-[#dc2626] dark:text-[#fecaca]",
+  missed: "bg-[#fee2e2] dark:bg-[#3a1a1a] border-[#fecaca] dark:border-[#5a3d3d] text-[#dc2626] dark:text-[#fecaca]",
+  completed: "bg-[#f0f0f0] dark:bg-[#2a2a2a] border-[#e5e7eb] dark:border-[#3a3a3a] text-[#606060] dark:text-[#a0a0a0]",
+  default: "bg-[#f0f0f0] dark:bg-[#2a2a2a] border-[#e5e7eb] dark:border-[#3a3a3a] text-[#262626] dark:text-[#e5e5e5]",
 };
 
 export default function StatusBadge({

@@ -14,15 +14,15 @@ export default function AppointmentRow({
   status,
 }: AppointmentRowProps) {
   return (
-    <div className="grid grid-cols-[auto_1fr_auto_auto] gap-4 py-2.5 items-center border-b border-[#e5e7eb]">
+    <div className="grid grid-cols-[auto_1fr_auto_auto] gap-4 py-2.5 items-center border-b border-[#e5e7eb] dark:border-[#2a2a2a]">
       <div className="flex items-center">
-        <Circle className="h-4 w-4 text-[#606060]" strokeWidth={1.5} fill="none" />
+        <Circle className="h-4 w-4 text-[#606060] dark:text-[#a0a0a0]" strokeWidth={1.5} fill="none" />
       </div>
-      <div className="font-sans text-xs leading-[17px] text-[#262626]">
+      <div className="font-sans text-xs leading-[17px] text-[#262626] dark:text-[#e5e5e5]">
         {patientName}
       </div>
       <div className="flex flex-col items-center">
-        <div className="font-sans text-xs leading-[17px] text-[#262626] text-right">
+        <div className="font-sans text-xs leading-[17px] text-[#262626] dark:text-[#e5e5e5] text-right">
           {time}
         </div>
         {status === "failed" && (

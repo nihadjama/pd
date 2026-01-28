@@ -58,7 +58,7 @@ function BackgroundElement({
 
   return (
     <div
-      className="absolute font-mono text-[4px] leading-[0.5] tracking-[0.5px] text-[#5e48f0] whitespace-pre pointer-events-none select-none"
+      className="absolute font-mono text-[4px] leading-[0.5] tracking-[0.5px] text-primary whitespace-pre pointer-events-none select-none"
       style={{
         top,
         left,

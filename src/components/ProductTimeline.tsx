@@ -57,12 +57,12 @@ export default function ProductTimeline() {
         {timelineData.map((item, index) => (
           <div
             key={item.year}
-            className="border border-[#e5e7eb] rounded-xl bg-white p-6 md:p-8 flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200"
+            className="border border-border rounded-xl bg-card p-6 md:p-8 flex flex-col gap-4 hover:border-primary transition-all duration-200"
           >
             {/* Year Badge */}
             <div className="flex items-center gap-3">
               <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center px-4 py-2 rounded-lg shrink-0">
-                <p className="font-heading font-semibold text-lg text-[#5e48f0]">
+                <p className="font-heading font-semibold text-lg text-primary">
                   {item.year}
                 </p>
               </div>
@@ -75,8 +75,8 @@ export default function ProductTimeline() {
                   key={featureIndex}
                   className="flex items-start gap-2"
                 >
-                  <div className="shrink-0 w-1.5 h-1.5 rounded-full bg-[#5e48f0] mt-2" />
-                  <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
+                  <div className="shrink-0 w-1.5 h-1.5 rounded-full bg-primary mt-2" />
+                  <p className="font-sans font-normal text-sm leading-5 text-muted">
                     {feature}
                   </p>
                 </li>

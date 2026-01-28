@@ -29,23 +29,23 @@ export default function FeatureCard({
   // Simple variant (existing usage)
   if (variant === "simple") {
     return (
-      <div className="bg-white border border-[#e5e7eb] flex flex-col items-start overflow-clip p-6 rounded-xl shrink-0 w-full h-full hover:border-[#5e48f0] transition-all duration-200">
+      <div className="bg-card border border-border flex flex-col items-start overflow-clip p-6 rounded-xl shrink-0 w-full h-full hover:border-primary transition-all duration-200">
         <div className="flex flex-col items-start w-full">
           <div className="flex items-center pb-5 pt-0 px-0">
             <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center p-2 rounded-[10px] shrink-0">
               {IconComponent && (
-                <div className="relative shrink-0 size-6 text-[#5e48f0]">
+                <div className="relative shrink-0 size-6 text-primary">
                   <IconComponent className="w-full h-full" />
                 </div>
               )}
             </div>
           </div>
           <div className="flex items-center justify-start pb-3 pt-0 px-0 w-full">
-            <p className="font-sans font-normal leading-6 shrink-0 text-[#262626] text-base tracking-normal">
+            <p className="font-sans font-normal leading-6 shrink-0 text-foreground text-base tracking-normal">
               {title}
             </p>
           </div>
-          <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal w-full">
+          <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal w-full">
             {description}
           </p>
         </div>
@@ -64,9 +64,9 @@ export default function FeatureCard({
           style={{ backgroundImage: `url(${image})` }}
         />
       ) : IconComponent ? (
-        <div className="flex items-center justify-center w-full h-48 md:h-56 bg-[#f9f9f9] p-6">
+        <div className="flex items-center justify-center w-full h-48 md:h-56 bg-background p-6">
           <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-4 rounded-[10px] group-hover:scale-105 transition-transform duration-200">
-            <IconComponent className="w-12 h-12 text-[#5e48f0]" />
+            <IconComponent className="w-12 h-12 text-primary" />
           </div>
         </div>
       ) : null}
@@ -80,7 +80,7 @@ export default function FeatureCard({
         )}
 
         {/* Description */}
-        <p className="font-sans font-normal text-sm md:text-sm leading-6 text-[#606060] line-clamp-2">
+        <p className="font-sans font-normal text-sm md:text-sm leading-6 text-muted line-clamp-2">
           {description}
         </p>
 
@@ -90,7 +90,7 @@ export default function FeatureCard({
             {badges.slice(0, 3).map((badge, index) => (
               <span
                 key={index}
-                className="text-xs font-medium text-[#606060] rounded-full bg-[#f0f0f0] px-2 py-1"
+                className="text-xs font-medium text-muted rounded-full bg-border-subtle px-2 py-1"
               >
                 {badge}
               </span>
@@ -100,13 +100,13 @@ export default function FeatureCard({
 
         {/* Link Arrow */}
         {href && (
-          <div className="flex items-center gap-2 text-[#5e48f0] font-medium text-sm mt-auto pt-2">
+          <div className="flex items-center gap-2 text-primary font-medium text-sm mt-auto pt-2">
             <span>Learn more</span>
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </div>
         )}
       </div>
-      <div className="h-16 border-y -mb-px border-[#e5e7eb] bg-[#f9f9f9]"></div>
+      <div className="h-16 border-y -mb-px border-border bg-background"></div>
     </>
   );
 
@@ -115,7 +115,7 @@ export default function FeatureCard({
     return (
       <Link
         href={href}
-        className="group bg-transparent border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:bg-[#f0f0f0] transition-all duration-200 relative h-full"
+        className="group bg-transparent border-l last:border-r -ml-px border-b border-border flex flex-col gap-4 hover:bg-border-subtle transition-all duration-200 relative h-full"
       >
         {content}
       </Link>
@@ -123,7 +123,7 @@ export default function FeatureCard({
   }
 
   return (
-    <div className="group bg-transparent border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 relative h-full">
+    <div className="group bg-transparent border-l last:border-r -ml-px border-b border-border flex flex-col gap-4 hover:border-primary transition-all duration-200 relative h-full">
       {content}
     </div>
   );

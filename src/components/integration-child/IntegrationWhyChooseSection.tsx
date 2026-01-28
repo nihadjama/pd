@@ -21,8 +21,8 @@ export default function IntegrationWhyChooseSection({
   items,
 }: IntegrationWhyChooseSectionProps) {
   return (
-    <SectionContainer className="items-start">
-      <div className="flex flex-col gap-4 items-start px-4 md:px-8 lg:px-16 py-8 md:py-12 lg:py-16 w-full max-w-[597px] mb-8 md:mb-10 lg:mb-12">
+    <SectionContainer className="items-start border-t">
+      <div className="flex flex-col gap-4 items-start px-4 md:px-8 lg:px-16 w-full max-w-[597px]">
         <HeadingWithHighlight
           text={heading.text}
           highlighted={heading.highlighted}
@@ -30,7 +30,7 @@ export default function IntegrationWhyChooseSection({
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start w-full px-4 md:px-8 lg:px-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 items-start w-full px-4 md:px-8 lg:px-16 pb-8 md:pb-12 lg:pb-16">
         {items.map((item, index) => {
           const IconComponent = getIcon(item.icon);
           
@@ -41,14 +41,14 @@ export default function IntegrationWhyChooseSection({
             >
               <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-4 rounded-xl w-16 h-16">
                 {IconComponent && (
-                  <IconComponent className="w-8 h-8 text-[#5e48f0]" />
+                  <IconComponent className="w-6 h-6 text-primary" />
                 )}
               </div>
               <div className="flex flex-col gap-2 items-start">
                 <H3 className="tracking-normal">
                   {item.title}
                 </H3>
-                <p className="font-sans font-normal leading-5 text-[#606060] text-sm tracking-normal">
+                <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal">
                   {item.description}
                 </p>
               </div>

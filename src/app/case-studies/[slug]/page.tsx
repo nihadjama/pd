@@ -64,12 +64,12 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   const contentParagraphs = caseStudy.content.split("\n\n").filter((p) => p.trim());
 
   return (
-    <div className="relative min-h-screen bg-[#f9f9f9]">
+    <div className="relative min-h-screen bg-background">
       {/* Back Link */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 pt-8 pb-4">
         <Link
           href="/case-studies"
-          className="inline-flex items-center gap-2 text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           <span>Back to all case studies</span>
@@ -77,7 +77,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
       </SectionContainer>
 
       {/* Hero Image */}
-      <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0] to-[#5e48f0]/20 border-y border-[#e5e7eb]">
+      <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0] to-[#5e48f0]/20 border-y border-border">
         {/* <ImageWithFallback
           src={`/case-studies/${caseStudy.slug}.png`}
           alt={caseStudy.title}
@@ -94,18 +94,18 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
           <div className="flex flex-col gap-6 mb-12">
             {/* Category Badge */}
             <div className="flex items-center">
-              <span className="text-xs font-medium text-[#5e48f0] bg-[rgba(94,72,240,0.1)] px-2.5 py-1 rounded-full">
+              <span className="text-xs font-medium text-primary bg-[rgba(94,72,240,0.1)] px-2.5 py-1 rounded-full">
                 Case Study
               </span>
             </div>
 
             {/* Title */}
-            <H1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#262626] leading-tight">
+            <H1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground leading-tight">
               {caseStudy.title}
             </H1>
 
             {/* Meta Info */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm text-[#606060]">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm text-muted">
               {caseStudy.location && (
                 <div className="flex items-center gap-1.5">
                   <MapPin className="h-4 w-4" />
@@ -119,7 +119,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                     href={caseStudy.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#5e48f0] hover:underline"
+                    className="text-primary hover:underline"
                   >
                     Visit Website
                   </a>
@@ -130,13 +130,13 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
           {/* Stats Section (if available) */}
           {caseStudy.stats && caseStudy.stats.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 bg-white border border-[#e5e7eb] rounded-xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 bg-card border border-border rounded-xl">
               {caseStudy.stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center text-center">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-[#5e48f0] mb-2">
+                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm font-sans text-[#606060]">
+                  <div className="text-sm font-sans text-muted">
                     {stat.label}
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 return (
                   <H2
                     key={index}
-                    className="text-2xl font-heading font-semibold text-[#262626] mt-8 mb-4"
+                    className="text-2xl font-heading font-semibold text-foreground mt-8 mb-4"
                   >
                     {headingText}
                   </H2>
@@ -166,7 +166,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 return (
                   <H3
                     key={index}
-                    className="text-xl font-heading font-semibold text-[#262626] mt-6 mb-3"
+                    className="text-xl font-heading font-semibold text-foreground mt-6 mb-3"
                   >
                     {headingText}
                   </H3>
@@ -181,7 +181,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                   .map((line) => line.replace("- ", "").trim());
 
                 return (
-                  <ul key={index} className="list-disc list-inside space-y-2 mb-6 text-[#262626]">
+                  <ul key={index} className="list-disc list-inside space-y-2 mb-6 text-foreground">
                     {listItems.map((item, itemIndex) => (
                       <li key={itemIndex} className="font-sans text-base leading-6">
                         {item}
@@ -198,7 +198,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                   return (
                     <blockquote
                       key={index}
-                      className="border-l-4 border-[#5e48f0] pl-4 py-2 my-6 italic text-[#262626] font-sans text-base leading-7"
+                      className="border-l-4 border-primary pl-4 py-2 my-6 italic text-foreground font-sans text-base leading-7"
                     >
                       {paragraph.slice(1, -1)}
                     </blockquote>
@@ -208,7 +208,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
                 return (
                   <p
                     key={index}
-                    className="font-sans text-base leading-7 text-[#262626] mb-6"
+                    className="font-sans text-base leading-7 text-foreground mb-6"
                   >
                     {paragraph}
                   </p>
@@ -223,9 +223,9 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
       {/* Related Case Studies */}
       {relatedCaseStudies.length > 0 && (
-        <SectionContainer className="px-4 md:px-8 lg:px-16 border-t border-[#e5e7eb]">
+        <SectionContainer className="px-4 md:px-8 lg:px-16 border-t border-border">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl font-heading font-semibold text-[#262626] mb-8">
+            <h2 className="text-2xl font-heading font-semibold text-foreground mb-8">
               Related Case Studies
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

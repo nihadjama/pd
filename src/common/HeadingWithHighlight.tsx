@@ -18,7 +18,7 @@ export default function HeadingWithHighlight({
   const content = (
     <>
       <span>{text}</span>
-      {highlighted && <span className="text-[#5e48f0]">{highlighted}</span>}
+      {highlighted && <span className="text-primary">{highlighted}</span>}
       {suffix && (
         <span>
           {suffix.includes('\n') ? (

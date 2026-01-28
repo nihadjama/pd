@@ -11,15 +11,15 @@ export default function WhyPracticeDilly() {
         icon={MessageCircleHeart}
         label="Why PracticeDilly"
         heading={{
-          text: "The Why, and the ",
-          highlighted: "What",
+          text: "Proven Results That ",
+          highlighted: "Drive Success",
         }}
-        description="500+ practices trust PracticeDilly to handle their patient communication. There's a reason for that."
-        className="max-w-[434px] w-full px-4"
+        description="Join 500+ practices that trust PracticeDilly to transform their patient communication and grow their practice."
+        className="max-w-[565px] w-full px-4"
       />
 
       {/* Stats Section */}
-      <div className="flex flex-col md:flex-row items-stretch w-full">
+      <div className="flex flex-col md:flex-row items-stretch w-full mt-4 md:mt-6">
         <StatCard
           icon={<CalendarCheck className="w-full h-full" />}
           title="Reduce No-Shows"
@@ -47,14 +47,14 @@ export default function WhyPracticeDilly() {
       </div>
 
       {/* 5-Star Rating Section */}
-      <div className="flex flex-col gap-2 items-center mt-8">
+      <div className="flex flex-col gap-2.5 items-center mt-10 md:mt-12 pt-8 border-t border-border w-full max-w-2xl">
         <div className="flex items-center gap-1">
           {[...Array(5)].map((_, i) => (
-            <Star key={i} className="h-5 w-5 text-[#fbbf24] fill-[#fbbf24]" />
+            <Star key={i} className="h-5 w-5 text-warning fill-warning" />
           ))}
         </div>
-        <p className="font-sans font-medium text-sm leading-5 text-[#262626]">
-          5-Star Rated by <span className="text-[#5e48f0]">500+</span> Practices
+        <p className="font-sans font-medium text-base leading-6 text-foreground text-center">
+          Trusted and rated 5 stars by <span className="text-primary font-semibold">500+ practices</span> nationwide
         </p>
       </div>
     </SectionContainer>

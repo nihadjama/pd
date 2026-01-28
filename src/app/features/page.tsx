@@ -12,11 +12,11 @@ import HeroPill from "@/common/HeroPill";
 
 export default function FeaturesPage() {
   return (
-    <div className="relative min-h-screen bg-[#f9f9f9]">
+    <div className="relative min-h-screen bg-background">
       {/* Hero Section */}
-      <div className="relative border-b border-[#e5e7eb] py-20">
+      <div className="relative border-b border-border py-20">
         {/* Grid Background */}
-        <GridBackground gridSize={1280/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+        <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-3xl mx-auto">
             <HeroPill icon="Zap" text="Features" />
@@ -25,7 +25,7 @@ export default function FeaturesPage() {
               highlighted="Run a Modern Practice"
               as="h1"
             />
-            <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
+            <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
               Comprehensive tools designed to modernize every aspect of your practice management and patient communication.
             </p>
 
@@ -45,7 +45,7 @@ export default function FeaturesPage() {
       {/* Features Grid */}
       <SectionContainer className="items-start">
         <div className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1280px] mx-auto border-t border-[#e5e7eb]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-[1280px] mx-auto border-t border-border">
             {featuresData.map((feature) => (
               <FeatureCard
                 key={feature.slug}

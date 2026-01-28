@@ -16,10 +16,10 @@ export default function RunSmootherDayUI() {
   return (
     <div className={`flex flex-col lg:flex-row gap-4 w-full max-w-[700px] transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Patient Chat Card */}
-      <div className="flex-1 bg-white rounded-xl border border-[#e0e0e0] overflow-hidden">
+      <div className="flex-1 bg-white dark:bg-[#0a0a0a] rounded-xl border border-[#e0e0e0] dark:border-[#2a2a2a] overflow-hidden">
         {/* Header */}
-        <div className="border-b border-[#e0e0e0] px-4 py-3">
-          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
+        <div className="border-b border-[#e0e0e0] dark:border-[#2a2a2a] px-4 py-3">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626] dark:text-[#e5e5e5]">
             Patient Chat
           </div>
         </div>
@@ -39,10 +39,10 @@ export default function RunSmootherDayUI() {
       </div>
 
       {/* Recent Calls Card */}
-      <div className="flex-1 bg-white rounded-xl border border-[#e0e0e0] overflow-hidden">
+      <div className="flex-1 bg-white dark:bg-[#0a0a0a] rounded-xl border border-[#e0e0e0] dark:border-[#2a2a2a] overflow-hidden">
         {/* Header */}
-        <div className="border-b border-[#e0e0e0] px-4 py-3 flex items-center justify-between">
-          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
+        <div className="border-b border-[#e0e0e0] dark:border-[#2a2a2a] px-4 py-3 flex items-center justify-between">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626] dark:text-[#e5e5e5]">
             Recent calls
           </div>
           <StatusBadge variant="active">1 ACTIVE</StatusBadge>

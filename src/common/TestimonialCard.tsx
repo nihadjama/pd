@@ -41,8 +41,8 @@ export default function TestimonialCard({
             </div>
           )}
           <div className="flex flex-col flex-1 min-w-0">
-            <p className="font-sans font-normal text-base leading-6 text-[#262626]">{name}</p>
-            <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
+            <p className="font-sans font-normal text-base leading-6 text-foreground">{name}</p>
+            <p className="font-sans font-normal text-sm leading-5 text-muted">
               {company}
             </p>
           </div>
@@ -65,14 +65,14 @@ export default function TestimonialCard({
             <Star
               key={i}
               className={`w-5 h-5 ${
-                i < rating ? "text-[#fbbf24] fill-[#fbbf24]" : "text-[#e5e7eb]"
+                i < rating ? "text-warning fill-warning" : "text-[#e5e7eb]"
               }`}
             />
           ))}
         </div>
 
         {/* Quote */}
-        <p className="font-sans font-normal text-base leading-6 text-[#262626] px-6 pb-6">
+        <p className="font-sans font-normal text-base leading-6 text-foreground px-6 pb-6">
           "{quote}"
         </p>
       </div>

@@ -26,13 +26,13 @@ export default function IntegrationTimeSection({ stat, primaryCta }: Integration
 
 
             <div className="flex flex-col items-start w-full md:w-1/2 gap-4 px-4 md:px-0">
-                {/* <span className="font-sans font-medium text-5xl leading-[48px] text-[#5e48f0]">{stat.value}</span> */}
-                <div className="flex items-center gap-1.5 font-sans font-medium text-xs bg-[#5e48f0]/20 text-[#5e48f0] border border-[#5e48f0] pl-2 pr-2.5 py-1.5 rounded-full">
+                {/* <span className="font-sans font-medium text-5xl leading-[48px] text-primary">{stat.value}</span> */}
+                <div className="flex items-center gap-1.5 font-sans font-medium text-xs bg-primary/20 text-primary border border-primary pl-2 pr-2.5 py-1.5 rounded-full">
 
                     <Check className="w-4 h-4" /> <span>No Setup Fee</span>
                 </div>
-                <H2><span className="text-[#5e48f0]">{stat.value}</span> {stat.label}</H2>
-                <p className="font-sans font-normal text-base leading-6 text-[#606060]">
+                <H2><span className="text-primary">{stat.value}</span> {stat.label}</H2>
+                <p className="font-sans font-normal text-base leading-6 text-muted">
                     {stat.description}
                 </p>
 

@@ -30,7 +30,7 @@ export default function IntegrationFeaturesSection({
           highlighted={heading.highlighted}
           suffix={heading.suffix}
         />
-        <p className="font-sans font-normal leading-6 text-[#262626] text-base tracking-normal w-full">
+        <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full">
           {description}
         </p>
       </div>

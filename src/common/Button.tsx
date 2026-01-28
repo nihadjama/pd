@@ -27,9 +27,9 @@ export default function Button({
   const baseStyles = "flex items-center justify-center text-sm font-medium px-3 py-2.5 rounded-[10px] transition-colors disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer";
   
   const variantStyles = {
-    primary: "bg-[#5e48f0] text-[#f9f9f9] hover:bg-[#4d3ad0] px-4 justify-between gap-4",
-    secondary: "text-[#262626] font-medium hover:text-[#5e48f0] border bg-[#e5e7eb]",
-    link: " font-medium hover:text-[#4d3ad0] bg-transparent",
+    primary: "bg-primary text-primary-foreground hover:bg-primary-hover px-4 justify-between gap-4",
+    secondary: "text-secondary font-medium hover:text-primary border bg-border",
+    link: "font-medium hover:text-primary-hover bg-transparent",
   };
 
   const content = (

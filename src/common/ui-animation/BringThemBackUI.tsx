@@ -42,12 +42,12 @@ export default function BringThemBackUI() {
   return (
     <div className={`flex flex-col lg:flex-row gap-4 w-full max-w-[700px] transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Patient Profile Card */}
-      <div className="flex-1 bg-white rounded-xl border border-[#e5e7eb] overflow-hidden">
+      <div className="flex-1 bg-white dark:bg-[#0a0a0a] rounded-xl border border-[#e5e7eb] dark:border-[#2a2a2a] overflow-hidden">
         {/* Header */}
-        <div className="border-b border-[#e5e7eb] px-4 py-3 flex items-center justify-between">
+        <div className="border-b border-[#e5e7eb] dark:border-[#2a2a2a] px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <User className="h-4 w-4 text-[#606060]" />
-            <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
+            <User className="h-4 w-4 text-[#606060] dark:text-[#a0a0a0]" />
+            <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626] dark:text-[#e5e5e5]">
               Patient Profile
             </div>
           </div>
@@ -66,41 +66,41 @@ export default function BringThemBackUI() {
 
           {/* Name and Since */}
           <div className="flex flex-col items-center gap-1">
-            <p className="font-sans text-sm font-medium leading-[21px] text-[#262626]">
+            <p className="font-sans text-sm font-medium leading-[21px] text-[#262626] dark:text-[#e5e5e5]">
               Luna Lovegood
             </p>
-            <p className="font-sans text-[10.5px] leading-[14px] text-[#606060]">
+            <p className="font-sans text-[10.5px] leading-[14px] text-[#606060] dark:text-[#a0a0a0]">
               Patient since 2019
             </p>
           </div>
 
           {/* Last Visit */}
-          <div className="w-full flex items-center justify-between py-2 border-b border-[#e5e7eb]">
+          <div className="w-full flex items-center justify-between py-2 border-b border-[#e5e7eb] dark:border-[#2a2a2a]">
             <div className="flex items-center gap-2">
               {/* <Calendar className="h-4 w-4 text-[#606060]" /> */}
-              <span className="font-sans text-[10.5px] leading-[14px] text-[#606060]">LAST VISIT</span>
+              <span className="font-sans text-[10.5px] leading-[14px] text-[#606060] dark:text-[#a0a0a0]">LAST VISIT</span>
             </div>
-            <span className="font-sans text-[10.5px] leading-[14px] text-[#262626]">Oct 12, 2025</span>
+            <span className="font-sans text-[10.5px] leading-[14px] text-[#262626] dark:text-[#e5e5e5]">Oct 12, 2025</span>
           </div>
 
           {/* Treatment */}
           <div className="w-full flex items-center justify-between">
-            <span className="font-sans text-[10.5px] leading-[14px] text-[#606060]">TREATMENT</span>
-            <span className="font-sans text-xs font-medium leading-[17px] text-[#5e48f0]">$1,250 Pending</span>
+            <span className="font-sans text-[10.5px] leading-[14px] text-[#606060] dark:text-[#a0a0a0]">TREATMENT</span>
+            <span className="font-sans text-xs font-medium leading-[17px] text-[#5e48f0] dark:text-[#7c6cf0]">$1,250 Pending</span>
           </div>
 
           {/* Send Recall Button */}
-          <button className="w-full mt-2 px-4 py-2.5 bg-[#5e48f0] text-[#f9f9f9] font-sans text-xs font-medium rounded-lg hover:bg-[#4d3ad0] transition-colors">
+          <button className="w-full mt-2 px-4 py-2.5 bg-[#5e48f0] dark:bg-[#5e48f0] text-[#f9f9f9] dark:text-[#f9f9f9] font-sans text-xs font-medium rounded-lg hover:bg-[#4d3ad0] dark:hover:bg-[#6d5cf0] transition-colors">
             Send Recall Text
           </button>
         </div>
       </div>
 
       {/* Hygiene Re-appointment Card */}
-      <div className="flex-1 bg-white rounded-xl border border-[#e5e7eb] overflow-hidden">
+      <div className="flex-1 bg-white dark:bg-[#0a0a0a] rounded-xl border border-[#e5e7eb] dark:border-[#2a2a2a] overflow-hidden">
         {/* Header */}
-        <div className="border-b border-[#e5e7eb] px-4 py-3 flex items-center justify-between">
-          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626]">
+        <div className="border-b border-[#e5e7eb] dark:border-[#2a2a2a] px-4 py-3 flex items-center justify-between">
+          <div className="font-heading font-[450] text-[16px] leading-[25px] text-[#262626] dark:text-[#e5e5e5]">
             Hygiene Re-appointment
           </div>
           
@@ -110,7 +110,7 @@ export default function BringThemBackUI() {
         <div className="px-4 py-4">
           {/* Large Percentage */}
           <div className="flex items-baseline gap-2 mb-4">
-            <span className="font-sans text-4xl font-semibold leading-[45px] text-[#262626]">84%</span>
+            <span className="font-sans text-4xl font-semibold leading-[45px] text-[#262626] dark:text-[#e5e5e5]">84%</span>
             <StatusBadge
               variant="active"
               icon={<ArrowUp className="h-3 w-3" />}
