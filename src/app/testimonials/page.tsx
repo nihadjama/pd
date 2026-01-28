@@ -10,6 +10,7 @@ import { Star, MessageCircleHeart, Clock, Headphones, DollarSign, CheckCircle2 }
 import GridCard from "@/common/GridCard";
 import GridBackground from "@/components/GridBackground";
 import testimonialsData from "@/data/testimonials.json";
+import HeroPill from "@/common/HeroPill";
 
 interface Testimonial {
   id: string;
@@ -158,6 +159,7 @@ export default function TestimonialsPage() {
         <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
+            <HeroPill icon="MessageCircleHeart" text="Testimonials" />
             <HeadingWithHighlight
               text="Customer Reviews & "
               highlighted="Testimonials"
@@ -197,8 +199,9 @@ export default function TestimonialsPage() {
           {/* Testimonials Grid - Pinterest Style Masonry Layout */}
           <div className="columns-1 md:columns-2 lg:columns-3 column-gap-2 " style={{ columnGap: 0 }}>
             {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="break-inside-avoid mb-0">
+              <div key={testimonial.id} className="break-inside-avoid mb-0 border-l">
                 <TestimonialCard {...testimonial} />
+                <div className="h-16 border-y -mb-px border-[#e5e7eb]"></div>
               </div>
             ))}
           </div>

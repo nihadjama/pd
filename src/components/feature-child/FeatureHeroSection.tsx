@@ -53,7 +53,7 @@ export default function FeatureHeroSection({
                   text={heading.text}
                   highlighted={heading.highlighted}
                   suffix={heading.suffix}
-                  className="max-w-[568px] w-full"
+                  className=" w-full"
                   as="h1"
                 />
 

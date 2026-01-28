@@ -123,7 +123,7 @@ export default function StickyNav() {
         </div>
       </div> */}
 
-      <nav ref={navRef} className="sticky top-0 z-50 bg-white border-b border-[#e5e7eb]" aria-label="Main navigation">
+      <nav ref={navRef} className="sticky top-0 z-50 bg-[#f9f9f9] border-b border-[#e5e7eb]" aria-label="Main navigation">
         <div className="max-w-[1280px] px-4 sm:px-6 lg:px-8 border border-b-0 w-full mx-auto py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center shrink-0" aria-label="Home">
@@ -187,7 +187,7 @@ export default function StickyNav() {
             {/* Mega Menu Dropdown */}
             {isFeaturesOpen && (
               <div 
-                className="fixed inset-x-0 bg-white shadow-2xl border-x-0 border-b border-t-0 border-[#e5e7eb] z-50"
+                className="fixed inset-x-0 bg-[#f9f9f9] shadow-2xl border-x-0 border-b border-t-0 border-[#e5e7eb] z-50"
                 style={{ top: `${navHeight}px` }}
                 onMouseEnter={() => {
                   if (featuresCloseTimeoutRef.current) {
@@ -312,7 +312,7 @@ export default function StickyNav() {
             {/* Mega Menu Dropdown */}
             {isIntegrationsOpen && (
               <div 
-                className="fixed inset-x-0 bg-white shadow-2xl border-x-0 border-b border-t-0 border-[#e5e7eb] z-50"
+                className="fixed inset-x-0 bg-[#f9f9f9] shadow-2xl border-x-0 border-b border-t-0 border-[#e5e7eb] z-50"
                 style={{ top: `${navHeight}px` }}
                 onMouseEnter={() => {
                   if (integrationsCloseTimeoutRef.current) {
@@ -403,7 +403,7 @@ export default function StickyNav() {
             {/* Resources Dropdown Menu */}
             {isResourcesOpen && (
               <div 
-                className="absolute bg-white shadow-2xl border border-[#e5e7eb] rounded-lg z-50 mt-2 left-0"
+                className="absolute bg-[#f9f9f9] shadow-2xl border border-[#e5e7eb] rounded-lg z-50 mt-2 left-0"
                 onMouseEnter={() => {
                   if (resourcesCloseTimeoutRef.current) {
                     clearTimeout(resourcesCloseTimeoutRef.current);
@@ -475,7 +475,7 @@ export default function StickyNav() {
       {/* Mobile Menu */}
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-[62px] left-0 right-0 bg-white border-b border-[#e5e7eb] z-[60] max-h-[calc(100vh-105px)] overflow-y-auto shadow-lg transition-transform duration-300 ease-in-out ${
+        className={`lg:hidden fixed top-[62px] left-0 right-0 bg-[#f9f9f9] border-b border-[#e5e7eb] z-[60] max-h-[calc(100vh-105px)] overflow-y-auto shadow-lg transition-transform duration-300 ease-in-out ${
           isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full pointer-events-none'
         }`}
       >

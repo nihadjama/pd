@@ -8,6 +8,7 @@ import featuresData from "@/data/features.json";
 import TestimonialSection from "@/components/TestimonialSection";
 import CTASection from "@/components/CTASection";
 import GridBackground from "@/components/GridBackground";
+import HeroPill from "@/common/HeroPill";
 
 export default function FeaturesPage() {
   return (
@@ -15,9 +16,10 @@ export default function FeaturesPage() {
       {/* Hero Section */}
       <div className="relative border-b border-[#e5e7eb] py-20">
         {/* Grid Background */}
-        <GridBackground gridSize={1278 / 11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
+        <GridBackground gridSize={1280/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
-          <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
+          <div className="flex flex-col items-center gap-8 text-center max-w-3xl mx-auto">
+            <HeroPill icon="Zap" text="Features" />
             <HeadingWithHighlight
               text="Everything You Need to "
               highlighted="Run a Modern Practice"
@@ -47,7 +49,7 @@ export default function FeaturesPage() {
             {featuresData.map((feature) => (
               <FeatureCard
                 key={feature.slug}
-                icon={feature.hero.category.icon}
+                image={feature.hero.image}
                 title={feature.hero.heading.text + (feature.hero.heading.highlighted || "") + (feature.hero.heading.suffix || "")}
                 description={feature.hero.description}
                 href={`/features/${feature.slug}`}

@@ -1,10 +1,11 @@
 import SectionContainer from "@/common/SectionContainer";
-import SectionHeader from "@/common/SectionHeader";
 import BlogCard from "@/common/BlogCard";
 import blogsData from "@/data/blogs.json";
 import GridBackground from "@/components/GridBackground";
-import { BookOpen } from "lucide-react";
 import type { Metadata } from "next";
+import HeroPill from "@/common/HeroPill";
+import HeadingWithHighlight from "@/common/HeadingWithHighlight";
+import Button from "@/common/Button";
 
 export const metadata: Metadata = {
   title: "Blog - Expert Insights on Dental Practice Management",
@@ -27,15 +28,25 @@ export default function BlogPage() {
         <GridBackground gridSize={1278 / 11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
-            <SectionHeader
-              icon={BookOpen}
-              label="Blog"
-              heading={{
-                text: "Expert Insights on Dental Practice ",
-                highlighted: "Management",
-              }}
-              description="Expert insights on dental practice management, patient engagement, and growth strategies"
+            <HeroPill icon="FileText" text="Blog" />
+            <HeadingWithHighlight
+              text="Expert Insights on Dental Practice "
+              highlighted="Management"
+              as="h1"
             />
+            <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
+              Expert insights on dental practice management, patient engagement, and growth strategies from PracticeDilly.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex items-center gap-4 flex-wrap justify-center">
+              <Button href="#get-started" variant="primary" className="px-6">
+                Get Started - No Setup Fee!
+              </Button>
+              <Button href="tel:+19494075907" variant="secondary" className="px-6">
+                Call (949) 407-5907
+              </Button>
+            </div>
           </div>
         </div>
       </div>

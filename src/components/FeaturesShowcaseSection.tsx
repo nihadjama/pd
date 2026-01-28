@@ -120,7 +120,7 @@ export default function FeaturesShowcaseSection() {
                 </div>
                 <ul className="flex flex-col ">
                   {feature.bullets.map((bullet, bulletIndex) => (
-                    <li key={bulletIndex} className="flex items-start gap-2 border-t border-[#e5e7eb] py-2 p-3 md:p-4 px-0 md:px-6">
+                    <li key={bulletIndex} className="flex items-start gap-2 border-t border-[#e5e7eb] py-3 md:p-4 px-4 md:px-6">
                       {/* <span className="text-[#5e48f0] border flex">•</span> */}
                       <Check className="w-5 h-5 text-[#5e48f0]" />
                       <span className="font-sans font-normal text-sm leading-5 text-[#606060]">
@@ -128,7 +128,7 @@ export default function FeaturesShowcaseSection() {
                       </span>
                     </li>
                   ))}
-                  <li className="h-16 border-t"></li>
+                  
                 </ul>
               </div>
             );

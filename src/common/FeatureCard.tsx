@@ -3,7 +3,8 @@ import { getIcon } from "@/utils/iconMap";
 import { H3 } from "@/common/headings";
 
 interface FeatureCardProps {
-  icon: string;
+  icon?: string;
+  image?: string;
   title: string;
   description: string;
   // Optional props for detailed variant
@@ -15,6 +16,7 @@ interface FeatureCardProps {
 
 export default function FeatureCard({
   icon,
+  image,
   title,
   description,
   href,
@@ -22,7 +24,7 @@ export default function FeatureCard({
   badges,
   variant = "simple",
 }: FeatureCardProps) {
-  const IconComponent = getIcon(icon);
+  const IconComponent = icon ? getIcon(icon) : null;
 
   // Simple variant (existing usage)
   if (variant === "simple") {
@@ -47,6 +49,7 @@ export default function FeatureCard({
             {description}
           </p>
         </div>
+        
       </div>
     );
   }
@@ -54,20 +57,25 @@ export default function FeatureCard({
   // Detailed variant (features page)
   const content = (
     <>
-      {/* Large Icon Section */}
-      {IconComponent && (
+      {/* Large Image/Icon Section */}
+      {image ? (
+        <div 
+          className="w-full h-48 md:h-56 bg-cover bg-center bg-no-repeat border-b"
+          style={{ backgroundImage: `url(${image})` }}
+        />
+      ) : IconComponent ? (
         <div className="flex items-center justify-center w-full h-48 md:h-56 bg-[#f9f9f9] p-6">
           <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-4 rounded-[10px] group-hover:scale-105 transition-transform duration-200">
             <IconComponent className="w-12 h-12 text-[#5e48f0]" />
           </div>
         </div>
-      )}
+      ) : null}
 
-      <div className="p-6 flex flex-col gap-4 flex-1">
+      <div className="p-6 pt-2 flex flex-col gap-2 flex-1">
         {/* Category */}
         {category && (
           <div className="flex items-center gap-3">
-            <H3 className="text-lg font-medium text-[#606060]">{category}</H3>
+            <H3 className="text-lg font-medium">{category}</H3>
           </div>
         )}
 
@@ -82,7 +90,7 @@ export default function FeatureCard({
             {badges.slice(0, 3).map((badge, index) => (
               <span
                 key={index}
-                className="text-xs font-medium text-[#606060] bg-[#f9f9f9] px-2 py-1"
+                className="text-xs font-medium text-[#606060] rounded-full bg-[#f0f0f0] px-2 py-1"
               >
                 {badge}
               </span>
@@ -98,6 +106,7 @@ export default function FeatureCard({
           </div>
         )}
       </div>
+      <div className="h-16 border-y -mb-px border-[#e5e7eb] bg-[#f9f9f9]"></div>
     </>
   );
 
@@ -106,7 +115,7 @@ export default function FeatureCard({
     return (
       <Link
         href={href}
-        className="group bg-white border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 relative h-full"
+        className="group bg-transparent border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:bg-[#f0f0f0] transition-all duration-200 relative h-full"
       >
         {content}
       </Link>
@@ -114,7 +123,7 @@ export default function FeatureCard({
   }
 
   return (
-    <div className="group bg-white border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 relative h-full">
+    <div className="group bg-transparent border-l last:border-r -ml-px border-b border-[#e5e7eb] flex flex-col gap-4 hover:border-[#5e48f0] transition-all duration-200 relative h-full">
       {content}
     </div>
   );

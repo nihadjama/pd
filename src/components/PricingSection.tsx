@@ -22,7 +22,7 @@ export default function PricingSection() {
 
   return (
     <SectionContainer className="items-start">
-      <div className="w-full px-4 lg:px-16">
+      <div className="w-full">
         <div className="flex flex-col gap-10 items-center mb-10">
           <SectionHeader
             heading={{
@@ -35,11 +35,11 @@ export default function PricingSection() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1000px] mx-auto mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-[1000px] md:gap-0 gap-y-16 mx-auto mb-8">
           {/* Single Location */}
-          <div className="bg-white border border-[#e5e7eb] flex flex-col gap-6 hover:border-[#5e48f0] transition-all duration-200 h-full">
-            <div className="flex flex-col gap-2 p-6 md:p-8">
-              <H3 className="font-semibold text-2xl leading-7">
+          <div className=" border border-[#e5e7eb] flex flex-col gap-6 transition-all duration-200 h-full">
+            <div className="flex flex-col gap-4 p-6 md:p-8">
+              <H3>
                 Single Location
               </H3>
               <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
@@ -49,35 +49,35 @@ export default function PricingSection() {
 
             <ul className="flex flex-col">
               {singleLocationFeatures.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3 p-6 md:p-8 md:py-4 border-t">
-                  <Check className="w-5 h-5 text-[#5e48f0] shrink-0 mt-0.5" />
-                  <span className="font-sans font-normal text-sm leading-5 text-[#262626]">
+                <li key={index} className="flex items-start gap-2 py-3 md:p-4 px-4 md:px-6 border-t last:border-b border-[#e5e7eb]">
+                  <Check className="w-5 h-5 text-[#5e48f0]" />
+                  <span className="font-sans font-normal text-sm leading-5 text-[#606060]">
                     {feature}
                   </span>
                 </li>
               ))}
             </ul>
 
-            <div className="flex flex-col gap-2 p-6 md:p-8 border-t border-[#e5e7eb]">
+            {/* <div className="flex flex-col gap-2 p-6 md:p-8 border-[#e5e7eb]">
               <p className="font-sans font-medium text-sm leading-5 text-[#262626]">
                 Join 400+ single-location practices
               </p>
               <p className="font-sans font-normal text-sm leading-5 text-[#606060] italic">
                 "Easy to use and incredibly powerful. Has saved us so much time." - Dr. Shivani Patel, Grand Central Dentistry
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Multi-Location Groups */}
-          <div className="bg-white border-2 border-[#5e48f0] flex flex-col gap-6 relative hover:shadow-lg transition-all duration-200 h-full">
+          <div className="border border-[#5e48f0] flex flex-col gap-6 relative transition-all duration-200 h-full">
             <div className="absolute top-4 right-4">
               <div className="bg-[#5e48f0] text-[#f9f9f9] px-3 py-1 rounded-lg">
                 <p className="font-sans font-medium text-xs leading-4">Most Popular</p>
               </div>
             </div>
 
-            <div className="flex flex-col gap-2 p-6 md:p-8">
-              <H3 className="font-semibold text-2xl leading-7">
+            <div className="flex flex-col gap-4 p-6 md:p-8">
+              <H3>
                 Multi-Location Groups
               </H3>
               <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
@@ -87,31 +87,29 @@ export default function PricingSection() {
 
             <ul className="flex flex-col">
               {multiLocationFeatures.map((feature, index) => (
-                <li key={index} className="flex items-start gap-3 p-6 md:p-8 md:py-4 border-t">
-                  <Check className="w-5 h-5 text-[#5e48f0] shrink-0 mt-0.5" />
-                  <span className="font-sans font-normal text-sm leading-5 text-[#262626]">
+                <li key={index} className="flex items-start gap-2 py-3 md:p-4 px-4 md:px-6 border-t last:border-b border-[#e5e7eb]">
+                  <Check className="w-5 h-5 text-[#5e48f0]" />
+                  <span className="font-sans font-normal text-sm leading-5 text-[#606060]">
                     {feature}
                   </span>
                 </li>
               ))}
             </ul>
 
-            <div className="flex flex-col gap-2 p-6 md:p-8 border-t border-[#e5e7eb]">
+            {/* <div className="flex flex-col gap-2 p-6 md:p-8 border-[#e5e7eb]">
               <p className="font-sans font-medium text-sm leading-5 text-[#262626]">
                 Trusted by 100+ multi-location groups
               </p>
               <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
                 "Scaled seamlessly across multiple locations. Game-changer for our practice group." - Pacific Ocean Dental Group
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Footer Note */}
-        <div className="flex flex-col gap-2 items-center max-w-[600px] mx-auto mb-12">
-          <p className="font-sans font-normal text-sm leading-5 text-[#606060] text-center">
-            From startups to established groups, PracticeDilly grows with you
-          </p>
+        {/* <div className="flex flex-col gap-2 items-center max-w-[600px] mx-auto mb-12">
+
           <div className="flex items-center gap-4">
             <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
               No contracts
@@ -125,25 +123,24 @@ export default function PricingSection() {
               Add locations as you grow
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* CTA Section */}
-        <div className="flex flex-col gap-6 items-center max-w-[600px] mx-auto pt-8 border-t border-[#e5e7eb]">
+        <div className="flex flex-col gap-6 items-center max-w-[600px] mx-auto pt-8">
           <div className="flex flex-col gap-3 items-center text-center">
-            <h3 className="font-heading font-semibold text-2xl leading-7 text-[#262626]">
+            <h3 className="font-heading font-semibold text-2xl leading-7">
               Ready to get started?
             </h3>
             <p className="font-sans font-normal text-base leading-6 text-[#606060]">
-              Join hundreds of practices already using PracticeDilly to streamline their operations.
+            From startups to established groups, PracticeDilly grows with you
             </p>
           </div>
           <Button
-            variant="primary"
-            icon={<ArrowRight className="h-5 w-5" />}
-            iconPosition="right"
+            variant="secondary"
             className="px-8 py-3 text-base font-medium"
+            href="/pricing"
           >
-            Start Free Trial
+            Get Pricing
           </Button>
           <p className="font-sans font-normal text-xs leading-4 text-[#606060] text-center">
             Setup takes less than 15 minutes • No credit card required

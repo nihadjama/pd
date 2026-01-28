@@ -10,6 +10,7 @@ import integrationsData from "@/data/integrations.json";
 import TestimonialSection from "@/components/TestimonialSection";
 import GridBackground from "@/components/GridBackground";
 import CTASection from "@/components/CTASection";
+import HeroPill from "@/common/HeroPill";
 
 export default function IntegrationsPage() {
   return (
@@ -20,6 +21,7 @@ export default function IntegrationsPage() {
         <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
+            <HeroPill icon="Plug" text="Integrations" />
             <HeadingWithHighlight
               text="Seamlessly Integrated "
               highlighted="With Your Practice"
