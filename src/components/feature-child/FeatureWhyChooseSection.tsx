@@ -1,6 +1,8 @@
 import SectionContainer from "@/common/SectionContainer";
 import GridCard from "@/common/GridCard";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
+import { H3 } from "@/common/headings";
+import { Paragraph } from "@/common/typography";
 
 interface FeatureWhyChooseSectionProps {
   heading: {
@@ -23,16 +25,16 @@ export default function FeatureWhyChooseSection({
 }: FeatureWhyChooseSectionProps) {
   return (
     <SectionContainer className="items-center md:items-start">
-      <div className="flex flex-col gap-4 items-center md:items-start px-4 md:px-8 lg:px-16 py-6 md:py-12 lg:py-16 w-full md:max-w-[597px]">
+      <div className="flex md:flex-row flex-col md:gap-16 gap-6 items-center md:items-start px-4 md:px-8 lg:px-12 py-6 md:py-12 lg:py-16 w-full">
         <HeadingWithHighlight
           text={heading.text}
           highlighted={heading.highlighted}
           suffix={heading.suffix}
-          className="text-center md:text-left"
+          className="md:text-left"
         />
-        <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal w-full text-center md:text-left">
+        <Paragraph className="w-full md:text-left">
           {description}
-        </p>
+        </Paragraph>
       </div>
 
       <div className="border-y border-border flex flex-wrap w-full">
@@ -52,11 +54,11 @@ export default function FeatureWhyChooseSection({
                     {item.number}
                   </p>
                 </div>
-                <div className="flex flex-col items-start w-full">
+                <div className="flex flex-col items-start w-full gap-4 md:gap-6">
                   <div className="flex items-center pb-1 pt-0 px-0 w-full">
-                    <p className="font-sans font-medium leading-6 text-foreground text-base md:whitespace-nowrap tracking-normal break-words">
+                    <H3>
                       {item.title}
-                    </p>
+                    </H3>
                   </div>
                   <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal w-full">
                     {item.description}

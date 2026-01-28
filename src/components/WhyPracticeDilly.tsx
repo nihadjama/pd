@@ -47,7 +47,7 @@ export default function WhyPracticeDilly() {
       </div>
 
       {/* 5-Star Rating Section */}
-      <div className="flex flex-col gap-2.5 items-center mt-10 md:mt-12 pt-8 border-t border-border w-full max-w-2xl">
+      {/* <div className="flex flex-col gap-2.5 items-center mt-10 md:mt-12 pt-8 border-t border-border w-full max-w-2xl">
         <div className="flex items-center gap-1">
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="h-5 w-5 text-warning fill-warning" />
@@ -56,7 +56,7 @@ export default function WhyPracticeDilly() {
         <p className="font-sans font-medium text-base leading-6 text-foreground text-center">
           Trusted and rated 5 stars by <span className="text-primary font-semibold">500+ practices</span> nationwide
         </p>
-      </div>
+      </div> */}
     </SectionContainer>
   );
 }

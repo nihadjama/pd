@@ -96,7 +96,7 @@ export default function AnimatedMolar() {
   }, []);
 
   return (
-    <div className="ascii-reveal absolute left-1/2 -bottom-[500px] z-0 -translate-x-1/2 -translate-y-1/2 w-[1000px] font-mono text-[5px] leading-[0.67] tracking-[0.84px] text-[#7864ff] whitespace-pre opacity-0 pointer-events-none select-none">
+    <div className="ascii-reveal absolute left-1/2 -bottom-[500px] z-0 -translate-x-1/2 -translate-y-1/2 w-[1000px] font-mono text-[5px] leading-[0.67] tracking-[0.84px] text-[#7864ff]/50 whitespace-pre opacity-0 pointer-events-none select-none">
       {displayText || molar}
     </div>
   );

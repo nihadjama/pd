@@ -8,6 +8,7 @@ import TestimonialSection from "@/components/TestimonialSection";
 import HomeFAQSection from "@/components/HomeFAQSection";
 import GridBackground from "@/components/GridBackground";
 import { H1, H2, H3 } from "@/common/headings";
+import { Paragraph, ContentListItem } from "@/common/typography";
 import { Check, ArrowRight } from "lucide-react";
 import FAQItem from "@/common/FAQItem";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
@@ -169,9 +170,9 @@ export default function PricingPage() {
               className="text-center"
               as="h1"
             />
-            <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
+            <Paragraph className="max-w-2xl">
               We want dental practices of all sizes to take advantage of technology and automation. That's why our pricing is based on practice size and offers all the features.
-            </p>
+            </Paragraph>
 
             {/* CTA Buttons */}
             <div className="flex items-center gap-4 flex-wrap justify-center">
@@ -209,9 +210,9 @@ export default function PricingPage() {
                   <H3 className="font-semibold">
                     {plan.name}
                   </H3>
-                  <p className="font-sans font-normal text-sm leading-5 text-muted">
+                  <Paragraph variant="sm" color="muted">
                     {plan.description}
-                  </p>
+                  </Paragraph>
                 </div>
 
                 <div className="flex flex-col gap-1 px-6 md:px-8">
@@ -235,9 +236,9 @@ export default function PricingPage() {
                 </div>
 
                 <div className="flex flex-col gap-2 py-3 md:p-4 px-4 md:px-6 border-t border-border">
-                  <p className="font-sans font-normal text-xs leading-4 text-muted text-center">
+                  <Paragraph variant="xs" color="muted" className="text-center">
                     No contracts, No setup fee
-                  </p>
+                  </Paragraph>
                 </div>
               </div>
             ))}
@@ -251,9 +252,9 @@ export default function PricingPage() {
           <div className="flex flex-col gap-10 items-center max-w-6xl mx-auto">
             <div className="flex flex-col gap-4 items-center">
               <HeadingWithHighlight text="" highlighted="All Features " suffix="Included in Each Plan" className="text-center" />
-              <p className="font-sans font-normal text-base text-foreground text-center">
+              <Paragraph className="text-center">
                 Regardless of the plan you choose, you will enjoy every feature listed below
-              </p>
+              </Paragraph>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full border">
@@ -263,17 +264,16 @@ export default function PricingPage() {
                   <H3 className="font-medium">
                     {category.category}
                   </H3>
-                  <p className="font-sans font-normal text-sm text-muted mt-1.5">
+                  <Paragraph variant="sm" color="muted" className="mt-1.5">
                     {category.description}
-                  </p>
+                  </Paragraph>
                   </div>
                   <ul className="flex flex-col w-full">
                     {category.items.map((item, itemIndex) => (
                       <li key={itemIndex} className="flex items-start gap-2 py-3 md:p-4 px-4 md:px-6 border-t last:border-b border-border">
-                        <Check className="w-5 h-5 text-primary" />
-                        <span className="font-sans font-normal text-sm leading-5 text-muted">
+                        <ContentListItem variant="check">
                           {item}
-                        </span>
+                        </ContentListItem>
                       </li>
                     ))}
                   </ul>
@@ -283,12 +283,12 @@ export default function PricingPage() {
             </div>
 
             <div className="flex flex-col gap-4 items-center border-border w-full">
-              <p className="font-sans font-normal text-base leading-5 text-foreground text-center">
+              <Paragraph className="text-center">
                 Looking for only a specific feature listed above? Let us know, we can certainly help you with that.
-              </p>
-              <p className="font-sans font-medium text-base leading-5 text-primary text-center">
+              </Paragraph>
+              <Paragraph weight="medium" color="primary" className="text-center">
                 Call us at (949) 407-5907
-              </p>
+              </Paragraph>
             </div>
           </div>
         </div>
@@ -341,9 +341,9 @@ export default function PricingPage() {
               text="Frequently Asked "
               highlighted="Questions"
             />
-            <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full">
+            <Paragraph className="w-full">
               Everything you need to know about PracticeDilly pricing and features.
-            </p>
+            </Paragraph>
           </div>
 
           <div className="flex flex-col w-full md:w-1/2">

@@ -51,13 +51,13 @@ export default function IntegrationHeroSection({
       <div className="flex w-full flex-col items-center gap-8 md:gap-16 lg:gap-20 relative z-10">
         {/* Main Content Card */}
 
-        <div className="flex max-w-[1280px] md:flex-row items-center flex-col gap-6 md:gap-12 w-full px-4 md:px-6 lg:px-0">
+        <div className="flex max-w-[1280px] md:flex-row items-center flex-col gap-6 md:gap-12 w-full px-4 md:px-6 lg:px-10">
 
-          <div className="flex flex-col items-start px-0 md:px-8 lg:pl-12 w-full md:w-1/2 flex-1">
+          <div className="flex flex-col items-start px-0 md:px-8 lg:pr-0 w-full md:w-1/2 flex-1">
             <div className="flex flex-col gap-6 md:gap-8 w-full">
               {/* Category Badge */}
               <div className="flex flex-col gap-4 md:gap-6 justify-start items-start w-full">
-                <HeroPill icon={category.icon} text={category.text} />
+                <HeroPill icon={category.icon} text={`${heading.highlighted} Integration`} />
 
                 {/* Heading */}
                 <HeadingWithHighlight

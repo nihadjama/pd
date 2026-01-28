@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LogoSVG from "./LogoSVG";
+import { NavListItem, Paragraph } from "./typography";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
@@ -64,7 +65,7 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16 border-b border-border">
               {/* Left: Logo */}
               <div className="flex-1">
-                <Link href="/" className="flex items-center w-fit mb-4" aria-label="Home">
+                <Link href="/" className="flex items-center w-fit" aria-label="Home">
                   <LogoSVG />
                 </Link>
               </div>
@@ -121,14 +122,14 @@ export default function Footer() {
                 </h3>
                 <ul className="flex flex-col list-none">
                   {navigationLinks.map((link, index) => (
-                    <li key={link.label} className={index < navigationLinks.length - 1 ? "border-b " : ""}>
-                      <Link
-                        href={link.href}
-                        className="block py-4 px-6  font-sans font-normal text-sm text-foreground hover:text-primary transition-colors"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
+                    <NavListItem
+                      key={link.label}
+                      href={link.href}
+                      borderBottom={index < navigationLinks.length - 1}
+                      className="block py-4 px-6"
+                    >
+                      {link.label}
+                    </NavListItem>
                   ))}
                 </ul>
               </div>
@@ -139,39 +140,18 @@ export default function Footer() {
                   Company
                 </h3>
                 <ul className="flex flex-col list-none">
-                  <li className="border-b">
-                    <Link
-                      href="/about"
-                      className="block py-4 px-6 font-sans font-normal text-sm text-foreground hover:text-primary transition-colors"
-                    >
-                      About
-                    </Link>
-                  </li>
-                  <li className="border-b">
-                    <Link
-                      href="/blog"
-                      className="block py-4 px-6 font-sans font-normal text-sm text-foreground hover:text-primary transition-colors"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="border-b">
-                    <Link
-                      href="/testimonials"
-                      className="block py-4 px-6 font-sans font-normal text-sm text-foreground hover:text-primary transition-colors"
-                    >
-                      Testimonials
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      href="/contact"
-                      className="block py-4 px-6 font-sans font-normal text-sm text-foreground hover:text-primary transition-colors"
-                    >
-                      Contact
-                    </Link>
-                  </li>
+                  <NavListItem href="/about" borderBottom className="block py-4 px-6">
+                    About
+                  </NavListItem>
+                  <NavListItem href="/blog" borderBottom className="block py-4 px-6">
+                    Blog
+                  </NavListItem>
+                  <NavListItem href="/testimonials" borderBottom className="block py-4 px-6">
+                    Testimonials
+                  </NavListItem>
+                  <NavListItem href="/contact" className="block py-4 px-6">
+                    Contact
+                  </NavListItem>
                 </ul>
               </div>
 
@@ -203,14 +183,14 @@ export default function Footer() {
                 </h3>
                 <ul className="flex flex-col list-none">
                   {featureLinks.slice(5, 10).map((link, index) => (
-                    <li key={link.label} className={index < 4 ? "border-b" : ""}>
-                      <Link
-                        href={link.href}
-                        className="block py-4 px-6 font-sans font-normal text-sm text-foreground hover:text-primary transition-colors"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
+                    <NavListItem
+                      key={link.label}
+                      href={link.href}
+                      borderBottom={index < 4}
+                      className="block py-4 px-6"
+                    >
+                      {link.label}
+                    </NavListItem>
                   ))}
                 </ul>
               </div>
@@ -220,9 +200,9 @@ export default function Footer() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 py-6 md:pt-8 px-4 md:px-6 lg:px-8">
               {/* Left: Copyright and Status */}
               <div className="flex flex-col gap-2">
-                <p className="font-sans font-normal text-sm text-muted">
+                <Paragraph variant="sm" color="muted">
                   © {currentYear} PracticeDilly. All rights reserved.
-                </p>
+                </Paragraph>
               </div>
 
               {/* Right: Legal Links */}

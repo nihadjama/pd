@@ -13,7 +13,7 @@ export default function FAQItem({ question, answer, isOpen, onToggle }: FAQItemP
   return (
     <button
       onClick={onToggle}
-      className="border-border border-b flex flex-col items-start px-4 md:px-8 lg:px-16 py-4 relative shrink-0 w-full md:w-full text-left"
+      className="border-border border-b flex flex-col items-start px-4 md:px-8 lg:px-12 py-4 relative shrink-0 w-full md:w-full text-left"
     >
       <div className="flex items-start relative shrink-0 w-full">
         <div className="flex flex-col grow items-start min-w-0 shrink-0 w-full">

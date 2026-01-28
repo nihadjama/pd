@@ -23,7 +23,7 @@ export default function FeatureBenefitsSection({
 }: FeatureBenefitsSectionProps) {
   return (
     <SectionContainer className="items-center md:items-start border-t">
-      <div className="flex flex-col gap-4 items-center md:items-start px-4 md:px-8 lg:px-16 py-6 md:py-12 lg:py-16 w-full max-w-1/2">
+      <div className="flex flex-col gap-4 items-center md:items-start px-4 md:px-8 lg:px-12 py-6 md:py-12 lg:py-16 w-full md:max-w-1/2">
         <HeadingWithHighlight
           text={heading.text}
           highlighted={heading.highlighted}

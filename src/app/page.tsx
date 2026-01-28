@@ -13,6 +13,7 @@ import HomeFAQSection from "@/components/HomeFAQSection";
 import CTASection from "@/components/CTASection";
 import Button from "@/common/Button";
 import { H1 } from "@/common/headings";
+import { Paragraph, SmallText } from "@/common/typography";
 import { Play,Star, Check, Circle, LucideArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -85,6 +86,7 @@ export default function Home() {
         {/* Grid Background */}
         <GridBackground gridSize={1280/11} contentPadding={64} />
         
+        
         {/* ASCII Background Art */}
         {/* <AnimatedMolar /> */}
 
@@ -93,9 +95,9 @@ export default function Home() {
           {/* Badge */}
           <div className="flex items-center gap-2.5 rounded-full border px-1.5 py-1">
             <div className="flex items-center rounded-full bg-primary px-1.5 py-px">
-              <p className="text-xs leading-4 text-primary-foreground">New</p>
+              <Paragraph variant="xs" color="primary" className="text-primary-foreground">New</Paragraph>
             </div>
-            <p className="text-sm leading-5 text-foreground">AI Voice Intelligence 2.0</p>
+            <Paragraph variant="sm">AI Voice Intelligence 2.0</Paragraph>
           </div>
 
           {/* Heading and Description */}
@@ -104,24 +106,23 @@ export default function Home() {
               AI-Powered Patient Communication for{" "}<br/>
               <span className="text-primary">Dental Practices</span>
             </H1>
-            <p className="max-w-[455px] font-sans text-base text-foreground">
+            <Paragraph className="max-w-[455px]">
               Combine phones, texting, scheduling, and recalls in one AI-powered communication hub built for multi-location dental groups and healthcare practices.
-            </p>
+            </Paragraph>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-[15px]">
             <Button variant="primary"
-            icon={<LucideArrowRight className="h-5 w-5" />}
-              iconPosition="right"
             >
-              Get Started
+              Get Started - No Setup Fee!
             </Button>
-            {/* <Button 
+            <Button 
               variant="secondary" 
+              href="/pricing"
             >
-              Watch Demo
-            </Button> */}
+              Pricing
+            </Button>
           </div>
 
           {/* Trust Indicator */}
@@ -133,9 +134,9 @@ export default function Home() {
                   <Star key={i} className="h-5 w-5 text-warning fill-warning" />
                 ))}
               </div>
-              <p className="text-sm sm:text-base font-medium leading-5 text-foreground text-center sm:text-left">
+              <Paragraph variant="sm" weight="medium" className="sm:text-base sm:leading-6 text-center sm:text-left">
                 PracticeDilly is Trusted by <span className="text-primary">500+</span> practices
-              </p>
+              </Paragraph>
             </div>
           </div>
         </div>
