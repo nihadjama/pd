@@ -83,7 +83,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
       </SectionContainer>
 
       {/* Hero Image */}
-      <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5 border-y border-[#e5e7eb]">
+      {/* <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5 border-y border-[#e5e7eb]">
         <ImageWithFallback
           src={`/blog-images/${blog.slug}.png`}
           alt={blog.title}
@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           className="object-cover"
           priority
         />
-      </div>
+      </div> */}
 
       {/* Article Content */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 py-12">

@@ -1,0 +1,248 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import caseStudiesData from "@/data/case-studies.json";
+import SectionContainer from "@/common/SectionContainer";
+import { H1, H2, H3 } from "@/common/headings";
+import ImageWithFallback from "@/common/ImageWithFallback";
+import { ArrowLeft, ExternalLink, MapPin } from "lucide-react";
+import type { Metadata } from "next";
+import CaseStudyCard from "@/common/CaseStudyCard";
+
+interface CaseStudyPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+  return caseStudiesData.map((caseStudy) => ({
+    slug: caseStudy.slug,
+  }));
+}
+
+export async function generateMetadata({ params }: CaseStudyPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const caseStudy = caseStudiesData.find((cs) => cs.slug === slug);
+
+  if (!caseStudy) {
+    return {
+      title: "Case Study Not Found",
+    };
+  }
+
+  return {
+    title: `${caseStudy.title} | PracticeDilly Case Studies`,
+    description: caseStudy.description,
+    keywords: [
+      "dental practice case study",
+      "dental practice success story",
+      "patient engagement results",
+      caseStudy.title.toLowerCase(),
+      ...caseStudy.description.split(" ").slice(0, 5),
+    ],
+    openGraph: {
+      title: caseStudy.title,
+      description: caseStudy.description,
+      type: "article",
+      images: [`/case-studies/${caseStudy.slug}.png`],
+    },
+  };
+}
+
+export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
+  const { slug } = await params;
+  const caseStudy = caseStudiesData.find((cs) => cs.slug === slug);
+
+  if (!caseStudy) {
+    notFound();
+  }
+
+  // Find related case studies
+  const relatedCaseStudies = caseStudiesData
+    .filter((cs) => caseStudy.relatedSlugs?.includes(cs.slug))
+    .slice(0, 3);
+
+  // Parse content into paragraphs
+  const contentParagraphs = caseStudy.content.split("\n\n").filter((p) => p.trim());
+
+  return (
+    <div className="relative min-h-screen bg-[#f9f9f9]">
+      {/* Back Link */}
+      <SectionContainer className="px-4 md:px-8 lg:px-16 pt-8 pb-4">
+        <Link
+          href="/case-studies"
+          className="inline-flex items-center gap-2 text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+        >
+          <ArrowLeft className="h-4 w-4" />
+          <span>Back to all case studies</span>
+        </Link>
+      </SectionContainer>
+
+      {/* Hero Image */}
+      <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0] to-[#5e48f0]/20 border-y border-[#e5e7eb]">
+        {/* <ImageWithFallback
+          src={`/case-studies/${caseStudy.slug}.png`}
+          alt={caseStudy.title}
+          fill
+          className="object-cover"
+          priority
+        /> */}
+      </div>
+
+      {/* Article Content */}
+      <SectionContainer className="px-4 md:px-8 lg:px-16 py-12">
+        <article className="max-w-3xl mx-auto">
+          {/* Header */}
+          <div className="flex flex-col gap-6 mb-12">
+            {/* Category Badge */}
+            <div className="flex items-center">
+              <span className="text-xs font-medium text-[#5e48f0] bg-[rgba(94,72,240,0.1)] px-2.5 py-1 rounded-full">
+                Case Study
+              </span>
+            </div>
+
+            {/* Title */}
+            <H1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-[#262626] leading-tight">
+              {caseStudy.title}
+            </H1>
+
+            {/* Meta Info */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm text-[#606060]">
+              {caseStudy.location && (
+                <div className="flex items-center gap-1.5">
+                  <MapPin className="h-4 w-4" />
+                  <span>{caseStudy.location}</span>
+                </div>
+              )}
+              {caseStudy.website && (
+                <div className="flex items-center gap-1.5">
+                  <ExternalLink className="h-4 w-4" />
+                  <a
+                    href={caseStudy.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#5e48f0] hover:underline"
+                  >
+                    Visit Website
+                  </a>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Stats Section (if available) */}
+          {caseStudy.stats && caseStudy.stats.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 bg-white border border-[#e5e7eb] rounded-xl">
+              {caseStudy.stats.map((stat, index) => (
+                <div key={index} className="flex flex-col items-center text-center">
+                  <div className="text-3xl md:text-4xl font-heading font-bold text-[#5e48f0] mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm font-sans text-[#606060]">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Content */}
+          <div className="prose prose-lg max-w-none">
+            {contentParagraphs.map((paragraph, index) => {
+              // Check if it's a heading
+              if (paragraph.startsWith("## ")) {
+                const headingText = paragraph.replace("## ", "");
+                return (
+                  <H2
+                    key={index}
+                    className="text-2xl font-heading font-semibold text-[#262626] mt-8 mb-4"
+                  >
+                    {headingText}
+                  </H2>
+                );
+              }
+
+              // Check if it's a subheading
+              if (paragraph.startsWith("### ")) {
+                const headingText = paragraph.replace("### ", "");
+                return (
+                  <H3
+                    key={index}
+                    className="text-xl font-heading font-semibold text-[#262626] mt-6 mb-3"
+                  >
+                    {headingText}
+                  </H3>
+                );
+              }
+
+              // Check if it's a list item
+              if (paragraph.startsWith("- ")) {
+                const listItems = paragraph
+                  .split("\n")
+                  .filter((line) => line.trim().startsWith("- "))
+                  .map((line) => line.replace("- ", "").trim());
+
+                return (
+                  <ul key={index} className="list-disc list-inside space-y-2 mb-6 text-[#262626]">
+                    {listItems.map((item, itemIndex) => (
+                      <li key={itemIndex} className="font-sans text-base leading-6">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                );
+              }
+
+              // Regular paragraph
+              if (paragraph.trim()) {
+                // Check if it's a quote (starts and ends with quotes)
+                if (paragraph.startsWith('"') && paragraph.endsWith('"')) {
+                  return (
+                    <blockquote
+                      key={index}
+                      className="border-l-4 border-[#5e48f0] pl-4 py-2 my-6 italic text-[#262626] font-sans text-base leading-7"
+                    >
+                      {paragraph.slice(1, -1)}
+                    </blockquote>
+                  );
+                }
+
+                return (
+                  <p
+                    key={index}
+                    className="font-sans text-base leading-7 text-[#262626] mb-6"
+                  >
+                    {paragraph}
+                  </p>
+                );
+              }
+
+              return null;
+            })}
+          </div>
+        </article>
+      </SectionContainer>
+
+      {/* Related Case Studies */}
+      {relatedCaseStudies.length > 0 && (
+        <SectionContainer className="px-4 md:px-8 lg:px-16 border-t border-[#e5e7eb]">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-2xl font-heading font-semibold text-[#262626] mb-8">
+              Related Case Studies
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {relatedCaseStudies.map((relatedCaseStudy) => (
+                <CaseStudyCard
+                  key={relatedCaseStudy.slug}
+                  slug={relatedCaseStudy.slug}
+                  title={relatedCaseStudy.title}
+                  description={relatedCaseStudy.description}
+                  image={`/case-studies/${relatedCaseStudy.slug}.png`}
+                  featured={relatedCaseStudy.featured}
+                />
+              ))}
+            </div>
+          </div>
+        </SectionContainer>
+      )}
+    </div>
+  );
+}

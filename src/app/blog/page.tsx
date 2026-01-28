@@ -38,15 +38,7 @@ export default function BlogPage() {
               Expert insights on dental practice management, patient engagement, and growth strategies from PracticeDilly.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex items-center gap-4 flex-wrap justify-center">
-              <Button href="#get-started" variant="primary" className="px-6">
-                Get Started - No Setup Fee!
-              </Button>
-              <Button href="tel:+19494075907" variant="secondary" className="px-6">
-                Call (949) 407-5907
-              </Button>
-            </div>
+
           </div>
         </div>
       </div>
@@ -54,7 +46,7 @@ export default function BlogPage() {
       {/* Blog Posts Grid */}
       <SectionContainer className="items-start px-4 md:px-8 lg:px-16">
         <div className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-[#e5e7eb] pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-[#e5e7eb]">
             {blogsData.map((blog) => (
               <BlogCard
                 key={blog.slug}

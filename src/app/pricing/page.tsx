@@ -8,9 +8,12 @@ import TestimonialSection from "@/components/TestimonialSection";
 import HomeFAQSection from "@/components/HomeFAQSection";
 import GridBackground from "@/components/GridBackground";
 import { H1, H2, H3 } from "@/common/headings";
-import { Check } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import FAQItem from "@/common/FAQItem";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
+import FeatureCard from "@/common/FeatureCard";
+import CTACard from "@/common/CTACard";
+import HeroPill from "@/common/HeroPill";
 import { useState } from "react";
 
 export default function PricingPage() {
@@ -46,6 +49,7 @@ export default function PricingPage() {
   const allFeatures = [
     {
       category: "Reminders",
+      description: "Keep patients informed and reduce no-shows",
       items: [
         "Appointment Reminders",
         "Automated Confirmations",
@@ -56,6 +60,7 @@ export default function PricingPage() {
     },
     {
       category: "Texting",
+      description: "Engage with patients through messaging",
       items: [
         "2-way Texting",
         "Landline Texting",
@@ -66,6 +71,7 @@ export default function PricingPage() {
     },
     {
       category: "Recall",
+      description: "Bring patients back with follow-ups",
       items: [
         "On-Demand Recall",
         "Automated Recall",
@@ -76,6 +82,7 @@ export default function PricingPage() {
     },
     {
       category: "Bulk Messaging",
+      description: "Reach multiple patients at once efficiently",
       items: [
         "Mass Texting",
         "Mass Emails",
@@ -86,6 +93,7 @@ export default function PricingPage() {
     },
     {
       category: "Reviews",
+      description: "Build your online reputation effortlessly",
       items: [
         "Google Reviews",
         "Facebook Reviews",
@@ -96,11 +104,13 @@ export default function PricingPage() {
     },
     {
       category: "Paperless Forms",
+      description: "Streamline patient intake digitally",
       items: [
         "Covid-19 Pre-Screening",
         "New Patient Forms",
         "Treatment Consent Form",
         "Form Customization",
+        "Auto Fill Forms",
       ],
     },
   ];
@@ -109,18 +119,22 @@ export default function PricingPage() {
     {
       title: "All In One",
       description: "You don't need multiple tools. Reminders, Texting, Paperless Forms, Reputation Management, etc. all available in one platform.",
+      icon: "Plug",
     },
     {
       title: "Great Support",
       description: "We even have our support staff providing you with assistance after hours or during the weekend.",
+      icon: "MessageCircle",
     },
     {
       title: "Best Pricing",
       description: "We want technology to be widely available to dental practices of all sizes and offer the best price in the market.",
+      icon: "DollarSign",
     },
     {
       title: "Real-Time Communication",
       description: "Our No-Sync technology enables us to obtain accurate information, so you will not see reminders sent out for canceled appointments.",
+      icon: "Zap",
     },
   ];
 
@@ -143,44 +157,55 @@ export default function PricingPage() {
   return (
     <div className="relative min-h-screen bg-[#f9f9f9]">
       {/* Hero Section */}
-      <SectionContainer className="relative items-center border-y border-[#e5e7eb]">
+      <div className="relative border-b border-[#e5e7eb] py-20">
         {/* Grid Background */}
         <GridBackground gridSize={1278/11} lineColor="#e5e7eb" contentWidth={960} contentPadding={64} />
-        <div className="relative z-10 w-full px-4 lg:px-16">
-          <div className="flex flex-col gap-6 items-center py-12">
-            <H1 className="text-center">
-              Affordable Plans for{" "}
-              <span className="text-[#5e48f0]">All</span>
-            </H1>
-            <p className="max-w-[600px] font-sans text-base text-[#262626] text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
+          <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
+            <HeroPill icon="DollarSign" text="Pricing" />
+            <HeadingWithHighlight
+              text="Affordable Plans for "
+              highlighted="All"
+              className="text-center"
+              as="h1"
+            />
+            <p className="font-sans text-base leading-6 text-[#262626] max-w-2xl">
               We want dental practices of all sizes to take advantage of technology and automation. That's why our pricing is based on practice size and offers all the features.
             </p>
+
+            {/* CTA Buttons */}
+            <div className="flex items-center gap-4 flex-wrap justify-center">
+              <Button href="#get-started" variant="primary" className="px-6">
+                Get Started - No Setup Fee!
+              </Button>
+              <Button href="tel:+19494075907" variant="secondary" className="px-6">
+                Call (949) 407-5907
+              </Button>
+            </div>
           </div>
         </div>
-      </SectionContainer>
+      </div>
 
       {/* Pricing Plans Section */}
       <SectionContainer className="items-center">
         <div className="w-full px-4 lg:px-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-[1200px] mx-auto md:gap-0 gap-y-16 border-x border-[#e5e7eb]">
             {pricingPlans.map((plan, index) => (
               <div
                 key={plan.name}
-                className={`relative border rounded-xl p-6 md:p-8 flex flex-col gap-6 hover:shadow-lg transition-all duration-200 h-full ${
-                  plan.popular
-                    ? "border-2 border-[#5e48f0]"
-                    : "border-[#e5e7eb] hover:border-[#5e48f0]"
+                className={`relative border-l -ml-px border-[#e5e7eb] flex flex-col gap-6 transition-all duration-200 h-full border-y ${
+                  plan.popular ? "border-[#5e48f0]" : ""
                 }`}
               >
                 {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                    <span className="bg-[#5e48f0] text-[#f9f9f9] text-xs font-medium px-3 py-1 rounded-full">
-                      Most Popular
-                    </span>
+                  <div className="absolute top-4 right-4 z-10">
+                    <div className="bg-[#5e48f0] text-[#f9f9f9] px-3 py-1 rounded-lg">
+                      <p className="font-sans font-medium text-xs leading-4">Most Popular</p>
+                    </div>
                   </div>
                 )}
 
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-4 p-6 md:p-8">
                   <H3 className="font-semibold">
                     {plan.name}
                   </H3>
@@ -189,7 +214,7 @@ export default function PricingPage() {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-1 pt-2">
+                <div className="flex flex-col gap-1 px-6 md:px-8">
                   <div className="flex items-baseline gap-2">
                     <span className="font-heading font-semibold text-4xl leading-tight text-[#262626]">
                       {plan.price}
@@ -200,14 +225,16 @@ export default function PricingPage() {
                   </div>
                 </div>
 
-                <Button 
-                  variant={plan.popular ? "primary" : "secondary"} 
-                  className="w-full mt-auto"
-                >
-                  {plan.cta}
-                </Button>
+                <div className="px-6 md:px-8 pb-6 md:pb-8">
+                  <Button 
+                    variant={plan.popular ? "primary" : "secondary"} 
+                    className="w-full"
+                  >
+                    {plan.cta}
+                  </Button>
+                </div>
 
-                <div className="flex flex-col gap-2 pt-4 border-t border-[#e5e7eb]">
+                <div className="flex flex-col gap-2 py-3 md:p-4 px-4 md:px-6 border-t border-[#e5e7eb]">
                   <p className="font-sans font-normal text-xs leading-4 text-[#606060] text-center">
                     No contracts, No setup fee
                   </p>
@@ -221,32 +248,36 @@ export default function PricingPage() {
       {/* All Features Included Section */}
       <SectionContainer className="items-center">
         <div className="w-full px-4 lg:px-16">
-          <div className="flex flex-col gap-10 items-center max-w-4xl mx-auto">
+          <div className="flex flex-col gap-10 items-center max-w-6xl mx-auto">
             <div className="flex flex-col gap-4 items-center">
-              <H2 className="text-center">
-                All Features Included in Each Plan
-              </H2>
+              <HeadingWithHighlight text="" highlighted="All Features " suffix="Included in Each Plan" className="text-center" />
               <p className="font-sans font-normal text-base text-[#262626] text-center">
                 Regardless of the plan you choose, you will enjoy every feature listed below
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full border">
               {allFeatures.map((category, index) => (
-                <div key={index} className="flex flex-col gap-4">
-                  <H3 className="font-semibold">
+                <div key={index} className="flex flex-col border-l -ml-px border-[#e5e7eb]">
+                  <div className="py-3 md:p-4 px-4 md:px-6">
+                  <H3 className="font-medium">
                     {category.category}
                   </H3>
-                  <ul className="flex flex-col gap-2.5">
+                  <p className="font-sans font-normal text-sm text-[#606060] mt-1.5">
+                    {category.description}
+                  </p>
+                  </div>
+                  <ul className="flex flex-col w-full">
                     {category.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start gap-2.5">
-                        <Check className="w-5 h-5 text-[#5e48f0] shrink-0 mt-0.5" />
-                        <span className="font-sans font-normal text-sm leading-5 text-[#262626]">
+                      <li key={itemIndex} className="flex items-start gap-2 py-3 md:p-4 px-4 md:px-6 border-t last:border-b border-[#e5e7eb]">
+                        <Check className="w-5 h-5 text-[#5e48f0]" />
+                        <span className="font-sans font-normal text-sm leading-5 text-[#606060]">
                           {item}
                         </span>
                       </li>
                     ))}
                   </ul>
+                  <div className="h-16 border-b -mb-px border-[#e5e7eb] bg-[#f9f9f9]"></div>
                 </div>
               ))}
             </div>
@@ -268,21 +299,23 @@ export default function PricingPage() {
         <div className="w-full px-4 lg:px-16">
           <div className="flex flex-col gap-10 items-center max-w-4xl mx-auto">
             <div className="flex flex-col gap-4 items-center">
-              <H2 className="text-center">
-                Why PracticeDilly?
-              </H2>
+              <HeadingWithHighlight
+                text="Why "
+                highlighted="PracticeDilly"
+                suffix="?"
+                className="text-center"
+              />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
               {whyPracticeDillyItems.map((item, index) => (
-                <div key={index} className="flex flex-col gap-3 border border-[#e5e7eb] rounded-xl p-6">
-                  <H3>
-                    {item.title}
-                  </H3>
-                  <p className="font-sans font-normal text-sm leading-5 text-[#606060]">
-                    {item.description}
-                  </p>
-                </div>
+                <FeatureCard
+                  key={index}
+                  icon={item.icon}
+                  title={item.title}
+                  description={item.description}
+                  variant="simple"
+                />
               ))}
             </div>
           </div>
@@ -290,18 +323,12 @@ export default function PricingPage() {
       </SectionContainer>
 
       {/* No Contracts Section */}
-      <SectionContainer className="items-center">
-        <div className="w-full px-4 lg:px-16">
-          <div className="flex flex-col gap-4 items-center max-w-2xl mx-auto py-12 border-y border-[#e5e7eb]">
-            <H2 className="text-center">
-              No Contracts, No Setup Fee
-            </H2>
-            <p className="font-sans font-normal text-base leading-6 text-[#262626] text-center">
-              We want you to be completely satisfied before you commit to making any payments. That's why we offer our service without any setup fees or contracts.
-            </p>
-          </div>
-        </div>
-      </SectionContainer>
+      <CTACard
+        headingHighlighted="No Contracts"
+        headingSuffix=", No Setup Fee"
+        description="We want you to be completely satisfied before you commit to making any payments. That's why we offer our service without any setup fees or contracts."
+        buttonText="Get Started"
+      />
 
       {/* Testimonial Section */}
       <TestimonialSection />

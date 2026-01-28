@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Button from "@/common/Button";
 import { useState, useRef, useEffect } from "react";
 import featuresData from "@/data/features.json";
 import integrationsData from "@/data/integrations.json";
+import blogsData from "@/data/blogs.json";
+import caseStudiesData from "@/data/case-studies.json";
 import { ChevronDown, Menu, X, Github, ArrowRight } from "lucide-react";
 import LogoSVG from "./LogoSVG";
 import { getIcon } from "@/utils/iconMap";
@@ -200,7 +203,7 @@ export default function StickyNav() {
                   setIsFeaturesOpen(false);
                 }}
               >
-                <div className="max-w-[1280px] mx-auto border-l">
+                <div className="max-w-[1280px] mx-auto  border-x">
                   <div className="grid grid-cols-3">
                   {/* Columns 1-5: Features (3 rows each) */}
                   {[0, 1, 2, 3].map((colIndex) => {
@@ -208,7 +211,7 @@ export default function StickyNav() {
                     const endIndex = startIndex + 3;
                     const columnFeatures = featuresData.slice(startIndex, endIndex);
                     return (
-                      <div key={colIndex} className={`${colIndex < 4 ? 'border-r border-[#e5e7eb]' : ''}`}>
+                      <div key={colIndex} className={`${colIndex < 4 ? 'border-l -ml-px border-[#e5e7eb]' : ''}`}>
                         <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Features submenu">
                           {columnFeatures.map((feature) => {
                             const IconComponent = getIcon(feature.hero.category.icon);
@@ -229,7 +232,7 @@ export default function StickyNav() {
                                     <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors">
                                       {feature.hero.category.text}
                                     </span>
-                                    <p className="text-sm text-[#666666] leading-relaxed line-clamp-1 text-ellipsis">
+                                    <p className="text-xs text-[#666666] leading-relaxed line-clamp-2 text-ellipsis">
                                       {feature.hero.description}
                                     </p>
                                   </div>
@@ -325,7 +328,7 @@ export default function StickyNav() {
                   setIsIntegrationsOpen(false);
                 }}
               >
-                <div className="max-w-[1280px] mx-auto border-l">
+                <div className="max-w-[1280px] mx-auto border-x">
                   <div className="grid grid-cols-4">
                   {/* Columns 1-4: Integrations (1 row each) */}
                   {[0, 1, 2, 3].map((colIndex) => {
@@ -354,7 +357,7 @@ export default function StickyNav() {
                                 <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors">
                                   {integrationName}
                                 </span>
-                                <p className="text-sm text-[#666666] leading-relaxed line-clamp-1 text-ellipsis">
+                                <p className="text-xs text-[#666666] leading-relaxed line-clamp-2 text-ellipsis">
                                   {integration.hero.description}
                                 </p>
                               </div>
@@ -400,10 +403,32 @@ export default function StickyNav() {
               />
             </button>
             
-            {/* Resources Dropdown Menu */}
+            {/* Invisible bridge to fill gap between menu item and dropdown */}
+            {isResourcesOpen && (
+              <div
+                className="fixed bg-transparent z-50 pointer-events-auto"
+                style={{
+                  top: `${navHeight}px`,
+                  left: 0,
+                  right: 0,
+                  height: '8px',
+                }}
+                onMouseEnter={() => {
+                  if (resourcesCloseTimeoutRef.current) {
+                    clearTimeout(resourcesCloseTimeoutRef.current);
+                    resourcesCloseTimeoutRef.current = null;
+                  }
+                  setIsResourcesOpen(true);
+                }}
+                aria-hidden="true"
+              />
+            )}
+            
+            {/* Mega Menu Dropdown */}
             {isResourcesOpen && (
               <div 
-                className="absolute bg-[#f9f9f9] shadow-2xl border border-[#e5e7eb] rounded-lg z-50 mt-2 left-0"
+                className="fixed inset-x-0 bg-[#f9f9f9] shadow-2xl border-x-0 border-b border-t-0 border-[#e5e7eb] z-50"
+                style={{ top: `${navHeight}px` }}
                 onMouseEnter={() => {
                   if (resourcesCloseTimeoutRef.current) {
                     clearTimeout(resourcesCloseTimeoutRef.current);
@@ -415,18 +440,128 @@ export default function StickyNav() {
                   setIsResourcesOpen(false);
                 }}
               >
-                <ul className="flex flex-col gap-0 list-none py-2 min-w-[160px]" role="menu" aria-label="Resources submenu">
-                  <li role="none">
-                    <Link
-                      href="/blog"
-                      onClick={() => setIsResourcesOpen(false)}
-                      className="block text-sm font-normal px-4 py-2.5 transition-colors text-[#262626] hover:text-[#5e48f0] hover:bg-[#f9f9f9]"
-                      role="menuitem"
-                    >
-                      Blog
-                    </Link>
-                  </li>
-                </ul>
+                <div className="max-w-[1280px] mx-auto border-x">
+                  <div className="grid grid-cols-3">
+                    {/* Column 1: Blog Posts */}
+                    <div className="border-r border-[#e5e7eb]">
+                      <div className="px-8 py-5 border-b border-[#e5e7eb]">
+                        <h3 className="text-sm font-semibold text-[#262626]">Blog</h3>
+                      </div>
+                      <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Blog submenu">
+                        {blogsData.slice(0, 4).map((blog) => (
+                          <li className="border-b px-8 py-5 h-full border-[#e5e7eb] hover:bg-[#f9f9f9]" key={blog.slug} role="none">
+                            <Link
+                              href={`/blog/${blog.slug}`}
+                              onClick={() => setIsResourcesOpen(false)}
+                              className="group flex items-start gap-3 px-0 py-3 transition-colors hover:bg-transparent"
+                              role="menuitem"
+                            >
+                              <div className="shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5">
+                                <Image
+                                  src={`/blog-images/${blog.slug}.png`}
+                                  alt={blog.title}
+                                  width={48}
+                                  height={48}
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                              <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                                <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors line-clamp-1">
+                                  {blog.title}
+                                </span>
+                                <p className="text-sm text-[#666666] leading-relaxed line-clamp-2 text-ellipsis">
+                                  {blog.description}
+                                </p>
+                              </div>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Column 2: Case Studies */}
+                    <div className="border-r border-[#e5e7eb]">
+                      <div className="px-8 py-5 border-b border-[#e5e7eb]">
+                        <h3 className="text-sm font-semibold text-[#262626]">Case Studies</h3>
+                      </div>
+                      <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Case Studies submenu">
+                        {caseStudiesData.slice(0, 4).map((caseStudy) => (
+                          <li className="border-b px-8 py-5 h-full border-[#e5e7eb] hover:bg-[#f9f9f9]" key={caseStudy.slug} role="none">
+                            <Link
+                              href={`/case-studies/${caseStudy.slug}`}
+                              onClick={() => setIsResourcesOpen(false)}
+                              className="group flex items-start gap-3 px-0 py-3 transition-colors hover:bg-transparent"
+                              role="menuitem"
+                            >
+                              <div className="shrink-0 w-12 h-12 rounded-lg overflow-hidden bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5">
+                                <Image
+                                  src={`/case-studies/${caseStudy.slug}.png`}
+                                  alt={caseStudy.title}
+                                  width={48}
+                                  height={48}
+                                  className="w-full h-full object-cover"
+                                />
+                              </div>
+                              <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                                <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors line-clamp-1">
+                                  {caseStudy.title}
+                                </span>
+                                <p className="text-sm text-[#666666] leading-relaxed line-clamp-2 text-ellipsis">
+                                  {caseStudy.description}
+                                </p>
+                              </div>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    {/* Column 3: View All Links */}
+                    <div>
+                      <div className="px-8 py-5 border-b border-[#e5e7eb]">
+                        <h3 className="text-sm font-semibold text-[#262626]">Resources</h3>
+                      </div>
+                      <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Resources links">
+                        <li className="border-b px-8 py-5 h-full border-[#e5e7eb] hover:bg-[#f9f9f9]" role="none">
+                          <Link
+                            href="/blog"
+                            onClick={() => setIsResourcesOpen(false)}
+                            className="group flex items-center gap-2 px-0 py-3 transition-colors hover:bg-transparent"
+                            role="menuitem"
+                          >
+                            <div className="flex flex-col gap-0.5 flex-1">
+                              <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors flex items-center gap-2">
+                                View all blog posts
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                              </span>
+                              <p className="text-sm text-[#666666] leading-relaxed">
+                                Explore all articles and guides
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="border-b px-8 py-5 h-full border-[#e5e7eb] hover:bg-[#f9f9f9]" role="none">
+                          <Link
+                            href="/case-studies"
+                            onClick={() => setIsResourcesOpen(false)}
+                            className="group flex items-center gap-2 px-0 py-3 transition-colors hover:bg-transparent"
+                            role="menuitem"
+                          >
+                            <div className="flex flex-col gap-0.5 flex-1">
+                              <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors flex items-center gap-2">
+                                View all case studies
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                              </span>
+                              <p className="text-sm text-[#666666] leading-relaxed">
+                                Browse customer success stories
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             )}
           </li>
@@ -666,6 +801,42 @@ export default function StickyNav() {
               {isResourcesOpen && (
                 <div className="px-3 pb-3">
                   <ul className="flex flex-col gap-2 list-none" role="menu" aria-label="Resources submenu">
+                    {/* Blog Section Header */}
+                    <li role="none" className="pt-2">
+                      <h3 className="text-xs font-semibold text-[#262626] uppercase tracking-wide px-3 mb-2">Blog</h3>
+                    </li>
+                    {blogsData.slice(0, 3).map((blog) => (
+                      <li key={blog.slug} role="none" className="relative z-10">
+                        <Link
+                          href={`/blog/${blog.slug}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setIsResourcesOpen(false);
+                            setIsMobileMenuOpen(false);
+                          }}
+                          className="group flex items-center gap-2.5 px-3 py-2.5 rounded-lg transition-all duration-200 hover:bg-[#f5f3ff] border border-transparent hover:border-[#e8e4ff]"
+                          role="menuitem"
+                        >
+                          <div className="shrink-0 w-10 h-10 rounded-lg overflow-hidden bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5">
+                            <Image
+                              src={`/blog-images/${blog.slug}.png`}
+                              alt={blog.title}
+                              width={40}
+                              height={40}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <div className="flex flex-col gap-1 flex-1 min-w-0">
+                            <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors line-clamp-1">
+                              {blog.title}
+                            </span>
+                            <p className="text-xs text-[#666666] leading-relaxed line-clamp-1">
+                              {blog.description}
+                            </p>
+                          </div>
+                        </Link>
+                      </li>
+                    ))}
                     <li role="none" className="relative z-10">
                       <Link
                         href="/blog"
@@ -674,11 +845,66 @@ export default function StickyNav() {
                           setIsResourcesOpen(false);
                           setIsMobileMenuOpen(false);
                         }}
-                        className="group flex items-center gap-2.5 px-3 py-2.5 rounded-lg transition-all duration-200 hover:bg-[#f5f3ff] border border-transparent hover:border-[#e8e4ff]"
+                        className="group flex items-center gap-2 px-3 py-2.5 rounded-lg transition-all duration-200 hover:bg-[#f5f3ff] border border-transparent hover:border-[#e8e4ff]"
                         role="menuitem"
                       >
-                        <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors">
-                          Blog
+                        <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors flex items-center gap-1">
+                          View all blog posts
+                          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                        </span>
+                      </Link>
+                    </li>
+
+                    {/* Case Studies Section Header */}
+                    <li role="none" className="pt-4">
+                      <h3 className="text-xs font-semibold text-[#262626] uppercase tracking-wide px-3 mb-2">Case Studies</h3>
+                    </li>
+                    {caseStudiesData.slice(0, 3).map((caseStudy) => (
+                      <li key={caseStudy.slug} role="none" className="relative z-10">
+                        <Link
+                          href={`/case-studies/${caseStudy.slug}`}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setIsResourcesOpen(false);
+                            setIsMobileMenuOpen(false);
+                          }}
+                          className="group flex items-center gap-2.5 px-3 py-2.5 rounded-lg transition-all duration-200 hover:bg-[#f5f3ff] border border-transparent hover:border-[#e8e4ff]"
+                          role="menuitem"
+                        >
+                          <div className="shrink-0 w-10 h-10 rounded-lg overflow-hidden bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5">
+                            <Image
+                              src={`/case-studies/${caseStudy.slug}.png`}
+                              alt={caseStudy.title}
+                              width={40}
+                              height={40}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <div className="flex flex-col gap-1 flex-1 min-w-0">
+                            <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors line-clamp-1">
+                              {caseStudy.title}
+                            </span>
+                            <p className="text-xs text-[#666666] leading-relaxed line-clamp-1">
+                              {caseStudy.description}
+                            </p>
+                          </div>
+                        </Link>
+                      </li>
+                    ))}
+                    <li role="none" className="relative z-10">
+                      <Link
+                        href="/case-studies"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setIsResourcesOpen(false);
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="group flex items-center gap-2 px-3 py-2.5 rounded-lg transition-all duration-200 hover:bg-[#f5f3ff] border border-transparent hover:border-[#e8e4ff]"
+                        role="menuitem"
+                      >
+                        <span className="text-sm font-medium text-[#262626] group-hover:text-[#5e48f0] transition-colors flex items-center gap-1">
+                          View all case studies
+                          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                         </span>
                       </Link>
                     </li>

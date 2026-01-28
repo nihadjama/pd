@@ -1,0 +1,15 @@
+# robots.txt for PracticeDilly
+# https://practicedilly.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemap location
+Sitemap: https://practicedilly.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+# Crawl-delay: 1

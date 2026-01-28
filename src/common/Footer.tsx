@@ -12,6 +12,19 @@ export default function Footer() {
     { label: "Pricing", href: "/pricing" },
   ];
 
+  const featureLinks = [
+    { label: "Phones", href: "/features/phones" },
+    { label: "Reminders", href: "/features/reminders" },
+    { label: "Scheduling", href: "/features/scheduling" },
+    { label: "Texting", href: "/features/texting" },
+    { label: "Reviews", href: "/features/reviews" },
+    { label: "Call Intelligence", href: "/features/call-intelligence" },
+    { label: "Billing & Payments", href: "/features/billing-payments" },
+    { label: "Digital Forms", href: "/features/digital-forms" },
+    { label: "Email Marketing", href: "/features/email-marketing" },
+    { label: "Mobile App", href: "/features/mobile-app" },
+  ];
+
   const legalLinks = [
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Terms of Service", href: "/terms-conditions" },
@@ -20,9 +33,9 @@ export default function Footer() {
 
   const socialLinks = [
     {
-      label: "Facebook",
-      href: "https://facebook.com",
-      icon: Facebook,
+      label: "LinkedIn",
+      href: "https://linkedin.com",
+      icon: Linkedin,
     },
     {
       label: "Twitter",
@@ -30,9 +43,9 @@ export default function Footer() {
       icon: Twitter,
     },
     {
-      label: "LinkedIn",
-      href: "https://linkedin.com",
-      icon: Linkedin,
+      label: "Facebook",
+      href: "https://facebook.com",
+      icon: Facebook,
     },
     {
       label: "Instagram",
@@ -43,34 +56,75 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#f9f9f9] border-t border-[#e5e7eb]" aria-label="Footer">
-      <div className="max-w-[1112px] mx-auto border-x">
-        <div className="px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
+      <div className="max-w-[1280px] mx-auto border-x">
+        <div className="">
           {/* Main Footer Content */}
-          <div className="flex flex-col gap-8 md:gap-12 lg:gap-16">
-            {/* Top Section: Logo and Description */}
-            <div className="flex flex-col gap-4 md:gap-6">
-              <Link href="/" className="flex items-center w-fit" aria-label="Home">
-                <LogoSVG />
-              </Link>
-              <p className="font-sans font-normal text-sm md:text-base leading-6 text-[#606060] max-w-md">
-                AI-powered patient communication platform for dental and healthcare practices. 
-                Trusted by 500+ practices.
-              </p>
+          <div className="flex flex-col">
+            {/* Top Section: Logo and Social Media */}
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16 border-b border-[#e5e7eb]">
+              {/* Left: Logo */}
+              <div className="flex-1">
+                <Link href="/" className="flex items-center w-fit mb-4" aria-label="Home">
+                  <LogoSVG />
+                </Link>
+              </div>
+
+              {/* Right: Social Media Links in 2 columns */}
+              {/* <div className="flex gap-8 md:gap-12">
+                <div className="flex flex-col">
+                  {socialLinks.slice(0, 2).map((social, index) => {
+                    const Icon = social.icon;
+                    return (
+                      <div key={social.label}>
+                        <a
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 py-2.5 border-b border-[#f0f0f0] text-[#262626] hover:text-[#5e48f0] transition-colors"
+                          aria-label={social.label}
+                        >
+                          <Icon className="w-4 h-4" aria-hidden="true" />
+                          <span className="font-sans font-normal text-sm">{social.label}</span>
+                        </a>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="flex flex-col">
+                  {socialLinks.slice(2, 4).map((social, index) => {
+                    const Icon = social.icon;
+                    return (
+                      <div key={social.label}>
+                        <a
+                          href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 py-2.5 border-b border-[#f0f0f0] text-[#262626] hover:text-[#5e48f0] transition-colors"
+                          aria-label={social.label}
+                        >
+                          <Icon className="w-4 h-4" aria-hidden="true" />
+                          <span className="font-sans font-normal text-sm">{social.label}</span>
+                        </a>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div> */}
             </div>
 
-            {/* Middle Section: Links Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-              {/* Navigation Links */}
-              <div className="flex flex-col gap-3">
-                <h3 className="font-heading font-semibold text-sm text-[#262626] mb-1">
+            {/* Middle Section: Navigation Links Grid with Boxy Layout */}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-0 border-b">
+              {/* Product Column */}
+              <div className="flex flex-col border-r">
+                <h3 className="font-heading font-semibold text-sm text-[#262626] py-2.5 px-4 border-b">
                   Product
                 </h3>
-                <ul className="flex flex-col gap-2.5 list-none">
-                  {navigationLinks.map((link) => (
-                    <li key={link.label}>
+                <ul className="flex flex-col list-none">
+                  {navigationLinks.map((link, index) => (
+                    <li key={link.label} className={index < navigationLinks.length - 1 ? "border-b " : ""}>
                       <Link
                         href={link.href}
-                        className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+                        className="block py-2.5 px-4  font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -79,32 +133,32 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Company Links */}
-              <div className="flex flex-col gap-3">
-                <h3 className="font-heading font-semibold text-sm text-[#262626] mb-1">
+              {/* Company Column */}
+              <div className="flex flex-col border-r">
+                <h3 className="font-heading font-semibold text-sm text-[#262626] py-2.5 px-4 border-b">
                   Company
                 </h3>
-                <ul className="flex flex-col gap-2.5 list-none">
-                  <li>
+                <ul className="flex flex-col list-none">
+                  <li className="border-b">
                     <Link
                       href="/about"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+                      className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
                     >
                       About
                     </Link>
                   </li>
-                  <li>
+                  <li className="border-b">
                     <Link
                       href="/blog"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+                      className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
                     >
                       Blog
                     </Link>
                   </li>
-                  <li>
+                  <li className="border-b">
                     <Link
                       href="/careers"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+                      className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
                     >
                       Careers
                     </Link>
@@ -112,7 +166,7 @@ export default function Footer() {
                   <li>
                     <Link
                       href="/contact"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+                      className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
                     >
                       Contact
                     </Link>
@@ -120,58 +174,55 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Support Links */}
-              <div className="flex flex-col gap-3">
-                <h3 className="font-heading font-semibold text-sm text-[#262626] mb-1">
-                  Support
+              {/* Legal Column */}
+              <div className="flex flex-col border-r md:border-r-0 lg:border-r">
+                <h3 className="font-heading font-semibold text-sm text-[#262626] py-2.5 px-4 border-b">
+                  Legal
                 </h3>
-                <ul className="flex flex-col gap-2.5 list-none">
-                  <li>
-                    <Link
-                      href="/help"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
-                    >
-                      Help Center
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/documentation"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
-                    >
-                      Documentation
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/api"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
-                    >
-                      API
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/status"
-                      className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
-                    >
-                      Status
-                    </Link>
-                  </li>
+                <ul className="flex flex-col list-none">
+                  {legalLinks.map((link, index) => (
+                    <li key={link.label} className={index < legalLinks.length - 1 ? "border-b" : ""}>
+                      <Link
+                        href={link.href}
+                        className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
-              {/* Legal Links */}
-              <div className="flex flex-col gap-3">
-                <h3 className="font-heading font-semibold text-sm text-[#262626] mb-1">
-                  Legal
+              {/* Features Column 1 */}
+              <div className="flex flex-col border-r lg:border-r">
+                <h3 className="font-heading font-semibold text-sm text-[#262626] py-2.5 px-4 border-b">
+                  Features
                 </h3>
-                <ul className="flex flex-col gap-2.5 list-none">
-                  {legalLinks.map((link) => (
-                    <li key={link.label}>
+                <ul className="flex flex-col list-none">
+                  {featureLinks.slice(0, 5).map((link, index) => (
+                    <li key={link.label} className={index < 4 ? "border-b" : ""}>
                       <Link
                         href={link.href}
-                        className="font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors"
+                        className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Features Column 2 */}
+              <div className="flex flex-col">
+                <h3 className="font-heading font-semibold text-sm text-[#262626] py-2.5 px-4 border-b">
+                  &nbsp;
+                </h3>
+                <ul className="flex flex-col list-none">
+                  {featureLinks.slice(5, 10).map((link, index) => (
+                    <li key={link.label} className={index < 4 ? "border-b" : ""}>
+                      <Link
+                        href={link.href}
+                        className="block py-2.5 px-4 font-sans font-normal text-sm text-[#262626] hover:text-[#5e48f0] transition-colors"
                       >
                         {link.label}
                       </Link>
@@ -181,35 +232,33 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Bottom Section: Social Links and Copyright */}
-            <div className="flex flex-col gap-6 pt-6 md:pt-8 border-t border-[#e5e7eb]">
-              {/* Social Media Links */}
-              <div className="flex items-center gap-4">
-                {socialLinks.map((social) => {
-                  const Icon = social.icon;
-                  return (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center w-10 h-10 rounded-[10px] text-[#606060] hover:text-[#5e48f0] hover:bg-[#f5f3ff] transition-colors"
-                      aria-label={social.label}
-                    >
-                      <Icon className="w-5 h-5" aria-hidden="true" />
-                    </a>
-                  );
-                })}
-              </div>
-
-              {/* Copyright */}
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            {/* Bottom Section: Copyright, Status, and Legal Links */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 py-6 md:pt-8 px-4 md:px-6 lg:px-8">
+              {/* Left: Copyright and Status */}
+              <div className="flex flex-col gap-2">
                 <p className="font-sans font-normal text-sm text-[#606060]">
                   © {currentYear} PracticeDilly. All rights reserved.
                 </p>
-                <p className="font-sans font-normal text-sm text-[#606060]">
-                  HIPAA Compliant • Trusted by 500+ Practices
-                </p>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#5e48f0]"></div>
+                  <p className="font-sans font-normal text-sm text-[#262626]">
+                    All systems normal
+                  </p>
+                </div>
+              </div>
+
+              {/* Right: Legal Links */}
+              <div className="flex items-center gap-0">
+                {legalLinks.map((link, index) => (
+                  <div key={link.label} className="flex items-center">
+                    <Link
+                      href={link.href}
+                      className="px-4 py-2 font-sans font-normal text-sm text-[#606060] hover:text-[#5e48f0] transition-colors border-r border-[#f0f0f0] last:border-r-0"
+                    >
+                      {link.label}
+                    </Link>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
