@@ -116,13 +116,8 @@ export default function RootLayout({
                 } else if (savedTheme === 'light') {
                   document.documentElement.classList.remove('dark');
                 } else {
-                  // No saved preference - use system preference as initial default
-                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  if (prefersDark) {
-                    document.documentElement.classList.add('dark');
-                  } else {
-                    document.documentElement.classList.remove('dark');
-                  }
+                  // No saved preference - always default to light mode (override system settings)
+                  document.documentElement.classList.remove('dark');
                 }
               })();
             `,

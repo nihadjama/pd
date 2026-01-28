@@ -18,9 +18,8 @@ export default function DarkModeToggle() {
       // User has explicitly set a preference - use it (switcher setting is final)
       shouldBeDark = savedTheme === "dark";
     } else {
-      // No saved preference - use system preference as initial default
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      shouldBeDark = prefersDark;
+      // No saved preference - always default to light mode (override system settings)
+      shouldBeDark = false;
     }
     
     setIsDark(shouldBeDark);
