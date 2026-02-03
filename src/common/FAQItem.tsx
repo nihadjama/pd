@@ -18,9 +18,9 @@ export default function FAQItem({ question, answer, isOpen, onToggle }: FAQItemP
       <div className="flex items-start relative shrink-0 w-full">
         <div className="flex flex-col grow items-start min-w-0 shrink-0 w-full">
           <div className={`${ isOpen ?  "border-border" :"border-transparent"} border-b flex gap-10 items-start px-0 py-5 relative shrink-0 w-full`}>
-            <p className="font-sans font-medium leading-6 text-foreground text-base text-left tracking-normal flex-1">
+            <span className="font-sans font-medium leading-6 text-foreground text-base text-left tracking-normal flex-1">
               {question}
-            </p>
+            </span>
             <div
               className={`flex items-center justify-center relative shrink-0 transition-transform duration-200 ${
                 isOpen ? "rotate-180" : ""

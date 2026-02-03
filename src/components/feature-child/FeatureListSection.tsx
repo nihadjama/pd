@@ -29,6 +29,7 @@ export default function FeatureListSection({
           highlighted={heading.highlighted}
           suffix={heading.suffix}
           className="text-center md:text-left"
+          as="h2"
         />
         <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full text-center md:text-left">
           {description}

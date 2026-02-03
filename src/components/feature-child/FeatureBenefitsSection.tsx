@@ -29,6 +29,7 @@ export default function FeatureBenefitsSection({
           highlighted={heading.highlighted}
           suffix={heading.suffix}
           className="text-center md:text-left"
+          as="h2"
         />
         <p className="font-sans font-normal leading-6 text-foreground text-base tracking-normal w-full text-center md:text-left">
           {description}
@@ -47,12 +48,12 @@ export default function FeatureBenefitsSection({
               isBottomRow={isBottomRow}
             >
               <div className="flex gap-3 items-start w-full">
-                <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                 <div className="flex flex-col grow items-start min-w-0">
                   <div className="flex items-center pb-1 pt-0 px-0 w-full">
-                    <p className="font-sans font-medium leading-6 text-foreground text-base md:whitespace-nowrap tracking-normal break-words">
+                    <h3 className="font-sans font-medium leading-6 text-foreground text-base md:whitespace-nowrap tracking-normal break-words">
                       {item.title}
-                    </p>
+                    </h3>
                   </div>
                   <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal w-full">
                     {item.description}

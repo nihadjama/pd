@@ -146,10 +146,10 @@ export default function Home() {
         <div className="absolute z-40 left-4 top-[388px] hidden w-[280px] md:w-[328.8px] rounded-[6.4px] shadow-[0px_20px_60px_0px_rgba(0,0,0,0.1)] lg:left-[91px] xl:block">
           <div className="overflow-hidden rounded-[6.4px] border border-border bg-card">
             {/* Header */}
-            <div className="border-b border-border px-2.5 py-3.5">
-              <p className="text-sm font-medium leading-[22.4px] text-foreground">Action Items</p>
-              <p className="text-right text-[9.6px] leading-[12.8px] text-muted">Priority To-Dos</p>
-            </div>
+            <header className="border-b border-border px-2.5 py-3.5">
+              <h2 className="text-sm font-medium leading-[22.4px] text-foreground m-0">Action Items</h2>
+              <p className="text-right text-[9.6px] leading-[12.8px] text-muted m-0">Priority To-Dos</p>
+            </header>
 
             {/* Items */}
             <div className="border-b border-border bg-muted/5 px-2.5 py-2.5">
@@ -203,10 +203,10 @@ export default function Home() {
         <div className="absolute z-50 right-4 top-[467.1px] hidden w-[280px] md:w-[355.2px] rounded-[6.4px] shadow-[0px_20px_60px_0px_rgba(0,0,0,0.1)] xl:right-[calc(50%+285px)] xl:block">
           <div className="overflow-hidden rounded-[6.4px] border border-border bg-card">
             {/* Header */}
-            <div className="border-b border-border px-2.5 py-3.5">
-              <p className="text-sm font-medium leading-[22.4px] text-foreground">Today's Appointments</p>
-              <p className="text-right text-[9.6px] leading-[12.8px] text-muted">3 appointments</p>
-            </div>
+            <header className="border-b border-border px-2.5 py-3.5">
+              <h2 className="text-sm font-medium leading-[22.4px] text-foreground m-0">Today's Appointments</h2>
+              <p className="text-right text-[9.6px] leading-[12.8px] text-muted m-0">3 appointments</p>
+            </header>
 
             {/* Appointment 1 */}
             <div className="border-b border-border px-2.5 py-2.5">

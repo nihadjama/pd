@@ -80,6 +80,7 @@ function SearchContent() {
                   ? `Found ${results.total} result${results.total !== 1 ? "s" : ""}`
                   : "Search across our blog posts, features, integrations, and testimonials"
               }
+              headingAs="h1"
             />
 
             {/* Search Input */}

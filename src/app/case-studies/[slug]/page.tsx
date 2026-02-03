@@ -130,18 +130,18 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
 
           {/* Stats Section (if available) */}
           {caseStudy.stats && caseStudy.stats.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 bg-card border border-border rounded-xl">
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 bg-card border border-border rounded-xl list-none" aria-label="Key results">
               {caseStudy.stats.map((stat, index) => (
-                <div key={index} className="flex flex-col items-center text-center">
-                  <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">
+                <li key={index} className="flex flex-col items-center text-center">
+                  <p className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2 m-0">
                     {stat.value}
-                  </div>
-                  <div className="text-sm font-sans text-muted">
+                  </p>
+                  <p className="text-sm font-sans text-muted m-0">
                     {stat.label}
-                  </div>
-                </div>
+                  </p>
+                </li>
               ))}
-            </div>
+            </ul>
           )}
 
           {/* Content */}

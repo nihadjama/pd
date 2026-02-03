@@ -31,6 +31,7 @@ export default function FeatureWhyChooseSection({
           highlighted={heading.highlighted}
           suffix={heading.suffix}
           className="md:text-left"
+          as="h2"
         />
         <Paragraph className="w-full md:text-left">
           {description}

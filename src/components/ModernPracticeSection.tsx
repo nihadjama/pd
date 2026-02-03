@@ -73,9 +73,9 @@ export default function ModernPracticeSection() {
                     </div>
                   </div>
                   <div className="flex flex-col gap-1 flex-1">
-                    <p className="font-sans font-normal leading-6 text-base tracking-normal text-foreground">
+                    <h3 className="font-sans font-normal leading-6 text-base tracking-normal text-foreground">
                       {feature.title}
-                    </p>
+                    </h3>
                     <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal">
                       {feature.description}
                     </p>
@@ -120,20 +120,20 @@ export default function ModernPracticeSection() {
                       }`}
                     >
                       {IconComponent && (
-                        <div className="relative shrink-0 size-6 text-primary">
+                        <div className="relative shrink-0 size-6 text-primary" aria-hidden="true">
                           <IconComponent className="w-full h-full" />
                         </div>
                       )}
                     </div>
                   </div>
                   <div className="flex flex-col gap-1 flex-1">
-                    <p
+                    <h3
                       className={`font-sans font-normal leading-6 text-base tracking-normal transition-colors ${
                         isSelected ? "text-foreground" : "text-foreground"
                       }`}
                     >
                       {feature.title}
-                    </p>
+                    </h3>
                     <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal min-h-[60px]">
                       {feature.description}
                     </p>

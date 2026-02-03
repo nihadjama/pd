@@ -39,6 +39,7 @@ export default function FeatureFAQSection({
             text={heading.text}
             highlighted={heading.highlighted}
             className="text-center md:text-left"
+            as="h2"
           />
           <Paragraph className="w-full text-center md:text-left">
             {description}

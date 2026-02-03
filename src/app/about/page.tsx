@@ -79,9 +79,9 @@ export default function AboutPage() {
                     {/* {section.year && (
                       <div className="flex items-center pb-4 pt-0 px-0">
                         <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center px-3 py-1.5 rounded-lg shrink-0">
-                          <p className="font-heading font-semibold text-sm text-primary">
+                          <span className="font-heading font-semibold text-sm text-primary">
                             {section.year}
-                          </p>
+                          </span>
                         </div>
                       </div>
                     )} */}
@@ -95,9 +95,9 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <div className="flex items-center justify-start pb-3 pt-0 px-0 w-full">
-                      <p className="font-sans font-semibold leading-6 shrink-0 text-foreground text-lg tracking-normal">
+                      <h3 className="font-sans font-semibold leading-6 shrink-0 text-foreground text-lg tracking-normal">
                         {section.title}
-                      </p>
+                      </h3>
                     </div>
                     <p className="font-sans font-normal leading-6 text-muted text-base tracking-normal w-full">
                       {section.description}

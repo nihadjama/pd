@@ -237,9 +237,9 @@ export default function TestimonialsPage() {
                     </div>
                   </div>
                   <div className="flex items-center justify-start pb-3 pt-0 px-0 w-full">
-                    <p className="font-sans font-normal leading-6 shrink-0 text-foreground text-base tracking-normal">
+                    <h3 className="font-sans font-normal leading-6 shrink-0 text-foreground text-base tracking-normal">
                       {item.title}
-                    </p>
+                    </h3>
                   </div>
                   <p className="font-sans font-normal leading-5 text-muted text-sm tracking-normal w-full">
                     {item.description}

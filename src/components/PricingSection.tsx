@@ -126,11 +126,11 @@ export default function PricingSection() {
         </div> */}
 
         {/* CTA Section */}
-        <div className="flex flex-col gap-6 items-center max-w-[600px] mx-auto pt-8">
+        <section className="flex flex-col gap-6 items-center max-w-[600px] mx-auto pt-8" aria-labelledby="pricing-cta-heading">
           <div className="flex flex-col gap-3 items-center text-center">
-            <h3 className="font-heading font-semibold text-2xl leading-7">
+            <h2 id="pricing-cta-heading" className="font-heading font-semibold text-2xl leading-7">
               Ready to get started?
-            </h3>
+            </h2>
             <p className="font-sans font-normal text-base leading-6 text-muted">
             From startups to established groups, PracticeDilly grows with you
             </p>
@@ -145,7 +145,7 @@ export default function PricingSection() {
           <p className="font-sans font-normal text-xs leading-4 text-muted text-center">
             Setup takes less than 15 minutes • No credit card required
           </p>
-        </div>
+        </section>
       </div>
     </SectionContainer>
   );

@@ -113,18 +113,18 @@ export default function ContactPage() {
                 </p>
                 <div className="flex flex-col gap-4 mt-4 pt-6 border-t border-border">
                   <div className="flex flex-col gap-2">
-                    <p className="font-sans font-semibold text-base text-foreground">
+                    <h4 className="font-sans font-semibold text-base text-foreground m-0">
                       Office Hours
-                    </p>
-                    <p className="font-sans font-normal text-base leading-6 text-muted">
+                    </h4>
+                    <p className="font-sans font-normal text-base leading-6 text-muted m-0">
                       Monday - Friday: 9:00 AM - 5:00 PM PST
                     </p>
                   </div>
                   <div className="flex flex-col gap-2">
-                    <p className="font-sans font-semibold text-base text-foreground">
+                    <h4 className="font-sans font-semibold text-base text-foreground m-0">
                       Response Time
-                    </p>
-                    <p className="font-sans font-normal text-base leading-6 text-muted">
+                    </h4>
+                    <p className="font-sans font-normal text-base leading-6 text-muted m-0">
                       We typically respond to emails within 24 hours during business days.
                     </p>
                   </div>
