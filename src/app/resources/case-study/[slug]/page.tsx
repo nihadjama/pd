@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import caseStudiesData from "@/data/case-studies.json";
 import SectionContainer from "@/common/SectionContainer";
-import { H1, H2, H3 } from "@/common/headings";
+import { H1, H3 } from "@/common/headings";
+import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import { ArrowLeft, ExternalLink, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import CaseStudyCard from "@/common/CaseStudyCard";
@@ -47,7 +48,7 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
   };
 }
 
-export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
+export default async function CaseStudySlugPage({ params }: CaseStudyPageProps) {
   const { slug } = await params;
   const caseStudy = caseStudiesData.find((cs) => cs.slug === slug);
 
@@ -80,24 +81,13 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         {/* Back Link */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 pt-8 pb-4">
         <Link
-          href="/case-studies"
+          href="/resources/case-study"
           className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           <span>Back to all case studies</span>
         </Link>
       </SectionContainer>
-
-      {/* Hero Image */}
-      {/* <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0] to-[#5e48f0]/20 border-y border-border">
-        <ImageWithFallback
-          src={`/case-studies/${caseStudy.slug}.png`}
-          alt={caseStudy.title}
-          fill
-          className="object-cover"
-          priority
-        />
-      </div> */}
 
       {/* Article Content */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 py-12">
@@ -163,12 +153,11 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
               if (paragraph.startsWith("## ")) {
                 const headingText = paragraph.replace("## ", "");
                 return (
-                  <H2
+                  <HeadingWithHighlight
                     key={index}
+                    text={headingText}
                     className="text-2xl font-heading font-semibold text-foreground mt-8 mb-4"
-                  >
-                    {headingText}
-                  </H2>
+                  />
                 );
               }
 

@@ -1,7 +1,7 @@
 import Button from "@/common/Button";
 import SectionContainer from "@/common/SectionContainer";
 import SectionHeader from "@/common/SectionHeader";
-import { H2, H3 } from "@/common/headings";
+import { H3 } from "@/common/headings";
 import { getIcon } from "@/utils/iconMap";
 import { Phone, MessageSquare, Mail, Voicemail, Workflow, Check } from "lucide-react";
 import Link from "next/link";

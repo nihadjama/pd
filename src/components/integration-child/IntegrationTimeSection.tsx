@@ -2,7 +2,7 @@ import SectionContainer from '@/common/SectionContainer';
 import React from 'react'
 import { Check } from 'lucide-react';
 import Button from '@/common/Button';
-import { H2 } from '@/common/headings';
+import HeadingWithHighlight from '@/common/HeadingWithHighlight';
 import IntegrationAnimation from './IntegrationAnimation';
 import IntegrationTimeSVG from './IntegrationTimeSVG';
 
@@ -31,7 +31,7 @@ export default function IntegrationTimeSection({ stat, primaryCta }: Integration
 
                     <Check className="w-4 h-4" /> <span>No Setup Fee</span>
                 </div>
-                <H2><span className="text-primary">{stat.value}</span> {stat.label}</H2>
+                <HeadingWithHighlight text="" highlighted={stat.value} suffix={` ${stat.label}`} />
                 <p className="font-sans font-normal text-base leading-6 text-muted">
                     {stat.description}
                 </p>

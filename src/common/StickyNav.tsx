@@ -451,16 +451,16 @@ export default function StickyNav() {
               >
                 <div className="max-w-[1280px] mx-auto border-x">
                   <div className="grid grid-cols-3">
-                    {/* Column 1: Blog Posts */}
+                    {/* Column 1: Articles */}
                     <div className="border-r border-border">
                       <div className="px-8 py-5 border-b border-border">
-                        <h3 className="text-sm font-semibold text-foreground">Blog</h3>
+                        <h3 className="text-sm font-semibold text-foreground">Articles</h3>
                       </div>
-                      <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Blog submenu">
+                      <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Articles submenu">
                         {blogsData.slice(0, 4).map((blog) => (
                           <li className="border-b px-8 py-5 h-full border-border hover:bg-muted/10" key={blog.slug} role="none">
                             <Link
-                              href={`/blog/${blog.slug}`}
+                              href={`/resources/article/${blog.slug}`}
                               onClick={() => setIsResourcesOpen(false)}
                               className="group flex items-start gap-3 px-0 py-3 transition-colors hover:bg-transparent"
                               role="menuitem"
@@ -497,7 +497,7 @@ export default function StickyNav() {
                         {caseStudiesData.slice(0, 4).map((caseStudy) => (
                           <li className="border-b px-8 py-5 h-full border-border hover:bg-muted/10" key={caseStudy.slug} role="none">
                             <Link
-                              href={`/case-studies/${caseStudy.slug}`}
+                              href={`/resources/case-study/${caseStudy.slug}`}
                               onClick={() => setIsResourcesOpen(false)}
                               className="group flex items-start gap-3 px-0 py-3 transition-colors hover:bg-transparent"
                               role="menuitem"
@@ -533,14 +533,14 @@ export default function StickyNav() {
                       <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Resources links">
                         <li className="border-b px-8 py-5 h-full border-border hover:bg-muted/10" role="none">
                           <Link
-                            href="/blog"
+                            href="/resources/article"
                             onClick={() => setIsResourcesOpen(false)}
                             className="group flex items-center gap-2 px-0 py-3 transition-colors hover:bg-transparent"
                             role="menuitem"
                           >
                             <div className="flex flex-col gap-0.5 flex-1">
                               <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
-                                View all blog posts
+                                View all articles
                                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                               </span>
                               <p className="text-sm text-muted leading-relaxed">
@@ -551,7 +551,7 @@ export default function StickyNav() {
                         </li>
                         <li className="border-b px-8 py-5 h-full border-border hover:bg-muted/10" role="none">
                           <Link
-                            href="/case-studies"
+                            href="/resources/case-study"
                             onClick={() => setIsResourcesOpen(false)}
                             className="group flex items-center gap-2 px-0 py-3 transition-colors hover:bg-transparent"
                             role="menuitem"
@@ -563,6 +563,24 @@ export default function StickyNav() {
                               </span>
                               <p className="text-sm text-muted leading-relaxed">
                                 Browse customer success stories
+                              </p>
+                            </div>
+                          </Link>
+                        </li>
+                        <li className="border-b px-8 py-5 h-full border-border hover:bg-muted/10 last:border-b-0" role="none">
+                          <Link
+                            href="/resources/demo-videos"
+                            onClick={() => setIsResourcesOpen(false)}
+                            className="group flex items-center gap-2 px-0 py-3 transition-colors hover:bg-transparent"
+                            role="menuitem"
+                          >
+                            <div className="flex flex-col gap-0.5 flex-1">
+                              <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex items-center gap-2">
+                                Demo videos
+                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                              </span>
+                              <p className="text-sm text-muted leading-relaxed">
+                                Watch short demos at your own pace
                               </p>
                             </div>
                           </Link>
@@ -821,14 +839,14 @@ export default function StickyNav() {
               {isResourcesOpen && (
                 <div className="px-3 pb-3">
                   <ul className="flex flex-col gap-2 list-none" role="menu" aria-label="Resources submenu">
-                    {/* Blog Section Header */}
+                    {/* Articles Section Header */}
                     <li role="none" className="pt-2">
-                      <h3 className="text-xs font-semibold text-foreground uppercase tracking-wide px-3 mb-2">Blog</h3>
+                      <h3 className="text-xs font-semibold text-foreground uppercase tracking-wide px-3 mb-2">Articles</h3>
                     </li>
                     {blogsData.slice(0, 3).map((blog) => (
                       <li key={blog.slug} role="none" className="relative z-10">
                         <Link
-                          href={`/blog/${blog.slug}`}
+                          href={`/resources/article/${blog.slug}`}
                           onClick={(e) => {
                             e.stopPropagation();
                             setIsResourcesOpen(false);
@@ -859,7 +877,7 @@ export default function StickyNav() {
                     ))}
                     <li role="none" className="relative z-10">
                       <Link
-                        href="/blog"
+                        href="/resources/article"
                         onClick={(e) => {
                           e.stopPropagation();
                           setIsResourcesOpen(false);
@@ -869,7 +887,7 @@ export default function StickyNav() {
                         role="menuitem"
                       >
                         <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex items-center gap-1">
-                          View all blog posts
+                          View all articles
                           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                         </span>
                       </Link>
@@ -882,7 +900,7 @@ export default function StickyNav() {
                     {caseStudiesData.slice(0, 3).map((caseStudy) => (
                       <li key={caseStudy.slug} role="none" className="relative z-10">
                         <Link
-                          href={`/case-studies/${caseStudy.slug}`}
+                          href={`/resources/case-study/${caseStudy.slug}`}
                           onClick={(e) => {
                             e.stopPropagation();
                             setIsResourcesOpen(false);
@@ -913,7 +931,7 @@ export default function StickyNav() {
                     ))}
                     <li role="none" className="relative z-10">
                       <Link
-                        href="/case-studies"
+                        href="/resources/case-study"
                         onClick={(e) => {
                           e.stopPropagation();
                           setIsResourcesOpen(false);
@@ -924,6 +942,28 @@ export default function StickyNav() {
                       >
                         <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex items-center gap-1">
                           View all case studies
+                          <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                        </span>
+                      </Link>
+                    </li>
+
+                    {/* Demo Videos Section Header */}
+                    <li role="none" className="pt-4">
+                      <h3 className="text-xs font-semibold text-foreground uppercase tracking-wide px-3 mb-2">Demo Videos</h3>
+                    </li>
+                    <li role="none" className="relative z-10">
+                      <Link
+                        href="/resources/demo-videos"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setIsResourcesOpen(false);
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="group flex items-center gap-2 px-3 py-2.5 rounded-lg transition-all duration-200 hover:bg-primary/10 border border-transparent hover:border-primary/20"
+                        role="menuitem"
+                      >
+                        <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors flex items-center gap-1">
+                          Watch demo videos
                           <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                         </span>
                       </Link>

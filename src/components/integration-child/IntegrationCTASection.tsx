@@ -1,6 +1,6 @@
 import SectionContainer from "@/common/SectionContainer";
 import Button from "@/common/Button";
-import { H2 } from "@/common/headings";
+import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 
 interface IntegrationCTASectionProps {
   heading: string;
@@ -27,9 +27,7 @@ export default function IntegrationCTASection({
     <SectionContainer className="items-center border-t border-border">
       <div className="flex flex-col gap-8 items-center w-full max-w-[600px] px-4">
         <div className="flex flex-col gap-4 items-center text-center">
-          <H2 className="font-medium text-center">
-            {heading}
-          </H2>
+          <HeadingWithHighlight text={heading} className="font-medium text-center" />
           <p className="font-sans font-normal text-base leading-6 text-muted">
             {description}
           </p>

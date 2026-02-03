@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { generateBlogArticleSchema } from "@/utils/generateArticleSchema";
 import { getAuthorSlugByName } from "@/utils/authors";
 
-interface BlogPageProps {
+interface ArticlePageProps {
   params: Promise<{ slug: string }>;
 }
 
@@ -18,18 +18,18 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
   const { slug } = await params;
   const blog = blogsData.find((b) => b.slug === slug);
 
   if (!blog) {
     return {
-      title: "Blog Post Not Found",
+      title: "Article Not Found",
     };
   }
 
   return {
-    title: `${blog.title} | PracticeDilly Blog`,
+    title: `${blog.title} | PracticeDilly Articles`,
     description: blog.description,
     keywords: [
       "dental practice management",
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
   };
 }
 
-export default async function BlogPostPage({ params }: BlogPageProps) {
+export default async function ArticleSlugPage({ params }: ArticlePageProps) {
   const { slug } = await params;
   const blog = blogsData.find((b) => b.slug === slug);
 
@@ -94,24 +94,13 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
         {/* Back Link */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 pt-8 pb-4">
         <Link
-          href="/blog"
+          href="/resources/article"
           className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           <span>Back to all articles</span>
         </Link>
       </SectionContainer>
-
-      {/* Hero Image */}
-      {/* <div className="relative w-full h-64 md:h-96 bg-gradient-to-br from-[#5e48f0]/10 to-[#5e48f0]/5 border-y border-border">
-        <ImageWithFallback
-          src={`/blog-images/${blog.slug}.png`}
-          alt={blog.title}
-          fill
-          className="object-cover"
-          priority
-        />
-      </div> */}
 
       {/* Article Content */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 py-12">
@@ -226,7 +215,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
               {relatedBlogs.map((relatedBlog) => (
                 <Link
                   key={relatedBlog.slug}
-                  href={`/blog/${relatedBlog.slug}`}
+                  href={`/resources/article/${relatedBlog.slug}`}
                   className="group bg-card border border-border rounded-xl p-6 hover:border-primary transition-all duration-200"
                 >
                   <div className="flex items-center mb-3">

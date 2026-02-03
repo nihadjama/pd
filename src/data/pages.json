@@ -1,0 +1,234 @@
+{
+  "home": {
+    "hero": {
+      "badge": "New",
+      "badgeLabel": "AI Voice Intelligence 2.0",
+      "heading": "AI-Powered Patient Communication for Dental Practices",
+      "description": "Combine phones, texting, scheduling, and recalls in one AI-powered communication hub built for multi-location dental groups and healthcare practices.",
+      "ctaPrimary": "Get Started - No Setup Fee!",
+      "ctaSecondary": "Pricing",
+      "trust": "PracticeDilly is Trusted by 500+ practices"
+    },
+    "whyPracticeDilly": {
+      "label": "Why PracticeDilly",
+      "heading": "Proven Results That Drive Success",
+      "description": "Join 500+ practices that trust PracticeDilly to transform their patient communication and grow their practice.",
+      "stats": [
+        { "title": "Reduce No-Shows", "value": "45", "unit": "%", "description": "reduction in no-shows", "explanation": "Smart reminders and automated confirmation flows keep your chairs full." },
+        { "title": "Saved Staff Time", "value": "15", "unit": "hrs", "description": "saved per week", "explanation": "Automate intake forms, insurance verification, and routine inquiries." },
+        { "title": "Boost Reputation", "value": "3", "unit": "x", "description": "more 5-star reviews", "explanation": "Automatically request reviews after positive visits to grow your online presence." }
+      ]
+    },
+    "testimonialsSection": {
+      "label": "Testimonials",
+      "heading": "Loved by Dentists Across the Country",
+      "description": "Real results from practices just like yours",
+      "cta": "Read More Success Stories"
+    },
+    "integrationsSection": {
+      "label": "Integrations",
+      "heading": "Seamlessly Integrated With",
+      "description": "Connect PracticeDilly with your existing practice management system for a unified workflow.",
+      "integrations": [
+        { "name": "Dentrix", "slug": "dentrix" },
+        { "name": "Eaglesoft", "slug": "eaglesoft" },
+        { "name": "Open Dental", "slug": "opendental" }
+      ],
+      "cta": "View all integrations"
+    },
+    "modernPractice": {
+      "heading": "Everything You Need To Run a Modern Practice",
+      "description": "A complete platform that helps you attract, manage, and retain patients without the manual admin tasks.",
+      "features": [
+        { "title": "Attract patients", "description": "Keep patients engaged between visits. Patients show up, rebook, and stay loyal without extra front-desk effort." },
+        { "title": "Run a smoother day", "description": "Run your entire patient journey from one workspace. Every interaction moves patients from first contact to completed treatment." },
+        { "title": "Bring them back", "description": "Keep patients for years, not months. Automated recall and reactivation campaigns that fill your schedule." }
+      ]
+    },
+    "featuresShowcase": {
+      "heading": "See How We Help You Automate Your Front Office",
+      "description": "Comprehensive tools designed to modernize every aspect of your practice management.",
+      "features": [
+        { "title": "Call Intelligence", "description": "Analyze patient calls to detect sentiment and surface revenue opportunities automatically.", "bullets": ["Less time on the phone", "Identify missed revenue", "Automated transcripts", "Sentiment analysis"] },
+        { "title": "Response Assistant", "description": "Automatically draft professional responses for Google reviews. Keep your tone consistent.", "bullets": ["Reputation management", "Professional responses", "Improve trust score", "Manage reviews"] },
+        { "title": "Email Assistant", "description": "Generate effective recall and promotional emails that drive bookings. Save front-desk time.", "bullets": ["Better performance", "Creative ideas instantly", "Save staff time", "Higher engagement"] },
+        { "title": "Voicemail Transcription", "description": "Turn voicemails into text automatically. Tag urgent messages and route them to the right staff.", "bullets": ["Visual voicemail", "Auto-tagging urgency", "Shared team inbox", "Faster callbacks"] }
+      ],
+      "cta": "See All Features"
+    },
+    "pricingSection": {
+      "heading": "Built for Practices of Every Size",
+      "description": "Whether you run one location or manage a multi-location group, PracticeDilly scales with your practice.",
+      "singleLocation": {
+        "title": "Single Location",
+        "description": "Everything you need to run a modern, efficient dental practice from day one.",
+        "features": ["Simple setup in under 15 minutes", "All-in-one communication hub", "Affordable pricing with no hidden fees", "Seamless PMS integration"]
+      },
+      "multiLocation": {
+        "title": "Multi-Location Groups",
+        "badge": "Most Popular",
+        "description": "Manage all your locations from one dashboard with enterprise-grade features.",
+        "features": ["Centralized dashboard for all locations", "Consistent patient experience across locations", "Volume pricing and dedicated support", "Advanced analytics and reporting", "Custom workflows for each location"]
+      },
+      "ctaHeading": "Ready to get started?",
+      "ctaDescription": "From startups to established groups, PracticeDilly grows with you",
+      "ctaButton": "Get Pricing",
+      "ctaNote": "Setup takes less than 15 minutes • No credit card required"
+    },
+    "faq": [
+      { "question": "Does this integrate with my existing Practice Management Software?", "answer": "Yes! PracticeDilly integrates seamlessly with all major practice management systems including Dentrix, Eaglesoft, Open Dental, and CareStack. Our integration ensures real-time data sync, so patient information, appointments, and records are always up to date across both platforms." },
+      { "question": "Can I keep my current office phone number?", "answer": "Absolutely. PracticeDilly supports number porting, so you can keep your existing office phone number. We'll handle the porting process, which typically takes 5-7 business days. During the transition, we can set up call forwarding to ensure you don't miss any calls." },
+      { "question": "Is the platform HIPAA compliant?", "answer": "Yes, PracticeDilly is fully HIPAA compliant. We sign Business Associate Agreements (BAAs) with all healthcare clients and implement comprehensive security measures including encryption, secure storage, access controls, and audit logging. We're regularly audited to maintain compliance standards." },
+      { "question": "How long does it take to get set up?", "answer": "Most practices are up and running within 15 minutes. Our simple setup process includes connecting your practice management system, configuring your preferences, and training your team. For multi-location groups, setup typically takes 1-2 days to ensure all locations are properly configured." },
+      { "question": "Do you offer contracts or is it month-to-month?", "answer": "PracticeDilly operates on a month-to-month basis with no long-term contracts. You can cancel anytime without penalties. We believe in earning your business every month, which is why we focus on delivering value rather than locking you into contracts." }
+    ],
+    "cta": {
+      "heading": "Ready to transform your practice? Start free today",
+      "description": "Join 500+ dental practices already using PracticeDilly to streamline patient communication and grow their practice.",
+      "benefits": ["No credit card", "30-day free trial", "Cancel anytime"],
+      "button": "Get Started Free",
+      "note": "Setup takes less than 5 minutes • No commitment required"
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "About Us",
+      "heading": "Our Journey & Mission",
+      "description": "From a simple mobile app to a comprehensive patient engagement platform, discover how PracticeDilly evolved by listening to our customers and building what they truly need."
+    },
+    "storySections": [
+      { "year": "2014", "title": "In 2014", "description": "Pavan and his team developed a mobile app for his daughter's dentist Dr. Mike Shannon's two dental offices. They built a mobile app that patients can use to pay their bills, book appointments, etc." },
+      { "title": "Big Setback", "description": "Dr. Shannon and his team members loved the patient mobile app. But we had a challenge with patient adoption. Not many patients were interested to download and use the app. So instead of putting our focus on what we think was cool, we had to pivot to what Dr. Shannon's office needed." },
+      { "title": "Customer-Centricity", "description": "As part of our approach to go more customer-focused, we looked into how we can automate certain things and save time for the staff at Dr. Shannon's offices. And automated appointment reminders (email, text, auto call) & two-way texting were born." },
+      { "title": "We Never Said Never", "description": "Any feature that's requested by our clients, we added to our product and will continue to do so. As a result, we have become a full-fledged patient engagement platform. And all of our success has become our customer's success." }
+    ],
+    "ceoQuote": {
+      "quote": "Listen to your customers. They'll guide you on how you should build your product, how you should market it, and everything in between.",
+      "author": "Pavan Chakka",
+      "title": "CEO, PracticeDilly"
+    },
+    "timeline": {
+      "heading": "Product Journey",
+      "description": "Our evolution from a simple mobile app to a comprehensive patient engagement platform",
+      "items": [
+        { "year": "2014", "features": ["Patient Mobile App", "Bill Payment, Appointment Booking via App"] },
+        { "year": "2016", "features": ["Dentrix Integration", "Appointment Reminders, Confirmations"] },
+        { "year": "2018", "features": ["Opendental, Eaglesoft Integration", "2-Way Texting, Online Reviews"] },
+        { "year": "2020", "features": ["Paperless Forms, Automated Recalls", "Campaigns & Promotions, Mass Texting"] },
+        { "year": "2022", "features": ["Dental Insurance Verifications", "Online Payments, Text to Pay"] },
+        { "year": "2024", "features": ["Patient Check In", "Self Scheduling"] }
+      ]
+    },
+    "california": {
+      "heading": "Proudly made in California"
+    },
+    "cta": {
+      "heading": "Ready to Join Our Journey?",
+      "description": "Experience the patient engagement platform built by listening to dental practices like yours. Start your 30-day free trial today.",
+      "button": "Get Started Free"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "Contact Us",
+      "heading": "Get in Touch",
+      "description": "Have questions? We'd love to hear from you. Reach out to us via email, phone, or visit our office in Irvine, California."
+    },
+    "address": {
+      "title": "Address",
+      "line1": "224 Kempton",
+      "line2": "Irvine, CA 92620"
+    },
+    "email": {
+      "title": "Email",
+      "value": "info@appdilly.com",
+      "href": "mailto:info@appdilly.com"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "(949) 407-5907",
+      "href": "tel:+19494075907"
+    },
+    "help": {
+      "heading": "We're Here to Help",
+      "description": "Whether you have questions about our platform, need support, or want to learn more about how PracticeDilly can help your dental practice, we're ready to assist you.",
+      "officeHours": "Monday - Friday: 9:00 AM - 5:00 PM PST",
+      "responseTime": "We typically respond to emails within 24 hours during business days."
+    }
+  },
+  "pricing": {
+    "hero": {
+      "label": "Pricing",
+      "heading": "Affordable Plans for All",
+      "description": "We want dental practices of all sizes to take advantage of technology and automation. That's why our pricing is based on practice size and offers all the features.",
+      "ctaPrimary": "Get Started - No Setup Fee!",
+      "ctaSecondary": "Call (949) 407-5907"
+    },
+    "plans": [
+      { "name": "Basic", "description": "For dental practices averaging 5-10 appointments daily", "price": "$99", "period": "per month", "cta": "Start 30 Day Free Trial", "popular": false },
+      { "name": "Pro", "description": "For dental practices averaging 11-20 appointments daily", "price": "$129", "period": "per month", "cta": "Start 30 Day Free Trial", "popular": true },
+      { "name": "Premier", "description": "For dental practices averaging 21-50 appointments daily", "price": "$179", "period": "per month", "cta": "Start 30 Day Free Trial", "popular": false }
+    ],
+    "plansNote": "No contracts, No setup fee",
+    "allFeaturesHeading": "All Features Included in Each Plan",
+    "allFeaturesDescription": "Regardless of the plan you choose, you will enjoy every feature listed below",
+    "allFeatures": [
+      { "category": "Reminders", "description": "Keep patients informed and reduce no-shows", "items": ["Appointment Reminders", "Automated Confirmations", "Email Reminders", "Text Reminders", "Voice Call Reminders"] },
+      { "category": "Texting", "description": "Engage with patients through messaging", "items": ["2-way Texting", "Landline Texting", "Custom Reminders", "Family Grouping", "Group Messaging"] },
+      { "category": "Recall", "description": "Bring patients back with follow-ups", "items": ["On-Demand Recall", "Automated Recall", "Yearly Recall", "Staff Mobile App", "Mobile App Texting"] },
+      { "category": "Bulk Messaging", "description": "Reach multiple patients at once efficiently", "items": ["Mass Texting", "Mass Emails", "Birthday Greetings", "Welcome Email", "Email Templates"] },
+      { "category": "Reviews", "description": "Build your online reputation effortlessly", "items": ["Google Reviews", "Facebook Reviews", "Yelp Reviews", "Auto Requests", "Manual Requests"] },
+      { "category": "Paperless Forms", "description": "Streamline patient intake digitally", "items": ["Covid-19 Pre-Screening", "New Patient Forms", "Treatment Consent Form", "Form Customization", "Auto Fill Forms"] }
+    ],
+    "allFeaturesFooter": "Looking for only a specific feature listed above? Let us know, we can certainly help you with that. Call us at (949) 407-5907",
+    "whyPracticeDillyHeading": "Why PracticeDilly?",
+    "whyPracticeDilly": [
+      { "title": "All In One", "description": "You don't need multiple tools. Reminders, Texting, Paperless Forms, Reputation Management, etc. all available in one platform." },
+      { "title": "Great Support", "description": "We even have our support staff providing you with assistance after hours or during the weekend." },
+      { "title": "Best Pricing", "description": "We want technology to be widely available to dental practices of all sizes and offer the best price in the market." },
+      { "title": "Real-Time Communication", "description": "Our No-Sync technology enables us to obtain accurate information, so you will not see reminders sent out for canceled appointments." }
+    ],
+    "noContractsCta": {
+      "heading": "No Contracts, No Setup Fee",
+      "description": "We want you to be completely satisfied before you commit to making any payments. That's why we offer our service without any setup fees or contracts.",
+      "button": "Get Started"
+    },
+    "faqHeading": "Frequently Asked Questions",
+    "faqDescription": "Everything you need to know about PracticeDilly pricing and features.",
+    "faq": [
+      { "question": "Is PracticeDilly HIPAA compliant?", "answer": "PracticeDilly is a result of collaboration between dentists and software engineers. As such, we knew from the start to make sure PracticeDilly must be completely HIPAA compliant. Our No-Sync approach to patient data enables us to use the data only to perform necessary functions and is never stored on our servers." },
+      { "question": "Why would you offer a free trial?", "answer": "We believe our product offers important features not included with other patient communication services. But we want to be even better! Your experience will help us learn how to improve PracticeDilly even more. Plus, we are confident you will love our service and be happy to become a customer." },
+      { "question": "What practice management softwares are you compatible with?", "answer": "PracticeDilly currently works seamlessly with Dentrix, Eaglesoft, and Opendental. We are constantly adding new software integrations." }
+    ]
+  },
+  "testimonials": {
+    "hero": {
+      "label": "Testimonials",
+      "heading": "Customer Reviews & Testimonials",
+      "description": "Dental practices owners and office managers share their stories about why they're passionate about what they do and how PracticeDilly helped them along the way.",
+      "ctaPrimary": "Get Started - No Setup Fee!",
+      "ctaSecondary": "Call (949) 407-5907"
+    },
+    "sectionHeading": "Stories From Our Clients",
+    "sectionDescription": "Real feedback from dental practices using PracticeDilly",
+    "whyChooseHeading": "Why Choose Us?",
+    "whyChooseDescription": "Our Dentist clients appreciate our easy to use patient engagement software and you will love it too!",
+    "whyChoose": [
+      { "title": "15 MINS", "description": "We understand how busy you are! Give us just 15 minutes to integrate with Dentrix and then enjoy all the benefits." },
+      { "title": "Great Support", "description": "We even have our support staff providing you with assistance after hours or during the weekend." },
+      { "title": "Fair Pricing", "description": "We provide highly affordable pricing plans designed to assist you in growing your dental practice." },
+      { "title": "No Contracts, No Setup Fee, and 30-day Free Trial", "description": "We want you to be completely satisfied before you commit to making any payments. That's why we offer our service without any setup fees or contracts." }
+    ],
+    "faqHeading": "Frequently Asked Questions",
+    "faqDescription": "Have questions? We're here to help.",
+    "faq": [
+      { "question": "Is PracticeDilly HIPAA compliant?", "answer": "Yes, PracticeDilly is fully HIPAA compliant. We take data security and patient privacy seriously, implementing industry-standard encryption and security measures to protect all patient information." },
+      { "question": "Why would you offer a free trial?", "answer": "We believe in the quality of our product and want you to experience its benefits firsthand. Our 30-day free trial allows you to fully explore all features and see how PracticeDilly can transform your practice's communication without any financial commitment." },
+      { "question": "What practice management softwares are you compatible with?", "answer": "PracticeDilly integrates seamlessly with major dental practice management software including Dentrix, Eaglesoft, Open Dental, and many others. Our team can help you set up the integration in just 15 minutes." }
+    ]
+  },
+  "search": {
+    "heading": "Search",
+    "description": "Search across our blog posts, features, integrations, and testimonials"
+  }
+}

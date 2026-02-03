@@ -17,11 +17,11 @@ export default function AuthorsIndexPage() {
     <div className="relative min-h-screen bg-background">
       <SectionContainer className="px-4 md:px-8 lg:px-16 pt-8 pb-4">
         <Link
-          href="/blog"
+          href="/resources/article"
           className="inline-flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
-          <span>Back to blog</span>
+          <span>Back to articles</span>
         </Link>
       </SectionContainer>
 

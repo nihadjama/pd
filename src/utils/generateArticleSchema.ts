@@ -36,7 +36,7 @@ export interface CaseStudyArticleInput {
  * Generates Article JSON-LD for a blog post (BlogPosting subtype).
  */
 export function generateBlogArticleSchema(input: BlogArticleInput): object {
-  const url = `${BASE_URL}/blog/${input.slug}`;
+  const url = `${BASE_URL}/resources/article/${input.slug}`;
   const imageUrl = input.image
     ? (input.image.startsWith("http") ? input.image : `${BASE_URL}${input.image}`)
     : undefined;
@@ -91,7 +91,7 @@ export function generateBlogArticleSchema(input: BlogArticleInput): object {
  * Generates Article JSON-LD for a case study (Article type, no author Person).
  */
 export function generateCaseStudyArticleSchema(input: CaseStudyArticleInput): object {
-  const url = `${BASE_URL}/case-studies/${input.slug}`;
+  const url = `${BASE_URL}/resources/case-study/${input.slug}`;
   const imageUrl = input.image
     ? (input.image.startsWith("http") ? input.image : `${BASE_URL}${input.image}`)
     : undefined;

@@ -69,7 +69,7 @@ function searchBlogs(searchTerm: string): SearchResult[] {
       id: blog.slug,
       title: blog.title,
       description: blog.description,
-      url: `/blog/${blog.slug}`,
+      url: `/resources/article/${blog.slug}`,
       metadata: {
         author: blog.author,
         date: blog.date,

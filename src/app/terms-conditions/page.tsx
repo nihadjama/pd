@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionContainer from "@/common/SectionContainer";
-import { H1, H2, H3 } from "@/common/headings";
+import { H1 } from "@/common/headings";
+import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import GridBackground from "@/components/GridBackground";
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function TermsConditionsPage() {
           <div className="max-w-4xl mx-auto flex flex-col gap-8 md:gap-10">
             {/* Terms and Conditions of Use */}
             <section className="flex flex-col gap-4">
-              <H2>Terms and Conditions of Use</H2>
+              <HeadingWithHighlight text="Terms and Conditions of Use" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 Please read these terms and conditions of use carefully. By accessing or using this web site or the AppDilly services, you agree to be bound by the terms and conditions described herein and all terms incorporated by reference. If you do not agree to all of these terms, do not use this web site.
               </p>
@@ -48,7 +49,7 @@ export default function TermsConditionsPage() {
 
             {/* Electronic Communications */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Electronic Communications</H2>
+              <HeadingWithHighlight text="Electronic Communications" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 When you access website, you are communicating with us electronically. You consent to receive communications from us electronically. We will communicate with you by e-mail or by posting notices on this site. You agree that all agreements, notices, disclosures and other communications that we provide you electronically satisfy any legal requirements that such communications be in writing.
               </p>
@@ -56,7 +57,7 @@ export default function TermsConditionsPage() {
 
             {/* License, Trademarks and Website access */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">License, Trademarks and Website access</H2>
+              <HeadingWithHighlight text="License, Trademarks and Website access" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 AppDilly, LLC. grants you a limited license to access and make personal use of the website and it's service. This license does not include any resale or commercial use of the services or its contents. The software applications or any portion of the web site may not be reproduced, duplicated, copied, sold, resold, visited, or otherwise exploited for any commercial purpose without express written consent of AppDilly, LLC. You may not frame or utilize framing techniques to enclose any trademark, logo, or other proprietary information (including images, text, page layout, or form) of the website or third party providers without express written consent. Any unauthorized use terminates the permission or license granted by AppDilly, LLC.
               </p>
@@ -67,7 +68,7 @@ export default function TermsConditionsPage() {
 
             {/* Payments */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Payments</H2>
+              <HeadingWithHighlight text="Payments" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 A valid credit card is required for accounts in order to process orders. The service will be billed in monthly intervals. For each billing period, the Account Owner will receive an invoice via the email provided. Users have approximately two weeks to notify us and settle any issues with the billing.
               </p>
@@ -75,7 +76,7 @@ export default function TermsConditionsPage() {
 
             {/* Cancellation and Termination */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Cancellation and Termination</H2>
+              <HeadingWithHighlight text="Cancellation and Termination" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 You may cancel your account at any time by selecting "Cancel Subscription" from your Billing Account. If you cancel the Service in the middle of the billing cycle, your service will be discontinued at the end of the billing cycle, and you will not be charged for the next billing cycle. Upon termination of the Services by either party for any reason: AppDilly, LLC will cease providing you with the Services and you will no longer be able to access your Account. Unless otherwise provided in the Terms of Service, you will not be entitled to any refunds of any Fees, pro rata or otherwise.
               </p>
@@ -83,7 +84,7 @@ export default function TermsConditionsPage() {
 
             {/* Modifications to the service and prices */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Modifications to the service and prices</H2>
+              <HeadingWithHighlight text="Modifications to the service and prices" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 Prices for using PracticeDilly are subject to change upon 60 days notice from AppDilly, LLC. Such notice will be provided to the email you furnished for your User Account. AppDilly, LLC reserves the right at any time to modify or discontinue the Service (or any part thereof) with or without notice.
               </p>
@@ -94,7 +95,7 @@ export default function TermsConditionsPage() {
 
             {/* Your Account */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Your Account</H2>
+              <HeadingWithHighlight text="Your Account" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 If you use the website, and AppDilly services, you are responsible for maintaining the confidentiality of your account and password and for restricting access to your mobile device and your computer, and you agree to accept responsibility for all activities that occur under your account or password. AppDilly, LLC. reserves the right to refuse service, terminate accounts, remove or edit content, or cancel orders in their sole discretion.
               </p>
@@ -108,7 +109,7 @@ export default function TermsConditionsPage() {
 
             {/* Text message compliance */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Text message compliance</H2>
+              <HeadingWithHighlight text="Text message compliance" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 The Telephone Consumer Protection Act (TCPA) is a federal law regulating the way consumers are contacted by telephone, fax, and text message. The TCPA regulations apply to the text and automated landline messages you are able to send through the AppDilly Service to communicate with your patients.
               </p>
@@ -119,7 +120,7 @@ export default function TermsConditionsPage() {
 
             {/* Opt-Out */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Opt-Out</H2>
+              <HeadingWithHighlight text="Opt-Out" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 TCPA regulations require you to honor patient requests to opt-out of future telephone, or text messages. The AppDilly Service allows you to honor these requests on an individual basis. A patient may also opt-out of text messages at any time by replying with the word STOP or letter S to any text message sent through the AppDilly Service. You are responsible for all liability for any failure to receive consent or failure to opt users out of the text message feature.
               </p>
@@ -127,7 +128,7 @@ export default function TermsConditionsPage() {
 
             {/* Email compliance */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Email compliance</H2>
+              <HeadingWithHighlight text="Email compliance" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 You agree to comply with all elements of CAN-SPAM and safe sender email practices. This includes but is not limited to including unsubscribe links, your full contact information in all correspondence, and not releasing private and/or confidential information. You may only use email services for those customers with whom you have an existing business relationship and which have indicated that they accept correspondence from you. You may not attempt to spoof sender domains, send spam or other offending email practices. Because of carrier technologies, AppDilly makes no expressed or implied warranty of individual message receipt. AppDilly is not liable for any issues that arise associated with the content that you provide or unforeseen liabilities of it being delivered.
               </p>
@@ -135,7 +136,7 @@ export default function TermsConditionsPage() {
 
             {/* Identity Disclosure */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Identity Disclosure</H2>
+              <HeadingWithHighlight text="Identity Disclosure" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 TCPA regulations require you to identify your practice by name in all text messages you send to patients. The AppDilly service enables you to comply with this rule by automatically including the identifying tokens in all text messages. Additionally, you may not attempt to spoof sender domains, send spam or other offending text messages. AppDilly makes no expressed or implied warranty of individual message receipt. Standard text message rates apply for all text message services. AppDilly shall not be liable for any issues that arise associated with the content that you provide or unforeseen liabilities of it being delivered. You shall be solely liable to comply with applicable laws and regulations within your jurisdiction in connection with telecommunication (e.g., email and text) messages that you send to your customers.
               </p>
@@ -143,7 +144,7 @@ export default function TermsConditionsPage() {
 
             {/* Data Consent for Services */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Data Consent for Services</H2>
+              <HeadingWithHighlight text="Data Consent for Services" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 In connection with the provision of technical support, training and other Services, you agree that AppDilly may remotely log-in to your computers, devices and systems for purposes of providing the support, training or other Services, including, without limitation, technical trouble shooting, answering questions, benchmarking and providing training to you or your personnel. You agree that AppDilly may automatically check the version of the Service that you are utilizing and may provide updates or upgrades remotely via the Internet. You consent to the receipt of updates or upgrades by means of download to your computers and systems. Additionally, your practice management software must always be accessible by AppDilly. It is your responsibility to contact AppDilly if you are upgrading or changing your computer systems.
               </p>
@@ -151,7 +152,7 @@ export default function TermsConditionsPage() {
 
             {/* Personal Information */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Personal Information</H2>
+              <HeadingWithHighlight text="Personal Information" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 Your privacy is important to us. We always transmits the data between the website and the back-end storage securely. This prevents potential hackers from tapping a data conversation. Your account credentials are encrypted. We employ reasonable and current security methods to prevent unauthorized access, maintain data accuracy, and ensure correct use of information your account information and profile are password-protected. We recommend that you do not divulge your password to anyone. Our personnel will never ask you for your password in an unsolicited phone call or in an unsolicited e-mail.
               </p>
@@ -159,7 +160,7 @@ export default function TermsConditionsPage() {
 
             {/* Information Control */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">Information Control</H2>
+              <HeadingWithHighlight text="Information Control" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 We do not control the information provided by other users that is made available through our system. You may find other user's information to be offensive, harmful, inaccurate, or deceptive. Please use caution, and practice safe trading when using our site. Please note that there are also risks of dealing with underage persons or people acting under false pretense. Additionally, there may also be risks dealing with international trade and foreign nationals.
               </p>
@@ -167,7 +168,7 @@ export default function TermsConditionsPage() {
 
             {/* General */}
             <section className="flex flex-col gap-4">
-              <H2 className="text-2xl md:text-3xl">General</H2>
+              <HeadingWithHighlight text="General" className="text-2xl md:text-3xl" />
               <p className="font-sans font-normal text-base leading-6 text-foreground">
                 This Agreement shall be governed in all respects by the laws of the State of California as such laws are applied to agreements entered into and to be performed entirely within California between California residents. We do not guarantee continuous, uninterrupted or secure access to our services, and operation of our website may be interfered with by numerous factors outside of our control. If any provision of this Agreement is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced. You agree that this Agreement and all incorporated agreements may be automatically assigned by AppDilly, LLC in our sole discretion, to a third party in the event of a merger or acquisition. Headings are for reference purposes only and in no way define, limit, construe or describe the scope or extent of such section. Our failure to act with respect to a breach by you or others does not waive our right to act with respect to subsequent or similar breaches. This Agreement sets forth the entire understanding and agreement between us with respect to the subject matter hereof.
               </p>

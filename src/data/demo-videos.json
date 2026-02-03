@@ -1,0 +1,210 @@
+{
+  "intro": "We understand it's challenging to find 30 minutes of continuous time to attend a demo while attending to patients' needs. That's why we've provided shorter demo videos so you can go through them at your own pace. If you have any questions, do not hesitate to call us at: (949) 407-5907.",
+  "phoneNumber": "(949) 407-5907",
+  "phoneHref": "tel:+19494075907",
+  "categories": [
+    {
+      "id": "appointment-reminders",
+      "name": "Appointment Reminders",
+      "videos": [
+        {
+          "id": "ar-1",
+          "slug": "how-dental-offices-can-use-appointment-reminder-system",
+          "title": "How Dental Offices Can Use Appointment Reminder System?",
+          "duration": "01:32",
+          "youtubeId": "lyMnEdwynF4",
+          "steps": [
+            { "text": "You can set out your reminder in advance for 30 days or 14 days or 7 days or 1 or 2 days or 2 hours before your scheduled appointment.", "time": "0.25" },
+            { "text": "You have the option to send the automated reminder through text message, email or automated phone call.", "time": "0.33" },
+            { "text": "Some of the popular settings which most offices prefer are a 30 days email reminder, 7 days email/text/phone call reminder, a day or two message/phone reminder, and a 2 hours prior phone call reminder.", "time": "0.54" },
+            { "text": "Go to the patient's name to make necessary customizations.", "time": "1.18" }
+          ]
+        },
+        {
+          "id": "ar-2",
+          "slug": "how-can-appointment-reminders-be-customized-for-patients",
+          "title": "How Can Appointment Reminders Be Customized For Patients?",
+          "duration": "01:22",
+          "youtubeId": "AOBsXKpF2bI",
+          "steps": []
+        },
+        {
+          "id": "ar-3",
+          "slug": "send-appointment-reminders-in-spanish",
+          "title": "Send Appointment Reminders in Spanish",
+          "duration": "01:22",
+          "youtubeId": "FLqnC7zVn0g",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "insurance-verification",
+      "name": "Insurance Verification",
+      "videos": [
+        {
+          "id": "iv-1",
+          "slug": "how-practicedilly-verify-insurance-periodically-with-patients",
+          "title": "How PracticeDilly Verify Insurance Periodically with Patients?",
+          "duration": "01:37",
+          "youtubeId": "WStI0fBoDPA",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "two-way-texting",
+      "name": "Two-way Texting",
+      "videos": [
+        {
+          "id": "tw-1",
+          "slug": "how-can-you-send-text-messages-to-patients-on-a-specific-date",
+          "title": "How Can You Send Text Messages to Patients on a Specific Date?",
+          "duration": "01:13",
+          "youtubeId": "tGdlyLDPAx0",
+          "steps": []
+        },
+        {
+          "id": "tw-2",
+          "slug": "how-to-send-and-receive-text-messages",
+          "title": "How to Send and Receive Text Messages?",
+          "duration": "01:45",
+          "youtubeId": "IJYLFekx0ZA",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "online-reviews",
+      "name": "Online Reviews",
+      "videos": [
+        {
+          "id": "or-1",
+          "slug": "how-to-customize-the-message-that-goes-out-in-the-online-review-requests",
+          "title": "How to Customize the Message That Goes Out in the Online Review Requests?",
+          "duration": "01:37",
+          "youtubeId": "UmlYjM1o1n0",
+          "steps": []
+        },
+        {
+          "id": "or-2",
+          "slug": "how-to-request-google-yelp-and-facebook-reviews-from-your-patients",
+          "title": "How to Request Google, Yelp and Facebook Reviews From Your Patients?",
+          "duration": "01:20",
+          "youtubeId": "4kCH8iv6xoA",
+          "steps": []
+        },
+        {
+          "id": "or-3",
+          "slug": "how-to-automate-google-yelp-and-facebook-reviews-requests",
+          "title": "How to Automate Google, Yelp, and Facebook Reviews Requests?",
+          "duration": "01:30",
+          "youtubeId": "mHTnkJbVQik",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "paperless-forms",
+      "name": "Paperless Forms",
+      "videos": [
+        {
+          "id": "pf-1",
+          "slug": "how-to-send-covid-19-pre-screening-form-to-your-patients",
+          "title": "How to Send COVID-19 Pre-Screening Form to Your Patients?",
+          "duration": "02:42",
+          "youtubeId": "9NVrVwZRWNE",
+          "steps": []
+        },
+        {
+          "id": "pf-2",
+          "slug": "how-to-send-paperless-forms-to-patients",
+          "title": "How to Send Paperless Forms to Patients?",
+          "duration": "02:00",
+          "youtubeId": "2e7Ui3PMMU8",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "campaigns-promotions",
+      "name": "Campaigns & Promotions",
+      "videos": [
+        {
+          "id": "cp-1",
+          "slug": "how-to-send-a-mass-text-message-to-your-patients",
+          "title": "How to Send a Mass Text Message to Your Patients?",
+          "duration": "02:56",
+          "youtubeId": "iwZKrF9QBZ4",
+          "steps": []
+        },
+        {
+          "id": "cp-2",
+          "slug": "how-to-send-an-email-campaign-to-all-of-your-patients",
+          "title": "How to Send an Email Campaign to All of Your Patients?",
+          "duration": "02:39",
+          "youtubeId": "gOCwZDq338c",
+          "steps": []
+        },
+        {
+          "id": "cp-3",
+          "slug": "explore-the-email-templates-to-strengthen-patient-relationships",
+          "title": "Explore the Email Templates to Strengthen Patient Relationships.",
+          "duration": "01:54",
+          "youtubeId": "ODit1DjbL-I",
+          "steps": []
+        },
+        {
+          "id": "cp-4",
+          "slug": "how-to-send-mass-text-messages-targeting-specific-patient-groups",
+          "title": "How to Send Mass Text Messages Targeting Specific Patient Groups?",
+          "duration": "02:05",
+          "youtubeId": "66VTPdNpceA",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "missed-appointments",
+      "name": "Missed Appointments",
+      "videos": [
+        {
+          "id": "ma-1",
+          "slug": "how-to-send-a-mass-text-message-to-all-the-patients-who-missed-their-appointments",
+          "title": "How to Send a Mass Text Message to All the Patients Who Missed Their Appointments?",
+          "duration": "01:37",
+          "youtubeId": "G7q0ZaHADN4",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "mobile-app",
+      "name": "Mobile App",
+      "videos": [
+        {
+          "id": "mo-1",
+          "slug": "how-to-use-practicedillys-dental-mobile-app",
+          "title": "How to Use PracticeDilly's Dental Mobile App?",
+          "duration": "01:55",
+          "youtubeId": "n8UyfefENwo",
+          "steps": []
+        }
+      ]
+    },
+    {
+      "id": "text-to-pay",
+      "name": "Text To Pay",
+      "videos": [
+        {
+          "id": "tp-1",
+          "slug": "how-to-send-payment-requests-to-patients",
+          "title": "How to Send Payment Requests to Patients?",
+          "duration": "01:35",
+          "youtubeId": "bpEPomAod1k",
+          "steps": []
+        }
+      ]
+    }
+  ]
+}

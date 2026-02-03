@@ -20,7 +20,7 @@ export default function CaseStudyCard({
 }: CaseStudyCardProps) {
   return (
     <Link
-      href={`/case-studies/${slug}`}
+      href={`/resources/case-study/${slug}`}
       className="group bg-card border border-border flex flex-col overflow-hidden rounded-xl hover:border-primary transition-all duration-200 hover:shadow-lg h-full"
     >
       {/* Image */}

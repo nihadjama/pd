@@ -5,7 +5,6 @@ import GridBackground from "@/components/GridBackground";
 import type { Metadata } from "next";
 import HeroPill from "@/common/HeroPill";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
-import Button from "@/common/Button";
 
 export const metadata: Metadata = {
   title: "Case Studies - Success Stories from Dental Practices | PracticeDilly",
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function CaseStudiesPage() {
+export default function CaseStudyIndexPage() {
   const featuredCaseStudy = caseStudiesData.find((cs) => cs.featured);
   const recentCaseStudies = caseStudiesData.filter((cs) => !cs.featured);
 

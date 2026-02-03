@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionContainer from "@/common/SectionContainer";
-import { H1, H2, H3 } from "@/common/headings";
+import { H1 } from "@/common/headings";
+import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import { Paragraph, ContentListItem } from "@/common/typography";
 import GridBackground from "@/components/GridBackground";
 
@@ -48,7 +49,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Types of Information Collected */}
             <section className="flex flex-col gap-4">
-              <H2>Types of Information Collected</H2>
+              <HeadingWithHighlight text="Types of Information Collected" />
               <Paragraph>
                 The information you provide us in order to use our services are stored in our secured database and are required for us to offer you our products/services. Information we may collect includes your name, contact information (such as email address, postal address, phone number, and mobile number), location and other information you choose to provide including such as passwords and so forth.
               </Paragraph>
@@ -59,7 +60,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Information Protection */}
             <section className="flex flex-col gap-4">
-              <H2>Information Protection</H2>
+              <HeadingWithHighlight text="Information Protection" />
               <Paragraph>
                 Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site is as safe as possible. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology.
               </Paragraph>
@@ -70,7 +71,7 @@ export default function PrivacyPolicyPage() {
 
             {/* HIPAA Notice */}
             <section className="flex flex-col gap-4">
-              <H2>HIPAA Notice of Privacy Practices</H2>
+              <HeadingWithHighlight text="HIPAA Notice of Privacy Practices" />
               <Paragraph>
                 This notice applies to information about you that is protected under HIPAA (the Health Insurance Portability and Accountability Act), a federal law designed to protect certain types of health information, known as "protected health information." This includes your health information we collect, create or maintain as part of the Services that identify who you are and information about your health.
               </Paragraph>
@@ -87,7 +88,7 @@ export default function PrivacyPolicyPage() {
 
             {/* California Online Privacy Protection Act */}
             <section className="flex flex-col gap-4">
-              <H2>California Online Privacy Protection Act</H2>
+              <HeadingWithHighlight text="California Online Privacy Protection Act" />
               <Paragraph>
                 CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law's reach stretches well beyond California to require any person or company in the United States (and conceivably the world) that operates websites collecting Personally Identifiable Information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals or companies with whom it is being shared.
               </Paragraph>
@@ -103,7 +104,7 @@ export default function PrivacyPolicyPage() {
 
             {/* COPPA */}
             <section className="flex flex-col gap-4">
-              <H2>COPPA (Children Online Privacy Protection Act)</H2>
+              <HeadingWithHighlight text="COPPA (Children Online Privacy Protection Act)" />
               <Paragraph>
                 When it comes to the collection of personal information from children under the age of 13 years old, the Children's Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, United States consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children's privacy and safety online.
               </Paragraph>
@@ -114,7 +115,7 @@ export default function PrivacyPolicyPage() {
 
             {/* CAN SPAM Act */}
             <section className="flex flex-col gap-4">
-              <H2>CAN SPAM Act</H2>
+              <HeadingWithHighlight text="CAN SPAM Act" />
               <Paragraph>
                 The CAN-SPAM Act is a law that sets the rules for commercial email, establishes requirements for commercial messages, gives recipients the right to have emails stopped from being sent to them, and spells out tough penalties for violations.
               </Paragraph>
@@ -142,7 +143,7 @@ export default function PrivacyPolicyPage() {
 
             {/* Contact Information */}
             <section className="flex flex-col gap-4 pt-4 border-t border-border">
-              <H2>Contact Us</H2>
+              <HeadingWithHighlight text="Contact Us" />
               <Paragraph>
                 If you have any questions about AppDilly's Privacy Policy, please contact us at: <a href="mailto:info@appdilly.com" className="text-primary hover:underline">info@appdilly.com</a>
               </Paragraph>

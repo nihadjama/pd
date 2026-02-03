@@ -1,6 +1,6 @@
 /**
  * Builds markdown content for agent/LLM consumption when Accept: text/markdown.
- * Keeps responses small and semantic (similar to Vercel changelog/docs, parallel.ai).
+ * Full content for all pages (home, about, contact, pricing, testimonials, legal, etc.).
  */
 
 import featuresData from "@/data/features.json";
@@ -8,6 +8,9 @@ import caseStudiesData from "@/data/case-studies.json";
 import blogsData from "@/data/blogs.json";
 import integrationsData from "@/data/integrations.json";
 import authorsData from "@/data/authors.json";
+import pagesData from "@/data/pages.json";
+import legalData from "@/data/legal.json";
+import testimonialsData from "@/data/testimonials.json";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://practicedilly.com";
 
@@ -16,76 +19,243 @@ function link(href: string, text: string) {
   return `[${text}](${url})`;
 }
 
-// Static markdown for key pages (concise for agents)
-const STATIC_PAGES: Record<string, string> = {
-  "/": `# PracticeDilly
+// --- Page data types (from pages.json) ---
+type PagesData = typeof pagesData;
+type LegalData = typeof legalData;
+type TestimonialItem = { id: string; practiceName: string; quote: string; rating: number; authorName: string; authorTitle: string };
 
-AI-Powered Patient Communication for Dental Practices. Combine phones, texting, scheduling, and recalls in one hub. Trusted by 500+ practices.
+// --- Markdown builders for static pages (full content from JSON) ---
 
-## Product
-- [Features](${BASE}/features) – Phones, reminders, texting, scheduling, reviews, call intelligence, billing, forms, email marketing, mobile app
-- [Integrations](${BASE}/integrations) – Dentrix, Eaglesoft, Open Dental, and more
-- [Pricing](${BASE}/pricing)
-- [Case Studies](${BASE}/case-studies)
-- [Blog](${BASE}/blog)
-- [Testimonials](${BASE}/testimonials)
+function buildHomeMarkdown(): string {
+  const p = (pagesData as PagesData).home;
+  let md = `# ${p.hero.heading}\n\n${p.hero.description}\n\n`;
+  md += `${p.hero.trust}\n\n`;
+  md += `${link("/pricing", p.hero.ctaPrimary)} | ${link("/pricing", p.hero.ctaSecondary)}\n\n`;
 
-## Company
-- [About Us](${BASE}/about)
-- [Contact](${BASE}/contact)
-- [Privacy Policy](${BASE}/privacy-policy)
-- [Terms & Conditions](${BASE}/terms-conditions)
-`,
+  md += `## ${p.whyPracticeDilly.heading}\n\n${p.whyPracticeDilly.description}\n\n`;
+  p.whyPracticeDilly.stats.forEach((s) => {
+    md += `- **${s.title}**: ${s.value}${s.unit} ${s.description} – ${s.explanation}\n`;
+  });
+  md += "\n";
 
-  "/about": `# About PracticeDilly
+  md += `## ${p.testimonialsSection.heading}\n\n${p.testimonialsSection.description}\n\n`;
+  (testimonialsData as TestimonialItem[]).forEach((t) => {
+    md += `- **${t.authorName}** (${t.practiceName}): "${t.quote}"\n`;
+  });
+  md += `\n${link("/testimonials", p.testimonialsSection.cta)}\n\n`;
 
-Our journey from a mobile app in 2014 to a full patient engagement platform. Customer-centric approach for dental practices.
+  md += `## ${p.integrationsSection.heading}\n\n${p.integrationsSection.description}\n\n`;
+  p.integrationsSection.integrations.forEach((i) => {
+    md += `- ${link(`/integrations/${i.slug}`, i.name)}\n`;
+  });
+  md += `\n${link("/integrations", p.integrationsSection.cta)}\n\n`;
 
-[Contact](${BASE}/contact) | [Features](${BASE}/features)
-`,
+  md += `## ${p.modernPractice.heading}\n\n${p.modernPractice.description}\n\n`;
+  p.modernPractice.features.forEach((f) => {
+    md += `- **${f.title}** – ${f.description}\n`;
+  });
+  md += "\n";
 
-  "/contact": `# Contact PracticeDilly
+  md += `## ${p.featuresShowcase.heading}\n\n${p.featuresShowcase.description}\n\n`;
+  p.featuresShowcase.features.forEach((f) => {
+    md += `### ${f.title}\n\n${f.description}\n\n`;
+    f.bullets.forEach((b) => {
+      md += `- ${b}\n`;
+    });
+    md += "\n";
+  });
+  md += `${link("/features", p.featuresShowcase.cta)}\n\n`;
 
-Get in touch for demos, support, or partnerships.
+  md += `## ${p.pricingSection.heading}\n\n${p.pricingSection.description}\n\n`;
+  md += `### ${p.pricingSection.singleLocation.title}\n\n${p.pricingSection.singleLocation.description}\n\n`;
+  p.pricingSection.singleLocation.features.forEach((f) => {
+    md += `- ${f}\n`;
+  });
+  md += `\n### ${p.pricingSection.multiLocation.title} ${p.pricingSection.multiLocation.badge ? `(${p.pricingSection.multiLocation.badge})` : ""}\n\n${p.pricingSection.multiLocation.description}\n\n`;
+  p.pricingSection.multiLocation.features.forEach((f) => {
+    md += `- ${f}\n`;
+  });
+  md += `\n**${p.pricingSection.ctaHeading}** ${p.pricingSection.ctaDescription}\n\n`;
+  md += `${link("/pricing", p.pricingSection.ctaButton)}\n\n`;
+  md += `*${p.pricingSection.ctaNote}*\n\n`;
 
-[Start here](${BASE}) | [Pricing](${BASE}/pricing)
-`,
+  md += "## Frequently Asked Questions\n\n";
+  p.faq.forEach((faq) => {
+    md += `### ${faq.question}\n\n${faq.answer}\n\n`;
+  });
 
-  "/pricing": `# Pricing | PracticeDilly
+  md += `## ${p.cta.heading}\n\n${p.cta.description}\n\n`;
+  p.cta.benefits.forEach((b) => {
+    md += `- ${b}\n`;
+  });
+  md += `\n${link("/contact", p.cta.button)}\n\n`;
+  md += `*${p.cta.note}*\n\n`;
 
-Flexible plans for dental and healthcare practices. Start with a free trial.
+  md += `[Features](${BASE}/features) | [Integrations](${BASE}/integrations) | [Pricing](${BASE}/pricing) | [Case Studies](${BASE}/resources/case-study) | [Articles](${BASE}/resources/article) | [About](${BASE}/about) | [Contact](${BASE}/contact)\n`;
+  return md;
+}
 
-[Features](${BASE}/features) | [Contact](${BASE}/contact)
-`,
+function buildAboutMarkdown(): string {
+  const p = (pagesData as PagesData).about;
+  let md = `# ${p.hero.label} – ${p.hero.heading}\n\n${p.hero.description}\n\n`;
 
-  "/testimonials": `# Testimonials | PracticeDilly
+  md += "## Our Story\n\n";
+  p.storySections.forEach((s) => {
+    md += `### ${s.title}${s.year ? ` (${s.year})` : ""}\n\n${s.description}\n\n`;
+  });
 
-What practices say about PracticeDilly.
+  md += "## CEO Quote\n\n";
+  md += `"${p.ceoQuote.quote}"\n\n— ${p.ceoQuote.author}, ${p.ceoQuote.title}\n\n`;
 
-[Case Studies](${BASE}/case-studies) | [Contact](${BASE}/contact)
-`,
+  md += `## ${p.timeline.heading}\n\n${p.timeline.description}\n\n`;
+  p.timeline.items.forEach((item) => {
+    md += `### ${item.year}\n\n`;
+    item.features.forEach((f) => {
+      md += `- ${f}\n`;
+    });
+    md += "\n";
+  });
 
-  "/search": `# Search | PracticeDilly
+  md += `## ${p.california.heading}\n\n`;
 
-Search the site.
+  md += `## ${p.cta.heading}\n\n${p.cta.description}\n\n`;
+  md += `${link("/contact", p.cta.button)}\n\n`;
 
-[Home](${BASE})
-`,
+  md += `[Contact](${BASE}/contact) | [Features](${BASE}/features) | [Home](${BASE})\n`;
+  return md;
+}
 
-  "/privacy-policy": `# Privacy Policy | PracticeDilly
+function buildContactMarkdown(): string {
+  const p = (pagesData as PagesData).contact;
+  let md = `# ${p.hero.label} – ${p.hero.heading}\n\n${p.hero.description}\n\n`;
 
-Privacy policy and data practices.
+  md += `## ${p.address.title}\n\n${p.address.line1}\n${p.address.line2}\n\n`;
+  md += `## ${p.email.title}\n\n${link(p.email.href, p.email.value)}\n\n`;
+  md += `## ${p.phone.title}\n\n${link(p.phone.href, p.phone.value)}\n\n`;
 
-[Home](${BASE}) | [Contact](${BASE}/contact)
-`,
+  md += `## ${p.help.heading}\n\n${p.help.description}\n\n`;
+  md += `**Office Hours:** ${p.help.officeHours}\n\n`;
+  md += `**Response Time:** ${p.help.responseTime}\n\n`;
 
-  "/terms-conditions": `# Terms & Conditions | PracticeDilly
+  md += `[Home](${BASE}) | [Pricing](${BASE}/pricing) | [Features](${BASE}/features)\n`;
+  return md;
+}
 
-Terms of use and conditions.
+function buildPricingMarkdown(): string {
+  const p = (pagesData as PagesData).pricing;
+  let md = `# Pricing – ${p.hero.heading}\n\n${p.hero.description}\n\n`;
+  md += `${link("/contact", p.hero.ctaPrimary)} | ${link("tel:+19494075907", p.hero.ctaSecondary)}\n\n`;
 
-[Home](${BASE}) | [Contact](${BASE}/contact)
-`,
-};
+  md += "## Plans\n\n";
+  p.plans.forEach((plan) => {
+    md += `### ${plan.name}${plan.popular ? " (Most Popular)" : ""}\n\n`;
+    md += `${plan.description}\n\n`;
+    md += `**${plan.price}** ${plan.period}\n\n`;
+    md += `${plan.cta}\n\n`;
+  });
+  md += `*${p.plansNote}*\n\n`;
+
+  md += `## ${p.allFeaturesHeading}\n\n${p.allFeaturesDescription}\n\n`;
+  p.allFeatures.forEach((cat) => {
+    md += `### ${cat.category}\n\n${cat.description}\n\n`;
+    cat.items.forEach((item) => {
+      md += `- ${item}\n`;
+    });
+    md += "\n";
+  });
+  md += `${p.allFeaturesFooter}\n\n`;
+
+  md += `## ${p.whyPracticeDillyHeading}\n\n`;
+  p.whyPracticeDilly.forEach((item) => {
+    md += `- **${item.title}** – ${item.description}\n`;
+  });
+  md += "\n";
+
+  md += `## ${p.noContractsCta.heading}\n\n${p.noContractsCta.description}\n\n`;
+  md += `${link("/contact", p.noContractsCta.button)}\n\n`;
+
+  md += `## ${p.faqHeading}\n\n${p.faqDescription}\n\n`;
+  p.faq.forEach((faq) => {
+    md += `### ${faq.question}\n\n${faq.answer}\n\n`;
+  });
+
+  md += `[Features](${BASE}/features) | [Contact](${BASE}/contact) | [Home](${BASE})\n`;
+  return md;
+}
+
+function buildTestimonialsMarkdown(): string {
+  const p = (pagesData as PagesData).testimonials;
+  let md = `# ${p.hero.heading}\n\n${p.hero.description}\n\n`;
+  md += `${link("/contact", p.hero.ctaPrimary)} | ${link("tel:+19494075907", p.hero.ctaSecondary)}\n\n`;
+
+  md += `## ${p.sectionHeading}\n\n${p.sectionDescription}\n\n`;
+  (testimonialsData as TestimonialItem[]).forEach((t) => {
+    md += `### ${t.authorName} – ${t.practiceName}\n\n`;
+    md += `"${t.quote}"\n\n`;
+    md += `*${t.rating} out of 5*\n\n`;
+  });
+
+  md += `## ${p.whyChooseHeading}\n\n${p.whyChooseDescription}\n\n`;
+  p.whyChoose.forEach((item) => {
+    md += `- **${item.title}** – ${item.description}\n`;
+  });
+  md += "\n";
+
+  md += `## ${p.faqHeading}\n\n${p.faqDescription}\n\n`;
+  p.faq.forEach((faq) => {
+    md += `### ${faq.question}\n\n${faq.answer}\n\n`;
+  });
+
+  md += `[Case Studies](${BASE}/resources/case-study) | [Contact](${BASE}/contact) | [Home](${BASE})\n`;
+  return md;
+}
+
+function buildSearchMarkdown(): string {
+  const p = (pagesData as PagesData).search;
+  let md = `# ${p.heading} | PracticeDilly\n\n${p.description}\n\n`;
+  md += `Use the search on our website to find articles, features, integrations, and testimonials.\n\n`;
+  md += `[Home](${BASE}) | [Articles](${BASE}/resources/article) | [Features](${BASE}/features) | [Integrations](${BASE}/integrations)\n`;
+  return md;
+}
+
+function buildPrivacyMarkdown(): string {
+  const pr = (legalData as LegalData).privacy;
+  let md = `# Privacy Policy | PracticeDilly\n\n${pr.intro}\n\n`;
+  md += `*Last updated: ${pr.lastUpdated}*\n\n`;
+  pr.sections.forEach((section: { title: string | null; paragraphs?: string[]; list?: string[] }) => {
+    if (section.title) {
+      md += `## ${section.title}\n\n`;
+    }
+    if (section.paragraphs) {
+      section.paragraphs.forEach((para) => {
+        md += `${para}\n\n`;
+      });
+    }
+    if (section.list) {
+      section.list.forEach((item) => {
+        md += `- ${item}\n`;
+      });
+      md += "\n";
+    }
+  });
+  md += `[Home](${BASE}) | [Contact](${BASE}/contact) | [Terms](${BASE}/terms-conditions)\n`;
+  return md;
+}
+
+function buildTermsMarkdown(): string {
+  const tr = (legalData as LegalData).terms;
+  let md = `# Terms & Conditions | PracticeDilly\n\n${tr.intro}\n\n`;
+  tr.sections.forEach((section: { title: string; paragraphs: string[] }) => {
+    md += `## ${section.title}\n\n`;
+    section.paragraphs.forEach((para) => {
+      md += `${para}\n\n`;
+    });
+  });
+  md += `[Home](${BASE}) | [Contact](${BASE}/contact) | [Privacy](${BASE}/privacy-policy)\n`;
+  return md;
+}
+
+// --- Feature / Case Study / Blog / Integration types and builders (unchanged) ---
 
 export interface FeatureData {
   slug: string;
@@ -177,7 +347,7 @@ function caseStudyToMarkdown(c: CaseStudyData): string {
   if (c.location) md += `*${c.location}*\n\n`;
   if (c.website) md += `Website: ${link(c.website, c.website)}\n\n`;
   md += c.content;
-  md += `\n\n[All case studies](${BASE}/case-studies) | [Contact](${BASE}/contact)\n`;
+  md += `\n\n[All case studies](${BASE}/resources/case-study) | [Contact](${BASE}/contact)\n`;
   return md;
 }
 
@@ -188,7 +358,7 @@ function blogToMarkdown(b: BlogData): string {
   }
   md += `${b.description}\n\n`;
   md += b.content;
-  md += `\n\n[All blog posts](${BASE}/blog) | [Home](${BASE})\n`;
+  md += `\n\n[All articles](${BASE}/resources/article) | [Home](${BASE})\n`;
   return md;
 }
 
@@ -218,11 +388,31 @@ function integrationToMarkdown(i: IntegrationData): string {
   return md;
 }
 
+// --- Main router ---
+
 export function getMarkdownForPath(path: string): string | null {
   const normalized = path.replace(/\/+$/, "") || "/";
 
-  if (STATIC_PAGES[normalized]) {
-    return STATIC_PAGES[normalized];
+  // Static pages (full content from pages.json + legal.json)
+  switch (normalized) {
+    case "/":
+      return buildHomeMarkdown();
+    case "/about":
+      return buildAboutMarkdown();
+    case "/contact":
+      return buildContactMarkdown();
+    case "/pricing":
+      return buildPricingMarkdown();
+    case "/testimonials":
+      return buildTestimonialsMarkdown();
+    case "/search":
+      return buildSearchMarkdown();
+    case "/privacy-policy":
+      return buildPrivacyMarkdown();
+    case "/terms-conditions":
+      return buildTermsMarkdown();
+    default:
+      break;
   }
 
   // /features
@@ -244,38 +434,38 @@ export function getMarkdownForPath(path: string): string | null {
     return null;
   }
 
-  // /case-studies
-  if (normalized === "/case-studies") {
+  // /resources/case-study
+  if (normalized === "/resources/case-study") {
     const studies = caseStudiesData as CaseStudyData[];
     let md = `# Case Studies | PracticeDilly\n\nSuccess stories from dental and healthcare practices.\n\n`;
     studies.forEach((c) => {
-      md += `- ${link(`/case-studies/${c.slug}`, c.title)}\n`;
+      md += `- ${link(`/resources/case-study/${c.slug}`, c.title)}\n`;
     });
     md += `\n[Home](${BASE}) | [Contact](${BASE}/contact)\n`;
     return md;
   }
 
-  // /case-studies/[slug]
-  const caseMatch = normalized.match(/^\/case-studies\/([^/]+)$/);
+  // /resources/case-study/[slug]
+  const caseMatch = normalized.match(/^\/resources\/case-study\/([^/]+)$/);
   if (caseMatch) {
     const c = (caseStudiesData as CaseStudyData[]).find((x) => x.slug === caseMatch[1]);
     if (c) return caseStudyToMarkdown(c);
     return null;
   }
 
-  // /blog
-  if (normalized === "/blog") {
+  // /resources/article
+  if (normalized === "/resources/article") {
     const posts = blogsData as BlogData[];
-    let md = `# Blog | PracticeDilly\n\nArticles on patient communication, reputation, and practice management.\n\n`;
+    let md = `# Articles | PracticeDilly\n\nArticles on patient communication, reputation, and practice management.\n\n`;
     posts.forEach((b) => {
-      md += `- ${link(`/blog/${b.slug}`, b.title)}\n`;
+      md += `- ${link(`/resources/article/${b.slug}`, b.title)}\n`;
     });
     md += `\n[Home](${BASE}) | [Contact](${BASE}/contact)\n`;
     return md;
   }
 
-  // /blog/[slug]
-  const blogMatch = normalized.match(/^\/blog\/([^/]+)$/);
+  // /resources/article/[slug]
+  const blogMatch = normalized.match(/^\/resources\/article\/([^/]+)$/);
   if (blogMatch) {
     const b = (blogsData as BlogData[]).find((x) => x.slug === blogMatch[1]);
     if (b) return blogToMarkdown(b);
@@ -289,7 +479,7 @@ export function getMarkdownForPath(path: string): string | null {
     authors.forEach((a) => {
       md += `- ${link(`/author/${a.slug}`, a.name)}\n`;
     });
-    md += `\n[Blog](${BASE}/blog) | [Home](${BASE})\n`;
+    md += `\n[Articles](${BASE}/resources/article) | [Home](${BASE})\n`;
     return md;
   }
 
@@ -307,10 +497,10 @@ export function getMarkdownForPath(path: string): string | null {
       if (posts.length) {
         md += "## Articles\n\n";
         posts.forEach((b) => {
-          md += `- ${link(`/blog/${b.slug}`, b.title)}\n`;
+          md += `- ${link(`/resources/article/${b.slug}`, b.title)}\n`;
         });
       }
-      md += `\n[All authors](${BASE}/author) | [Blog](${BASE}/blog) | [Home](${BASE})\n`;
+      md += `\n[All authors](${BASE}/author) | [Articles](${BASE}/resources/article) | [Home](${BASE})\n`;
       return md;
     }
     return null;

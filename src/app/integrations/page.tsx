@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import SectionContainer from "@/common/SectionContainer";
-import { H2 } from "@/common/headings";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
 import Button from "@/common/Button";
 import integrationsData from "@/data/integrations.json";

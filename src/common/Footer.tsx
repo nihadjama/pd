@@ -9,8 +9,13 @@ export default function Footer() {
   const navigationLinks = [
     { label: "Features", href: "/features" },
     { label: "Integrations", href: "/integrations" },
-    { label: "Case Studies", href: "/case-studies" },
     { label: "Pricing", href: "/pricing" },
+  ];
+
+  const resourcesLinks = [
+    { label: "Articles", href: "/resources/article" },
+    { label: "Case Studies", href: "/resources/case-study" },
+    { label: "Demo Videos", href: "/resources/demo-videos" },
   ];
 
   const featureLinks = [
@@ -114,7 +119,7 @@ export default function Footer() {
             </div>
 
             {/* Middle Section: Navigation Links Grid with Boxy Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-b">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0 border-b">
               {/* Product Column */}
               <div className="flex flex-col border-r">
                 <h3 className="font-heading font-semibold text-sm text-foreground py-4 px-6 border-b">
@@ -143,9 +148,6 @@ export default function Footer() {
                   <NavListItem href="/about" borderBottom className="block py-4 px-6">
                     About
                   </NavListItem>
-                  <NavListItem href="/blog" borderBottom className="block py-4 px-6">
-                    Blog
-                  </NavListItem>
                   <NavListItem href="/testimonials" borderBottom className="block py-4 px-6">
                     Testimonials
                   </NavListItem>
@@ -155,7 +157,24 @@ export default function Footer() {
                 </ul>
               </div>
 
- 
+              {/* Resources Column */}
+              <div className="flex flex-col border-r">
+                <h3 className="font-heading font-semibold text-sm text-foreground py-4 px-6 border-b">
+                  Resources
+                </h3>
+                <ul className="flex flex-col list-none">
+                  {resourcesLinks.map((link, index) => (
+                    <NavListItem
+                      key={link.label}
+                      href={link.href}
+                      borderBottom={index < resourcesLinks.length - 1}
+                      className="block py-4 px-6"
+                    >
+                      {link.label}
+                    </NavListItem>
+                  ))}
+                </ul>
+              </div>
 
               {/* Features Column 1 */}
               <div className="flex flex-col border-r lg:border-r">

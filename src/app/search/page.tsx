@@ -78,7 +78,7 @@ function SearchContent() {
               description={
                 query
                   ? `Found ${results.total} result${results.total !== 1 ? "s" : ""}`
-                  : "Search across our blog posts, features, integrations, and testimonials"
+                  : "Search across our articles, features, integrations, and testimonials"
               }
               headingAs="h1"
             />
@@ -109,14 +109,14 @@ function SearchContent() {
       {/* Search Results */}
       {query ? (
         <div className="pb-20">
-          {/* Blogs Section */}
+          {/* Articles Section */}
           {results.blogs.length > 0 && (
             <SectionContainer className="items-start px-4 md:px-8 lg:px-16">
               <div className="w-full">
                 <div className="flex items-center gap-3 mb-8">
                   <BookOpen className="h-6 w-6 text-primary" />
                   <h2 className="text-2xl font-heading font-semibold text-foreground">
-                    Blog Posts ({results.blogs.length})
+                    Articles ({results.blogs.length})
                   </h2>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[37px] max-w-[1280px] mx-auto border-t border-border pt-8">
@@ -348,7 +348,7 @@ export default function SearchPage() {
                     text: "Search",
                     highlighted: "",
                   }}
-                  description="Search across our blog posts, features, integrations, and testimonials"
+                  description="Search across our articles, features, integrations, and testimonials"
                 />
               </div>
             </div>
