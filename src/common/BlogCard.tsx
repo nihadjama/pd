@@ -8,6 +8,7 @@ interface BlogCardProps {
   title: string;
   description: string;
   author: string;
+  authorSlug?: string;
   date: string;
   readTime: string;
   category: string;
@@ -19,6 +20,7 @@ export default function BlogCard({
   title,
   description,
   author,
+  authorSlug,
   date,
   readTime,
   category,
@@ -84,7 +86,19 @@ export default function BlogCard({
               <span>{readTime}</span>
             </div>
           </div>
-          <p className="text-xs text-muted">By {author}</p>
+          <p className="text-xs text-muted">
+            By{" "}
+            {authorSlug ? (
+              <Link
+                href={`/author/${authorSlug}`}
+                className="hover:text-primary transition-colors"
+              >
+                {author}
+              </Link>
+            ) : (
+              author
+            )}
+          </p>
         </div>
       </div>
     </Link>

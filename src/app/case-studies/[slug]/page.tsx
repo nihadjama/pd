@@ -3,10 +3,10 @@ import Link from "next/link";
 import caseStudiesData from "@/data/case-studies.json";
 import SectionContainer from "@/common/SectionContainer";
 import { H1, H2, H3 } from "@/common/headings";
-import ImageWithFallback from "@/common/ImageWithFallback";
 import { ArrowLeft, ExternalLink, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import CaseStudyCard from "@/common/CaseStudyCard";
+import { generateCaseStudyArticleSchema } from "@/utils/generateArticleSchema";
 
 interface CaseStudyPageProps {
   params: Promise<{ slug: string }>;
@@ -55,6 +55,13 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
     notFound();
   }
 
+  const articleSchema = generateCaseStudyArticleSchema({
+    slug: caseStudy.slug,
+    title: caseStudy.title,
+    description: caseStudy.description,
+    image: `/case-studies/${caseStudy.slug}.png`,
+  });
+
   // Find related case studies
   const relatedCaseStudies = caseStudiesData
     .filter((cs) => caseStudy.relatedSlugs?.includes(cs.slug))
@@ -64,8 +71,13 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
   const contentParagraphs = caseStudy.content.split("\n\n").filter((p) => p.trim());
 
   return (
-    <div className="relative min-h-screen bg-background">
-      {/* Back Link */}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <div className="relative min-h-screen bg-background">
+        {/* Back Link */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 pt-8 pb-4">
         <Link
           href="/case-studies"
@@ -243,6 +255,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
           </div>
         </SectionContainer>
       )}
-    </div>
+      </div>
+    </>
   );
 }

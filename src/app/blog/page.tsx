@@ -5,7 +5,7 @@ import GridBackground from "@/components/GridBackground";
 import type { Metadata } from "next";
 import HeroPill from "@/common/HeroPill";
 import HeadingWithHighlight from "@/common/HeadingWithHighlight";
-import Button from "@/common/Button";
+import { getAuthorSlugByName } from "@/utils/authors";
 
 export const metadata: Metadata = {
   title: "Blog - Expert Insights on Dental Practice Management",
@@ -54,6 +54,7 @@ export default function BlogPage() {
                 title={blog.title}
                 description={blog.description}
                 author={blog.author}
+                authorSlug={blog.author ? getAuthorSlugByName(blog.author) : undefined}
                 date={blog.date}
                 readTime={blog.readTime}
                 category={blog.category}

@@ -7,6 +7,7 @@ import featuresData from "@/data/features.json";
 import caseStudiesData from "@/data/case-studies.json";
 import blogsData from "@/data/blogs.json";
 import integrationsData from "@/data/integrations.json";
+import authorsData from "@/data/authors.json";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://practicedilly.com";
 
@@ -278,6 +279,40 @@ export function getMarkdownForPath(path: string): string | null {
   if (blogMatch) {
     const b = (blogsData as BlogData[]).find((x) => x.slug === blogMatch[1]);
     if (b) return blogToMarkdown(b);
+    return null;
+  }
+
+  // /author
+  if (normalized === "/author") {
+    const authors = authorsData as Array<{ slug: string; name: string }>;
+    let md = `# Authors | PracticeDilly\n\nBlog authors.\n\n`;
+    authors.forEach((a) => {
+      md += `- ${link(`/author/${a.slug}`, a.name)}\n`;
+    });
+    md += `\n[Blog](${BASE}/blog) | [Home](${BASE})\n`;
+    return md;
+  }
+
+  // /author/[slug]
+  const authorMatch = normalized.match(/^\/author\/([^/]+)$/);
+  if (authorMatch) {
+    const a = (authorsData as Array<{ slug: string; name: string; role?: string; bio?: string }>).find(
+      (x) => x.slug === authorMatch[1]
+    );
+    if (a) {
+      let md = `# ${a.name}\n\n`;
+      if (a.role) md += `*${a.role}*\n\n`;
+      if (a.bio) md += `${a.bio}\n\n`;
+      const posts = (blogsData as BlogData[]).filter((b) => b.author === a.name);
+      if (posts.length) {
+        md += "## Articles\n\n";
+        posts.forEach((b) => {
+          md += `- ${link(`/blog/${b.slug}`, b.title)}\n`;
+        });
+      }
+      md += `\n[All authors](${BASE}/author) | [Blog](${BASE}/blog) | [Home](${BASE})\n`;
+      return md;
+    }
     return null;
   }
 

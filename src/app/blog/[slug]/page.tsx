@@ -3,9 +3,10 @@ import Link from "next/link";
 import blogsData from "@/data/blogs.json";
 import SectionContainer from "@/common/SectionContainer";
 import { H1 } from "@/common/headings";
-import ImageWithFallback from "@/common/ImageWithFallback";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
+import { generateBlogArticleSchema } from "@/utils/generateArticleSchema";
+import { getAuthorSlugByName } from "@/utils/authors";
 
 interface BlogPageProps {
   params: Promise<{ slug: string }>;
@@ -55,6 +56,20 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
     notFound();
   }
 
+  const authorSlug = blog.author ? getAuthorSlugByName(blog.author) : undefined;
+  const articleSchema = generateBlogArticleSchema({
+    slug: blog.slug,
+    title: blog.title,
+    description: blog.description,
+    date: blog.date,
+    author: blog.author && authorSlug
+      ? { slug: authorSlug, name: blog.author, role: blog.authorRole }
+      : null,
+    image: `/blog-images/${blog.slug}.png`,
+    readTime: blog.readTime,
+    category: blog.category,
+  });
+
   const formattedDate = new Date(blog.date).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -70,8 +85,13 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
   const contentParagraphs = blog.content.split("\n\n").filter((p) => p.trim());
 
   return (
-    <div className="relative min-h-screen bg-background">
-      {/* Back Link */}
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <div className="relative min-h-screen bg-background">
+        {/* Back Link */}
       <SectionContainer className="px-4 md:px-8 lg:px-16 pt-8 pb-4">
         <Link
           href="/blog"
@@ -123,7 +143,16 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="font-medium text-foreground">{blog.author}</span>
+                {authorSlug ? (
+                  <Link
+                    href={`/author/${authorSlug}`}
+                    className="font-medium text-foreground hover:text-primary transition-colors"
+                  >
+                    {blog.author}
+                  </Link>
+                ) : (
+                  <span className="font-medium text-foreground">{blog.author}</span>
+                )}
                 {blog.authorRole && (
                   <>
                     <span>•</span>
@@ -217,6 +246,7 @@ export default async function BlogPostPage({ params }: BlogPageProps) {
           </div>
         </SectionContainer>
       )}
-    </div>
+      </div>
+    </>
   );
 }
