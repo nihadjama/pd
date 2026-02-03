@@ -41,12 +41,12 @@ export default function DemoVideosPage() {
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
-            <HeroPill icon="Videotape" text="Demo Videos" />
+            <HeroPill icon="Videotape" text="Demo Videos" as="h1" />
             <HeadingWithHighlight
               text="See Features in "
               highlighted="Action"
               className="text-center"
-              as="h1"
+              as="h2"
             />
             <p className="font-sans text-base leading-6 text-muted">
               {intro.split(phoneNumber)[0].trim()}{" "}

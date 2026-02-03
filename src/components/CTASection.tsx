@@ -22,7 +22,7 @@ export default function CTASection() {
           </div>
 
           {/* Benefits Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
+          <div className="flex md:flex-row flex-col items-center justify-center gap-4 w-full">
             <div className="flex items-center gap-2.5 px-4 py-3 rounded-lg bg-card border border-border">
               <div className="shrink-0 h-5 w-5 rounded-full bg-primary/10 flex items-center justify-center">
                 <Check className="h-3.5 w-3.5 text-primary" strokeWidth={2.5} />

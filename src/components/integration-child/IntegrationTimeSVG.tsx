@@ -9,7 +9,7 @@ export default function IntegrationTimeSVG() {
     const borderStrokeLength = 2 * (82.0759 + 63.0173) - 4 * 5.36418 + 2 * Math.PI * 5.36418;
     
     return (
-        <svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='w-full h-full' viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <style>{`
                 @keyframes strokeDraw {

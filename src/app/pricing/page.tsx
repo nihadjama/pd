@@ -163,12 +163,12 @@ export default function PricingPage() {
         <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
-            <HeroPill icon="DollarSign" text="Pricing" />
+            <HeroPill icon="DollarSign" text="Pricing" as="h1" />
             <HeadingWithHighlight
               text="Affordable Plans for "
               highlighted="All"
               className="text-center"
-              as="h1"
+              as="h2"
             />
             <Paragraph className="max-w-2xl">
               We want dental practices of all sizes to take advantage of technology and automation. That's why our pricing is based on practice size and offers all the features.
@@ -350,6 +350,7 @@ export default function PricingPage() {
             {faqItems.map((faq, index) => (
               <FAQItem
                 key={index}
+                id={`faq-pricing-${index}`}
                 question={faq.question}
                 answer={faq.answer}
                 isOpen={openFAQIndex === index}

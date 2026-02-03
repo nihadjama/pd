@@ -57,7 +57,7 @@ export default function IntegrationHeroSection({
             <div className="flex flex-col gap-6 md:gap-8 w-full">
               {/* Category Badge */}
               <div className="flex flex-col gap-4 md:gap-6 justify-start items-start w-full">
-                <HeroPill icon={category.icon} text={`${heading.highlighted} Integration`} />
+                <HeroPill icon={category.icon} text={`${heading.highlighted} Integration`} as="h1" />
 
                 {/* Heading */}
                 <HeadingWithHighlight
@@ -65,7 +65,7 @@ export default function IntegrationHeroSection({
                   highlighted={heading.highlighted}
                   suffix={heading.suffix}
                   className="w-full"
-                  as="h1"
+                  as="h2"
                 />
 
                 {/* Description */}

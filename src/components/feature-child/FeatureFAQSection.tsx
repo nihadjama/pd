@@ -50,6 +50,7 @@ export default function FeatureFAQSection({
           {items.map((faq, index) => (
             <FAQItem
               key={index}
+              id={`faq-feature-${index}`}
               question={faq.question}
               answer={faq.answer}
               isOpen={openIndex === index}

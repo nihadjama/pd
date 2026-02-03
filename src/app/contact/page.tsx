@@ -21,12 +21,12 @@ export default function ContactPage() {
         <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
-            <HeroPill icon="Mail" text="Contact Us" />
+            <HeroPill icon="Mail" text="Contact Us" as="h1" />
             <HeadingWithHighlight
               text="Get in "
               highlighted="Touch"
               className="text-center"
-              as="h1"
+              as="h2"
             />
             <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
               Have questions? We'd love to hear from you. Reach out to us via email, phone, or visit our office in Irvine, California.
@@ -42,7 +42,7 @@ export default function ContactPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Address Card */}
               <div className="border border-border rounded-xl bg-card p-8 flex flex-col items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]" aria-hidden="true">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -58,7 +58,7 @@ export default function ContactPage() {
 
               {/* Email Card */}
               <div className="border border-border rounded-xl bg-card p-8 flex flex-col items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]" aria-hidden="true">
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -67,7 +67,7 @@ export default function ContactPage() {
                   </h3>
                   <a
                     href="mailto:info@appdilly.com"
-                    className="font-sans font-normal text-base leading-6 text-primary hover:underline"
+                    className="font-sans font-normal text-base leading-6 text-primary hover:underline focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none rounded"
                   >
                     info@appdilly.com
                   </a>
@@ -76,7 +76,7 @@ export default function ContactPage() {
 
               {/* Phone Card */}
               <div className="border border-border rounded-xl bg-card p-8 flex flex-col items-start gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)]" aria-hidden="true">
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex flex-col gap-2">
@@ -85,7 +85,7 @@ export default function ContactPage() {
                   </h3>
                   <a
                     href="tel:+19494075907"
-                    className="font-sans font-normal text-base leading-6 text-primary hover:underline"
+                    className="font-sans font-normal text-base leading-6 text-primary hover:underline focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none rounded"
                   >
                     (949) 407-5907
                   </a>

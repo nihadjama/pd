@@ -39,9 +39,11 @@ export default function IntegrationWhyChooseSection({
               key={index}
               className="flex flex-col gap-4 items-start"
             >
-              <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center justify-center p-4 rounded-xl w-16 h-16">
+              <div className="bg-[rgba(94,72,240,0.1)] border border-[rgba(94,72,240,0.25)] flex items-center p-2 rounded-[10px] shrink-0">
                 {IconComponent && (
-                  <IconComponent className="w-6 h-6 text-primary" />
+                  <div className="relative shrink-0 size-6 text-primary">
+                    <IconComponent className="w-full h-full" />
+                  </div>
                 )}
               </div>
               <div className="flex flex-col gap-2 items-start">

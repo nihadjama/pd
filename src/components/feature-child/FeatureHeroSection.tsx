@@ -46,7 +46,7 @@ export default function FeatureHeroSection({
             <div className="flex flex-col gap-6 md:gap-8 w-full">
               {/* Category Badge */}
               <div className="flex flex-col gap-4 md:gap-6 justify-center md:justify-start items-center md:items-start w-full">
-                <HeroPill icon={category.icon} text={category.text} />
+                <HeroPill icon={category.icon} text={category.text} as="h1" />
 
                 {/* Heading */}
                 <HeadingWithHighlight
@@ -54,7 +54,7 @@ export default function FeatureHeroSection({
                   highlighted={heading.highlighted}
                   suffix={heading.suffix}
                   className="text-center md:text-left w-full"
-                  as="h1"
+                  as="h2"
                 />
 
                 {/* Description */}

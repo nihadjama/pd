@@ -53,10 +53,11 @@ export default function HomeFAQSection() {
           </p>
         </div>
 
-        <div className="flex flex-col w-full md:w-1/2">
+        <div className="flex flex-col w-full md:w-1/2" role="region" aria-label="Frequently asked questions">
           {faqItems.map((faq, index) => (
             <FAQItem
               key={index}
+              id={`faq-home-${index}`}
               question={faq.question}
               answer={faq.answer}
               isOpen={openIndex === index}

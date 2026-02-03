@@ -49,12 +49,12 @@ export default function AboutPage() {
         <GridBackground gridSize={1280/11} contentWidth={960} contentPadding={64} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 lg:px-16">
           <div className="flex flex-col items-center gap-8 text-center max-w-4xl mx-auto">
-            <HeroPill icon="Users" text="About Us" />
+            <HeroPill icon="Users" text="About Us" as="h1" />
             <HeadingWithHighlight
               text="Our Journey & "
               highlighted="Mission"
               className="text-center"
-              as="h1"
+              as="h2"
             />
             <p className="font-sans text-base leading-6 text-foreground max-w-2xl">
               From a simple mobile app to a comprehensive patient engagement platform, discover how PracticeDilly evolved by listening to our customers and building what they truly need.

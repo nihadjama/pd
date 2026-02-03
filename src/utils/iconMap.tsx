@@ -52,7 +52,8 @@ import {
   Plug,
   Megaphone,
   DollarSign,
-  Voicemail
+  Voicemail,
+  BookOpen
 } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -108,7 +109,8 @@ const iconMap: Record<string, LucideIcon> = {
   Plug,
   Megaphone,
   DollarSign,
-  Voicemail
+  Voicemail,
+  BookOpen
 };
 
 export function getIcon(iconName: string): LucideIcon | null {

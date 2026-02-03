@@ -121,7 +121,8 @@ export default async function CaseStudySlugPage({ params }: CaseStudyPageProps) 
                     href={caseStudy.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-primary hover:underline"
+                    className="text-primary hover:underline focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none rounded"
+                    aria-label="Visit website (opens in new window)"
                   >
                     Visit Website
                   </a>

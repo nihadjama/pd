@@ -129,7 +129,7 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             {/* <div className="h-px w-full bg-border" /> */}
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4">
-              <div className="flex items-center gap-0.5">
+              <div className="flex items-center gap-0.5" aria-hidden="true">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 text-warning fill-warning" />
                 ))}
@@ -217,7 +217,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <div className="relative h-8 w-8 overflow-hidden rounded-full">
-                    <img alt="Avatar" className="h-full w-full object-cover" src={img1} />
+                    <img alt="" className="h-full w-full object-cover" src={img1} role="presentation" />
                   </div>
                   <div className="flex w-[120px] flex-col gap-0.5">
                     <p className="text-xs leading-[19.2px] text-foreground">Luna L.</p>
@@ -241,7 +241,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <div className="relative h-8 w-8 overflow-hidden rounded-full">
-                    <img alt="Avatar" className="h-full w-full object-cover" src={img2} />
+                    <img alt="" className="h-full w-full object-cover" src={img2} role="presentation" />
                   </div>
                   <div className="flex w-[120px] flex-col gap-0.5">
                     <p className="text-xs leading-[19.2px] text-foreground">Neville L.</p>
@@ -265,7 +265,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <div className="relative h-8 w-8 overflow-hidden rounded-full">
-                    <img alt="Avatar" className="h-full w-full object-cover" src={img3} />
+                    <img alt="" className="h-full w-full object-cover" src={img3} role="presentation" />
                   </div>
                   <div className="flex w-[120px] flex-col gap-0.5">
                     <p className="text-xs leading-[19.2px] text-foreground">Ginny W.</p>
