@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "accept-md fix-routes"
+    "postbuild": "npx accept-md fix-routes"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
