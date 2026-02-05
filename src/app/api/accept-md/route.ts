@@ -19,6 +19,7 @@ export async function GET(request: NextRequest) {
       baseUrl,
       config,
       cache: config.cache !== false ? cache : undefined,
+      headers: request.headers,
     });
     return new NextResponse(markdown, {
       headers: {
