@@ -15,7 +15,7 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   url.pathname = MARKDOWN_HANDLER_PATH;
   url.searchParams.set('path', pathname);
-  const requestHeaders = new Headers(request.headers);
-  requestHeaders.set('x-accept-md-path', pathname);
-  return NextResponse.rewrite(url, { request: { headers: requestHeaders } });
+  // Let Vercel/Next.js forward all original request metadata (auth, cookies, protection)
+  // and only use the query parameter to communicate the original pathname.
+  return NextResponse.rewrite(url);
 }
