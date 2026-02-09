@@ -1806,5 +1806,186 @@
       "ogImage": "/og-images/mobile-app-feature.jpg",
       "canonicalUrl": "https://practicedilly.com/features/mobile-app"
     }
+  },
+  {
+    "slug": "insurance-verifications",
+    "hero": {
+      "category": {
+        "icon": "ClipboardCheck",
+        "text": "Insurance Verifications"
+      },
+      "heading": {
+        "text": "Dental Insurance Verifications ",
+        "highlighted": "Made Easy.",
+        "suffix": ""
+      },
+      "image": "/feature-images/insurance-verifications.jpg",
+      "description": "Verify patients' insurance coverage in just a few clicks. Obtain information on insurance status, remaining balances, frequencies, and limitations. Works with Dentrix, Eaglesoft, and Open Dental.",
+      "cta": {
+        "text": "Get Started",
+        "href": "#"
+      },
+      "badges": [
+        "Instant Verification",
+        "Real-Time Data",
+        "PMS Integration",
+        "No Setup Fee"
+      ]
+    },
+    "list": {
+      "heading": {
+        "text": "Insurance Verification ",
+        "highlighted": "Simplified",
+        "suffix": ""
+      },
+      "description": "Stop waiting on hold with insurance companies. Get accurate coverage details instantly from your web portal.",
+      "features": [
+        {
+          "icon": "Zap",
+          "title": "Instant Verification",
+          "description": "Verify patients' insurance in seconds through our web portal. No more waiting on hold with insurance companies."
+        },
+        {
+          "icon": "RefreshCw",
+          "title": "Real-Time Accuracy",
+          "description": "Every verification connects directly with the insurance company to retrieve up-to-the-second status, balances, and coverage details."
+        },
+        {
+          "icon": "Database",
+          "title": "PMS Auto-Sync",
+          "description": "Insurance information is automatically pulled from Dentrix, Eaglesoft, or Open Dental if you are using those programs."
+        },
+        {
+          "icon": "FileSearch",
+          "title": "Coverage Details",
+          "description": "Access deductible balances, treatment frequency limits, annual maximums, and coverage percentages at a glance."
+        },
+        {
+          "icon": "Activity",
+          "title": "Active/Inactive Status",
+          "description": "Instantly confirm whether a patient's insurance is active or inactive before their appointment."
+        },
+        {
+          "icon": "Layers",
+          "title": "Batch Verification",
+          "description": "Verify insurance for an entire day's schedule at once. Save hours of manual verification work every week."
+        }
+      ]
+    },
+    "benefits": {
+      "heading": {
+        "text": "Why Practices Choose ",
+        "highlighted": "PracticeDilly",
+        "suffix": " for Insurance Verification"
+      },
+      "description": "Reduce claim denials, save staff time, and improve patient trust with accurate insurance information.",
+      "items": [
+        {
+          "title": "Save 10+ Hours Weekly",
+          "description": "Eliminate phone hold times with insurance companies. Verify coverage in clicks, not calls."
+        },
+        {
+          "title": "Reduce Claim Denials",
+          "description": "Accurate, real-time verification data means fewer surprises during claim submission and fewer rejected claims."
+        },
+        {
+          "title": "Improve Patient Experience",
+          "description": "Inform patients about their coverage and out-of-pocket costs before treatment begins. No billing surprises."
+        },
+        {
+          "title": "Seamless PMS Integration",
+          "description": "Works with Dentrix, Eaglesoft, and Open Dental. Patient data flows automatically without duplicate entry."
+        }
+      ]
+    },
+    "whyChoose": {
+      "heading": {
+        "text": "Why Healthcare ",
+        "highlighted": "Practices Choose PracticeDilly",
+        "suffix": " for Insurance Verifications"
+      },
+      "description": "Insurance verification is one of the most time-consuming and frustrating tasks in any dental office. Staff spend hours on hold with insurance companies, manually entering data, and chasing down coverage details that may already be outdated by the time they're recorded. PracticeDilly's dental insurance verification software eliminates this bottleneck by connecting directly with insurance carriers to deliver real-time, accurate coverage information in seconds.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Quick and Easy Verification",
+          "description": "You no longer have to wait on hold with insurance companies to verify your patients' insurance. PracticeDilly's web portal allows you to verify a patient's insurance instantly with just a few clicks. The insurance information is automatically pulled from Dentrix, Eaglesoft, or Open Dental if you are using those programs, eliminating manual data entry and saving your front desk team significant time every day. What used to take 15-20 minutes per patient now takes seconds."
+        },
+        {
+          "number": "02",
+          "title": "Accurate to the Second",
+          "description": "Every time you verify insurance through PracticeDilly, our program connects directly with the insurance company to retrieve the current status of the insurance. Whether you are looking at balances, active/inactive status, remaining benefits, or anything else, you can rest assured the information is accurate to the second. This eliminates the risk of working with outdated information that leads to claim denials and patient billing disputes."
+        },
+        {
+          "number": "03",
+          "title": "Details at Your Fingertips",
+          "description": "Making informed decisions based on the patient's coverage details reduces surprises during claim submission. The verification process allows you to access patients' deductible balances, treatment frequency limits, annual maximums, waiting periods, and coverage percentages for every procedure category. Your team can present accurate cost estimates to patients before treatment, building trust and reducing accounts receivable issues."
+        },
+        {
+          "number": "04",
+          "title": "Get Connected in Minutes",
+          "description": "Setting up PracticeDilly's insurance verification is simple and fast. Sign up for a free 30-day trial, enter some basic provider details like provider name and NPI, and your account is fully functional with all features enabled. There's no lengthy onboarding process, no complex technical setup, and no setup fees. Most practices are verifying insurance within minutes of creating their account."
+        }
+      ]
+    },
+    "faq": {
+      "heading": {
+        "text": "Frequently Asked ",
+        "highlighted": "Questions"
+      },
+      "description": "Common questions about PracticeDilly's dental insurance verification software",
+      "items": [
+        {
+          "question": "Which practice management systems does the insurance verification work with?",
+          "answer": "PracticeDilly's insurance verification integrates with Dentrix, Eaglesoft, and Open Dental. Patient insurance information is automatically pulled from your PMS, eliminating the need for manual data entry. The integration is set up during onboarding and requires no technical expertise from your team."
+        },
+        {
+          "question": "How accurate is the insurance verification data?",
+          "answer": "Every verification connects directly with the insurance carrier in real time. The data you receive—active/inactive status, remaining balances, deductibles, frequencies, and limitations—is accurate to the second. This is significantly more reliable than calling insurance companies, where information may be entered manually and subject to human error."
+        },
+        {
+          "question": "Can I verify insurance for my entire day's schedule at once?",
+          "answer": "Yes! PracticeDilly supports batch verification, allowing you to verify insurance for all patients on a given day's schedule in one action. This is especially useful for morning prep, letting your team start the day with complete, up-to-date insurance information for every patient."
+        },
+        {
+          "question": "Is there a setup fee or long-term contract?",
+          "answer": "No setup fee and no long-term contracts. PracticeDilly offers a free 30-day trial so you can experience the full capabilities of the insurance verification system before committing. After the trial, pricing is straightforward with month-to-month billing."
+        },
+        {
+          "question": "What information does the verification return?",
+          "answer": "Each verification returns comprehensive coverage details including insurance active/inactive status, remaining annual maximum balance, deductible amounts and remaining balances, treatment frequency limitations, coverage percentages by procedure category, waiting periods, and coordination of benefits information when applicable."
+        },
+        {
+          "question": "How long does each verification take?",
+          "answer": "Most verifications complete in seconds. Compared to the 15-20 minutes (or more) of waiting on hold with an insurance company, PracticeDilly delivers the same information—often more detailed—in a fraction of the time. Your staff can verify dozens of patients in the time it used to take to verify one."
+        },
+        {
+          "question": "Does PracticeDilly work with all dental insurance carriers?",
+          "answer": "PracticeDilly connects with the vast majority of dental insurance carriers and payers in the United States. Our network covers over 95% of commercially insured patients. If you encounter a carrier that isn't supported, our team works to add connectivity as quickly as possible."
+        },
+        {
+          "question": "How does insurance verification help reduce claim denials?",
+          "answer": "Claim denials often result from outdated or incorrect insurance information—expired coverage, exceeded benefits, or unmet deductibles. By verifying insurance in real time before treatment, you catch these issues before they become costly denials. Practices using PracticeDilly's verification typically see a significant reduction in insurance-related claim rejections."
+        }
+      ]
+    },
+    "seo": {
+      "title": "Dental Insurance Verification Software | Works with Dentrix, Eaglesoft & Open Dental | PracticeDilly",
+      "description": "Verify patients' dental insurance coverage instantly. Real-time insurance status, remaining balances, frequencies, and limitations. Works with Dentrix, Eaglesoft, and Open Dental. No setup fee.",
+      "keywords": [
+        "dental insurance verification",
+        "insurance verification software",
+        "dental insurance eligibility",
+        "real-time insurance verification",
+        "Dentrix insurance verification",
+        "Eaglesoft insurance verification",
+        "Open Dental insurance verification",
+        "dental benefits verification",
+        "insurance eligibility check",
+        "dental practice insurance"
+      ],
+      "ogImage": "/og-images/insurance-verifications-feature.jpg",
+      "canonicalUrl": "https://practicedilly.com/features/insurance-verifications"
+    }
   }
 ]

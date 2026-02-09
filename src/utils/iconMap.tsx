@@ -53,7 +53,13 @@ import {
   Megaphone,
   DollarSign,
   Voicemail,
-  BookOpen
+  BookOpen,
+  ClipboardCheck,
+  RefreshCw,
+  Database,
+  FileSearch,
+  Activity,
+  Layers
 } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
@@ -110,7 +116,13 @@ const iconMap: Record<string, LucideIcon> = {
   Megaphone,
   DollarSign,
   Voicemail,
-  BookOpen
+  BookOpen,
+  ClipboardCheck,
+  RefreshCw,
+  Database,
+  FileSearch,
+  Activity,
+  Layers
 };
 
 export function getIcon(iconName: string): LucideIcon | null {
