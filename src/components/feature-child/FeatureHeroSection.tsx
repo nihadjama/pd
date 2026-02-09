@@ -86,6 +86,7 @@ export default function FeatureHeroSection({
               alt={heading.text}
               width={600}
               height={600}
+              priority
               className="w-full h-auto max-w-full"
             />
           </div>
