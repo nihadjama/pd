@@ -53,7 +53,7 @@ export default function FeaturesPage() {
                 title={feature.hero.heading.text + (feature.hero.heading.highlighted || "") + (feature.hero.heading.suffix || "")}
                 description={feature.hero.description}
                 href={`/features/${feature.slug}`}
-                category={feature.hero.category.text}
+                category={feature.hero?.category?.text ?? feature.slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
                 badges={feature.hero.badges}
                 variant="detailed"
               />

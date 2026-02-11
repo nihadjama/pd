@@ -109,9 +109,9 @@ function searchFeatures(searchTerm: string): SearchResult[] {
       description: feature.hero.description,
       url: `/features/${feature.slug}`,
       metadata: {
-        category: feature.hero.category.text,
+        category: feature.hero?.category?.text ?? feature.slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
         badges: feature.hero.badges,
-        icon: feature.hero.category.icon,
+        icon: feature.hero?.category?.icon,
       },
     }));
 }

@@ -20,14 +20,14 @@ export default function Footer() {
 
   const featureLinks = [
     { label: "Phones", href: "/features/phones" },
-    { label: "Reminders", href: "/features/reminders" },
+    { label: "Appointment Reminders", href: "/features/reminders" },
     { label: "Scheduling", href: "/features/scheduling" },
     { label: "Texting", href: "/features/texting" },
     { label: "Reviews", href: "/features/reviews" },
     { label: "Call Intelligence", href: "/features/call-intelligence" },
-    { label: "Billing & Payments", href: "/features/billing-payments" },
+    { label: "Text to Pay", href: "/features/text-to-pay" },
     { label: "Digital Forms", href: "/features/digital-forms" },
-    { label: "Email Marketing", href: "/features/email-marketing" },
+    { label: "Campaigns and Promotions", href: "/features/email-marketing" },
     { label: "Mobile App", href: "/features/mobile-app" },
   ];
 

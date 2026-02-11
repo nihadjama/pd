@@ -1,7 +1,7 @@
 interface FeatureData {
   slug: string;
   hero: {
-    category: {
+    category?: {
       icon: string;
       text: string;
     };
@@ -26,7 +26,7 @@ interface FeatureData {
       description: string;
     }>;
   };
-  benefits: {
+  benefits?: {
     heading: {
       text: string;
       highlighted: string;
@@ -82,7 +82,7 @@ export function generateFeatureSchema(featureData: FeatureData) {
   const summary = seo.description || [
     hero.description,
     list.description,
-    benefits.description,
+    benefits?.description,
     whyChoose.description,
   ]
     .filter(Boolean)
@@ -92,7 +92,7 @@ export function generateFeatureSchema(featureData: FeatureData) {
   const featureList = list.features.map((f) => f.title);
   
   // Generate benefits list
-  const benefitsList = benefits.items.map((item) => item.title);
+  const benefitsList = benefits?.items?.map((item) => item.title) ?? [];
   
   // Image URL - ensure it points to public folder
   const imageUrl = seo.ogImage.startsWith("http")
@@ -254,7 +254,7 @@ export function generateFeatureSchema(featureData: FeatureData) {
   }
   
   // 7. ItemList Schema for Benefits
-  if (benefits.items && benefits.items.length > 0) {
+  if (benefits?.items && benefits.items.length > 0) {
     schemas.push({
       "@context": "https://schema.org",
       "@type": "ItemList",

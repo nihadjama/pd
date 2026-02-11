@@ -8,7 +8,7 @@ interface HeroPillProps {
 }
 
 const pillClassName =
-  "flex gap-1 items-center justify-center border rounded-full px-2 py-1";
+  "flex gap-1 items-center justify-center border border-border rounded-full px-2 py-1";
 const textClassName =
   "font-sans font-normal leading-5 shrink-0 text-foreground text-sm text-center whitespace-nowrap text-uppercase tracking-normal";
 
