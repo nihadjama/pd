@@ -1,7 +1,15 @@
 import FeatureHeroSection from "@/components/feature-child/FeatureHeroSection";
+import FeaturePostHeroIntegrationsSection from "@/components/feature-child/FeaturePostHeroIntegrationsSection";
 import FeatureListSection from "@/components/feature-child/FeatureListSection";
+import FeatureTestimonialSection from "@/components/feature-child/FeatureTestimonialSection";
 import FeatureBenefitsSection from "@/components/feature-child/FeatureBenefitsSection";
-import FeatureWhyChooseSection from "@/components/feature-child/FeatureWhyChooseSection";
+import FeatureDataPrivacySection from "@/components/feature-child/FeatureDataPrivacySection";
+import FeaturePreFaqVideoSection from "@/components/feature-child/FeaturePreFaqVideoSection";
+import PaperlessAdvantageComparison from "@/components/feature-child/PaperlessAdvantageComparison";
+import FeatureVideoSection from "@/components/feature-child/FeatureVideoSection";
+import FeatureVideosSection from "@/components/feature-child/FeatureVideosSection";
+import FeaturePaperlessVideoSection from "@/components/feature-child/FeaturePaperlessVideoSection";
+import FeatureCampaignsVideosSection from "@/components/feature-child/FeatureCampaignsVideosSection";
 import FeatureFAQSection from "@/components/feature-child/FeatureFAQSection";
 import featuresData from "@/data/features.json";
 import { notFound } from "next/navigation";
@@ -100,9 +108,41 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
       
       <div className="relative min-h-screen">
         <FeatureHeroSection {...featureData.hero} />
+        {"testimonial" in featureData && featureData.testimonial ? (
+          <FeatureTestimonialSection {...featureData.testimonial} />
+        ) : null}
+        {"postHeroIntegrations" in featureData && featureData.postHeroIntegrations ? (
+          <FeaturePostHeroIntegrationsSection {...featureData.postHeroIntegrations} />
+        ) : null}
         <FeatureListSection {...featureData.list} />
-        <FeatureBenefitsSection {...featureData.benefits} />
-        <FeatureWhyChooseSection {...featureData.whyChoose} />
+        {"benefits" in featureData && featureData.benefits ? (
+          slug === "digital-forms" ? (
+            <PaperlessAdvantageComparison
+              heading={featureData.benefits.heading}
+              subtitle="Scroll down to see a comparison of two patients trying to get their new patient forms completed."
+            />
+          ) : (
+            <FeatureBenefitsSection {...featureData.benefits} />
+          )
+        ) : null}
+        {"dataPrivacy" in featureData && featureData.dataPrivacy ? (
+          <FeatureDataPrivacySection {...featureData.dataPrivacy} />
+        ) : null}
+        {"video" in featureData && featureData.video ? (
+          <FeatureVideoSection {...featureData.video} />
+        ) : null}
+        {"videos" in featureData && featureData.videos?.length ? (
+          <FeatureVideosSection videos={featureData.videos} />
+        ) : null}
+        {"paperlessVideoSection" in featureData && featureData.paperlessVideoSection ? (
+          <FeaturePaperlessVideoSection {...featureData.paperlessVideoSection} />
+        ) : null}
+        {"campaignsVideos" in featureData && featureData.campaignsVideos?.length ? (
+          <FeatureCampaignsVideosSection videos={featureData.campaignsVideos} />
+        ) : null}
+        {"preFaqVideo" in featureData && featureData.preFaqVideo ? (
+          <FeaturePreFaqVideoSection {...featureData.preFaqVideo} />
+        ) : null}
         <FeatureFAQSection {...featureData.faq} />
         
       </div>

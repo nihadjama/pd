@@ -18,7 +18,8 @@ const legacyRedirects: { source: string; destination: string; permanent: boolean
   { source: "/dental-mobile-app.html", destination: "/features/mobile-app", permanent: true },
   { source: "/automated-recalls.html", destination: "/features/reminders", permanent: true },
   { source: "/paperless-forms.html", destination: "/features/digital-forms", permanent: true },
-  { source: "/text-to-pay.html", destination: "/features/billing-payments", permanent: true },
+  { source: "/text-to-pay.html", destination: "/features/text-to-pay", permanent: true },
+  { source: "/features/billing-payments", destination: "/features/text-to-pay", permanent: true },
   { source: "/dental-insurance-verifications.html", destination: "/features/reminders", permanent: true },
 
   // --- Integration / "best companion" pages ---

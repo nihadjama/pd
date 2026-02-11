@@ -186,18 +186,19 @@
     "hero": {
       "category": {
         "icon": "Bell",
-        "text": "Reminders"
+        "text": "Appointment Reminders"
       },
       "heading": {
-        "text": "Cut No-Shows by 80%. ",
-        "highlighted": "Automatically.",
+        "text": "Make no-shows a thing of the past at your ",
+        "highlighted": "dental practice",
         "suffix": ""
       },
       "image":"/feature-images/reminders.png",
-      "description": "Smart appointment reminders that reach patients at the right time, through the right channel. Confirmations flow back automatically.",
+      "description": "Utilize our patient communication platform to reduce missed appointments by sending personalized, timely reminder messages.",
       "cta": {
-        "text": "Get Started",
-        "href": "#"
+        "text": "How It Works",
+        "href": "#how-it-works",
+        "icon": "Play"
       },
       "badges": [
         "SMS & Email",
@@ -206,45 +207,75 @@
         "Two-Way Confirm"
       ]
     },
+    "postHeroIntegrations": {
+      "heading": "Works seamlessly with the software listed below",
+      "logos": [
+        { "src": "/integrations/logos/dentrix.png", "alt": "Dentrix" },
+        { "src": "/integrations/logos/eagle-soft.png", "alt": "Eaglesoft" },
+        { "src": "/integrations/logos/open-dental.png", "alt": "Open Dental" },
+        { "src": "/integrations/logos/practice-web.png", "alt": "Practice-Web" }
+      ]
+    },
     "list": {
       "heading": {
-        "text": "Reminders That ",
-        "highlighted": "Actually Work",
+        "text": "Features that enhance and personalize the ",
+        "highlighted": "patient experience",
         "suffix": ""
       },
-      "description": "Not just notifications—intelligent communication that respects your patients' preferences.",
+      "description": "",
+      "layout": "featureGrid",
       "features": [
         {
-          "icon": "MessageSquare",
-          "title": "Multi-Channel Delivery",
-          "description": "Reach patients where they are—SMS, email, or voice calls. Let patients choose their preferred method."
+          "icon": "Users",
+          "title": "Family Grouping",
+          "description": "PracticeDilly automatically groups multiple appointments from a family (pediatric dental appointments) and sends out a single reminder message. Mom or Dad gets one message for all the appointments and can easily confirm with a single response."
         },
         {
-          "icon": "Clock",
-          "title": "Smart Timing",
-          "description": "AI determines the optimal time to send reminders based on appointment type and patient behavior."
-        },
-        {
-          "icon": "CheckCircle",
-          "title": "Two-Way Confirmation",
-          "description": "Patients confirm, cancel, or reschedule with a simple reply. No phone tag required."
-        },
-        {
-          "icon": "ListChecks",
-          "title": "Waitlist Management",
-          "description": "Automatically fill cancelled slots by notifying waitlisted patients instantly."
+          "icon": "Repeat",
+          "title": "Confirmation Flexibility",
+          "description": "Your practice has total control and flexibility over when you'd like to get confirmations from your patients for appointments that fall after/between holidays or are scheduled for Mondays."
         },
         {
           "icon": "BellRing",
-          "title": "Instant Notifications",
-          "description": "Real-time alerts when patients confirm, cancel, or request changes. Stay ahead of your schedule."
+          "title": "On-Demand Reminders",
+          "description": "Have the ability to kick off reminders to all the patients of a particular date or just a single patient. Let's say a new appointment was added to your schedule; you can quickly send a customized reminder message to the patient."
         },
         {
-          "icon": "Settings",
-          "title": "Custom Sequences",
-          "description": "Create reminder sequences for different appointment types—cleanings, surgeries, consultations."
+          "icon": "Bell",
+          "title": "Personalized Reminders",
+          "description": "You have total control over the number of reminders that you would like to send to your patients before an appointment. Personalize how you'd like to send the reminders (email, text messages, phone calls) as well as when they are sent (30 days, 7 days, even 2 hours before the appointment) in a way that suits your practice's needs."
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Notification Status",
+          "description": "Conveniently view the status of each reminder notification sent to your patients through the PracticeDilly website. By logging into the portal, you can see what the status of each reminder notification is: whether the message was successfully delivered, if a patient responded, etc."
+        },
+        {
+          "icon": "Ban",
+          "title": "Texting Opt Out",
+          "description": "Patients have the flexibility to opt out of text reminders by simply replying with STOP to the text messages. PracticeDilly will automatically exclude the patient from any future text reminders. On the other hand, you can personalize how each of your patients would like to receive their reminders (email, text message, phone call)."
         }
       ]
+    },
+    "video": {
+      "heading": {
+        "text": "Automate the appointment reminders as per your patient's preferences, ",
+        "highlighted": "here's how.",
+        "suffix": ""
+      },
+      "videoUrl": "https://www.youtube.com/embed/lyMnEdwynF4",
+      "trustedHeading": "Trusted by 500+ Dental Practices",
+      "trustedLogos": [
+        { "src": "/practice-logos/michael-shannon-dds.png", "alt": "Mike Shannon DDS" },
+        { "src": "/practice-logos/grand-central-dentistry.png", "alt": "Grand Central Dentistry" },
+        { "src": "/practice-logos/village-family-dental.png", "alt": "Village Family Dental" },
+        { "src": "/practice-logos/green-leaf.png", "alt": "123 Greenleaf Dental Group" },
+        { "src": "/practice-logos/karzen-family-dental.png", "alt": "Karzen Family Dental" },
+        { "src": "/practice-logos/custom-smile-dentistry.png", "alt": "Custom Smile Dentistry" }
+      ]
+    },
+    "testimonial": {
+      "testimonialId": "16"
     },
     "benefits": {
       "heading": {
@@ -274,31 +305,24 @@
     },
     "whyChoose": {
       "heading": {
-        "text": "Why Healthcare ",
-        "highlighted": "Practices Choose PracticeDilly",
+        "text": "Why Dental Practices ",
+        "highlighted": "Choose PracticeDilly",
         "suffix": " for Appointment Reminders"
       },
-      "description": "No-shows and last-minute cancellations cost the average healthcare practice $150,000+ annually in lost revenue. But the problem isn't that patients don't care—it's that reminder systems haven't evolved with how people actually communicate. PracticeDilly's automated appointment reminder software combines multi-channel delivery, intelligent timing, and two-way confirmation to create a reminder experience that patients actually respond to and appreciate.",
+      "description": "",
+      "layout": "featureBlocks",
       "items": [
         {
-          "number": "01",
-          "title": "Multi-Channel Delivery That Meets Patients Where They Are",
-          "description": "Different patients prefer different communication channels. Younger patients respond best to text messages, while older patients may prefer phone calls or emails. PracticeDilly lets patients choose their preferred reminder method during intake and automatically delivers reminders through their selected channel. Our data shows that patient-preferred delivery increases confirmation rates by 35% compared to one-size-fits-all approaches. You can also configure cascade sequences—start with a text, escalate to email, then phone call if no response."
+          "title": "Automated Appointment Reminders",
+          "description": "Automatically send out personalized reminders via email, text, or phone calls to your patients. Minimize your missed appointments by sending out multiple reminders (30 days ahead, 1 day, 2 hrs, etc.) prior to the scheduled appointment."
         },
         {
-          "number": "02",
-          "title": "AI-Optimized Timing for Maximum Response",
-          "description": "Sending a reminder at 2 AM doesn't help anyone. PracticeDilly's AI analyzes appointment types, patient history, and response patterns to determine the optimal reminder timing for each individual. Routine cleanings might need a 48-hour and 24-hour reminder, while complex procedures benefit from a week-ahead notice plus day-before confirmation. The system continuously learns from response data, automatically adjusting timing to maximize confirmation rates for your specific patient population."
+          "title": "Automated Confirmations",
+          "description": "Patients can quickly confirm their appointment by responding to the automated appointment reminder email, text message, or a phone call. The confirmations are automatically recorded in your practice management software (Dentrix, Eaglesoft, and Open Dental)."
         },
         {
-          "number": "03",
-          "title": "Two-Way Confirmation That Eliminates Phone Tag",
-          "description": "Old-school reminders are one-way broadcasts. PracticeDilly's two-way system lets patients confirm, cancel, or request rescheduling with a simple reply. Confirmations automatically update your schedule with visual indicators. Cancellations immediately trigger waitlist notifications to fill the slot. Reschedule requests open a streamlined rebooking flow. Your front desk no longer wastes hours playing phone tag—they can focus on patients who need personal attention."
-        },
-        {
-          "number": "04",
-          "title": "Intelligent Waitlist Management That Recovers Revenue",
-          "description": "When patients cancel, most practices scramble to fill slots manually. PracticeDilly's waitlist automation instantly notifies patients who want earlier appointments, in priority order based on your rules. Patients claim open slots with one tap. First-come-first-served fairness eliminates awkward conversations. Practices using our waitlist feature recover an average of 40% of cancelled appointment revenue that would otherwise be lost. That's often tens of thousands of dollars annually."
+          "title": "Automated Insurance Confirmation",
+          "description": "Claims sent to outdated insurance providers can lead to rejected claims, frustrated patients, and extra work for your staff. With our simple insurance reminders, you can prevent these incidents by confirming your patients' current insurance information periodically."
         }
       ]
     },
@@ -548,18 +572,19 @@
     "hero": {
       "category": {
         "icon": "MessageCircle",
-        "text": "Texting"
+        "text": "Two-way texting"
       },
       "heading": {
-        "text": "Text Patients. ",
-        "highlighted": "Get Answers.",
+        "text": "Easy-to-use texting platform ",
+        "highlighted": "built for dental practices",
         "suffix": ""
       },
       "image":"/feature-images/texting.png",
-      "description": "HIPAA-compliant two-way texting that feels as natural as messaging a friend. Because that's how your patients want to communicate.",
+      "description": "Take advantage of our messaging platform to text patients in real-time right from your office number and keep appointments up to date.",
       "cta": {
-        "text": "Get Started",
-        "href": "#"
+        "text": "How It Works",
+        "href": "#how-it-works",
+        "icon": "Play"
       },
       "badges": [
         "HIPAA Compliant",
@@ -568,10 +593,19 @@
         "Team Inbox"
       ]
     },
+    "postHeroIntegrations": {
+      "heading": "Works seamlessly with the software listed below",
+      "logos": [
+        { "src": "/integrations/logos/dentrix.png", "alt": "Dentrix" },
+        { "src": "/integrations/logos/eagle-soft.png", "alt": "Eaglesoft" },
+        { "src": "/integrations/logos/open-dental.png", "alt": "Open Dental" },
+        { "src": "/integrations/logos/practice-web.png", "alt": "Practice-Web" }
+      ]
+    },
     "list": {
       "heading": {
         "text": "Texting That Works for ",
-        "highlighted": "Healthcare",
+        "highlighted": "Dental Practices",
         "suffix": ""
       },
       "description": "Built for busy practices with security, compliance, and convenience at the core.",
@@ -579,7 +613,7 @@
         {
           "icon": "MessageSquare",
           "title": "Two-Way Conversations",
-          "description": "Real conversations with patients, not one-way blasts. They reply, you respond—simple as that."
+          "description": "Our user-friendly message board allows you to communicate with your patients instantly. You can send and receive text messages as well as pictures."
         },
         {
           "icon": "Inbox",
@@ -592,9 +626,9 @@
           "description": "Send images, documents, and care instructions. Receive photos from patients."
         },
         {
-          "icon": "Bot",
-          "title": "Smart Auto-Replies",
-          "description": "AI handles common questions automatically. Escalate complex issues to staff."
+          "icon": "Smartphone",
+          "title": "Answer Patients on the go",
+          "description": "The message board is also available on the PracticeDilly mobile app, meaning you can respond to your patient's messages instantly."
         },
         {
           "icon": "Calendar",
@@ -608,60 +642,50 @@
         }
       ]
     },
-    "benefits": {
-      "heading": {
-        "text": "Why Texting ",
-        "highlighted": "Changes Everything",
-        "suffix": ""
-      },
-      "description": "Meet patients where they already are—on their phones.",
-      "items": [
-        {
-          "title": "98% Open Rate",
-          "description": "Texts get read within 3 minutes on average. Email can't compete."
-        },
-        {
-          "title": "Faster Response Times",
-          "description": "Patients reply to texts 60x faster than emails. Get answers in minutes."
-        },
-        {
-          "title": "Reduce Phone Calls 40%",
-          "description": "Quick questions get quick answers via text. Reserve calls for complex discussions."
-        },
-        {
-          "title": "Better Patient Relationships",
-          "description": "Modern communication builds trust and shows you respect their time."
-        }
-      ]
+    "testimonial": {
+      "testimonialId": "10"
     },
     "whyChoose": {
       "heading": {
-        "text": "Why Healthcare ",
-        "highlighted": "Practices Choose PracticeDilly",
-        "suffix": " for Patient Texting"
+        "text": "Why Dental Practices ",
+        "highlighted": "Choose PracticeDilly",
+        "suffix": " for Texting"
       },
-      "description": "Text messages have a 98% open rate and are read within 3 minutes on average. Compare that to email (20% open rate) or phone calls (often ignored or sent to voicemail). Your patients live on their phones—PracticeDilly's HIPAA-compliant patient texting lets you meet them there with two-way conversations that feel natural, professional, and secure.",
+      "description": "Text messages have a 98% open rate and are read within 3 minutes. Your patients already live on their phones, so PracticeDilly helps you reach them there with secure, two-way conversations.",
       "items": [
         {
           "number": "01",
-          "title": "True Two-Way Conversations, Not Broadcast Blasts",
-          "description": "Most 'patient texting' systems are really just one-way notification tools. PracticeDilly enables real conversations—patients can reply to your texts, ask questions, send photos, and get immediate responses. Your team sees all messages in a unified inbox where anyone can pick up a conversation. It's as easy as texting a friend, but with the security and organization a healthcare practice needs. Two-way texting builds relationships and solves problems faster than phone tag ever could."
+          "title": "Real Conversations, Not One-Way Blasts",
+          "description": "Patients can reply to your texts, ask questions, and send photos. Your team sees everything in one shared inbox, so anyone can jump in and continue the conversation."
         },
         {
           "number": "02",
-          "title": "HIPAA-Compliant Security Without Sacrificing Convenience",
-          "description": "Healthcare texting must protect patient privacy. PracticeDilly is fully HIPAA compliant with end-to-end encryption, secure data storage, access controls, and complete audit trails. We sign Business Associate Agreements with all healthcare clients. But security doesn't mean inconvenience—patients text from their regular messaging app, and your team uses our intuitive interface. You get enterprise security with consumer simplicity."
+          "title": "HIPAA-Compliant and Secure",
+          "description": "PracticeDilly uses end-to-end encryption, secure storage, and full audit trails. Patients text from their regular messaging app while your team stays protected with enterprise-grade security."
         },
         {
           "number": "03",
-          "title": "Smart Automation That Handles Routine Communication",
-          "description": "Not every text needs human attention. PracticeDilly's AI-powered auto-replies handle common questions—office hours, directions, appointment confirmations, pre-visit instructions—instantly and accurately. Complex or sensitive messages route to your team for personal response. You can create custom auto-replies for any scenario, from insurance questions to post-procedure care. Automation handles the routine so your team focuses on patients who need human touch."
+          "title": "Automate the Routine Stuff",
+          "description": "Set up auto-replies for common questions like office hours, directions, and pre-visit instructions. When something needs a personal touch, the message goes straight to your team."
         },
         {
           "number": "04",
-          "title": "Unified Team Inbox That Ensures Nothing Falls Through Cracks",
-          "description": "When one staff member starts a conversation and another finishes it, context matters. PracticeDilly's team inbox shows the complete message history for every patient conversation, who sent each message, and any internal notes. Assign conversations to specific team members, mark messages for follow-up, and ensure every patient gets a response. Managers can oversee all conversations without reading over shoulders—perfect for training and quality assurance."
+          "title": "One Inbox for the Whole Team",
+          "description": "See the full message history for every patient, assign conversations to specific staff members, and make sure nothing slips through the cracks. Great for training and keeping quality consistent."
         }
+      ]
+    },
+    "video": {
+      "heading": "Two-way texting made easy, See how.",
+      "videoUrl": "",
+      "trustedHeading": "Trusted by 500+ Dental Practices",
+      "trustedLogos": [
+        { "src": "/practice-logos/michael-shannon-dds.png", "alt": "Mike Shannon DDS" },
+        { "src": "/practice-logos/grand-central-dentistry.png", "alt": "Grand Central Dentistry" },
+        { "src": "/practice-logos/village-family-dental.png", "alt": "Village Family Dental" },
+        { "src": "/practice-logos/green-leaf.png", "alt": "123 Greenleaf Dental Group" },
+        { "src": "/practice-logos/karzen-family-dental.png", "alt": "Karzen Family Dental" },
+        { "src": "/practice-logos/custom-smile-dentistry.png", "alt": "Custom Smile Dentistry" }
       ]
     },
     "faq": {
@@ -727,26 +751,26 @@
   {
     "slug": "reviews",
     "hero": {
-      "category": {
-        "icon": "Star",
-        "text": "Reviews"
-      },
       "heading": {
-        "text": "Build a 5-Star Reputation. ",
-        "highlighted": "Automatically.",
+        "text": "Be Found. Be Chosen. Be the Best Dental Practice in ",
+        "highlighted": "Town.",
         "suffix": ""
       },
-      "image":"/feature-images/reviews.png",
-      "description": "Turn happy patients into vocal advocates. Catch issues before they become public. Grow your online presence effortlessly.",
+      "image": "/feature-images/reviews.png",
+      "description": "Leverage the power of online reviews to build trust, expand your practice and attract more new patients.",
       "cta": {
-        "text": "Get Started",
-        "href": "#"
-      },
-      "badges": [
-        "Auto-Request",
-        "Multi-Platform",
-        "Alert System",
-        "Analytics"
+        "text": "How It Works",
+        "href": "#how-it-works",
+        "icon": "Play"
+      }
+    },
+    "postHeroIntegrations": {
+      "heading": "Works seamlessly with the software listed below",
+      "logos": [
+        { "src": "/integrations/logos/dentrix.png", "alt": "Dentrix" },
+        { "src": "/integrations/logos/eagle-soft.png", "alt": "Eaglesoft" },
+        { "src": "/integrations/logos/open-dental.png", "alt": "Open Dental" },
+        { "src": "/integrations/logos/practice-web.png", "alt": "Practice-Web" }
       ]
     },
     "list": {
@@ -756,6 +780,21 @@
         "suffix": ""
       },
       "description": "From collection to response to analysis—everything you need in one platform.",
+      "layout": "benefitBlocks",
+      "blocks": [
+        {
+          "title": "Gain exposure on popular sites",
+          "description": "Get reviews on the web sites that matter most. Positive reviews on sites like Google, Yelp, and Facebook can help drive new patients to your practice."
+        },
+        {
+          "title": "Build up positive online reviews",
+          "description": "Our proprietary software identifies patients most likely to give your practice a 5 star rating and recommends them to their social network. PracticeDilly makes it easy for your patients to post a positive review with the click of a button."
+        },
+        {
+          "title": "Acquire more new patients",
+          "description": "Online reviews serve as a relatively inexpensive marketing strategy for attracting new patients, garnering the trust of future and current patients, and increasing your ranking in Google and other search engines."
+        }
+      ],
       "features": [
         {
           "icon": "Send",
@@ -845,6 +884,17 @@
         }
       ]
     },
+    "videos": [
+      {
+        "title": "Ask for a Google review from your patients."
+      },
+      {
+        "title": "Receive Google reviews from your patients automatically. Here's how."
+      },
+      {
+        "title": "Send customized review requests to your patients. Know how."
+      }
+    ],
     "faq": {
       "heading": {
         "text": "Frequently Asked ",
@@ -1083,123 +1133,115 @@
     }
   },
   {
-    "slug": "billing-payments",
+    "slug": "text-to-pay",
     "hero": {
       "category": {
         "icon": "CreditCard",
-        "text": "Billing & Payments"
+        "text": "Text to Pay"
       },
       "heading": {
-        "text": "Get Paid Faster. ",
-        "highlighted": "Stress Less.",
+        "text": "Text to pay service for your ",
+        "highlighted": "dental office",
         "suffix": ""
       },
-      "image":"/feature-images/billing-payments.png",
-      "description": "Modern payment experiences patients love. Digital invoices, text-to-pay, and flexible plans that improve cash flow.",
+      "image": "/feature-images/billing-payments.png",
+      "description": "Take advantage of our software to collect payments from your patients quickly and efficiently.",
       "cta": {
-        "text": "Get Started",
-        "href": "#"
+        "text": "How It Works",
+        "href": "#how-it-works"
       },
-      "badges": [
-        "Text-to-Pay",
-        "Payment Plans",
-        "Auto Reminders",
-        "PCI Compliant"
+      "phone": {
+        "number": "9494075907",
+        "display": "(949) 407-5907"
+      },
+      "poweredBy": {
+        "name": "stripe",
+        "logo": ""
+      }
+    },
+    "postHeroIntegrations": {
+      "heading": "Works seamlessly with the software listed below",
+      "logos": [
+        { "src": "/integrations/logos/dentrix.png", "alt": "Dentrix" },
+        { "src": "/integrations/logos/eagle-soft.png", "alt": "Eaglesoft" },
+        { "src": "/integrations/logos/open-dental.png", "alt": "Open Dental" },
+        { "src": "/integrations/logos/practice-web.png", "alt": "Practice-Web" }
       ]
+    },
+    "testimonial": {
+      "testimonialId": "14"
     },
     "list": {
       "heading": {
-        "text": "Payments Built for ",
-        "highlighted": "Healthcare",
+        "text": "How does ",
+        "highlighted": "it work?",
         "suffix": ""
       },
-      "description": "From invoicing to collections—a complete financial workflow.",
+      "description": "",
+      "layout": "steps",
       "features": [
         {
-          "icon": "Smartphone",
-          "title": "Text-to-Pay",
-          "description": "Send payment links via text. Patients pay in 30 seconds from their phone."
+          "icon": "Send",
+          "title": "Send Payment Request",
+          "description": "Enter patient details, amount, and choose to send the request via email, text, or both."
         },
         {
-          "icon": "Repeat",
-          "title": "Flexible Payment Plans",
-          "description": "Offer financing options that work for patients. Automatic recurring payments."
+          "icon": "ChartColumn",
+          "title": "Track Payment Progress",
+          "description": "Monitor all payment requests in real-time. See which are pending, successful, or need follow-up."
         },
         {
-          "icon": "Receipt",
-          "title": "Digital Invoicing",
-          "description": "Professional invoices via email or text. Patients pay with one click."
-        },
-        {
-          "icon": "Bell",
-          "title": "Automated Reminders",
-          "description": "Gentle payment reminders that collect without confrontation."
-        },
-        {
-          "icon": "FileText",
-          "title": "Detailed Statements",
-          "description": "Clear, branded statements that patients understand. Reduce billing questions."
-        },
-        {
-          "icon": "ShieldCheck",
-          "title": "PCI Compliant",
-          "description": "Enterprise-grade security. Securely store cards for future payments."
+          "icon": "DollarSign",
+          "title": "Get Paid",
+          "description": "Payment is received and credited directly to your practice's bank account. Simple as that."
         }
       ]
     },
-    "benefits": {
+    "video": {
       "heading": {
-        "text": "Transform Your ",
-        "highlighted": "Revenue Cycle",
-        "suffix": ""
+        "text": "How to ",
+        "highlighted": "Send Payment Requests",
+        "suffix": " to Patients?"
       },
-      "description": "Faster payments, fewer headaches, happier patients.",
-      "items": [
-        {
-          "title": "Get Paid 50% Faster",
-          "description": "Text-to-pay closes the gap between service and payment."
-        },
-        {
-          "title": "Reduce Collections 60%",
-          "description": "Automated reminders and easy payment options prevent accounts from aging."
-        },
-        {
-          "title": "Increase Case Acceptance",
-          "description": "Payment plans make big treatments accessible. More yes, less hesitation."
-        },
-        {
-          "title": "Save Admin Hours",
-          "description": "Digital statements and auto-reminders eliminate manual billing work."
-        }
+      "videoUrl": "",
+      "trustedHeading": "Trusted by 500+ Dental Practices",
+      "trustedLogos": [
+        { "src": "/practice-logos/custom-smile-dentistry.png", "alt": "Custom Smile Dentistry" },
+        { "src": "/practice-logos/village-family-dental.png", "alt": "Village Family Dental" },
+        { "src": "/practice-logos/grand-central-dentistry.png", "alt": "Grand Central Dentistry" },
+        { "src": "/practice-logos/karzen-family-dental.png", "alt": "Karzen Family Dental" },
+        { "src": "/practice-logos/spence-dental.png", "alt": "Spence Dental" },
+        { "src": "/practice-logos/future-dental-care.png", "alt": "Future Dental Care" }
       ]
     },
     "whyChoose": {
       "heading": {
-        "text": "Why Healthcare ",
-        "highlighted": "Practices Choose PracticeDilly",
-        "suffix": " for Patient Billing"
+        "text": "Why use ",
+        "highlighted": "PracticeDilly's text to pay?",
+        "suffix": ""
       },
-      "description": "Getting paid shouldn't be harder than providing care. Yet most practices struggle with aging accounts receivable, awkward payment conversations, and manual collection processes that consume staff hours. PracticeDilly's patient billing and payment platform modernizes how healthcare practices collect revenue—making it easier for patients to pay and easier for you to get paid.",
+      "description": "",
+      "layout": "alternating",
       "items": [
         {
           "number": "01",
-          "title": "Text-to-Pay That Patients Actually Use",
-          "description": "Paper statements get ignored. Email invoices get lost. But text messages get read within 3 minutes. PracticeDilly's text-to-pay sends a simple link that lets patients pay their balance in 30 seconds—no logging in, no creating accounts, no friction. Just tap, confirm amount, and pay. Practices using text-to-pay collect 50% faster on average, with dramatically higher collection rates on balances under 90 days. Meet patients where they are: on their phones."
+          "title": "Fewer Lapsed Accounts",
+          "description": "25% of the total amount patients owe goes to debt collection agencies since there is no convenient way for them to pay and sending payment invoices with the dental office's stamp via mail results in unnecessary delay."
         },
         {
           "number": "02",
-          "title": "Flexible Payment Plans That Increase Case Acceptance",
-          "description": "Expensive treatments get declined when patients can't see a path to payment. PracticeDilly's built-in payment plan functionality lets you offer financing options directly—no third-party patient financing companies taking a cut. Customize terms, set up automatic recurring payments, and let patients choose plans that work for their budget. Practices offering in-house payment plans see 30-40% higher treatment acceptance on cases over $1,000."
+          "title": "Make payments easy",
+          "description": "Using our text-to-pay software, you can make it easier for patients to pay for their treatment since electronic transactions are more secure and easier to track. You also have the amount credited directly to your business account."
         },
         {
           "number": "03",
-          "title": "Automated Collections That Preserve Relationships",
-          "description": "Manual collection calls are uncomfortable and time-consuming. PracticeDilly automates the collections sequence with escalating reminders that are firm but friendly. Start with gentle text reminders, escalate to email statements, then phone call queues for your team. The system tracks every touchpoint and stops automatically when payment is received. Collect more while spending less staff time on awkward conversations."
+          "title": "The convenience of paying from anywhere",
+          "description": "Your patients can pay from anywhere as our software is device-friendly. All you have to do is send a text or an email with the payment link and it's done."
         },
         {
           "number": "04",
-          "title": "Clear, Professional Statements Patients Understand",
-          "description": "Confusing bills don't get paid. PracticeDilly generates clean, branded statements that clearly show what was done, what insurance covered, and what the patient owes. Patients can see their payment history, download receipts, and understand their obligations. Clarity reduces billing questions (saving staff time) and increases payment rates because patients know exactly what they owe and why."
+          "title": "Contactless payment - 24*7",
+          "description": "Your patients can reduce the time spent at the dental office making payments, thus promoting an enhanced contactless experience. These benefit you, and your team by increasing efficiency and reducing the risk of getting ill."
         }
       ]
     },
@@ -1246,86 +1288,90 @@
       ]
     },
     "seo": {
-      "title": "Patient Billing & Payment Solutions for Dental Practices | PracticeDilly",
-      "description": "Get paid faster with text-to-pay, flexible payment plans, digital invoicing, and automated reminders. PCI compliant. Get paid 50% faster and reduce collections by 60%.",
+      "title": "Text to Pay Service for Dental Practices | PracticeDilly",
+      "description": "Text to pay service for your dental office. Collect payments from patients quickly and efficiently with text-to-pay, payment plans, and automated reminders.",
       "keywords": [
-        "dental billing",
+        "text to pay dental",
+        "dental text to pay",
+        "text to pay service",
         "patient payments",
-        "text to pay",
-        "payment plans",
         "dental payment processing",
         "patient billing software",
         "healthcare payments",
-        "digital invoicing",
         "payment reminders",
-        "PCI compliant payments"
+        "dental office payments",
+        "text payment dental"
       ],
       "ogImage": "/og-images/billing-payments-feature.jpg",
-      "canonicalUrl": "https://practicedilly.com/features/billing-payments"
+      "canonicalUrl": "https://practicedilly.com/features/text-to-pay"
     }
   },
   {
     "slug": "digital-forms",
     "hero": {
-      "category": {
-        "icon": "Clipboard",
-        "text": "Digital Forms"
-      },
       "heading": {
-        "text": "Ditch the Clipboard. Go ",
-        "highlighted": "Digital.",
+        "text": "Paperless forms for ",
+        "highlighted": "dental practices",
         "suffix": ""
       },
-      "image":"/feature-images/digital-forms.png",
-      "description": "Beautiful, mobile-friendly intake forms that patients actually enjoy completing. Data syncs automatically to your PMS.",
+      "image": "/feature-images/digital-forms.png",
+      "description": "Save time, reduce cost, and minimize touch-points with our digitized version of patient intake forms.",
       "cta": {
-        "text": "Get Started",
-        "href": "#"
+        "text": "How It Works",
+        "href": "#",
+        "icon": "Play"
       },
-      "badges": [
-        "Mobile-Friendly",
-        "PMS Sync",
-        "E-Signatures",
-        "HIPAA Secure"
+      "cleanLayout": true
+    },
+    "testimonial": {
+      "testimonialId": "7"
+    },
+    "postHeroIntegrations": {
+      "heading": "Works seamlessly with the software listed below",
+      "logos": [
+        { "src": "/integrations/logos/dentrix.png", "alt": "Dentrix" },
+        { "src": "/integrations/logos/eagle-soft.png", "alt": "Eaglesoft" },
+        { "src": "/integrations/logos/open-dental.png", "alt": "Open Dental" },
+        { "src": "/integrations/logos/practice-web.png", "alt": "Practice-Web" }
       ]
     },
     "list": {
       "heading": {
-        "text": "Forms That Work for ",
-        "highlighted": "Everyone",
-        "suffix": ""
+        "text": "Why use ",
+        "highlighted": "paperless forms",
+        "suffix": "?"
       },
-      "description": "Easy for patients, efficient for staff, integrated with your systems.",
+      "description": "",
       "features": [
         {
-          "icon": "Smartphone",
-          "title": "Complete Anywhere",
-          "description": "Patients fill forms from home on any device. Arrive ready, not early."
+          "icon": "Clock",
+          "title": "Decreased Wait Time",
+          "description": "With paperless forms, your patients don't have to fill out conventional paper forms at your office. They simply arrive at the office after filling out the forms online along with their signature and can now get on with their treatment/appointment."
         },
         {
-          "icon": "Link2",
-          "title": "PMS Integration",
-          "description": "Data flows directly into your practice management system. No manual entry."
+          "icon": "Clipboard",
+          "title": "Streamlined Patient Intake",
+          "description": "Going digital with your patient intake forms saves time and energy as it replaces the need to fill, scan, and shred paper forms. You can also cut out a substantial amount of stationery costs directly contributing to your bottom line."
         },
         {
-          "icon": "PenTool",
-          "title": "E-Signatures",
-          "description": "Legally binding electronic signatures for consent forms and agreements."
-        },
-        {
-          "icon": "Zap",
-          "title": "Smart Form Logic",
-          "description": "Conditional fields show relevant questions. Forms feel short and smart."
+          "icon": "Sliders",
+          "title": "Customizable",
+          "description": "You can have your forms customized to your office's needs (e.g. with your office logo), collect any additional information, etc. There are no additional charges for customizing the forms."
         },
         {
           "icon": "Send",
-          "title": "Auto-Send Before Visits",
-          "description": "Forms automatically sent with appointment confirmations. Zero staff effort."
+          "title": "Shareable",
+          "description": "Easily share these patient intake forms with your patients. Include it on your website so your patients can navigate from there, or you can send the link as a text message/email from our web portal, etc."
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Device-Friendly",
+          "description": "When the patient tries to access the digital forms to fill them out, the forms can adjust based on the device that the patient is using. Whether it's an iPhone, an iPad, or a computer, the form automatically adjusts according to the device size."
         },
         {
           "icon": "ShieldCheck",
           "title": "HIPAA Compliant",
-          "description": "Encrypted transmission and storage. Audit trails for every submission."
+          "description": "Paperless forms help reduce typos, so patient information is always accurately collected. Ours are also completely HIPAA compliant and stored securely, ensuring that your patient's information is protected at all times."
         }
       ]
     },
@@ -1383,6 +1429,20 @@
           "title": "Legally Binding E-Signatures for Consents and Agreements",
           "description": "Informed consent, financial agreements, HIPAA acknowledgments, treatment authorizations—these documents require signatures. PracticeDilly's e-signature capability captures legally binding electronic signatures that meet healthcare compliance requirements. Signed documents are stored securely, attached to patient records, and accessible anytime. No more scanning paper forms or tracking down missing signatures."
         }
+      ]
+    },
+    "paperlessVideoSection": {
+      "heading": "Send paperless forms to your patients. Know how.",
+      "videoUrl": "https://www.youtube.com/embed/2e7Ui3PMMU8",
+      "youtubeWatchUrl": "https://www.youtube.com/watch?v=2e7Ui3PMMU8",
+      "trustedHeading": "Trusted by 500+ Dental Practices",
+      "trustedLogos": [
+        { "src": "/practice-logos/michael-shannon-dds.png", "alt": "Michael Shannon DDS" },
+        { "src": "/practice-logos/future-dental-care.png", "alt": "Future Dental Care" },
+        { "src": "/practice-logos/grand-central-dentistry.png", "alt": "Grand Central Dentistry" },
+        { "src": "/practice-logos/green-leaf.png", "alt": "Greenleaf Dental Group" },
+        { "src": "/practice-logos/karzen-family-dental.png", "alt": "Karzen Family Dental" },
+        { "src": "/practice-logos/custom-smile-dentistry.png", "alt": "Custom Smile Dentistry" }
       ]
     },
     "faq": {
@@ -1450,24 +1510,34 @@
     "hero": {
       "category": {
         "icon": "Mail",
-        "text": "Email Marketing"
+        "text": "Campaigns and Promotions"
       },
       "heading": {
-        "text": "Email Marketing That ",
-        "highlighted": "Runs Itself.",
+        "text": "Attract, connect, and convert ",
+        "highlighted": "your dental patients.",
         "suffix": ""
       },
       "image":"/feature-images/email-marketing.png",
-      "description": "Keep patients engaged with beautiful, automated emails. Reactivate lost patients. Fill your schedule. All on autopilot.",
+      "description": "Reaching your patients is vital for an effective marketing campaign. Let PracticeDilly help you engage with your patients and convert them into appointments.",
       "cta": {
-        "text": "Get Started",
-        "href": "#"
+        "text": "How It Works",
+        "href": "#how-it-works",
+        "icon": "Play"
       },
       "badges": [
-        "Done-For-You",
+        "Pre-Built Campaigns",
         "Automation",
         "Segmentation",
         "Analytics"
+      ]
+    },
+    "postHeroIntegrations": {
+      "heading": "Works seamlessly with the software listed below",
+      "logos": [
+        { "src": "/integrations/logos/dentrix.png", "alt": "Dentrix" },
+        { "src": "/integrations/logos/eagle-soft.png", "alt": "Eaglesoft" },
+        { "src": "/integrations/logos/open-dental.png", "alt": "Open Dental" },
+        { "src": "/integrations/logos/practice-web.png", "alt": "Practice-Web" }
       ]
     },
     "list": {
@@ -1476,37 +1546,28 @@
         "highlighted": "Simple",
         "suffix": ""
       },
-      "description": "Professional email marketing without the complexity or cost of agencies.",
+      "description": "Professional campaigns and promotions without the complexity or cost of agencies.",
+      "layout": "accentBlocks",
       "features": [
         {
-          "icon": "FileText",
-          "title": "Pre-Built Templates",
-          "description": "Professional, healthcare-specific templates ready to customize. Launch in minutes."
+          "icon": "MessageCircle",
+          "title": "Multichannel Communication",
+          "description": "Use mass email, text and multimedia messages to connect with your patients wherever they respond."
         },
         {
           "icon": "Zap",
-          "title": "Marketing Automation",
-          "description": "Welcome sequences, birthday emails, and reactivation campaigns run on autopilot."
+          "title": "Easy Automation",
+          "description": "Automation makes it easy for you to set up email sequences and engage your subscribers without manually sending campaigns. Just set it up and sit back."
         },
         {
-          "icon": "Filter",
-          "title": "Smart Segmentation",
-          "description": "Target patients by treatment history, last visit, insurance, or any criteria."
+          "icon": "FileText",
+          "title": "Templates for everything",
+          "description": "Whether you want to wish your patients for their birthday or remind them about their insurance expiry, we've got you covered!"
         },
         {
-          "icon": "Calendar",
-          "title": "Campaign Scheduling",
-          "description": "Plan and schedule campaigns in advance. Never miss a holiday or promotion."
-        },
-        {
-          "icon": "Palette",
-          "title": "Brand Customization",
-          "description": "Your colors, your logo, your voice. Every email looks authentically you."
-        },
-        {
-          "icon": "BarChart",
-          "title": "Performance Analytics",
-          "description": "Track opens, clicks, and appointments booked. Know what's working."
+          "icon": "MessageSquare",
+          "title": "Personalized Messaging",
+          "description": "Make mass messages feel like a conversation between you and your patients and turn them into loyal fans."
         }
       ]
     },
@@ -1540,7 +1601,7 @@
       "heading": {
         "text": "Why Healthcare ",
         "highlighted": "Practices Choose PracticeDilly",
-        "suffix": " for Email Marketing"
+        "suffix": " for Campaigns and Promotions"
       },
       "description": "Between appointments, patients forget about you. They see competing practices' ads, get busy with life, and lapse on their care. Email marketing keeps your practice top-of-mind—reminding patients to schedule overdue appointments, educating them on treatments, and building relationships that drive loyalty and referrals. PracticeDilly makes healthcare email marketing effortless with pre-built campaigns, automation, and integration with your patient data.",
       "items": [
@@ -1566,12 +1627,30 @@
         }
       ]
     },
+    "campaignsVideos": [
+      {
+        "heading": "Sending mass texts to your patients? Here's how.",
+        "subheading": "Send Mass Text Messages to your Patients"
+      },
+      {
+        "heading": "You can also send mass emails to your patients. Check out how.",
+        "subheading": "Send an Email Campaign to your Patients"
+      },
+      {
+        "heading": "Remind your patients prior to the insurance expiration. Here's how.",
+        "subheading": "Explore Email Templates"
+      },
+      {
+        "heading": "Send mass texts to the patients who showed up last year.",
+        "subheading": "Send Mass Text Messages Targeting Specific Groups"
+      }
+    ],
     "faq": {
       "heading": {
         "text": "Frequently Asked ",
         "highlighted": "Questions"
       },
-      "description": "Common questions about PracticeDilly's email marketing for healthcare",
+      "description": "Common questions about PracticeDilly's campaigns and promotions for healthcare",
       "items": [
         {
           "question": "Is healthcare email marketing HIPAA compliant?",
@@ -1608,8 +1687,8 @@
       ]
     },
     "seo": {
-      "title": "Email Marketing for Dental Practices | PracticeDilly",
-      "description": "Email marketing that runs itself. Pre-built templates, automation, smart segmentation, and analytics. Reactivate lost patients, fill slow periods, build loyalty. Zero marketing team needed.",
+      "title": "Campaigns and Promotions for Dental Practices | PracticeDilly",
+      "description": "Attract, connect, and convert your dental patients. PracticeDilly helps you engage with patients and convert them into appointments. Works seamlessly with Dentrix, Eaglesoft, Open Dental, and Practice-Web.",
       "keywords": [
         "dental email marketing",
         "healthcare email marketing",
@@ -1629,65 +1708,59 @@
   {
     "slug": "mobile-app",
     "hero": {
-      "category": {
-        "icon": "Smartphone",
-        "text": "Mobile App"
-      },
       "heading": {
-        "text": "Your Practice. In Every ",
-        "highlighted": "Pocket.",
-        "suffix": ""
+        "text": "All-in-one ",
+        "highlighted": "Dental",
+        "suffix": " Mobile App"
       },
-      "image":"/feature-images/mobile-app.png",
-      "description": "A beautiful, branded mobile app that puts your practice on patients' home screens. Booking, messaging, payments—everything they need.",
+      "image": "/feature-images/mobile-app.png",
+      "description": "View your schedule, message your patients, manage your practice - do it all right here in PracticeDilly's all-in-one dental mobile app.",
       "cta": {
         "text": "Get Started",
         "href": "#"
       },
-      "badges": [
-        "Your Branding",
-        "Easy Booking",
-        "Secure Messaging",
-        "Mobile Payments"
+      "appStore": {
+        "href": "https://apps.apple.com/app/practicedilly/id583696605",
+        "label": "Download on the App Store"
+      },
+      "googlePlay": {
+        "href": "https://play.google.com/store/apps/details?id=com.practicedilly",
+        "label": "GET IT ON Google Play"
+      },
+      "cleanLayout": true
+    },
+    "postHeroIntegrations": {
+      "heading": "Works seamlessly with the software listed below",
+      "logos": [
+        { "src": "/integrations/logos/dentrix.png", "alt": "Dentrix" },
+        { "src": "/integrations/logos/eagle-soft.png", "alt": "Eaglesoft" },
+        { "src": "/integrations/logos/open-dental.png", "alt": "Open Dental" },
+        { "src": "/integrations/logos/practice-web.png", "alt": "Practice-Web" }
       ]
     },
     "list": {
       "heading": {
-        "text": "Everything Patients ",
-        "highlighted": "Need",
+        "text": "Built for the way you ",
+        "highlighted": "work",
         "suffix": ""
       },
-      "description": "A complete patient experience, designed for the smartphone generation.",
-      "features": [
+      "description": "Access your schedule, communicate with patients, and manage multiple offices—all from the mobile app.",
+      "layout": "benefitBlocks",
+      "features": [],
+      "blocks": [
         {
-          "icon": "Zap",
-          "title": "One-Tap Booking",
-          "description": "Patients book, reschedule, or cancel appointments in seconds. 24/7 access."
+          "title": "Access your schedule on the GO!",
+          "description": "Tired of remoting into your office to access your schedule? Now access it anywhere and any time with the click of a button."
         },
         {
-          "icon": "MessageSquare",
-          "title": "Secure Messaging",
-          "description": "HIPAA-compliant chat keeps conversations private and organized."
+          "title": "Seamless Communication",
+          "description": "Text your patients instantly from our mobile app without revealing your personal mobile number. Studies show that quickly responding to your patients increases satisfaction."
         },
         {
-          "icon": "CreditCard",
-          "title": "Mobile Payments",
-          "description": "Pay bills, view statements, and set up payment plans right from the app."
-        },
-        {
-          "icon": "Clipboard",
-          "title": "Digital Forms",
-          "description": "Complete intake forms before visits. Push notifications remind them."
-        },
-        {
-          "icon": "Bell",
-          "title": "Push Notifications",
-          "description": "Appointment reminders, recall notices, and important updates reach patients instantly."
-        },
-        {
-          "icon": "ShieldCheck",
-          "title": "Secure Records Access",
-          "description": "Patients view treatment history, receipts, and care instructions anytime."
+          "title": "Manage multiple ",
+          "description": "Do you manage multiple dental practices? Access all of your office schedules on the go from our mobile app.",
+          "titleHighlighted": "dental",
+          "titleSuffix": " offices"
         }
       ]
     },
@@ -1716,6 +1789,30 @@
           "description": "Your logo and colors on their home screen. Daily visibility."
         }
       ]
+    },
+    "dataPrivacy": {
+      "heading": "Data Privacy built into our apps",
+      "cards": [
+        {
+          "icon": "Award",
+          "title": "HIPAA Compliant",
+          "description": "Our HIPAA compliant mobile app ensures that your patients' information is always protected. Their data is neither stored on the phone nor on the cloud."
+        },
+        {
+          "icon": "Settings",
+          "title": "Control App Access",
+          "description": "Have complete control over who in your office gets to use the app. Add or remove access whenever you need to."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Enhanced Security",
+          "description": "Our mobile app is protected by Face ID and Touch ID. Only you can access the app, even during unexpected events like a lost or stolen phone."
+        }
+      ]
+    },
+    "preFaqVideo": {
+      "heading": "Take PracticeDilly wherever you go, it's truly mobile for mobile-users.",
+      "videoUrl": ""
     },
     "whyChoose": {
       "heading": {

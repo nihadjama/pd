@@ -49,7 +49,7 @@ export default function PricingPage() {
 
   const allFeatures = [
     {
-      category: "Reminders",
+      category: "Appointment Reminders",
       description: "Keep patients informed and reduce no-shows",
       items: [
         "Appointment Reminders",
@@ -119,7 +119,7 @@ export default function PricingPage() {
   const whyPracticeDillyItems = [
     {
       title: "All In One",
-      description: "You don't need multiple tools. Reminders, Texting, Paperless Forms, Reputation Management, etc. all available in one platform.",
+      description: "You don't need multiple tools. Appointment Reminders, Texting, Paperless Forms, Reputation Management, etc. all available in one platform.",
       icon: "Plug",
     },
     {

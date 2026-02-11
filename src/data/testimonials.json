@@ -148,5 +148,15 @@
     "authorName": "Dr. Kevin Kang (D.D.S.)",
     "authorTitle": "123 Greenleaf Dental Group",
     "authorImage": "/dentists/kevin-dang-dds.png"
+  },
+  {
+    "id": "16",
+    "practiceName": "Michael Shannon DDS",
+    "practiceLogo": "/practice-logos/michael-shannon-dds.png",
+    "quote": "Our patients love the opportunity to confirm appointments via text or email. One of the main features we love about PracticeDilly is the ability for it to integrate seamlessly with our dental software, the confirmations that we receive from our patients are automatically updated into our dental software. I highly recommend PracticeDilly to make your office more efficient and reduce no-shows.",
+    "rating": 5,
+    "authorName": "Dr. Michael Shannon, D.D.S, M.S.",
+    "authorTitle": "Michael Shannon DDS",
+    "authorImage": "/dentists/mike-shannon.png"
   }
 ]

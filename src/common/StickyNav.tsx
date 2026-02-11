@@ -214,7 +214,9 @@ export default function StickyNav() {
                       <div key={colIndex} className={`${colIndex < 4 ? 'border-l -ml-px border-border' : ''}`}>
                         <ul className="flex flex-col gap-0 list-none" role="menu" aria-label="Features submenu">
                           {columnFeatures.map((feature) => {
-                            const IconComponent = getIcon(feature.hero.category.icon);
+                            const category = feature.hero?.category;
+                            const label = category?.text ?? feature.slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+                            const IconComponent = getIcon(category?.icon ?? "FileText");
                             return (
                               <li className="border-b px-8 py-5 h-full border-border hover:bg-muted/10" key={feature.slug} role="none">
                                 <Link
@@ -230,7 +232,7 @@ export default function StickyNav() {
                                   )}
                                   <div className="flex flex-col gap-0.5">
                                     <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
-                                      {feature.hero.category.text}
+                                      {label}
                                     </span>
                                     <p className="text-xs text-muted leading-relaxed line-clamp-2 text-ellipsis">
                                       {feature.hero.description}
@@ -675,7 +677,9 @@ export default function StickyNav() {
                 <div className="px-3 pb-3">
                   <ul className="flex flex-col gap-2 list-none" role="menu" aria-label="Features submenu">
                     {featuresData.map((feature) => {
-                      const IconComponent = getIcon(feature.hero.category.icon);
+                      const category = feature.hero?.category;
+                      const label = category?.text ?? feature.slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+                      const IconComponent = getIcon(category?.icon ?? "FileText");
                       return (
                         <li key={feature.slug} role="none" className="relative z-10">
                           <Link
@@ -695,7 +699,7 @@ export default function StickyNav() {
                             )}
                             <div className="flex flex-col gap-1">
                               <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
-                                {feature.hero.category.text}
+                                {label}
                               </span>
                               <p className="text-xs text-muted leading-relaxed line-clamp-1">
                                 {feature.hero.description}

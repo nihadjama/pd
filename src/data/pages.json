@@ -173,7 +173,7 @@
     "allFeaturesHeading": "All Features Included in Each Plan",
     "allFeaturesDescription": "Regardless of the plan you choose, you will enjoy every feature listed below",
     "allFeatures": [
-      { "category": "Reminders", "description": "Keep patients informed and reduce no-shows", "items": ["Appointment Reminders", "Automated Confirmations", "Email Reminders", "Text Reminders", "Voice Call Reminders"] },
+      { "category": "Appointment Reminders", "description": "Keep patients informed and reduce no-shows", "items": ["Appointment Reminders", "Automated Confirmations", "Email Reminders", "Text Reminders", "Voice Call Reminders"] },
       { "category": "Texting", "description": "Engage with patients through messaging", "items": ["2-way Texting", "Landline Texting", "Custom Reminders", "Family Grouping", "Group Messaging"] },
       { "category": "Recall", "description": "Bring patients back with follow-ups", "items": ["On-Demand Recall", "Automated Recall", "Yearly Recall", "Staff Mobile App", "Mobile App Texting"] },
       { "category": "Bulk Messaging", "description": "Reach multiple patients at once efficiently", "items": ["Mass Texting", "Mass Emails", "Birthday Greetings", "Welcome Email", "Email Templates"] },
@@ -183,7 +183,7 @@
     "allFeaturesFooter": "Looking for only a specific feature listed above? Let us know, we can certainly help you with that. Call us at (949) 407-5907",
     "whyPracticeDillyHeading": "Why PracticeDilly?",
     "whyPracticeDilly": [
-      { "title": "All In One", "description": "You don't need multiple tools. Reminders, Texting, Paperless Forms, Reputation Management, etc. all available in one platform." },
+      { "title": "All In One", "description": "You don't need multiple tools. Appointment Reminders, Texting, Paperless Forms, Reputation Management, etc. all available in one platform." },
       { "title": "Great Support", "description": "We even have our support staff providing you with assistance after hours or during the weekend." },
       { "title": "Best Pricing", "description": "We want technology to be widely available to dental practices of all sizes and offer the best price in the market." },
       { "title": "Real-Time Communication", "description": "Our No-Sync technology enables us to obtain accurate information, so you will not see reminders sent out for canceled appointments." }
