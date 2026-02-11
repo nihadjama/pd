@@ -1810,6 +1810,10 @@
         }
       ]
     },
+    "preFaqVideo": {
+      "heading": "Take PracticeDilly wherever you go, it's truly mobile for mobile-users.",
+      "videoUrl": ""
+    },
     "whyChoose": {
       "heading": {
         "text": "Why Healthcare ",

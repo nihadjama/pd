@@ -4,6 +4,7 @@ import FeatureListSection from "@/components/feature-child/FeatureListSection";
 import FeatureTestimonialSection from "@/components/feature-child/FeatureTestimonialSection";
 import FeatureBenefitsSection from "@/components/feature-child/FeatureBenefitsSection";
 import FeatureDataPrivacySection from "@/components/feature-child/FeatureDataPrivacySection";
+import FeaturePreFaqVideoSection from "@/components/feature-child/FeaturePreFaqVideoSection";
 import PaperlessAdvantageComparison from "@/components/feature-child/PaperlessAdvantageComparison";
 import FeatureVideoSection from "@/components/feature-child/FeatureVideoSection";
 import FeatureVideosSection from "@/components/feature-child/FeatureVideosSection";
@@ -138,6 +139,9 @@ export default async function FeaturePage({ params }: FeaturePageProps) {
         ) : null}
         {"campaignsVideos" in featureData && featureData.campaignsVideos?.length ? (
           <FeatureCampaignsVideosSection videos={featureData.campaignsVideos} />
+        ) : null}
+        {"preFaqVideo" in featureData && featureData.preFaqVideo ? (
+          <FeaturePreFaqVideoSection {...featureData.preFaqVideo} />
         ) : null}
         <FeatureFAQSection {...featureData.faq} />
         
